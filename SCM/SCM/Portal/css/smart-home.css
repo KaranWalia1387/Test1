@@ -1,0 +1,26 @@
+.Imgtitle{text-align: center;color: #3096ca;font-weight: bold;font-size: 16px;text-transform: uppercase;}
+.SmartDiv {padding: 10px; }
+
+.SmartHomeContainer{width:1200px; height:500px;margin:10px 0 0 40px;}
+.SmartHomeContainer tr td{padding:10px 0 0 0; text-align:center;}
+
+
+
+.SmartSetting{width:400px; margin-right:150px;border:1px solid black;}
+
+
+
+
+.SmartHomeLogo{height:275px;}
+.SmartHomeStatus {width:102px; cursor:pointer;}
+.SmartHomeTitle {color:#5aabd4; font-size:20px;font-weight:bold; text-transform:uppercase;}
+
+
+.MySlider{width:1200px;border:1px solid #333333; overflow-x: scroll;overflow-y: hidden;}
+.MySlider img{width:100px; margin:10px 20px; }
+
+table.SmartCheckBox { width: 100%; }
+table.SmartCheckBox label{ display: block; text-align: center;}
+table.SmartCheckBox input[type=checkbox]{display: block; margin: 5px auto; }
+table.test tr td { padding: 0px;}
+table.Temp tr td { padding: 6px;}

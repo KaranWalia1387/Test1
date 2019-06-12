@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="AdminPanel.GasUsageAnalysis" CodeBehind="GasUsageAnalysis.svc.cs" %>

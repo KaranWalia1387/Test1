@@ -1,0 +1,1081 @@
+﻿.mail-header h4/*
+	Author: Prashant Kumar
+*/
+
+@charset "utf-8";
+	ul, .list-unstyled {
+    padding-left: 30px;
+}
+ul li {
+    list-style: none; 
+}
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+.energy_mid_box {
+
+    overflow: hidden;
+    padding-bottom: 25px;
+    position: relative;
+    width: 100%;
+}
+.wht-bg {
+    background: #fff;
+}
+.wht-bg h4 {
+    font-size: 24px;
+    color: #a2a2a2;
+    font-weight: 300;
+}
+.gen-case {
+    text-transform: none;
+}
+.mail-src-position {
+    margin-top: -3px;
+}
+.mail-option {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.mail-option .chk-all, .mail-option .btn-group a.btn {
+    border: 1px solid #e7e7e7;
+    padding: 5px 10px;
+    display: inline-block;
+    background: #fcfcfc;
+    color: #afafaf;
+    border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+}
+.mail-option .chk-all, .mail-option .btn-group {
+    margin-right: 5px;
+}
+.mail-option .chk-all {
+    float: left;
+}
+.mail-checkbox {
+    margin-right: 10px;
+}
+.mail-option .chk-all ul > li > a
+{
+    display:block;
+    width:100%;
+}
+.icheckbox_minimal, .iradio_minimal {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background: url(../img/minimal.png) no-repeat;
+    border: none;
+    cursor: pointer;
+	position:relative;
+}
+.mail-option .chk-all input[type=checkbox] {
+    margin-top: 0;
+}
+.mail-option .chk-all, .mail-option .btn-group {
+    margin-right: 5px;
+}
+
+.mail-option .chk-all, .mail-option .btn-group a.btn {
+    border: 1px solid #e7e7e7;
+    padding: 5px 10px;
+    display: inline-block;
+    background: #fcfcfc;
+    color: #afafaf;
+    border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+}
+
+.mail-option .btn-group a.all {
+    padding: 0;
+    border: none;
+}
+		.mail-option .chk-all, .mail-option .btn-group {
+    margin-right: 5px;
+}
+ul.inbox-pagination {
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.inbox-pagination li {
+    float: left;
+	padding:0;
+	border:solid 0px #fff;
+}
+.inbox-pagination li span {
+    display: inline-block;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+.inbox-pagination a.np-btn {
+    margin-left: 5px;
+}
+.inbox-pagination a.np-btn {
+    border: 1px solid #e7e7e7;
+    padding: 5px 15px;
+    display: inline-block;
+    background: #fcfcfc;
+    color: #afafaf;
+    border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+    cursor:pointer;
+}
+.fa-angle-left.pagination-left {
+    font-weight: bold;
+    font-size: 17px;
+}
+.fa-angle-right.pagination-right {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#ulNotificatons .inbox-small-cells > .fa-star {
+    color: #dadada;
+}
+.table-inbox-wrap {
+   float:left;
+   width:100%;
+}
+.table-inbox tr.unread td {
+    font-weight: 600;
+    background: #f7f7f7;
+    color: #53565a;
+}
+.table-inbox tr td:first-child {
+    width: 5%;
+}
+.table-inbox tr td:first-child .icheckbox_minimal {
+    margin-left: 15px;
+}
+.icheckbox_minimal {
+    background-position: 0 0;
+}
+    .icheckbox_minimal.hover {
+        background-position: -20px 0;
+    }
+    .icheckbox_minimal.checked {
+        background-position: -40px 0;
+    }
+    .icheckbox_minimal.disabled {
+        background-position: -60px 0;
+        cursor: default;
+    }
+    .icheckbox_minimal.checked.disabled {
+        background-position: -80px 0;
+    }
+.table-inbox .msg-sbjcts > a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 22em;
+    display: block;
+}
+.table-inbox tr td {
+    padding: 12px !important;
+}
+.table-inbox tr td:hover {
+    cursor:pointer;
+}
+
+ul#ulNotificatons li.unread {
+    color: #53565a;
+    font-weight:600;
+}
+#ulNotificatons .SaveImageContainer:hover img {
+background:url(../images/notification_icon/SavedIcons.png);
+height:12px;
+width:13px;
+display:inline-block;
+}
+.notif-table span.label
+{
+border-radius:0;
+}
+.search-btns
+{
+float:left;
+width:100%;
+}
+.search-btn-area  input
+{
+width:100%;
+}
+.search-btn-area
+{
+float:left;
+width:100%;
+}
+.mail-option > section
+{
+padding:0px;
+}
+.search-btn-area input[type="text"]
+{
+background-color:#fcfcfc;
+}
+.search-btn-area button[type="submit"] {
+    position: absolute;
+    right: 0px;
+    background-color: rgba(0,0,0,0) !important;
+    background-image: none;
+    border: solid 0px #F4F4F4;
+    min-width: inherit;
+    line-height: 23px !important;
+    font-size: 15px;
+    margin: 0;
+    padding: 6px 12px !important;
+}
+.search-btns > button[type="submit"] {
+    position: absolute;
+    right: 0px;
+    background-color: rgba(0,0,0,0);
+    border: solid 0px #fff;
+}
+.search-btns > button > i.fa
+{
+color:#9ea1a5
+}
+
+/* View mail */
+.mail-sender {
+    background-color: #f7f7f7;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 1px 0;
+    margin: 10px -15px;
+    padding: 5px 15px;
+}
+.mail-header h4 {
+    color: #53565a;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    padding-top: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+}
+.mail-header h4#subj {
+    overflow:visible;
+}
+.compose-btn {
+    float: left;
+    margin-top: 6px;
+}
+.mail-sender .date {
+    line-height: 30px;
+    margin-bottom: 0;
+    text-align: right;
+	font-weight:600;
+}
+.details-sender
+{
+    line-height: 30px;
+    margin-bottom: 0;
+    text-align: left;
+}
+.view-mail
+{
+padding:0px 8px;
+}
+.view-mail a, .attachment-mail a:hover {
+    color: #35bcb5;
+}
+.view-mail > p
+{
+color:#53565a;
+}
+.mail-sender p
+{
+color:#53565a;
+}
+.attachment-mail {
+    border-bottom: 5px solid #eff2f7;
+    border-top: 1px solid #eff2f7;
+    float: left;
+    margin: 20px 0 15px;
+    padding: 10px 20px;
+    width: 100%;
+}
+.attachment-mail > ul > li {
+    float: left;
+    width: 200px;
+    margin-right: 15px;
+    margin-top: 15px;
+    list-style: none;
+}
+.attachment-mail a {
+    color: #32323a;
+}
+.compose-btn {
+    float: left;
+    margin-top: 0px;
+}
+.attachment-mail ul li a.name span {
+    float: right;
+    color: #767676;
+}
+.compose-btn > .rp-btn {
+    background-color: #39b0d2  !important;
+    border: 1px solid #39b0d2  !important;
+    color: #ffffff !important;
+}
+.rp-btn > i, .btn-sm > i {
+    margin-right: 5px;
+
+}
+.atch-thumb > img
+{
+padding:0 0 5px 0;
+}
+/* View Mail */
+/* compose mail */
+.cmpsmail {
+    box-shadow: none;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 0;
+}
+header.cmpsmail#commail {
+        box-shadow: 0 0 0px #9c9c9c !important;
+        z-index: 99 !important;
+} 
+
+.cmpsmail > h4 {
+    color: #53565a;
+    display: inline-block;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+.compose-mail {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+}
+.compose-mail .form-group {
+    background-color: #fcfcfc;
+    border: 1px solid #e7e7e7;
+    display: inline-block;
+    margin-bottom: 0;
+    width: 100%;
+}
+.compose-mail .form-group label {
+    float: left;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.compose-mail input, .compose-mail input:focus {
+    border: none;
+    padding: 0;
+    width: 80%;
+    float: left;
+	background-color:#fcfcfc;
+}
+.compose-mail .compose-options {
+    color: #979797;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+.wysihtml5-toolbar .btn-default {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 0;
+    color: #757575;
+}
+.wysihtml5-toolbar
+{
+margin:10px 0 !important;
+}
+.compose-editor input {
+    margin-top: 15px;
+}
+.compose-mail input, .compose-mail input:focus {
+    border: none;
+    padding: 0;
+    width: 80%;
+    float: left;
+}
+#file-1 {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.attachment-files
+{
+float: left; width: 100%; margin: 15px 0px 0px; padding: 15px 0px 0px;
+}
+.box.attachment-files > span.btn-file {
+    background-color: #fcfcfc !important;
+    color: #53565a !important;
+    padding:7px 12px 7px 5px;
+    border: solid 1px #e7e7e7;
+    cursor: pointer;
+}
+.attachment-files .fa
+{
+margin:0px 5px;
+}
+.nav-alrtmsgs > li > a > span.label
+{
+position:absolute;
+right:20px;
+}
+.nav-alrtmsgs > li.active > a > .fa, .nav-alrtmsgs > li > a:hover > .fa
+{
+color:#ffffff;
+}
+.nav-alrtmsgs > li.active > a > span.label, .nav-alrtmsgs > li > a:hover > span.label{
+
+    right: 34px;
+}
+.nav-alrtmsgs > li > a > .fa {
+    font-size: 21px;
+    margin: 0 10px;
+    vertical-align: middle;
+    color: #13689b;
+    width: 18px;
+    text-align: center;
+}
+.nav_left ul li a {
+    color: #666666;
+    cursor: pointer;
+    display: block;
+    padding: 10px 0 10px 15px !important;
+    text-decoration: none;
+}
+.nav_left > ul.nav-alrtmsgs > li > a
+{
+    background:none !important;
+}
+.nav_left ul li a:hover, .nav_left ul li.active a {
+    border: 0 none;
+    color: #fff;
+    padding-left: 15px !important;
+}
+.compose-btn > button.btn-sm {
+    background-color: #fcfcfc;
+    border: solid 1px #e7e7e7;
+    border-radius: 0px;
+    background-image: none;
+    min-width: auto !important;
+    padding: 5px 10px !important;
+    line-height: 20px !important;
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .compose-btn > button.btn-sm {
+         width: 35px !important;
+          min-width: 35px !important;
+    }
+}
+
+ul#ulNotificatons
+{
+    margin:0px -15px;
+}
+.compose-btn > button.btn-primary
+{
+background-color:#95c93d !important;
+border:solid 1px #95c93d !important;
+border-radius:0px !important;
+color:#ffffff  !important;
+background-image:none;
+}
+/* compose mail */
+ul.MailListing li:nth-child(1)
+{
+border-top:1px solid #dadada;
+}
+ul.MailListing li {
+    padding:8px 0 7px;
+}
+ul.MailListing li.unread {
+    background: #f7f7f7;
+}
+.select_chech-box > input[type="checkbox"]
+{
+    margin-left:15px;
+}
+.liclick .select_from {
+    width: 22%;
+    float: left;
+    padding-left: 0;
+    width: 25%;
+    padding: 0px 10px;
+}
+.liclick .select_counter {
+    float: left;
+    width: 10%;
+    height:25px;
+}
+    .liclick .select_counter > span {
+        width:100%;
+        margin-left: -4px;
+        margin-top: 2px;
+        }
+.liclick .select_subject {
+    width: 38%;
+    padding: 0px 10px;
+    height:25px;
+}
+.liclick .select_atachment {
+    width: 4%;
+    float: left;
+    text-align: right;
+    padding: 0px 10px;
+    height:25px;
+}
+.liclick .select_date {
+    width: 22%;
+    padding: 0px 10px;
+    float:right;
+    white-space:nowrap;
+}
+.liclick .select_from > span:nth-child(1)
+{
+    width: 80%;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ul.MailListing li.unread:hover {
+    background: #f7f7f7;
+
+    cursor: pointer;
+}
+ul.MailListing li:hover {
+    background: #f7f7f7;
+
+    cursor: pointer;
+}
+
+.mail-option label, #ulNotificatons label{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 0;
+    margin-right: 0;
+    font-size: 13px;
+    top: 4px;
+    height: 16px;
+    width: 16px;
+}
+.mail-option input[type="checkbox"], #ulNotificatons input[type="checkbox"]{
+	display: none;
+}
+.mail-option label:before, #ulNotificatons label:before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #fff;
+    box-shadow: none;
+    border: solid 1px #999;
+}
+.mail-option .checkbox label:before, #ulNotificatons .checkbox label:before{
+    border-radius: 0px;
+}
+.mail-option input[type="checkbox"]:checked + label:before, #ulNotificatons input[type="checkbox"]:checked + label:before{
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #333333;
+    text-align: center;
+    line-height: 15px;
+    font-weight: bold;
+}
+.mail-option .select_chech-box, #ulNotificatons .select_chech-box{
+    width: 6%;
+    float: left;
+    padding-left: 14px;
+    text-align: center;
+    padding-top: 2px;
+}
+.mail-option .SaveImageContainer, #ulNotificatons .SaveImageContainer
+{
+    text-align:center;
+}
+#MessageBody {
+    padding:0;
+    margin:0;
+}
+#msgReply
+{
+    padding:0px 0px;
+}
+input[type="text"]:disabled {
+    background-color: #fcfcfc;
+    color: #333;
+}
+.Attachment-mail p  span .fa-paperclip{
+    font-size: 25px;padding: 0px 10px 0 0;vertical-align: middle;
+}
+.BacktoInbox {
+    background: rgba(0, 0, 0, 0) url("../images/notification_icon/icon-back-to-inbox.png") no-repeat scroll 0 0 / 25px 25px;
+    border: 0 none;
+    cursor: pointer;
+    height: 25px;
+    left: 30px;
+    position: relative;
+    text-indent: -9999px;
+    top: -3px;
+    width: 25px;
+}
+#demandresponse .fa-bar-chart {
+        padding-right: 20px;
+}
+.nav_left ul li#leakalert.sidebar_favourites a
+{
+    background: url("../images/leak_alret_icon.png") no-repeat 12% center !important;
+    background-size:20px;
+    padding-left: 56px !important;
+}
+
+    .nav_left ul li#leakalert.sidebar_favourites a:hover, .nav_left ul li#leakalert.sidebar_favourites.active a
+    {
+        background: url("../images/leak_alret_icon_hover.png") no-repeat 11.2% center !important;
+         background-size:20px;
+        padding-left: 56px !important;
+    }
+.nav_left ul li#leakalert.sidebar_leakalert a
+{
+    background: url("../images/leak_alret_icon.png") no-repeat 12% center !important;
+    background-size:20px;
+    padding-left: 56px !important;
+}
+
+    .nav_left ul li#leakalert.sidebar_leakalert a:hover, .nav_left ul li#leakalert.sidebar_leakalert.active a
+    {
+        background: url("../images/leak_alret_icon_hover.png") no-repeat 11.2% center !important;
+         background-size:20px;
+        padding-left: 56px !important;
+    }
+
+    .nav_left ul li#loginissue.sidebar_loginissue a
+{
+    background: url("../images/login_issue.png") no-repeat 12% center !important;
+    background-size:20px;
+    padding-left: 56px !important;
+}
+
+    .nav_left ul li#loginissue.sidebar_loginissue a:hover, .nav_left ul li#loginissue.sidebar_loginissue.active a
+    {
+        background: url("../images/login_issue_hover.png") no-repeat 11.2% center !important;
+         background-size:20px;
+        padding-left: 56px !important;
+    }
+
+.energy_mid_box .right_content_box {
+    overflow-x: hidden !important;
+
+}
+#msgReply .dropdown-menu > li > a {
+    padding: 6px 20px;
+}
+#msgReply .right_content_box ul li {
+    padding: 0;
+    text-align: center;
+}
+.nav-alrtmsgs > li > a > .fa {
+    height: 20px;
+}
+
+.fa-mobile-phone:before, .fa-mobile:before {
+    content: "\f10b";
+    font-size: 32px;
+    top: -5px;
+    position: relative;
+}
+.fa-bar-chart-o:before, .fa-bar-chart:before {
+    content: "\f080";
+    font-size: 20px;
+}
+.chk-all ul.dropdown-menu > li {
+    padding:0;
+}
+.bootstrap-wysihtml5-insert-image-modal .modal-body {
+    padding: 15px;
+    position: relative;
+}
+.bootstrap-wysihtml5-insert-image-modal .modal-body > input[type="text"] {
+    float: none;
+    padding: 5px 8px;
+    width: 100%;
+    resize: none;
+}
+.bootstrap-wysihtml5-insert-image-modal .modal-footer > .btn
+{
+    background-color: #fcfcfc!important;
+    border: solid 1px #e7e7e7!important;
+    border-radius: 0 !important;
+    color:#666666 !important;
+}
+
+.wysihtml5
+{
+    color: #333333 !important;
+    -webkit-text-fill-color:#333 !important;
+}
+body.wysihtml5
+{
+    color: #333333 !important;
+    -webkit-text-fill-color:#333 !important;
+}
+@media only screen and (min-width : 768px) and (max-width :991px) {
+    .mail-option .select_chech-box, #ulNotificatons .select_chech-box {
+        float: left;
+        padding-left: 14px;
+        padding-top: 2px;
+        text-align: center;
+        width: 9%;
+    }
+
+    .liclick {
+        float: left;
+        width: 86%;
+    }
+
+        .liclick .select_subject {
+            padding: 0 5px 0 10px;
+            width: 25%;
+        }
+
+        .liclick .select_atachment {
+            float: left;
+            height: 25px;
+            padding: 0 5px;
+            text-align: right;
+            width: 5%;
+        }
+
+        .liclick .select_date {
+            float: right;
+            font-size: 11px;
+            padding: 0 5px;
+            width: 26%;
+        }
+
+        .liclick .select_from > span {
+            font-size: 11px;
+        }
+
+        .liclick .select_counter {
+            float: left;
+            height: 25px;
+            text-align: center;
+            vertical-align: middle;
+            width: 15%;
+        }
+        .liclick .select_counter > span {
+                width: 90%;
+            }
+
+            .liclick .select_counter span.label {
+                display: block;
+                font-size: 9px;
+                left: 5px;
+                margin: 0 auto;
+                padding: 4px 5px;
+                position: relative;
+                text-align: center;
+                top: 4px;
+                vertical-align: middle;
+            }
+
+        .liclick .select_date {
+            float: right;
+            font-size: 11px;
+            padding: 0 5px;
+            width: 30%;
+        }
+
+    .SaveImageContainer {
+        float: left;
+        width: 4%;
+    }
+
+    .select_subject > span {
+        font-size: 11px;
+    }
+
+    .cmpsmail > h4 {
+        font-size: 18px;
+    }
+
+    ul.wysihtml5-toolbar > li {
+        margin: 0 2px 10px 0 !important;
+        padding: 0;
+    }
+
+    .fa.fa-bar-chart {
+        font-size: 19px;
+    }
+
+    .nav-alrtmsgs > li.active > a > span.label, .nav-alrtmsgs > li > a:hover > span.label {
+        right: 29px;
+    }
+
+    .nav-alrtmsgs > li > a > .fa {
+        color: #13689b;
+        font-size: 18px;
+        margin: 0 8px;
+        text-align: center;
+        vertical-align: middle;
+        width: 18px;
+    }
+}
+
+@media only screen and (min-width : 992px) and (max-width :1024px) {
+    .liclick .select_date {
+        float: right;
+        padding: 0 10px;
+        width: 25%;
+    }
+
+    .liclick .select_subject {
+        padding: 0 10px;
+        width: 36%;
+    }
+
+    .nav-alrtmsgs > li.active > a > span.label, .nav-alrtmsgs > li > a:hover > span.label {
+        right: 31px;
+    }
+
+    .table-inbox-wrap > ul.MailListing {
+        height: 100% !important;
+    }
+
+    .mail-option .select_chech-box, #ulNotificatons .select_chech-box {
+        padding-left: 22px;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width :767px) {
+    .energy_mid_box .nav_left {
+        background: #d4d4d4 none repeat scroll 0 0;
+        width: 100%;
+    }
+}
+@media (min-width:320px) and (max-width:767px) {
+    ul#ulNotificatons.MailListing {
+        height: 313px !important;
+        border-top: 1px solid #cfcfcf;
+    }
+     .nav_left ul li#leakalert.sidebar_leakalert a {
+             background:url("../images/leak_alret_icon.png") no-repeat scroll 6% center !important;
+        } 
+        .nav_left ul li#leakalert.sidebar_leakalert a:hover, .nav_left ul li#leakalert.sidebar_leakalert.active a {
+        background: url("../images/leak_alret_icon_hover.png") no-repeat scroll 6% center !important;
+    
+    }
+
+    .mail-option {
+        margin-bottom: 5px;
+        margin-left: -14px;
+    }
+
+    ul.MailListing li:nth-child(1) {
+        border-top: 0 solid #dadada;
+    }
+
+    .mail-option .select_chech-box, #ulNotificatons .select_chech-box {
+        padding-left: 10px;
+        width: 8% !important;
+        padding-top: 0px;
+    }
+
+    .SaveImageContainer {
+        float: left;
+        width: 6%;
+    }
+
+    .liclick {
+        float: left;
+        font-size: 11px;
+        padding-top: 1px;
+        vertical-align: middle;
+        width: 86%;
+    }
+
+        .liclick .select_counter {
+            float: left;
+            height: 25px;
+            width: 20%;
+        }
+
+        .liclick .select_from {
+            float: left;
+            padding-left: 0;
+            width: 30%;
+        }
+
+        .liclick .select_counter > span {
+            font-size: 9px;
+            margin-left: 0;
+            margin-top: 2px;
+            width: 100%;
+        }
+
+        .liclick .select_message {
+            padding-right: 0;
+            width: 25%;
+        }
+
+        .liclick .select_subject {
+            padding-right: 0;
+            width: 22%;
+            padding-left: 5px;
+        }
+
+        .liclick .select_atachment {
+            float: left;
+            height: 25px;
+            padding: 0;
+            text-align: center;
+            width: 4% !important;
+        }
+
+        .liclick .select_date {
+            overflow: hidden;
+            padding-left: 5px;
+            padding-right: 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 24%;
+        }
+
+    .responsive_alignment_pagination {
+        position: absolute;
+        top: 5px;
+        right: 3px;
+    }
+
+    .energy_mid_box .right_content_box {
+        width: 100% !important;
+    }
+
+    .message-section {
+        height: 90%;
+    }
+
+    .message-written-area {
+        padding: 0 25px;
+    }
+
+    .select_chech-box {
+        width: 7%;
+    }
+
+    .select_topic {
+        width: 7%;
+    }
+
+    .select_from {
+        padding-left: 0;
+        padding-right: 0;
+        width: 20%;
+    }
+
+    .select_message {
+        padding-left: 0;
+        padding-right: 0;
+        width: 20%;
+    }
+
+    .select_subject {
+        padding-right: 0;
+        width: 20%;
+    }
+
+    .select_date {
+        padding-right: 0;
+        width: 25%;
+    }
+
+    .back_notification_btn {
+        width: 60% !important;
+    }
+
+    .from-section {
+        width: 20%;
+    }
+
+    .from-name-section {
+        width: 80%;
+    }
+
+    .message-written-area {
+        float: left;
+        padding: 0 20px !important;
+        width: 80%;
+    }
+
+    .SaveImageContainer > img, .select_atachment > img {
+        width: 15px;
+    }
+
+    .mail-header h4 {
+        font-size: 14px;
+        font-weight: bold;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .compose-btn > button.btn-sm {
+        margin: 0 !important;
+    }
+
+    .mail-sender .date {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .cmpsmail > h4 {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 0;
+        margin-top: 5px;
+        vertical-align: middle;
+    }
+
+    #div_print > .mail-header > div {
+        padding: 0;
+    }
+
+    .compose-btn > button.btn-sm {
+        min-width: 35px !important;
+    }
+}
+
+
+.nav-alrtmsgs {
+              overflow:hidden;
+          }

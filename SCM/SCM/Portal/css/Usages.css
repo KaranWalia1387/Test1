@@ -1,0 +1,428 @@
+﻿
+.msthigh {
+    font-size: 8px;
+    line-height: 18px;
+}
+
+.power_graph_heading.msthigh {
+    width: 35% !important;
+}
+
+#chrt {
+    POSITION: absolute;
+    bottom: -1px;
+    height: 20px;
+    width: 20px;
+}
+.help_icon_img.help_icon_img {
+    margin-top: 2px !important;
+}
+
+.preLoader {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url('../images/loader.gif');
+    background-position: center center;
+    background-attachment: inherit;
+    top: -200px;
+    left: 0;
+    background-repeat: no-repeat;
+    color: white;
+    opacity: 9;
+    overflow: hidden;
+    z-index: 99999999999999;
+}
+
+#chrt img {
+    height: 20px;
+}
+
+.null {
+    margin-left: -13px !important;
+}
+
+.TableCellHeaderTitle img {
+    height: auto;
+}
+
+.TableCellHeaderTitle img {
+    height: auto;
+}
+
+.divam svg {
+    width: 100% !important;
+}
+
+.power_rates_popup rect {
+    width: 100%;
+    height: 150px;
+}
+
+.all_bill_box {
+    width: 100% !important;
+}
+
+
+    .all_bill_box .white_div {
+        border-radius: 6px !important;
+    }
+
+
+@media (max-width:991px) {
+    #usageMapType .compare_month {
+        float: right;
+        margin: 6px 0 0;
+        width: 22.3%;
+    }
+}
+
+.ajax__calendar_year, .ajax__calendar_months, .ajax__calendar_days {
+    overflow: visible !important;
+    line-height: normal !important;
+}
+
+.ajax__calendar_days, .ajax__calendar_months, .ajax__calendar_years {
+    left: -6px !important;
+}
+
+.ajax__calendar_header {
+    height: 27px !important;
+}
+
+.currency ul li a[mode="D"] {
+    text-align: center;
+    margin: 10px 2px 7px 0px;
+}
+
+
+
+
+
+
+.currency ul li a[mode="S"] {
+    background: url("../images/icon_season.svg") no-repeat left top !important;
+    text-indent: -3px !important;
+}
+
+.currency ul li a.active[mode="S"] {
+    background: url("../images/icon_season_hover.svg") no-repeat left top !important;
+    text-indent: -3px !important;
+}
+
+@media (min-width:767px) and (max-width:1024px) {
+    #usageMapType ul {
+        width: 16% !important;
+    }
+
+    #usageMapMode {
+        width: 30% !important;
+    }
+
+    .wthr_usages {
+        margin-left: 0px !important;
+    }
+}
+
+
+.right_content_box #usageMapType ul li:last-child a {
+    margin-right: 0 !important;
+}
+
+.fancybox-inner {
+    width: 625px;
+}
+
+.fancybox-close {
+    position: absolute;
+    top: 9px !important;
+    right: 9px !important;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 8040;
+}
+
+.toggle.btn.ios {
+    margin-top: -1px;
+    margin-right: 7px;
+    min-width: 44px;
+    min-height: 24px;
+    height: 23px !important;
+    width: 44px !important;
+    background-color: #246A9F !important;
+    border-color: #246A9F !important;
+    border-radius: 20px !important;
+    color: #246A9F !important;
+}
+
+.toggle.ios, .toggle-on.ios, .weather_box_right .toggle-off.ios {
+    border-radius: 20px;
+}
+
+.toggle-on.btn {
+    background-color: #246A9F !important;
+    text-indent: -9999px;
+     border-radius: 20px !important;
+}
+
+.toggle-off.btn {
+    background-color: #828282 !important;
+    text-indent: -9999px;
+    border-radius: 20px !important;
+}
+
+.toggle.ios .toggle-handle {
+    padding: 0 24px;
+}
+
+.toggle.ios .toggle-handle {
+    -moz-border-radius: 20px; 
+    -webkit-border-radius: 20px; 
+    border-radius: 20px;
+    float: none;
+}
+
+.currency ul.calender_usages li {
+    width: 45px;
+}
+
+/*#5368-end*/
+/* Microsoft Edge Browser 12+ (All) - @supports method */
+
+@supports (-ms-accelerator:true) {
+
+    .currency ul li a[mode="S"] {
+        background: url("../images/icon_season.png") no-repeat left top !important;
+        text-indent: -3px !important;
+    }
+
+    .currency ul li a.active[mode="S"] {
+        background: url("../images/icon_season_hover.png") no-repeat left top !important;
+        text-indent: -3px !important;
+    }
+
+    .currency ul li a[mode="M"] {
+        width: 37px;
+        background: url("../images/icon_monthly.png") no-repeat left top !important;
+        text-indent: -5px !important;
+    }
+
+    .currency ul li a.active[mode="M"] {
+        width: 37px;
+        background: url("../images/icon_monthly_hover.png") no-repeat left top !important;
+        text-indent: -5px !important;
+    }
+
+
+    .right_content_box ul li a[type='K'], .right_content_box ul li a[mode='K'] {
+        background: url("../images/icon_kwh.png") no-repeat 0px 0px !important;
+        /*  background-size:auto 29px !important;*/
+    }
+
+        .right_content_box ul li a[type='K'].active, .right_content_box ul li a[mode='K'].active {
+            background: url("../images/icon_kwh_hover.png") no-repeat 0px 0px !important;
+            /* background-size:auto 29px !important;*/
+        }
+
+    .right_content_box ul li a[type='D'] {
+        background: url("../images/icon_currency.png") no-repeat 0px 0px !important;
+        /*  background-size:auto 29px !important;*/
+    }
+
+        .right_content_box ul li a[type='D'].active {
+            background: url("../images/icon_currency_hover.png") no-repeat 0px 0px !important;
+            /*  background-size:auto 29px !important;*/
+        }
+
+    .right_content_box ul li a[type='G'] {
+        background: url("../images/gl.png") no-repeat 0px 0px !important;
+        /* background-size:auto 29px !important;*/
+    }
+
+        .right_content_box ul li a[type='G'].active {
+            background: url("../images/gl_ro.png") no-repeat 0px 0px !important;
+            /*  background-size:auto 29px !important;*/
+        }
+
+    .right_content_box ul li a[type='W'], .right_content_box ul li a[mode='K'] {
+        background: url("../images/icon_hcf.png") no-repeat 0px 0px !important;
+        /* background-size:auto 29px !important;*/
+    }
+
+        .right_content_box ul li a[type='W'].active, .right_content_box ul li a[mode='K'].active {
+            background: url("../images/icon_hcf_active.png") no-repeat 0px 0px !important;
+            /* background-size:auto 29px !important;*/
+        }
+}
+
+@media screen and (min-width:0\0) {
+    .currency ul li a[mode="S"] {
+        background: url("../images/icon_season.png") no-repeat left top !important;
+        text-indent: -3px !important;
+    }
+
+    .currency ul li a.active[mode="S"] {
+        background: url("../images/icon_season_hover.png") no-repeat left top !important;
+        text-indent: -3px !important;
+    }
+
+    .currency ul li a[mode="M"] {
+        width: 37px;
+        background: url("../images/icon_monthly.png") no-repeat left top !important;
+        text-indent: -5px !important;
+    }
+
+    .currency ul li a.active[mode="M"] {
+        width: 37px;
+        background: url("../images/icon_monthly_hover.png") no-repeat left top !important;
+        text-indent: -5px !important;
+    }
+
+    .right_content_box ul li a[type='K'], .right_content_box ul li a[mode='K'] {
+        background: url("../images/icon_kwh.png") no-repeat 0px 0px !important;
+        /*background-size:auto 29px !important;*/
+    }
+
+        .right_content_box ul li a[type='K'].active, .right_content_box ul li a[mode='K'].active {
+            background: url("../images/icon_kwh_hover.png") no-repeat 0px 0px !important;
+            /*background-size:auto 29px !important;*/
+        }
+
+    .right_content_box ul li a[type='D'] {
+        background: url("../images/icon_currency.png") no-repeat 0px 0px !important;
+        background-size: auto 29px !important;
+    }
+
+        .right_content_box ul li a[type='D'].active {
+            background: url("../images/icon_currency_hover.png") no-repeat 0px 0px !important;
+            /*background-size:auto 29px !important;*/
+        }
+
+    .right_content_box ul li a[type='G'] {
+        background: url("../images/gl.png") no-repeat 0px 0px !important;
+        /*background-size:auto 29px !important;*/
+    }
+
+        .right_content_box ul li a[type='G'].active {
+            background: url("../images/gl_ro.png") no-repeat 0px 0px !important;
+            /*background-size:auto 29px !important;*/
+        }
+
+    .right_content_box ul li a[type='W'], .right_content_box ul li a[mode='K'] {
+        background: url("../images/icon_hcf.png") no-repeat 0px 0px !important;
+        /*background-size:auto 29px !important;*/
+    }
+
+        .right_content_box ul li a[type='W'].active, .right_content_box ul li a[mode='K'].active {
+            background: url("../images/icon_hcf_active.png") no-repeat 0px 0px !important;
+            /*background-size:auto 29px !important;*/
+        }
+}
+
+
+.help_popup_link, .help_popup_link_1 {
+    position: relative;
+    z-index: 999;
+}
+
+.help_popup_box, .help_popup_box_1 {
+    display: none;
+    width: 300px;
+    min-height: 121px;
+    border: 1px solid #E8E8E8;
+    background: #fff;
+    position: absolute;
+    left: 55px;
+    top: -18px;
+    z-index: 9999;
+    padding: 2px 10px;
+    box-shadow: 1px 2px 6px #cdcdcd;
+}
+
+.help_popup_box_1 {
+    left: 20px;
+}
+
+.help_popup_link img, .help_popup_link_1 img {
+    cursor: pointer;
+    z-index: 9999999;
+    position: relative;
+}
+
+.help_popup_box h5, .help_popup_box_1 h5 {
+    margin: 4px 0;
+    padding: 4px 0px;
+    border-bottom: 1px solid #EFEFEF;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4C82BB;
+}
+
+.help_popup_box p, .help_popup_box_1 p {
+    font-size: 12px;
+}
+
+
+.help_popup_box_bdr {
+    width: 0;
+    height: 0;
+    border-right: 15px solid #fff !important;
+    border-left: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-bottom: 13px solid transparent;
+    margin-left: -40px;
+    position: absolute;
+}
+
+.help_popup_box_1 .help_popup_box_bdr {
+    border-right: 15px solid #ECECEC !important;
+}
+
+
+i.icon.help.circle::before {
+    content: "" !important;
+}
+
+.radio-button-box span {
+    float: left;
+    margin: 7px 0px 0px;
+}
+
+.radio-button-box input[type="text"] {
+    width: 20%;
+}
+
+.right {
+    border: 0 none !important;
+    height: 48px;
+    left: 0 !important;
+    position: absolute !important;
+    z-index: -1;
+}
+
+.ui.divider {
+    -moz-user-select: none;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 1rem;
+    font-weight: 700;
+    height: 0;
+    letter-spacing: 0.05em;
+    margin: 2px 0 8px 0px !important;
+    text-transform: uppercase;
+    padding: 0 !important;
+}
+
+h5 {
+    font-weight: 700;
+    margin: 0px 0px 8px !important;
+    padding: 0;
+    color: #006699 !important;
+}
+
+.help_icon_img {
+    color: #AFAFAF;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: -21px;
+}

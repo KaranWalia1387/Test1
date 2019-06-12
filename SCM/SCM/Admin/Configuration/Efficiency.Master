@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Efficiency.master.cs" Inherits="AdminPanel.Efficiency" %>
+
+<%@ Import Namespace="AdminPanel" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <aside class="left-side sidebar-offcanvas">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <ul class="tabs sidebar-menu" id="accordion">
+
+                <%if (SessionAccessor.UserRightList.Contains(UserRights.OutageCreate))
+                  { %>
+                <li class="sidebar_outage" style="display:none"><a href="configure-outage.aspx">Outage</a></li>
+                <%} %>
+                <%   if (SessionAccessor.UserRightList.Contains(UserRights.EfficiencyReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.EfficiencyAccess))
+                { %>
+                <li class="sidebar_efficency" ><a href="configure-saving-tips.aspx">Efficiency</a></li>
+                <% }%>
+
+                  
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <aside class="right-side">
+        <a href="javascript:void(0);" id="button-sidebar" class="button-sidebar ir"></a>
+        <div class="inner-right-section">
+            <div class="right-content-area">
+                <asp:ContentPlaceHolder ID="rightpanel" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </aside>
+   
+    <script type="text/javascript" src="../js/jscolor/jscolor.js"></script>
+    <script type="text/javascript">
+        $(".user-mgt").addClass('active');
+
+    </script>
+    <style>
+        #collapseOne li a, .in li a {
+            cursor: pointer;
+        }
+
+        #PopupAddTopic {
+            left: 15% !important;
+            top: 0% !important;
+        }
+    </style>
+
+</asp:Content>

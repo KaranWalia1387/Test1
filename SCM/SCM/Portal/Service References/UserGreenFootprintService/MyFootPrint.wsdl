@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MyFootPrint" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://sus_dsc.sus.local/SCM_Service/MyFootPrint.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://sus_dsc.sus.local/SCM_Service/MyFootPrint.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://sus_dsc.sus.local/SCM_Service/MyFootPrint.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMyFootPrint_GetMyFootPrintMob_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyFootPrintMob" />
+  </wsdl:message>
+  <wsdl:message name="IMyFootPrint_GetMyFootPrintMob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyFootPrintMobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMyFootPrint_GetGPSMyFootPrintMob_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGPSMyFootPrintMob" />
+  </wsdl:message>
+  <wsdl:message name="IMyFootPrint_GetGPSMyFootPrintMob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGPSMyFootPrintMobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMyFootPrint_SearchMyFootPrintMob_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchMyFootPrintMob" />
+  </wsdl:message>
+  <wsdl:message name="IMyFootPrint_SearchMyFootPrintMob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchMyFootPrintMobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMyFootPrint_GetMyFootPrint_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyFootPrint" />
+  </wsdl:message>
+  <wsdl:message name="IMyFootPrint_GetMyFootPrint_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyFootPrintResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMyFootPrint_GetGPSMyFootPrint_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGPSMyFootPrint" />
+  </wsdl:message>
+  <wsdl:message name="IMyFootPrint_GetGPSMyFootPrint_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGPSMyFootPrintResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMyFootPrint_SearchMyFootPrint_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchMyFootPrint" />
+  </wsdl:message>
+  <wsdl:message name="IMyFootPrint_SearchMyFootPrint_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchMyFootPrintResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMyFootPrint">
+    <wsdl:operation name="GetMyFootPrintMob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyFootPrint/GetMyFootPrintMob" message="tns:IMyFootPrint_GetMyFootPrintMob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyFootPrint/GetMyFootPrintMobResponse" message="tns:IMyFootPrint_GetMyFootPrintMob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGPSMyFootPrintMob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyFootPrint/GetGPSMyFootPrintMob" message="tns:IMyFootPrint_GetGPSMyFootPrintMob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyFootPrint/GetGPSMyFootPrintMobResponse" message="tns:IMyFootPrint_GetGPSMyFootPrintMob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchMyFootPrintMob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyFootPrint/SearchMyFootPrintMob" message="tns:IMyFootPrint_SearchMyFootPrintMob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyFootPrint/SearchMyFootPrintMobResponse" message="tns:IMyFootPrint_SearchMyFootPrintMob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyFootPrint">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyFootPrint/GetMyFootPrint" message="tns:IMyFootPrint_GetMyFootPrint_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyFootPrint/GetMyFootPrintResponse" message="tns:IMyFootPrint_GetMyFootPrint_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGPSMyFootPrint">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyFootPrint/GetGPSMyFootPrint" message="tns:IMyFootPrint_GetGPSMyFootPrint_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyFootPrint/GetGPSMyFootPrintResponse" message="tns:IMyFootPrint_GetGPSMyFootPrint_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchMyFootPrint">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyFootPrint/SearchMyFootPrint" message="tns:IMyFootPrint_SearchMyFootPrint_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyFootPrint/SearchMyFootPrintResponse" message="tns:IMyFootPrint_SearchMyFootPrint_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMyFootPrint" type="tns:IMyFootPrint">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMyFootPrintMob">
+      <soap:operation soapAction="http://tempuri.org/IMyFootPrint/GetMyFootPrintMob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGPSMyFootPrintMob">
+      <soap:operation soapAction="http://tempuri.org/IMyFootPrint/GetGPSMyFootPrintMob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchMyFootPrintMob">
+      <soap:operation soapAction="http://tempuri.org/IMyFootPrint/SearchMyFootPrintMob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyFootPrint">
+      <soap:operation soapAction="http://tempuri.org/IMyFootPrint/GetMyFootPrint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGPSMyFootPrint">
+      <soap:operation soapAction="http://tempuri.org/IMyFootPrint/GetGPSMyFootPrint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchMyFootPrint">
+      <soap:operation soapAction="http://tempuri.org/IMyFootPrint/SearchMyFootPrint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MyFootPrint">
+    <wsdl:port name="BasicHttpBinding_IMyFootPrint" binding="tns:BasicHttpBinding_IMyFootPrint">
+      <soap:address location="http://sus_dsc.sus.local/SCM_Service/MyFootPrint.svc/SoapService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

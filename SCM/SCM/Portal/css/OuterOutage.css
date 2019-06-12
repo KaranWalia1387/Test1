@@ -1,0 +1,346 @@
+﻿@media (min-width: 320px) and (max-width:767px) {
+    .cover_right_top_area {
+        border-top: 2px solid #f4f4f4;
+        margin-top: 5px;
+        width: 100% !important;
+        padding-right: 23px;
+    }
+
+    .logo {
+        text-align: right !important;
+        margin-right: 0 !important;
+    }
+
+        .logo img {
+            max-width: 100%;
+        }
+}
+.gis-footprint-area ul li:last-child {
+        width: 253px;
+    font-size: 13px;
+}
+@media (min-width: 320px) and (max-width:640px) {
+
+    .logo {
+        text-align: right !important;
+        margin-right: 0 !important;
+    }
+
+        .logo img {
+            max-width: 100%;
+        }
+}
+
+
+.esriPopup .sizer {
+    position: relative;
+    width: 300px !important;
+    z-index: 1;
+}
+
+#btnDistance, #btnRate {
+    cursor: pointer;
+}
+
+.esriPopup .actionsPane .zoomTo {
+    display: none;
+}
+
+.MessageContainer .PinLabel {
+    position: absolute;
+    top: 18px;
+    left: 27px;
+    color: #000000;
+    display: block;
+    width: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.LeftPanel .MessageContainerActive, .LeftPanel .MessageContainer:hover {
+    background: #eaeaea;
+    border-bottom: 1px dashed #dadada;
+    color: #53565a;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.MessageContainer, .MessageContainerActive {
+    line-height: 18px;
+    position: relative;
+}
+
+    .MessageContainer .blue {
+        color: #3398cc;
+        font-weight: bold;
+    }
+
+    .MessageContainer .red {
+        color: #fe0000;
+    }
+
+    .MessageContainerActive .blue, .MessageContainer:hover .blue, .MessageContainer:hover .red, .MessageContainerActive .red, .MessageContainerActive .PinLabel, .MessageContainer:hover .PinLabel {
+        color: #006699 !important;
+    }
+
+.LeftPanel .MessageContainer {
+    border-bottom: 1px dashed #dadada;
+    padding: 10px;
+    font-size: 12px;
+}
+
+    .LeftPanel .MessageContainer strong {
+        font-size: 12px;
+        padding-right: 5px;
+    }
+
+.MessageContainer table td, th {
+    vertical-align: top;
+}
+
+.gis-footprint-area ul li {
+    margin: 0px;
+    padding: 8px 5px 5px;
+    float: left;
+}
+
+
+/*@media screen and (min-width:0\0) {
+            .gis-footprint-area ul li:last-child {
+                padding-right: 15px;
+                width: 35%;
+            }
+        }*/
+
+/* For IE 8 */
+/*@media \0screen {
+            .gis-footprint-area ul li:last-child {
+                padding-right: 15px;
+                width: 35%;
+            }
+        }*/
+
+.distance_area ul {
+    display: block !important;
+    margin: 0px !important;
+}
+
+    .distance_area ul li a.active {
+        background: #dddddd;
+        color: #000 !important;
+    }
+
+.right_charging_map .distance_area ul li a {
+    padding: 7px 0px !important;
+}
+
+.right_charging_map .distance_area ul li {
+    border-bottom: medium none;
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 50%;
+}
+
+.search-area input {
+    height: 28px;
+}
+
+.search-area {
+    float: left;
+    width: 90%;
+}
+
+.distance_area ul {
+    display: block !important;
+    margin: 0px !important;
+}
+
+    .distance_area ul li a.active {
+        background: #dddddd;
+        color: #000 !important;
+    }
+
+.right_charging_map .distance_area ul li a {
+    padding: 7px 0px !important;
+}
+
+.right_charging_map .distance_area ul li {
+    border-bottom: medium none;
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 50%;
+}
+
+@media (max-width:767px) {
+    .without_sidebar {
+        height: 100% !important;
+    }
+
+    .cover_right_top_area .search-area input[type="text"], input[type="password"], textarea {
+        width: 100% !important;
+    }
+
+    input#GIStxtGoogleSearch {
+        width: 100% !important;
+    }
+}
+
+@media (min-width:1500px) {
+    .without_sidebar {
+        height: 101.8% !important;
+    }
+}
+
+
+#outage_map_canvas {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-width: none;
+}
+
+.gm-style-iw {
+    width: 350px !important;
+    top: 15px !important;
+    left: 0px !important;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+    border: 1px solid #fff;
+    /*border-radius: 5px 5px 5px 5px;*/
+}
+
+    .gm-style-iw > div {
+        width: 350px !important;
+    }
+/*#iw-container {
+    margin-bottom: 10px;
+}*/
+#iw-container .iw-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 10px;
+    background-color: #fff;
+    color: #006699;
+    margin: 0;
+    /*border-radius: 2px 2px 0 0;*/
+    border-bottom: 1px solid #f4f4f4;
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+}
+
+.iw-title > strong {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#iw-container .iw-content {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-right: 1px;
+    padding: 8px 5px 10px 10px;
+    max-height: 140px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #53565a;
+    font-family: Arial;
+}
+
+.iw-content img {
+    float: right;
+    margin: 0 5px 5px 10px;
+}
+
+.iw-subTitle {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+.iw-bottom-gradient {
+    position: absolute;
+    width: 326px;
+    height: 25px;
+    bottom: 10px;
+    right: 18px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+.w2ui-tag-body {
+    padding: 4px 15px !important;
+    margin-left: -153px !important;
+    margin-top: -22px !important;
+}
+
+@media (min-width: 1520px) and (max-width:3640px) {
+    .inner_mid_section {
+        height: 88.4%;
+    }
+
+    .map_address_area.map_address_area {
+        height: 92% !important;
+    }
+}
+
+.inner_uni1 {
+    height: 87% !important;
+}
+
+    .inner_uni1 .setting_save_box .connect_email_box {
+        margin-top: 19px !important;
+        padding-top: 5px !important;
+    }
+
+.inner_uni2 {
+    height: 86% !important;
+}
+
+    .inner_uni2 .setting_save_box {
+        padding-top: 12px !important;
+    }
+
+        .inner_uni2 .setting_save_box .connect_email_box {
+            margin-top: 19px !important;
+            padding-top: 5px !important;
+        }
+
+.inner_uni3 {
+    height: 86% !important;
+}
+
+    .inner_uni3 .setting_save_box {
+        padding-top: 4px !important;
+    }
+
+        .inner_uni3 .setting_save_box .connect_email_box {
+            margin-top: 10px !important;
+            padding-top: 5px !important;
+        }
+
+.inner_uni4 {
+    height: 84% !important;
+}
+
+    .inner_uni4 .setting_save_box .connect_email_box {
+        margin-top: 5px !important;
+        padding-top: 5px !important;
+    }
+
+@media (min-width: 1200px) and (max-width:1366px) {
+    .inner_mid_section {
+        height: 81%;
+        margin-top: 15px;
+    }
+}
+

@@ -1,0 +1,135 @@
+﻿.logo img {
+    padding: 0;
+}
+
+footer {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    position: fixed;
+    padding: 0px 10px 5px;
+    width: 100%;
+    bottom: 0px;
+    z-index: 9999;
+    border-top: 1px solid #e2e2e2;
+}
+
+    footer .copy-right {
+        margin: 7px 0px 0px;
+        padding: 0px;
+        text-align: left;
+        font-size: 10px;
+    }
+
+    footer .footer-logo {
+        float: right;
+        text-align: right;
+        margin: 4px 0px;
+    }
+
+
+#errorMsg {
+    background: rgba(60, 60, 60, 0.82) none repeat scroll 0 0;
+    box-shadow: 0 1px 3px #ccc;
+    color: white;
+    display: none;
+    float: initial;
+    padding: 3px 8px;
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 262px;
+}
+
+.errorbox {
+    border: 1px solid #ffa8a8 !important;
+    background-color: #fff4eb !important;
+    height: 34px;
+}
+
+.login-page input[type="text"], .login-page input[type="password"] {
+    width: 97% !important;
+    height: 35px !important;
+    display: inline;
+    font-size: 14px;
+}
+
+#errorMsg {
+    z-index: 9999;
+}
+
+.btn-default-login {
+    padding: 7px 6% !important;
+}
+
+
+
+.carousel-inner {
+    background: none !important;
+    -webkit-background-size: cover;
+}
+
+/*.login-page {
+    padding-top: 0;
+}*/
+
+.energy_mid_box h1 {
+    font-size: 16px !important;
+    color: #53565a;
+    padding: 10px 0 12px 8px;
+    margin: 0px 0px 15px 0px;
+    font-weight: bold;
+    border-bottom: 1px solid #f4f4f4;
+    background: #fff;
+}
+
+.form-group {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+
+@media (min-width: 414px) and (max-width:640px) {
+    .logo {
+        text-align: right !important;
+        margin-right: 0 !important;
+    }
+
+        .logo img {
+            max-width: 100%;
+        }
+}
+
+@media (min-width: 320px) and (max-width:640px) {
+    .log_smw_btn {
+        width: 96% !important;
+    }
+
+    .logo {
+        text-align: right !important;
+        margin-right: 0 !important;
+    }
+
+        .logo img {
+            max-width: 100%;
+        }
+
+    .login-page input[type="text"], .login-page input[type="password"] {
+        width: 96% !important;
+        display: inline;
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .login-page input[type="text"], .login-page input[type="password"] {
+        width: 95% !important;
+    }
+}
+
+.pay_bill_head {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 6px 0 18px;
+}

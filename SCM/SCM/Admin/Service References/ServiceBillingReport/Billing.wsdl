@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Billing" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Billing.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Billing.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Billing.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBilling_MobBillingReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobBillingReport" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobBillingReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobBillingReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetBillingReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetBillingReport" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetBillingReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetBillingReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobBillingMap_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobBillingMap" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobBillingMap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobBillingMapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetBillingMap_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetBillingMap" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetBillingMap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetBillingMapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobConfigureBilling_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobConfigureBilling" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobConfigureBilling_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobConfigureBillingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetConfigureBilling_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetConfigureBilling" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetConfigureBilling_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetConfigureBillingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobSetConfigureBilling_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobSetConfigureBilling" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobSetConfigureBilling_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobSetConfigureBillingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetSetConfigureBilling_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetSetConfigureBilling" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetSetConfigureBilling_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetSetConfigureBillingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobGetBillingDates_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetBillingDates" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobGetBillingDates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetBillingDatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetGetBillingDates_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetBillingDates" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetGetBillingDates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetBillingDatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobGetPaymentHistoryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetPaymentHistoryList" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobGetPaymentHistoryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetPaymentHistoryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetGetPaymentHistoryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetPaymentHistoryList" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetGetPaymentHistoryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetPaymentHistoryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobGetPaymentLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetPaymentLocations" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobGetPaymentLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetPaymentLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetGetPaymentLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetPaymentLocations" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetGetPaymentLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetPaymentLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobSetPaymentLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobSetPaymentLocation" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_MobSetPaymentLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobSetPaymentLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetSetPaymentLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetSetPaymentLocation" />
+  </wsdl:message>
+  <wsdl:message name="IBilling_NetSetPaymentLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetSetPaymentLocationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBilling">
+    <wsdl:operation name="MobBillingReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/MobBillingReport" message="tns:IBilling_MobBillingReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/MobBillingReportResponse" message="tns:IBilling_MobBillingReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetBillingReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/NetBillingReport" message="tns:IBilling_NetBillingReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/NetBillingReportResponse" message="tns:IBilling_NetBillingReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobBillingMap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/MobBillingMap" message="tns:IBilling_MobBillingMap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/MobBillingMapResponse" message="tns:IBilling_MobBillingMap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetBillingMap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/NetBillingMap" message="tns:IBilling_NetBillingMap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/NetBillingMapResponse" message="tns:IBilling_NetBillingMap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobConfigureBilling">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/MobConfigureBilling" message="tns:IBilling_MobConfigureBilling_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/MobConfigureBillingResponse" message="tns:IBilling_MobConfigureBilling_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetConfigureBilling">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/NetConfigureBilling" message="tns:IBilling_NetConfigureBilling_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/NetConfigureBillingResponse" message="tns:IBilling_NetConfigureBilling_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobSetConfigureBilling">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/MobSetConfigureBilling" message="tns:IBilling_MobSetConfigureBilling_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/MobSetConfigureBillingResponse" message="tns:IBilling_MobSetConfigureBilling_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetSetConfigureBilling">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/NetSetConfigureBilling" message="tns:IBilling_NetSetConfigureBilling_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/NetSetConfigureBillingResponse" message="tns:IBilling_NetSetConfigureBilling_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobGetBillingDates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/MobGetBillingDates" message="tns:IBilling_MobGetBillingDates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/MobGetBillingDatesResponse" message="tns:IBilling_MobGetBillingDates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGetBillingDates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/NetGetBillingDates" message="tns:IBilling_NetGetBillingDates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/NetGetBillingDatesResponse" message="tns:IBilling_NetGetBillingDates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobGetPaymentHistoryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/MobGetPaymentHistoryList" message="tns:IBilling_MobGetPaymentHistoryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/MobGetPaymentHistoryListResponse" message="tns:IBilling_MobGetPaymentHistoryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGetPaymentHistoryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/NetGetPaymentHistoryList" message="tns:IBilling_NetGetPaymentHistoryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/NetGetPaymentHistoryListResponse" message="tns:IBilling_NetGetPaymentHistoryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobGetPaymentLocations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/MobGetPaymentLocations" message="tns:IBilling_MobGetPaymentLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/MobGetPaymentLocationsResponse" message="tns:IBilling_MobGetPaymentLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGetPaymentLocations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/NetGetPaymentLocations" message="tns:IBilling_NetGetPaymentLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/NetGetPaymentLocationsResponse" message="tns:IBilling_NetGetPaymentLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobSetPaymentLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/MobSetPaymentLocation" message="tns:IBilling_MobSetPaymentLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/MobSetPaymentLocationResponse" message="tns:IBilling_MobSetPaymentLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetSetPaymentLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBilling/NetSetPaymentLocation" message="tns:IBilling_NetSetPaymentLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBilling/NetSetPaymentLocationResponse" message="tns:IBilling_NetSetPaymentLocation_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBilling" type="tns:IBilling">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MobBillingReport">
+      <soap:operation soapAction="http://tempuri.org/IBilling/MobBillingReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetBillingReport">
+      <soap:operation soapAction="http://tempuri.org/IBilling/NetBillingReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobBillingMap">
+      <soap:operation soapAction="http://tempuri.org/IBilling/MobBillingMap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetBillingMap">
+      <soap:operation soapAction="http://tempuri.org/IBilling/NetBillingMap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobConfigureBilling">
+      <soap:operation soapAction="http://tempuri.org/IBilling/MobConfigureBilling" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetConfigureBilling">
+      <soap:operation soapAction="http://tempuri.org/IBilling/NetConfigureBilling" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobSetConfigureBilling">
+      <soap:operation soapAction="http://tempuri.org/IBilling/MobSetConfigureBilling" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetSetConfigureBilling">
+      <soap:operation soapAction="http://tempuri.org/IBilling/NetSetConfigureBilling" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobGetBillingDates">
+      <soap:operation soapAction="http://tempuri.org/IBilling/MobGetBillingDates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGetBillingDates">
+      <soap:operation soapAction="http://tempuri.org/IBilling/NetGetBillingDates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobGetPaymentHistoryList">
+      <soap:operation soapAction="http://tempuri.org/IBilling/MobGetPaymentHistoryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGetPaymentHistoryList">
+      <soap:operation soapAction="http://tempuri.org/IBilling/NetGetPaymentHistoryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobGetPaymentLocations">
+      <soap:operation soapAction="http://tempuri.org/IBilling/MobGetPaymentLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGetPaymentLocations">
+      <soap:operation soapAction="http://tempuri.org/IBilling/NetGetPaymentLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobSetPaymentLocation">
+      <soap:operation soapAction="http://tempuri.org/IBilling/MobSetPaymentLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetSetPaymentLocation">
+      <soap:operation soapAction="http://tempuri.org/IBilling/NetSetPaymentLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Billing">
+    <wsdl:port name="BasicHttpBinding_IBilling" binding="tns:BasicHttpBinding_IBilling">
+      <soap:address location="http://64.58.161.201/adminservice6.0/Billing.svc/SoapService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

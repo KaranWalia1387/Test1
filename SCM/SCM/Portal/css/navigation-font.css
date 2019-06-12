@@ -1,0 +1,1572 @@
+
+
+/*-- Main Navigation Large --*/
+
+nav.main_large ul.tabs
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    float: right;
+    margin: 0 0 0 -14px;
+}
+
+
+    nav.main_large ul.tabs li
+    {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        float: left;
+        /*border-left: 1px solid #e6e7e8;*/
+        width:74px;
+        text-align:center;
+    }
+
+        nav.main_large ul.tabs li a
+        {
+            display: block;
+            color: #53565a;
+            font-size: 92.3%;
+            text-decoration: none;
+            padding: 6px 0 1px;
+            background-image:none !important;
+        }
+
+
+            nav.main_large ul.tabs li a span
+            {
+                    font-size: 9px;
+                    display: block;
+                    padding: 3px 0px 0px;
+                    text-decoration: none;
+            }
+
+            nav.main_large ul.tabs li a:hover, nav.main_large ul.tabs li.active a, nav.main_large ul.tabs li a.active
+            {
+                background-color: #eeeeee !important;
+            }
+
+             nav.main_large ul.tabs li a:before {
+                     /*font-family: "scm-base-fonts";*/
+                     font-family: "scmfonts" !important;
+                    position: relative;
+                    top: 8px;
+                     color:#39b0d2;
+                    font-size: 37px;
+
+             }
+
+        nav.main_large ul.tabs li.home a
+        {
+            background: url(../images/nav_img_large/icon_home_sidebar.svg) no-repeat center 5px;
+            display: block;
+        }
+
+          
+             nav.main_large ul.tabs li.dashboard_home a:before {
+                content: "\e90f";  
+             }
+
+         nav.main_large ul.tabs li.footprint a:before {
+            content: "\e877";
+         }
+
+
+      
+
+        nav.main_large ul.tabs li.ev a:before {
+           content: "\e873";
+                    font-size: 47px;
+                line-height: 11px;
+                top: 13px;
+        }
+
+       
+         nav.main_large ul.tabs li.sh a:before {
+             content: "\e8a2";
+         }
+
+
+             nav.main_large ul.tabs li.sb a:before {
+                 content: "\e8a2";
+             }
+
+
+         nav.main_large ul.tabs li.nitiF a:before{
+              content: "\e891";
+         }
+
+         nav.main_large ul.tabs li.outages a:before{
+                content: "\e887";
+         }
+      
+         nav.main_large ul.tabs li.connect a:before {
+             content: "\e86a";
+                 font-size: 35px;
+                line-height: 21px;
+                top: 6px;
+         }
+        
+        nav.main_large ul.tabs li.service a:before {
+            content: "\e88d";
+        }
+
+         nav.main_large ul.tabs li.efficency a:before {
+             content: "\e871";
+         }
+    
+         nav.main_large ul.tabs li.billing a:before {
+             content: "\e882";
+         }
+      
+        /*nav.main_large ul.tabs li.cs a:before {
+             content: "\67";
+        }*/
+         nav.main_large ul.tabs li.cs a:before {             
+            content: "\e010";
+            font-family: "scmfonts" !important;
+        }
+    
+        nav.main_large ul.tabs li.usage a:before {
+             content: "\e8ab";
+        }
+
+         nav.main_large ul.tabs li.myaccount a:before {
+              content: "\e87f";
+                  /*font-size: 36px;*/
+         }
+
+
+/*-- End Main Navigation Large --*/
+
+
+
+
+
+
+.changing_nav {
+    position:absolute;
+    right: -40px;
+    top: -2px;
+}
+
+.changing_nav ul {
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+
+.changing_nav ul li {
+    margin:0px;
+    padding:0px;
+    float:left;
+}
+
+.changing_nav ul li a {
+    display:block;
+    text-decoration:none;
+    padding:2px 3px;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+     nav.main_large ul.tabs li a span {
+        text-indent: -9999px;
+        height: 11px;
+    }
+   nav.main_large ul.tabs li a {
+        text-indent:0 !important;
+    }
+   nav.main_large ul.tabs li {
+       width:41px;
+   }
+   nav.main_large ul.tabs li a:before {
+     top: 14px;
+    font-size: 24px;
+   }
+
+    nav.main_large ul.tabs li.connect a:before {             
+                 font-size: 24px;
+                  line-height: 19px !important;
+         }
+    nav.main_large.main_large ul.tabs li.ev a::before {
+         font-size: 28px !important;
+    line-height: 15px;
+    top: 10px !important;
+    }
+    .nav_left.nav_left ul li a::before, .nav_left.nav_left ul li a:hover::before, .nav_left.nav_left ul li.active a::before {
+         font-size: 16px !important;
+        left: 8px !important;
+        top: 6px !important;
+        }
+    .logo_large.logo_large {
+            padding: 4px 0 2px !important;
+        }
+    #headerlogo > a > img {
+        max-width: 100%;
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1024px){
+    nav.main_large ul.tabs li {
+            width: 53px;
+    }
+    nav.main_large ul.tabs li a span {
+        text-indent: -9999px;
+        height: 11px;
+    }
+    nav.main_large ul.tabs li a:before {
+        font-size: 25px;
+    }
+
+      nav.main_large.main_large ul.tabs li.ev.ev a:before {
+         font-size: 31px !important;
+        line-height: 14px !important;
+        top: 11px !important;
+    }
+       nav.main_large ul.tabs li.connect a:before {             
+                 font-size: 24px;
+                  line-height: 21px !important;
+         }
+  
+    .nav_left.nav_left ul li a::before, .nav_left.nav_left ul li a:hover::before, .nav_left.nav_left ul li.active a::before {
+        font-size: 18px !important;
+    left: 15px !important;
+    top: 6px !important;
+        }
+    .logo_large.logo_large {
+            padding: 4px 0 2px !important;
+        }
+
+    .glyphicon-info-sign.glyphicon-info-sign::before {
+           font-size: 14px !important;
+    }
+    .nav_left.nav_left ul li a, .nav_left.nav_left ul li a:hover, .nav_left.nav_left ul li.active a {
+        padding-left: 23.4%;
+    }
+
+
+}
+
+
+
+/*-- Inner Page Css   --*/
+.nav_left.nav_left ul li a {
+    background-image:none !important;
+}
+.nav_left.nav_left ul li a:hover, .nav_left.nav_left ul li.active a {
+     background-image:none !important;
+}
+.nav_left.nav_left ul li a:before {
+    font-family: "scmfonts";
+    position: absolute;
+    top: 3px;
+    color: #39b0d2;
+    font-size: 22px;
+    left: 20px;
+    }
+
+.nav_left.nav_left ul li a:hover:before, .nav_left.nav_left ul li.active a:before {
+    font-family: "scmfonts";
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-size: 22px;
+    left: 20px;
+}
+
+/*My Account */
+
+ .nav_left ul li.icon_profile a:before {
+                content: "\e898";
+         }
+    .nav_left ul li.icon_profile a:hover:before, .nav_left ul li.icon_profile.active a:before {
+              content: "\e898";
+         }
+
+ .nav_left ul li.icon_setting a:before {
+                content: "\e8a1";
+         }
+    .nav_left ul li.icon_setting a:hover:before, .nav_left ul li.icon_setting.active a:before {
+              content: "\e8a1";
+         }
+
+ .nav_left ul li.payment_info a:before {
+                content: "\e894";
+                    content: "\e894";
+                    font-size: 27px;
+                    top: 0px;
+                    left: 17px;
+         }
+    .nav_left ul li.payment_info a:hover:before, .nav_left ul li.payment_info.active a:before {
+              content: "\e894";
+                  content: "\e894";
+                    font-size: 27px;
+                    top: 0px;
+                    left: 17px;
+         }
+
+ .nav_left ul li.marketing_pref a:before {
+                content: "\e856";
+         }
+    .nav_left ul li.marketing_pref a:hover:before, .nav_left ul li.marketing_pref.active a:before {
+              content: "\e856";
+         }
+
+    .nav_left ul li.icon_aboutmyhome a:before {
+                content: "\e854";
+         }
+    .nav_left ul li.icon_aboutmyhome a:hover:before, .nav_left ul li.icon_aboutmyhome.active a:before {
+              content: "\e854";
+         }
+
+
+
+    /*Usage */
+
+
+    .nav_left ul li.sidebar_power a:before {
+                content: "\e865";
+         }
+    .nav_left ul li.sidebar_power a:hover:before, .nav_left ul li.sidebar_power.active a:before {
+              content: "\e865";
+         }
+
+    .nav_left ul li.sidebar_water a:before {
+                content: "\e867";
+         }
+    .nav_left ul li.sidebar_water a:hover:before, .nav_left ul li.sidebar_water.active a:before {
+              content: "\e867";
+         }
+
+    .nav_left ul li.sidebar_gas a:before {
+                content: "\e879";
+         }
+    .nav_left ul li.sidebar_gas a:hover:before, .nav_left ul li.sidebar_gas.active a:before {
+              content: "\e879";
+         }
+
+    .nav_left ul li.sidebar_solar a:before {
+                content: "\e8a3";
+         }
+    .nav_left ul li.sidebar_solar a:hover:before, .nav_left ul li.sidebar_solar.active a:before {
+              content: "\e8a3";
+         }
+
+        /* Billing */
+
+         .nav_left ul li.icon_utility_bill a:before {
+                content: "\e8ac";
+         }
+         .nav_left ul li.icon_utility_bill a:hover:before, .nav_left ul li.icon_utility_bill.active a:before {
+              content: "\e8ac";
+         }
+          .nav_left ul li.recurring_bill a:before {
+                content: "\e89b";
+         }
+         .nav_left ul li.recurring_bill a:hover:before, .nav_left ul li.recurring_bill.active a:before {
+              content: "\e89b";
+         }
+          .nav_left ul li.icon_history a:before {
+                content: "\e896";
+         }
+         .nav_left ul li.icon_history a:hover:before, .nav_left ul li.icon_history.active a:before {
+              content: "\e896";
+         }
+          .nav_left ul li.icon_budget_bill a:before {
+                content: "\e85c";
+         }
+         .nav_left ul li.icon_budget_bill a:hover:before, .nav_left ul li.icon_budget_bill.active a:before {
+              content: "\e85c";
+         }
+          .nav_left ul li.icon_dispute_bill a:before {
+                content: "\e85b";
+         }
+         .nav_left ul li.icon_dispute_bill a:hover:before, .nav_left ul li.icon_dispute_bill.active a:before {
+              content: "\e85b";
+         }
+          .nav_left ul li.icon_payment_location a:before {
+                content: "\e895";
+         }
+         .nav_left ul li.icon_payment_location a:hover:before, .nav_left ul li.icon_payment_location.active a:before {
+              content: "\e895";
+         }
+          .nav_left ul li.icon_rate_analysis a:before {
+                content: "\e8e4";
+         }
+         .nav_left ul li.icon_rate_analysis a:hover:before, .nav_left ul li.icon_rate_analysis.active a:before {
+              content: "\e8e4";
+         }
+          .nav_left ul li.icon_label_pay a:before {
+                content: "\e8f5";
+         }
+         .nav_left ul li.icon_label_pay a:hover:before, .nav_left ul li.icon_label_pay.active a:before {
+              content: "\e8f5";
+         }
+
+
+          /* Notification */
+          
+          .nav-alrtmsgs.nav-alrtmsgs > li > a > .fa {
+                  color: #39b0d2 ;
+          }
+             .nav-alrtmsgs.nav-alrtmsgs > li > a > .fa:hover, .nav-alrtmsgs.nav-alrtmsgs > li > a > .fa:hover:before, .nav-alrtmsgs > li.active > a > .fa {
+                color: #fff ;
+            }
+          .fa-inbox:before {
+            content: "\e885" !important;
+            font-family: "scmfonts";
+          }
+
+
+          .fa-warning:before, .fa-exclamation-triangle:before {
+              content: "\e887" !important;
+            font-family: "scmfonts";
+          }
+          .fa-dollar:before, .fa-usd:before {
+              content: "\e85a" !important;
+            font-family: "scmfonts";
+          }
+
+          .fa-wrench:before {
+              content: "\e8a0" !important;
+            font-family: "scmfonts";
+          }
+
+          .fa-mobile-phone:before, .fa-mobile:before {
+              content: "\e883" !important;
+               font-family: "scmfonts";
+                font-size: 23px !important;
+                top: 0px !important;
+                left: -2px !important;
+          }
+
+          .fa-bar-chart-o:before, .fa-bar-chart:before {
+              content: "\e08b" !important;
+            font-family: "scmfonts";
+          }
+
+          .nav_left ul li#leakalert.sidebar_leakalert.sidebar_leakalert a, .nav_left ul li#loginissue.sidebar_loginissue.sidebar_loginissue a {
+              background:none !important
+          }
+
+          .nav_left ul li#leakalert.sidebar_leakalert.sidebar_leakalert a:hover, .nav_left ul li#leakalert.sidebar_leakalert.sidebar_leakalert.active a,
+          .nav_left ul li#loginissue.sidebar_loginissue.sidebar_loginissue a:hover, .nav_left ul li#loginissue.sidebar_loginissue.sidebar_loginissue.active a
+           {
+               background:none !important
+          }
+          .nav_left ul li#leakalert.sidebar_leakalert a:before {
+              content: "\e886" !important; 
+          }
+
+          .nav_left ul li#leakalert.sidebar_leakalert a:hover:before, .nav_left ul li#leakalert.sidebar_leakalert.active a:before {
+               content: "\e886" !important; 
+          }
+
+          .nav_left ul li#loginissue.sidebar_loginissue a:before {
+              content: "\e917" !important; 
+              font-size: 19px;
+    left: 25px;
+          }
+
+          .nav_left ul li#loginissue.sidebar_loginissue a:hover:before, .nav_left ul li#loginissue.sidebar_loginissue.active a:before {
+               content: "\e917" !important; 
+               font-size: 19px;
+    left: 25px;
+          }
+
+          .fa-send:before, .fa-paper-plane:before {
+              content: "\e88c" !important;
+            font-family: "scmfonts";
+          }
+
+          .fa-star:before {
+              content: "\e88a" !important;
+            font-family: "scmfonts";
+          }
+          .fa-star.cgreen:before {
+              content: "\f005" !important;
+            font-family:'FontAwesome' !important;
+          }
+
+
+          .fa-trash:before {
+              content: "\e88e" !important;
+            font-family: "scmfonts";
+          }
+
+          .fa-envelope:before {
+              content: "\e881" !important;
+            font-family: "scmfonts";
+          }
+
+
+           /* Connect Me */
+
+
+           .nav_left ul li.icon_contact a:before {
+                content: "\e86b";
+         }
+            .nav_left ul li.icon_contact a:hover:before, .nav_left ul li.icon_contact.active a:before {
+                        content: "\e86b";
+                    }
+
+            .nav_left ul li.icon_fb a:before {
+                        content: "\e874";
+                    }
+            .nav_left ul li.icon_fb a:hover:before, .nav_left ul li.icon_fb.active a:before {
+                        content: "\e874";
+                    }
+
+            .nav_left ul li.icon_twitter a:before {
+                        content: "\e8a7";
+                    }
+            .nav_left ul li.icon_twitter a:hover:before, .nav_left ul li.icon_twitter.active a:before {
+                        content: "\e8a7";
+                    }
+         .nav_left ul li.icon_youtube_new a:before {
+                        content: "\e8af";
+                    }
+            .nav_left ul li.icon_youtube_new a:hover:before, .nav_left ul li.icon_youtube_new.active a:before {
+                        content: "\e8af";
+                    }
+
+
+
+             /* Efficiency */
+
+
+           .nav_left ul li.icon_rebates a:before {
+                /*content: "\e0e9";*/
+                content: "\e89a";
+                
+               }
+            .nav_left ul li.icon_rebates a:hover:before, .nav_left ul li.icon_rebates.active a:before {
+                        content: "\e89a";
+                    }
+
+            .nav_left ul li.icon_dr_programes a:before {
+                        content: "\e899";
+                    }
+            .nav_left ul li.icon_dr_programes a:hover:before, .nav_left ul li.icon_dr_programes.active a:before {
+                        content: "\e899";
+                    }
+
+            .nav_left ul li.icon_saving_tips a:before {
+                        content: "\e89e";
+                    }
+            .nav_left ul li.icon_saving_tips a:hover:before, .nav_left ul li.icon_saving_tips.active a:before {
+                        content: "\e89e";
+                    }
+         .nav_left ul li.educational_tips a:before {
+                        content: "\e870";
+                    }
+            .nav_left ul li.educational_tips a:hover:before, .nav_left ul li.educational_tips.active a:before {
+                        content: "\e870";
+                    }
+
+              .nav_left ul li.my_applications a:before {
+                        content: "\e87e";
+                    }
+            .nav_left ul li.my_applications a:hover:before, .nav_left ul li.my_applications.active a:before {
+                        content: "\e87e";
+                    }
+
+            
+            .nav_left ul li.icon_annual_goal a:before {
+                        content: "\e872";
+                    }
+            .nav_left ul li.icon_annual_goal a:hover:before, .nav_left ul li.icon_annual_goal.active a:before {
+                        content: "\e872";
+                    }
+         .nav_left ul li.icon_efficiency_rank a:before {
+                        content: "\e856";
+                    }
+            .nav_left ul li.icon_efficiency_rank a:hover:before, .nav_left ul li.icon_efficiency_rank.active a:before {
+                        content: "\e856";
+                    }
+
+              .nav_left ul li.icon_energy_report a:before {
+                        content: "\e880";
+                    }
+            .nav_left ul li.icon_energy_report a:hover:before, .nav_left ul li.icon_energy_report.active a:before {
+                        content: "\e880";
+                    }
+
+             .nav_left ul li.icon_energy_audit a:before {
+                        content: "\e855";
+                    }
+            .nav_left ul li.icon_energy_audit a:hover:before, .nav_left ul li.icon_energy_audit.active a:before {
+                        content: "\e855";
+                    }
+
+              .nav_left ul li.low_income_icon a:before {
+                        content: "\e870";
+                    }
+            .nav_left ul li.low_income_icon a:hover:before, .nav_left ul li.low_income_icon.active a:before {
+                        content: "\e870";
+                    }
+
+
+
+               /* SMART HOME */
+
+
+           .nav_left ul li.icon_dish_washer a:before {
+                content: "\e86e";
+               }
+            .nav_left ul li.icon_dish_washer a:hover:before, .nav_left ul li.icon_dish_washer.active a:before {
+                        content: "\e86e";
+                    }
+
+            .nav_left ul li.icon_lighting a:before {
+                        content: "\e87c";
+                    }
+            .nav_left ul li.icon_lighting a:hover:before, .nav_left ul li.icon_lighting.active a:before {
+                        content: "\e87c";
+                    }
+
+            .nav_left ul li.icon_center_system a:before {
+                        content: "\e860";
+                    }
+
+            .nav_left ul li.icon_center_system a:hover:before, .nav_left ul li.icon_center_system.active a:before {
+                        content: "\e860";
+                    }
+
+         .nav_left ul li.icon_tv a:before {
+                        content: "\e8a6";
+                    }
+            .nav_left ul li.icon_tv a:hover:before, .nav_left ul li.icon_tv.active a:before {
+                        content: "\e8a6";
+                    }
+
+              .nav_left ul li.icon_refrigerator a:before {
+                        content: "\e89c";
+                    }
+            .nav_left ul li.icon_refrigerator a:hover:before, .nav_left ul li.icon_refrigerator.active a:before {
+                        content: "\e89c";
+                    }
+
+            
+            .nav_left ul li.icon_washing_machin a:before {
+                        content: "\e8ad";
+                    }
+            .nav_left ul li.icon_washing_machin a:hover:before, .nav_left ul li.icon_washing_machin.active a:before {
+                        content: "\e8ad";
+                    }
+         .nav_left ul li.icon_jacuzzi a:before {
+                        content: "\e87b";
+                    }
+            .nav_left ul li.icon_jacuzzi a:hover:before, .nav_left ul li.icon_jacuzzi.active a:before {
+                        content: "\e87b";
+                    }
+
+              .nav_left ul li.icon_water_heater a:before {
+                        content: "\e880";
+                    }
+            .nav_left ul li.icon_water_heater a:hover:before, .nav_left ul li.icon_water_heater.active a:before {
+                        content: "\e880";
+                    }
+
+             .nav_left ul li.icon_dryer a:before {
+                        content: "\e86f";
+                    }
+            .nav_left ul li.icon_dryer a:hover:before, .nav_left ul li.icon_dryer.active a:before {
+                        content: "\e86f";
+                    }
+
+              .nav_left ul li.icon_sprinkler a:before {
+                        content: "\e004";
+                    }
+            .nav_left ul li.icon_sprinkler a:hover:before, .nav_left ul li.icon_sprinkler.active a:before {
+                        content: "\e004";
+                    }
+
+            .nav_left ul li.icon_dr_programes a:before {
+                content: "\e899";
+               }
+            .nav_left ul li.icon_dr_programes a:hover:before, .nav_left ul li.icon_dr_programes.active a:before {
+                    content: "\e899";
+                }
+
+             .nav_left ul li.icon_system_details a:before {
+                content: "\e009";
+               }
+            .nav_left ul li.icon_system_details a:hover:before, .nav_left ul li.icon_system_details.active a:before {
+                    content: "\e009";
+                }
+
+             .nav_left ul li.icon_preferences a:before {
+                content: "\e00c";
+               }
+            .nav_left ul li.icon_preferences a:hover:before, .nav_left ul li.icon_preferences.active a:before {
+                    content: "\e00c";
+                }
+
+             .nav_left ul li.icon_smart_plugs a:before {
+                content: "\e00a";
+               }
+            .nav_left ul li.icon_smart_plugs a:hover:before, .nav_left ul li.icon_smart_plugs.active a:before {
+                    content: "\e00a";
+                }
+
+            /*.thermo_head {
+                display: block !important;
+            }*/
+         /* EV HOME */
+
+          .nav_left ul li.icon_ev_sidebar a:before {
+                        content: "\e873";
+                    }
+            .nav_left ul li.icon_ev_sidebar a:hover:before, .nav_left ul li.icon_ev_sidebar.active a:before {
+                        content: "\e873";
+                    }
+
+              .nav_left ul li.icon_charging_station a:before {
+                       content: "\e07a";
+                    }
+            .nav_left ul li.icon_charging_station a:hover:before, .nav_left ul li.icon_charging_station.active a:before {
+                       content: "\e07a";
+                    }
+
+            /*-- heading icons CSS --*/
+
+
+             .head_icon_flat {
+                  display: block !important;
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -3px;
+                    color: #39b0d2;
+                    font-size: 20px;
+                    float: left;
+                    padding-right: 10px;
+                    margin-bottom: -5px;
+           }
+            .head_icon_flat.icon_usage {
+                top: -1px;
+            }
+            .head_icon_flat.icon_billing {
+                font-size: 22px;
+                    top: -4px;
+            }
+
+            .head_icon_flat.icon_footprint {
+                font-size:22px;
+            }
+            .head_icon_flat.icon_smarthome {
+                    top: -4px;
+                    margin-bottom: -6px;
+            }
+             .energy_mid_box > h1 > img, .cover_top_area > h1 > img {
+                 display:none;
+             }
+
+             .outerservice_mid_head > h1 img  {
+                  display:none !important;
+             }
+
+             .address-1.address-icon.address-icon2 > img  {
+                 display:none;
+             }
+             
+
+             /*-- Usage Icon of inside page --*/
+             .right_content_box.right_content_box ul li a[type="D"] {
+                 background:none !important;
+             }
+             .right_content_box.right_content_box ul li a.active[type="D"]            
+              {
+                 background:none !important;
+             }
+             .right_content_box.right_content_box ul li a[type="D"]:before{
+                     content: "\e08f";
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -15px;
+                    color: #828282;
+                    font-size: 31px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                        left: -10px;
+             }
+              .right_content_box.right_content_box ul li a.active[type="D"]:before{
+                content: "\e08f";
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -15px;
+                    color: #39b0d2;
+                    font-size: 31px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                        left: -10px;
+             }
+
+              .right_content_box.right_content_box ul li a[type="K"], 
+              .right_content_box.right_content_box ul li a[mode="K"],
+               .currency.currency > ul > li > a[text="KWh"],
+                  .currency.currency > ul > li > a.active[text="kWh"],
+              .currency.currency > ul > li > a.active[text="Currency"],
+              .currency.currency > ul > li > a[text="Currency"]
+               {
+                   background:none !important;
+              }
+
+              .right_content_box.right_content_box ul li a.active[type="K"], .right_content_box.right_content_box ul li a.active[mode="K"] {
+                   background:none !important;
+              }
+              .right_content_box.right_content_box ul li a[type="K"]:before, 
+              .right_content_box.right_content_box ul li a[mode="K"]:before,  
+              .currency.currency > ul > li > a[text="KWh"]:before  {
+                   content: "\e0af";
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -15px;
+                    color: #828282;
+                    font-size: 31px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: -19px;
+
+              }
+
+              .right_content_box.right_content_box ul li a.active[type="K"]:before, 
+              .right_content_box.right_content_box ul li a.active[mode="K"]:before, 
+              .currency.currency > ul > li > a.active[text="kWh"]:before {
+                content: "\e0af";
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -15px;
+                    color: #39b0d2;
+                    font-size: 31px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: -19px;
+             }
+               .currency.currency > ul > li > a[text="Currency"]:before  {
+                   content: "\e08f";
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -7px;
+                    color: #828282;
+                    font-size: 31px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: -0px;
+
+              }
+
+               .currency.currency > ul > li > a.active[text="Currency"]:before {
+                content: "\e08f";
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -7px;
+                    color: #39b0d2;
+                    font-size: 31px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: -0px;
+             }
+              .currency.currency > ul > li > a[text="KWh"]:before, .currency.currency > ul > li > a.active[text="kWh"]:before  {
+                      top: -7px;
+                          left: 0px;
+              }
+
+              .right_content_box.right_content_box ul li a[type="G"], 
+              .right_content_box.right_content_box ul li a.active[type="G"], 
+              .right_content_box.right_content_box ul li a[type="W"],
+              .right_content_box.right_content_box ul li a.active[type="W"],
+                .currency.currency > ul > li > a.active[text="HCF"],
+                .currency.currency > ul > li > a[text="HCF"],
+                .currency.currency > ul > li > a[text="Gallon"],
+                .currency.currency > ul > li > a.active[text="Gallon"]
+              
+               {
+                  background:none !important;
+              }
+
+
+              .right_content_box.right_content_box ul li a[type="G"]:before, .currency.currency > ul > li > a[text="Gallon"]:before {
+                  content: "\e0a8";
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -15px;
+                    color: #828282;
+                    font-size: 31px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: -11px;
+              }
+              .right_content_box.right_content_box ul li a.active[type="G"]:before, .currency.currency > ul > li > a.active[text="Gallon"]:before {
+                    content: "\e0a8";
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -15px;
+                    color: #39b0d2;
+                    font-size: 31px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: -11px;
+              }
+              .right_content_box.right_content_box ul li a[type="W"]:before, .currency.currency > ul > li > a[text="HCF"]:before {
+                  content: "\e0a9";
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -15px;
+                    color: #828282;
+                    font-size: 31px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: -19px;
+              }
+
+              .right_content_box.right_content_box ul li a.active[type="W"]:before, .currency.currency > ul > li > a.active[text="HCF"]:before {
+                    content: "\e0a9";
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -15px;
+                    color: #39b0d2;
+                    font-size: 31px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: -19px;
+              }
+
+              .right_content_box ul li a.active[type="C"],
+              .right_content_box ul li a[type="C"],
+              .currency.currency > ul > li > a.active[text="Ccf"],
+              .currency.currency > ul > li > a[text="Ccf"] {
+                  background:none !important;
+
+              }
+              .right_content_box ul li a[type="C"]:before, .currency.currency > ul > li > a[text="Ccf"]:before {
+                   content: "\e076";
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -15px;
+                    color: #828282;
+                    font-size: 31px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: -19px;
+              }
+               .right_content_box ul li a.active[type="C"]:before, .currency.currency > ul > li > a.active[text="Ccf"]:before {
+                   content: "\e076";
+                    font-family: "scmfonts";
+                    position: relative;
+                    top: -15px;
+                    color: #39b0d2;
+                    font-size: 31px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: -19px;
+              }
+
+               .currency.currency > ul > li > a.active[text="HCF"]:before, 
+               .currency.currency > ul > li > a[text="HCF"]:before,
+               .currency.currency > ul > li > a[text="Gallon"]:before,
+               .currency.currency > ul > li > a.active[text="Gallon"]:before,
+               .currency.currency > ul > li > a[text="Ccf"]:before,
+               .currency.currency > ul > li > a.active[text="Ccf"]:before
+                {
+                       top: -7px;
+                       left: 0px;
+               }
+
+              .glyphicon-info-sign.glyphicon-info-sign{
+                 font-family: "scmfonts" !important;
+                 }
+                .glyphicon-info-sign.glyphicon-info-sign:before {
+                content: "\e9b1" !important;
+                font-family: "scmfonts" !important;
+                color:#39b0d2 !important;
+            }
+
+                .currency.currency ul li a[mode="M"], 
+                .currency.currency ul li a.active[mode="M"],
+                .currency.currency ul li a[mode="S"],
+                 .currency.currency ul li a.active[mode="S"],
+                .currency.currency ul li a[mode="D"],
+                .currency.currency ul li a.active[mode="D"],            
+                .currency.currency ul li a[mode="H"],
+                .currency.currency ul li a.active[mode="H"] {
+                    background:none !important;
+                }
+                .currency.currency ul li a.active[mode="S"], .currency.currency ul li a[mode="S"] {
+                        text-indent: -1px !important;
+                }
+
+                .currency_1.currency_1_mob li a{
+                   position:relative;
+                }
+
+                .currency ul li a[mode="M"]:before{
+                     content: "\e8c4";
+                    font-family: "scmfonts";
+                    position: absolute;
+                    top: 1px;
+                    color: #828282;
+                        font-size: 20px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: 6px;
+                }
+                .currency ul li a.active[mode="M"]:before {
+                     content: "\e8c4";
+                    font-family: "scmfonts";
+                    position: absolute;
+                    top: 1px;
+                    color: #39b0d2;
+                        font-size: 20px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                     left: 6px;
+                }
+                .currency ul li a[mode="S"]:before{
+                     content: "\e0f4";
+                    font-family: "scmfonts";
+                    position: absolute;
+                    top: 1px;
+                    color: #828282;
+                        font-size: 20px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: 6px;
+                }
+                .currency ul li a.active[mode="S"]:before {
+                     content: "\e0f4";
+                    font-family: "scmfonts";
+                    position: absolute;
+                    top: 1px;
+                    color: #39b0d2;
+                        font-size: 20px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                     left: 6px;
+                }
+                .currency ul li a[mode="D"]:before {
+                     content: "\e002";
+                    font-family: "scmfonts";
+                    position: absolute;
+                    top: 1px;
+                    color: #828282;
+                       font-size: 21px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: 6px;
+                }
+                .currency ul li a.active[mode="D"]:before {
+                     content: "\e002";
+                    font-family: "scmfonts";
+                    position: absolute;
+                     top: 1px;
+                    color: #39b0d2;
+                       font-size: 21px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                     left: 6px;
+                }
+                
+                .currency ul li a[mode="H"]:before {
+                     content: "\e006";
+                    font-family: "scmfonts";
+                    position: absolute;
+                     top: 1px;
+                    color: #828282;
+                       font-size: 21px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                    left: 6px;
+                }
+                .currency ul li a.active[mode="H"]:before {
+                     content: "\e006";
+                    font-family: "scmfonts";
+                    position: absolute;
+                   top: 1px;
+                    color: #39b0d2;
+                       font-size: 21px;
+                    float: left;
+                    z-index: 99;
+                    text-indent: 0px !important;
+                     left: 6px;
+                }
+
+            .li_ReportOutage_font > a > img{
+                display:none;
+            }
+
+            .li_ReportOutage_font > a > .head_icon_flat.icon_report-outage {
+                    top: 0px;
+                   right: -8px;
+            }
+
+            .distance_area_font ul li > a > img {
+                display:none;
+            }
+            .distance_area_font ul li > a > span.head_icon_flat {               
+                float: none;
+                padding: 0px;
+                display: inline-block !important;
+            }
+
+            .currency.currency ul li input[value="Compare Me"],
+            .currency.currency ul li input.active[value="Compare Me"],
+            .currency.currency ul li input[value="Compare Zip"],
+            .currency.currency ul li input.active[value="Compare Zip"],
+            .currency.currency ul li input[value="Compare Utility"],
+            .currency.currency ul li input.active[value="Compare Utility"],
+            .currency.currency ul li input[value="Compare All"],
+            .currency.currency ul li input.active[value="Compare All"] {
+                background:none !important;
+                position:relative;
+                  z-index: 999;
+            }
+            .currency.currency ul li {
+                position:relative;
+            }
+    .currency.currency ul li.compare_me_flat:before {
+        content: "\e864";
+        font-family: "scmfonts";
+        position: absolute;
+            top: 5px;
+        color: #828282;
+         font-size: 21px;
+        float: left;
+        z-index: 1;
+        text-indent: 0px !important;
+        left: 0;
+       right: 0;
+    }
+
+     .currency.currency ul li.active.compare_me_flat:before{
+          content: "\e864";
+          font-family: "scmfonts";
+        position: absolute;
+            top: 5px;
+        color: #39b0d2;
+        font-size: 21px;
+        float: left;
+         z-index: 1;
+        text-indent: 0px !important;
+         left: 0;
+       right: 0;
+     }
+
+
+     .currency.currency ul li.compare_zip_flat:before {
+        content: "\e868";
+        font-family: "scmfonts";
+        position: absolute;
+            top: 5px;
+        color: #828282;
+         font-size: 21px;
+        float: left;
+        z-index: 1;
+        text-indent: 0px !important;
+        left: 0;
+       right: 0;
+    }
+
+     .currency.currency ul li.active.compare_zip_flat:before{
+          content: "\e868";
+          font-family: "scmfonts";
+        position: absolute;
+            top: 5px;
+        color: #39b0d2;
+        font-size: 21px;
+        float: left;
+         z-index: 1;
+        text-indent: 0px !important;
+         left: 0;
+       right: 0;
+     }
+
+
+     .currency.currency ul li.compare_utility_flat:before {
+        content: "\e866";
+        font-family: "scmfonts";
+        position: absolute;
+            top: 5px;
+        color: #828282;
+         font-size: 21px;
+        float: left;
+        z-index: 1;
+        text-indent: 0px !important;
+        left: 0;
+       right: 0;
+    }
+
+     .currency.currency ul li.active.compare_utility_flat:before{
+          content: "\e866";
+          font-family: "scmfonts";
+        position: absolute;
+            top: 5px;
+        color: #39b0d2;
+        font-size: 21px;
+        float: left;
+         z-index: 1;
+        text-indent: 0px !important;
+         left: 0;
+       right: 0;
+     }
+
+
+     .currency.currency ul li.compare_all_flat:before {
+        content: "\e862";
+        font-family: "scmfonts";
+        position: absolute;
+            top: 5px;
+        color: #828282;
+         font-size: 21px;
+        float: left;
+        z-index: 1;
+        text-indent: 0px !important;
+        left: 0;
+       right: 0;
+    }
+
+     .currency.currency ul li.active.compare_all_flat:before{
+          content: "\e862";
+          font-family: "scmfonts";
+        position: absolute;
+            top: 5px;
+        color: #39b0d2;
+        font-size: 21px;
+        float: left;
+         z-index: 1;
+        text-indent: 0px !important;
+         left: 0;
+       right: 0;
+     }
+
+
+
+
+            a#Text, a#Text.active, a#Map, a#Map.active {
+                background:none !important
+            }
+            a#Text:before {
+                 content: "\e0b6";
+                  font-family: "scmfonts";
+                position: relative;
+                top: -11px;
+                color: #828282;
+                   font-size: 28px;
+                float: left;
+                z-index: 99;
+                left: 6px;
+            }
+             a#Text.active:before  {
+                  content: "\e0b6";
+                  font-family: "scmfonts";
+                position: relative;
+                top: -11px;
+                color: #39b0d2;
+                   font-size: 28px;
+                    float: left;
+                    z-index:99;
+                    left: 6px;
+             }
+              a#Map:before {                  
+                content: "\e895";
+                font-family: "scmfonts";
+                position: relative;
+                    top: -7px;
+                color: #828282;
+                font-size: 26px;
+                float: left;
+                z-index: 99;
+                left: 0px;
+            }
+             a#Map.active:before  {
+                  content: "\e895";
+                  font-family: "scmfonts";
+                position: relative;
+                    top: -7px;
+                color: #39b0d2;
+                font-size: 26px;
+                float: left;
+                z-index: 99;
+                left: 0px;
+             }
+
+             .curren_flat_icon_hide {
+                 display:none !important;
+             }
+             .head_icon_flat.icon_notif-sent:before {
+                     font-size: 24px;
+                         position: relative;
+                     top: -1px;
+             }
+
+           input[type="image"]#btnRefresh {
+               display:none;
+                }
+       
+
+               /*.btn_ref_flat:before {
+                  content: "\e0ee";
+                  font-family: "scmfonts";
+                position: relative;
+                    top: -7px;
+                color: #39b0d2;
+                font-size: 26px;
+                float: left;
+                z-index: 999999;
+                left: 0px;
+             }*/
+
+            .foot_print.head_icon_flat.icon_refreshbtn {
+                    font-size: 25px;
+                        color: #39b0d2;
+            }
+
+            .acc_del_box_1 > div img {
+                display:none;
+            }
+            .acc_del_box_1 > .address-2:before {
+                  content: "\e88e";
+                    font-family: "scmfonts";
+                position: relative;
+                    top: -3px;
+                color: #39b0d2;
+                font-size: 20px;
+                float: left;
+                z-index: 99;
+                left: 5px;
+            }
+
+            .address-icon2  .head_icon_flat.icon_edit:before {
+                    left: 7px !important;
+                    position: relative;
+
+            }
+            .glyphicon.glyphicon-question-sign.help_icon_img.help_icon_img:before {
+                content: "\e9b1" !important;
+                font-family: "scmfonts" !important;
+                color: #39b0d2 !important;
+            }
+
+          .confi_flat_icon > img  {
+              display:none;
+          }
+
+            .confi_flat_icon:before {
+                content: "\e094";
+                  font-family: "scmfonts";
+                position: relative;
+                top: -3px;
+                color: #39b0d2;
+                font-size: 20px;
+                float: left;
+                z-index: 99;
+                left: 0px;
+            }
+          
+
+            #NotificationData .img_align_1 > img {
+                display:none;
+            }
+
+             #NotificationData .img_align_1 > .head_icon_flat:before {
+                     font-size: 16px;
+                    position: relative;
+                    top: 1px;
+             }
+
+             /* MarketPlace Icons */
+
+             .market_place1 .energy_mid_box.energy_mid_box > h1 > img {
+                 /*display:block;
+                 visibility:hidden;*/
+             }
+             .market_place1 .energy_mid_box.energy_mid_box > h1:before {
+                /*background:url("../images/nav_img_large/icon_marketplace_sidebar_flat.png") no-repeat 10px 8px !important;
+                background-size:25px 25px !important;*/
+                    content: "\e8f2";
+                        font-family: "scmfonts" !important;
+                        color: #39b0d2 !important;
+                        position: relative;
+                        top: 0px;
+                        padding-right: 10px;
+                        font-size: 27px;
+                        margin-bottom: 0px;
+                        margin-top: -8px;
+                        display: block;
+                        float: left;
+                        font-weight:normal;
+             }
+
+             .nav_left ul li.icon_kitchen a:before {
+                        content: "\e89c";
+                    }
+            .nav_left ul li.icon_kitchen a:hover:before, .nav_left ul li.icon_kitchen.active a:before {
+                        content: "\e89c";
+                    }
+            .nav_left ul li.icon_electronics a:before {
+                        content: "\e8f3";
+                    }
+            .nav_left ul li.icon_electronics a:hover:before, .nav_left ul li.icon_electronics.active a:before {
+                        content: "\e8f3";
+                    }
+
+            .nav_left ul li.icon_cleaning a:before {
+                        content: "\e8ad";
+                    }
+            .nav_left ul li.icon_cleaning a:hover:before, .nav_left ul li.icon_cleaning.active a:before {
+                        content: "\e8ad";
+                    }
+
+              .nav_left ul li.icon_health_per_care a:before {
+                        content: "\e864";
+                    }
+            .nav_left ul li.icon_health_per_care a:hover:before, .nav_left ul li.icon_health_per_care.active a:before {
+                        content: "\e864";
+                    }
+             .nav_left ul li.Marketplace_icon a:before {
+                        content: "\e8f2";
+                    }
+            .nav_left ul li.Marketplace_icon a:hover:before, .nav_left ul li.icon_health_per_care.active a:before {
+                        content: "\e8f2";
+                    }
+
+             .nav_left ul li.icon_laundry a:before {
+                        content: "\e8ad";
+                    }
+            .nav_left ul li.icon_laundry a:hover:before, .nav_left ul li.icon_laundry.active a:before {
+                        content: "\e8ad";
+                    }
+             .nav_left ul li.icon_colling a:before {
+                        content: "\e8a2";
+                    }
+                .nav_left ul li.icon_colling a:hover:before, .nav_left ul li.icon_colling.active a:before {
+                        content: "\e8a2";
+                    }
+             .nav_left ul li.icon_home_ofc a:before {
+                                    content: "\e8f6";
+                                }
+                .nav_left ul li.icon_home_ofc a:hover:before, .nav_left ul li.icon_home_ofc.active a:before {
+                            content: "\e8f6";
+                        }
+
+
+
+          /*End market place icon*/
+          .img_icon_cal_none {
+              display:none;
+          }
+          .flat_icon_cal:before {
+              content: "\e8f1";
+          }
+
+            .cal_img_btn {
+                background: none !important;
+                position:relative;
+            }
+            .cal_img_btn:before {
+                    content: "\e8f1";
+                    position:absolute;
+                    left:0;
+                     color: #39b0d2;
+                     font-family: "scmfonts" !important;
+                     font-size:24px;
+                         top: -10px;
+                }
+
+
+
+
+
+
+
+            @media (min-width:992px) and (max-width:1024px) {
+                nav.main_large.main_large ul.tabs li {
+                        width: 54px !important;
+                }
+                nav.main_large.main_large ul.tabs li.ev a:before {
+                        font-size: 35px;
+                }
+                #headerlogo > a > img.modern_logo {
+                        max-height: 38px;
+                }
+                .billing-area .pay_bill.pay_bill a {
+                        width: 88px !important;
+                }
+
+
+            }
+
+              @media (min-width:768px) and (max-width:991px) {
+                nav.main_large.main_large ul.tabs li {
+                           width: 40px !important;
+                }
+                nav.main_large.main_large ul.tabs li.ev a:before {
+                        font-size: 35px;
+                }
+                nav.main_large ul.tabs li a:before {
+                        top: 7px;
+                }
+                #headerlogo > a > img.modern_logo {
+                        max-height: 35px;
+                }
+
+                
+            }
+
+
+
+
+              .right_charging_map a#btnDistance > img, .right_charging_map a#btnRate > img {
+                  display:none;
+              }
+               .right_charging_map a#btnDistance:before {
+                    content: "\e8b6";
+                    position:relative;
+                    left:0;
+                     color: #39b0d2;
+                     font-family: "scmfonts" !important;
+                     font-size:22px;
+                     top: 0px;
+                }
+                .right_charging_map a#btnRate:before {
+                    content: "\e0e6";
+                    position:relative;
+                    left:0;
+                     color: #39b0d2;
+                     font-family: "scmfonts" !important;
+                     font-size:22px;
+                     top: 0px;
+                }
+
+
+              .acc_del_box_1 > .address-2 {
+                  position:relative;
+
+              }
+                 .acc_del_box_1 > .address-2 .deleteaccount {
+                        width: 31px;
+                    HEIGHT: 26px;
+                    cursor: pointer;
+                    z-index: 999;
+                    position: absolute;
+                }

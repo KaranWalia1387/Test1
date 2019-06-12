@@ -1,0 +1,379 @@
+﻿.Left_Bill_area {
+    width: 100%;
+    padding-top: 0px !important;
+}
+
+.w2ui-tag {
+    position: absolute;
+    z-index: 9999999 !important;
+}
+
+#BillPopup#BillPopup{padding-bottom:30px;}
+
+.right_Bill_area {
+    float: left;
+    width: 100%;
+    border-left: 0;
+}
+
+.all_bill_box .white_div {
+    float: left;
+    
+}
+.right_bill_box {
+    width: 100%;
+}
+
+.all_bill_box {
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+.bgalternate {
+    width:100%;
+    float:left;
+}
+.bottom_billed_boxes {
+    margin-left: 0px;
+}
+
+.all_bill_box h3 {
+    background: none repeat scroll 0 0 #dedede !important;
+    color: #53565a;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    padding: 11px 16px;
+    width: 100%;
+}
+
+    .all_bill_box h3 span {
+        color: #53565a;
+    }
+
+.all_bill_box .right-area-tabular {
+    text-align: right;
+}
+
+.all_bill_box .left-area-tabular {
+    padding: 7px 16px;
+}
+
+.total_bills {
+    margin-left: 0px;
+}
+
+table#TableBill {
+    width: 100%;
+}
+
+.bottom_billed_boxes .white_div .right-area-tabular, .bottom_billed_boxes .gray_div .right-area-tabular {
+    width: 23%;
+}
+
+.QuestionMark {
+    height: 20px;
+    margin-left: 10px;
+    margin-top: -2px;
+}
+
+.SmartHomeStatus {
+    width: 102px;
+    cursor: pointer;
+}
+
+.TableCellContainerContent {
+    height: 162px;
+}
+
+.BillLabelData {
+    width: 345px;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 3px;
+}
+
+.BillLabelDataValue {
+    width: 170px;
+    float: left;
+    text-align: right;
+    padding-right: 5px;
+    margin-top: 3px;
+}
+
+.TableCellContainerFooter .DefaultbtnsSmall {
+    margin-bottom: 0px;
+}
+
+.HelpIcon {
+    float: left;
+    margin-top: 3px;
+}
+
+.PopupDiv {
+    display: none;
+    background-color: White;
+    width: 500px;
+    height: 300px;
+    border: 1px solid #b5b5b5;
+    -webkit-border-radius: 10px;
+    text-align: left;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin: 5px;
+}
+
+    .PopupDiv input[type="text"], .PopupDiv input[type="password"] {
+        margin-left: 0px;
+        border: 1px solid #B5B5B5;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        padding: 6px 0px 6px 6px;
+        width: 190px;
+        font-size: .9em;
+    }
+
+
+    .PopupDiv select {
+        width: 198px;
+    }
+
+#divPopup label {
+    cursor: pointer;
+    font-family: Arial, Helvetica, Neue, sans-serif;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+#divpopuppower label {
+    font-family: Arial, Helvetica, Neue, sans-serif;
+    font-size: 12px;
+}
+
+.PopupDiv h3 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 5px;
+}
+
+.popupLabel {
+    float: left;
+    width: 120px;
+    padding: 22px 5px 0px 5px;
+    margin-left: 20px;
+}
+
+.popupData {
+    float: left;
+    width: 220px;
+    padding: 15px 5px 0px 5px;
+}
+
+.popupLabelcard {
+    float: left;
+    width: 100px;
+    padding: 14px 5px 0px 5px !important;
+    margin-left: 20px;
+}
+
+.popupDatacard {
+    float: left;
+    width: 100px;
+    padding: 14px 5px 0px 5px !important;
+}
+
+.popupLabelcard1 {
+    float: left;
+    width: 139px;
+    padding: 14px 5px 0px 0px !important;
+    margin-left: 20px;
+}
+
+
+.calculated-container {
+    float: left;
+    width: 105px;
+    padding: 14px 5px 0px 5px !important;
+    margin-left: 10px;
+}
+
+
+
+.popupDatacard1 {
+    float: left !important;
+    /*width: 100px;*/
+    padding: 14px 5px 0px 50px !important;
+}
+
+
+
+.popupDatacardNew {
+    float: left;
+    width: 200px;
+    padding: 14px 25px 0px 5px !important;
+}
+
+.SmallData {
+    float: left;
+    width: 50px;
+    padding: 0px;
+}
+
+.PopupDiv .SmallData input[type="text"] {
+    width: 40px;
+}
+
+.SmallLabel {
+    float: left;
+    width: 90px;
+    padding: 7px 5px 0px 5px;
+}
+
+.popCloseBtn {
+    margin-top: -10px;
+    margin-right: -20px;
+    width: 38px !important;
+    height: 37px !important;
+    background: url(../images/popup_close_btn.png) no-repeat;
+}
+
+.FormulaContainer {
+    margin-top: 10px;
+    font-weight: bold;
+    background: #333;
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    position: absolute;
+    width: 299px !important;
+    top: 245px;
+}
+
+.right-area-tabular span {
+    font-weight: normal !important;
+    color: #666;
+}
+
+#viewBill {
+    cursor: pointer;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .view_bill {
+        width: 56% !important;
+    }
+
+    #BillPopup.modal-content {
+        max-width: 100%;
+    }
+}
+
+
+.inner_uni1 {
+    height: 81% !important;
+}
+
+.inner_uni2 {
+    height: 80% !important;
+}
+
+    .inner_uni2 .setting_save_box {
+        padding-top: 12px !important;
+    }
+
+.inner_uni3 {
+    height: 78% !important;
+}
+
+    .inner_uni3 .setting_save_box {
+        padding-top: 4px !important;
+    }
+
+.inner_uni4 {
+    height: 75% !important;
+}
+
+.popup_area .popup_area_home .popup_right_content_area_home {
+    margin: 0 0 0 0;
+}
+
+    .popup_area .popup_area_home .popup_right_content_area_home input[type="text"] {
+        margin: 0 0 10px 0;
+    }
+
+.popup_area .bottom_area_home {
+    margin-top: 10px;
+}
+
+@media only screen and (min-width:992px) and (max-width:1024px) {
+    .top_conte_box_mob {
+        height: 90% !important;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .top_conte_box_mob {
+        height: 78% !important;
+    }
+
+    .energy_mid_box .right_content_box {
+        height: 96%;
+        margin-bottom: 0;
+        padding-bottom: 0px;
+    }
+}
+
+.cal_popup_box1 {
+    font-weight: bold; background: #333; color: #fff; 
+    margin-top: 10px; 
+    margin-bottom: 0px;
+    border-bottom-left-radius: 5px;
+    padding: 5px 0px 5px 15px;
+    border-bottom-right-radius: 5px;
+}
+
+.current_area ul li {
+        width:33.33%;
+      }
+
+.customer-details.view_bill {
+      width: 30% !important;
+}
+
+
+.popup_right_content_area_home.popup_right_content_area_home select {
+     width: 98% !important;
+}
+#CardDetails {
+        float: left;
+    width: 100%;
+    padding-top: 18px;
+    border-top: 1px solid #f4f4f4;
+    margin-top: 10px;
+}
+.popup_area .popup_area_home .popup_right_content_area_home input[type="text"] {
+       width: 98% !important;
+}
+#change-pwd-divPopup .popup_right_content_area_home input[type="password"], #change-pwd-divPopup .popup_right_content_area_home input[type="text"],
+#change-userid-divPopup .popup_right_content_area_home input[type="password"], #change-userid-divPopup .popup_right_content_area_home input[type="text"] {
+     width: 94% !important;
+}
+#RechargeSuccess p {
+    padding:20px;
+    text-align:center;
+}
+    #RechargeSuccess p b, #RechargeSuccess p span {
+        display:block;
+        }
+     #RechargeSuccess p b{
+         font-size:22px;
+         margin-bottom:15px;
+         color:#006698;
+     }

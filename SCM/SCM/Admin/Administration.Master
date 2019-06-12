@@ -1,0 +1,270 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Administration.master.cs" Inherits="AdminPanel.Administration" %>
+
+<%@ Import Namespace="AdminPanel" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <aside class="left-side sidebar-offcanvas">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <ul class="tabs sidebar-menu" id="accordion">
+
+                <%if (SessionAccessor.UserRightList.Contains(UserRights.ReportEmailAccess))
+                  { %><li class="sidebar_userreport"><a href="<%=string.Format("{0}/UserManagement/User.aspx",AdminPanel.Common.url)%>">Users</a></li>
+                <%} %>
+                <%if (SessionAccessor.UserRightList.Contains(UserRights.UsageReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.UsageAccess))
+                  { %><li class="sidebar_usage" style="display: none"><a href="<%=string.Format("{0}/configuration/configure-usage.aspx",AdminPanel.Common.url)%>">Usage</a></li>
+                <%} %>
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.BillingReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.BillingAccess))
+                   { %><li class="sidebar_billing" style="display: <%=SessionAccessor.IsModuleEnabled(Features.Billing) %>"><a href="<%=string.Format("{0}/configuration/configure-billing.aspx",AdminPanel.Common.url)%>">Billing</a></li>
+                <% }
+                   if (SessionAccessor.scmexpress != "1")
+                   {
+                       if (SessionAccessor.UserRightList.Contains(UserRights.CompareReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.CompareAccess))
+                       { %>
+                <li class="sidebar_compare" style="display: none"><a href="<%=string.Format("{0}/configuration/configure-comparespending.aspx", AdminPanel.Common.url)%>">Compare</a></li>
+                <% }
+                   }
+                   if (SessionAccessor.scmexpress != "1")
+                   {
+                       if (SessionAccessor.UserRightList.Contains(UserRights.ServiceReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.ServiceAccess))
+                       {%>
+                <li class="sidebar_service" style="display: <%=SessionAccessor.IsModuleEnabled(Features.Services) %>"><a href="<%=string.Format("{0}/configuration/configure-service.aspx",AdminPanel.Common.url)%>">Services</a></li>
+                <% }
+                   } %>
+                <%  if (SessionAccessor.UserRightList.Contains(UserRights.AccountReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.AccountAccess))
+                    { %>
+                <li class="sidebar_myaccount" style="display: none"><a href="configue-myaccount.aspx">My Account</a></li>
+                <% }%>
+                <%--Have hidden images and theme till its not implemented as per new UI--%>
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.PaymentLocationReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.PaymentLocationAccess))
+                   { %>
+                <li class="sidebar_PaymentLocations" style="display: <%=SessionAccessor.IsModuleEnabled(Features.BillingPaymentLocation) %>"><a href="<%=string.Format("{0}/configuration/view-payLocation.aspx",AdminPanel.Common.url)%>">Payment Locations</a>
+                </li>
+                <%} %>
+
+                <%if (SessionAccessor.UserRightList.Contains(UserRights.ReportEmailAccess))
+                  { %>   <li class="sidebar_Emailtemplate"><a href="<%=string.Format("{0}/configuration/configure-emailtemplate.aspx",AdminPanel.Common.url)%>">Email Template</a></li>
+                <li class="sidebar_MobileDashobard"><a href="<%=string.Format("{0}/configuration/configure-mobiledashboard.aspx",AdminPanel.Common.url)%>">Mobile Dashboard Settings</a></li>
+
+                <%} %>
+                             <%  if (SessionAccessor.UserRightList.Contains(UserRights.ConnectMeReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.ConnectMeAccess))
+                    { %>
+
+                <li class="sidebar_connectme" style="display: <%=SessionAccessor.IsModuleEnabled(Features.ConnectMe) %>"><a href="<%=string.Format("{0}/configuration/configure-connectme.aspx",AdminPanel.Common.url)%>">Connect Me</a></li>
+
+                <% }
+
+                    if (SessionAccessor.UserRightList.Contains(UserRights.SettingReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.SettingAccess))
+                    { %>
+
+                <li id="banner" class="sidebar_configurebanner" style="display: none"><%--<a href="configure-banner">Banners</a>--%>
+                    <a class="lnkconfigurebanner" href="#collapseTwo">Banners</a>
+                    <ul id="collapseTwo" class="collapse" style="display: none">
+                        <li class="sidebar_configurebanner_inner"><a href="configure-banner.aspx">Configure Banner</a></li>
+                        <li class="sidebar_statistics_inner"><a href="banner-statistics.aspx">Statistics</a></li>
+                        <li class="sidebar_clicklogs_inner"><a href="banner-click-logs.aspx">Click Logs</a></li>
+                    </ul>
+                </li>
+                <%if (SessionAccessor.IsSuperAdmin)
+                  { %>
+                <li class="sidebar_Settings"><a href="<%=string.Format("{0}/configuration/configure-authentication.aspx",AdminPanel.Common.url)%>">Settings</a></li>
+                <% }%>
+                <% } if (SessionAccessor.UserRightList.Contains(UserRights.LanguageAccess) || SessionAccessor.UserRightList.Contains(UserRights.LanguageReadOnly))
+                    { %>
+                <li class="sidebar_MultiManguage_app"><a href="<%=string.Format("{0}/configuration/configure-multilingual.aspx",AdminPanel.Common.url)%>">Application Labels</a></li>
+                <%  }%><% if ((SessionAccessor.UserRightList.Contains(UserRights.PaymentOptionReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.PaymentOptionAccess)) && (SessionAccessor.IsSuperAdmin))
+                          { %>
+                <li class="sidebar_PaymentOption"><a href="<%=string.Format("{0}/configuration/PaymentOption.aspx",AdminPanel.Common.url)%>">Payment Options</a></li>
+                <% }%><% if (SessionAccessor.UserRightList.Contains(UserRights.RoleAccess) && (SessionAccessor.IsSuperAdmin))
+                         { %>
+                <li class="sidebar_Role"><a href="<%=string.Format("{0}/configuration/Role.aspx",AdminPanel.Common.url)%>">Role</a></li>
+                <% } %><% if (SessionAccessor.UserRightList.Contains(UserRights.FeatureAccess) && (SessionAccessor.IsSuperAdmin))
+                          { %>
+                <li class="sidebar_Feature"><a href="<%=string.Format("{0}/configuration/Configure-feature.aspx",AdminPanel.Common.url)%>">Add/Remove Feature</a></li>
+                <% }%>
+                <%if ((SessionAccessor.IsSuperAdmin) && SessionAccessor.UserRightList.Contains(UserRights.SocialMediaAcces))
+                  { %>
+                <li class="sidebar_SocialMedia"><a href="<%=string.Format("{0}/configuration/configure-socialmedia.aspx",AdminPanel.Common.url)%>">Utility Information</a></li>
+
+                <% }%>
+
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.FootPrintAccess))
+                   { %>
+                <li class="sidebar_Footprint" style="display: <%=SessionAccessor.IsModuleEnabled(Features.FootPrint) %>"><a href="<%=string.Format("{0}/configuration/configure_viewfootprint.aspx",AdminPanel.Common.url)%>">Footprints</a></li>
+                <% }%>
+
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.TermsConditionsAccess))
+                   { %>
+                <li class="sidebar_TermsConditions"><a href="<%=string.Format("{0}/configuration/Configure-TermsConditions.aspx",AdminPanel.Common.url)%>">Terms and Conditions</a></li>
+                <% }%>
+
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.PrivacyPolicyAccess))
+                   { %>
+                <li class="sidebar_PrivacyPolicy"><a href="<%=string.Format("{0}/configuration/Configure-PrivacyPolicy.aspx",AdminPanel.Common.url)%>">Privacy Policy</a></li>
+                <% }%>
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.BannerAccess))
+                   { %>
+                <li class="sidebar_configurebanner_inner"><a href="<%=string.Format("{0}/configuration/configureBanner.aspx",AdminPanel.Common.url)%>">Banners</a></li>
+                <% }%>
+
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.RegistrationTemplateAccess))
+                   { %>
+                <li class="sidebar_RegistrationTemplate"><a href="<%=string.Format("{0}/configuration/configure-registrationtemplate.aspx",AdminPanel.Common.url)%>">Registration Template</a></li>
+                <% }%>
+
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.ConfigurationNotificationTemplateAccess))
+                   { %>
+
+                <li class="sidebar_configurationsetting"><a href="#">Configuration Settings<span class="caret-lane"></span></a>
+                    <ul id="conf-setting">
+                        <li class="sidebar_cust_conf"><a href="../Configuration/CustomerConfiguration.aspx">Customer Configuration</a></li>
+                        <li class="sidebar_service_conf"><a href="../Configuration/CustomerServiceConfiguration.aspx">Service Configuration</a></li>
+                        <li class="sidebar_admin_conf"><a href="../Configuration/AdminConfiguration.aspx">Admin Configuration</a></li>
+                        <li class="sidebar_adser_conf"><a href="../Configuration/AdminServiceConfiguration.aspx">Admin Service Configuration</a></li>
+                    </ul>
+
+                </li>
+               
+                <li class="sidebar_NotificationTemplate"><a href="<%=string.Format("{0}/configuration/configure-notificationtemplates.aspx",AdminPanel.Common.url)%>">Notification Template</a></li>
+                <% }%>
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.NotificationWorkflowAccess))
+                   { %>
+                <li class="sidebar_NotificationWorkflow"><a href="<%=string.Format("{0}/configuration/configure-notificationtemplate.aspx",AdminPanel.Common.url)%>">Notification Workflow</a></li>
+                <% }%>
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.SchedularMaintenceAccess))
+                   { %>
+                <li class="sidebar_Scheduler_Maintenance"><a href="<%=string.Format("{0}/configuration/SchedulerMaintenance.aspx",AdminPanel.Common.url)%>">Schedule Maintenance</a></li>
+               <li class="sidebar_DeactivationSettings"><a href="<%=string.Format("{0}/configuration/DeactivationSettings.aspx",AdminPanel.Common.url)%>">Security Configuration</a></li>
+                 <% }%>
+
+                
+
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.ConfigurationDisclaimerAccess))
+                   { %>
+                <li class="sidebar_Disclaimer"><a href="<%=string.Format("{0}/configuration/DisclaimerSettings.aspx",AdminPanel.Common.url)%>">Disclaimer Settings</a></li>
+                <% }%>
+
+                <li class="sidebar_FAQ" style="display: <%=SessionAccessor.IsModuleEnabled(Features.FAQ) %>"><a href="<%=string.Format("{0}/configuration/configure-FAQ.aspx",AdminPanel.Common.url)%>">FAQ'S</a></li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <aside class="right-side">
+        <a href="javascript:void(0);" id="button-sidebar" class="button-sidebar ir"></a>
+        <div class="inner-right-section">
+            <div class="right-content-area">
+                <asp:ContentPlaceHolder ID="rightpanel" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </aside>
+    <script src="../js/highchart_js/highcharts.js"></script>
+    <script src="../js/highchart_js/common-chart.js"></script>
+    <script src="../js/highchart_js/highcharts-3d.js"></script>
+    <script src="../js/highchart_js/highcharts-more.js"></script>
+    <script src="//code.highcharts.com/modules/drilldown.js"></script>
+
+
+    <script type="text/javascript" src="../js/jscolor/jscolor.js"></script>
+    <script src="../js/AdminReport_CommonFunctions.js"></script>
+    <script type="text/javascript">
+        $(".crm_header").addClass('active');
+
+    </script>
+    <style>
+        #collapseOne li a, .in li a {
+            cursor: pointer;
+        }
+
+        #PopupAddTopic {
+            left: 15% !important;
+            top: 0% !important;
+        }
+
+        #collapseOne li a, .in li a {
+            cursor: pointer;
+        }
+
+        .ajax__calendar_body {
+            height: 121px;
+        }
+
+        .filterBtn {
+            border: medium none;
+            border-radius: 4px !important;
+            color: #ffffff;
+            display: block;
+            height: auto;
+            padding: 5px 19px;
+            width: 153px;
+        }
+
+        .select-style select {
+            padding: 2px 8px;
+        }
+
+        .top-header-area .filter_area_ui {
+            width: auto;
+        }
+
+        .filter_area_ui .select-style {
+            margin-top: -6px;
+        }
+
+        .caret-lane {
+            border-bottom: 6px solid transparent;
+            border-left: 10px solid #333;
+            border-top: 6px solid transparent;
+            display: inline-block;
+            float: right;
+            height: 0;
+            margin: 4px 10px 5px;
+            vertical-align: middle;
+            width: 0;
+        }
+
+        ul > li.sidebar_efficency:hover .caret-lane, ul > li.sidebar_efficency.active .caret-lane {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            vertical-align: middle;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 10px solid #fff;
+            float: right;
+            margin: 6px 10px 5px 5px;
+            color: #fff !important;
+            border-bottom: 0px solid #fff;
+        }
+        ul > li.sidebar_configurationsetting:hover .caret-lane, ul > li.sidebar_configurationsetting.active .caret-lane {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            vertical-align: middle;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 10px solid #fff;
+            float: right;
+            margin: 6px 10px 5px 5px;
+            color: #fff !important;
+            border-bottom: 0px solid #fff;
+        }
+
+
+
+        ul.tabs > li > ul > li.sidebar_programs > a {
+            background: rgba(0, 0, 0, 0) url("../images/sidebar_programs.png") no-repeat scroll 20px 8px;
+            display: block;
+        }
+
+            ul.tabs > li > ul > li.sidebar_programs.active > a, ul.tabs > li > ul > li.sidebar_programs > a:hover {
+                background: rgba(0, 0, 0, 0) url("../images/sidebar_programs_hover.png") no-repeat scroll 20px 8px;
+                display: block;
+                color: #fff !important;
+            }
+    </style>
+
+</asp:Content>

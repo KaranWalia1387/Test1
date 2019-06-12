@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="ElectricVehicleNestedMaster.master.cs" Inherits="CustomerPortal.ElectricVehicleNestedMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        $(window).load(function () {
+            changeactivelinkcolor();
+        });
+
+    </script>
+    <style type="text/css">
+        @media only screen and (min-width:768px) and (max-width:991px) {
+            .cover_top_area h1 {
+                width: 25%;
+            }
+
+            .cover_right_top_area {
+                width: 75%;
+            }
+        }
+
+        .sidebar_toggle {
+            background: #93d400 url("images/icon_side_nav.png") no-repeat 93% 49px !important;
+        }
+    </style>
+
+
+    <style type="text/css">
+        .inner_mid_section_box1 {
+            height: 80% !important;
+        }
+
+            .inner_mid_section_box1 .right_top_box-1 {
+                height: 85% !important;
+                overflow: auto;
+            }
+
+        .inner_uni1 {
+            height: 82% !important;
+            overflow: auto;
+        }
+
+        .inner_uni5 {
+            height: 76% !important;
+            overflow: auto;
+        }
+
+        .inner_uni3 {
+            height: 78% !important;
+            overflow: auto;
+        }
+
+        .inner_uni1 .setting_save_box {
+            padding-top: 13px;
+        }
+
+        .inner_mid_section_box1 .setting_save_box {
+            padding-top: 15px;
+        }
+
+        .inner_mid_section_box1 .energy_mid_box {
+            padding-bottom: 12px;
+        }
+
+        .inner_uni3 .setting_save_box {
+            padding-top: 9px;
+        }
+
+        .inner_uni3 .energy_mid_box {
+            padding-bottom: 36px;
+        }
+
+        .right_content_box_1 {
+            height: 90%;
+            overflow: auto;
+            position: relative;
+        }
+
+        .inner_mid_section_box1 .right_content_box_1 {
+            height: 84% !important;
+        }
+    </style>
+
+    <script>
+        var metas = document.getElementsByTagName('meta');
+        var i;
+        if (navigator.userAgent.match(/iPhone/i)) {
+            for (i = 0; i < metas.length; i++) {
+                if (metas[i].name == "viewport") {
+                    metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+                }
+            }
+            document.addEventListener("gesturestart", gestureStart, false);
+        }
+        function gestureStart() {
+            for (i = 0; i < metas.length; i++) {
+                if (metas[i].name == "viewport") {
+                    metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+                }
+            }
+        }
+    </script>
+    <script type="text/javascript" src="js/detect-zoom.js"></script>
+    <script type="text/javascript">
+        function refresh() {
+            //var zoom = $('#zoom');
+            var device = $('#device');
+            //zoom.text(window.detectZoom.zoom().toFixed(2));
+            //device.text(window.detectZoom.device().toFixed(2));
+            if ((window.detectZoom.device().toFixed(1) >= 1.09) && (window.detectZoom.device().toFixed(1) < 1.20)) {
+                $("#device").addClass('inner_uni1');
+                $("#device").removeClass('inner_mid_section_box1');
+                $("#device").removeClass('inner_uni3');
+                $("#device").removeClass('inner_uni5');
+            }
+            else if ((window.detectZoom.device().toFixed(1) >= 1.20) && (window.detectZoom.device().toFixed(1) < 1.30)) {
+                $("#device").removeClass('inner_uni1');
+                $("#device").removeClass('inner_uni3');
+                $("#device").removeClass('inner_uni5');
+                $("#device").addClass('inner_mid_section_box1');
+            }
+            else if ((window.detectZoom.device().toFixed(1) >= 1.30) && (window.detectZoom.device().toFixed(1) < 1.50)) {
+                $("#device").removeClass('inner_uni1');
+                $("#device").removeClass('inner_mid_section_box1');
+                $("#device").removeClass('inner_uni5');
+                $("#device").addClass('inner_uni3');
+            }
+            else if ((window.detectZoom.device().toFixed(1) >= 1.50) && (window.detectZoom.device().toFixed(1) < 1.70)) {
+                $("#device").removeClass('inner_uni1');
+                $("#device").removeClass('inner_mid_section_box1');
+                $("#device").removeClass('inner_uni3');
+                $("#device").addClass('inner_uni5');
+            }
+            else {
+                $("#device").removeClass('inner_uni1');
+                $("#device").removeClass('inner_mid_section_box1');
+                $("#device").removeClass('inner_uni3');
+                $("#device").removeClass('inner_uni5');
+            }
+
+        }
+        $(document).ready(function () {
+            refresh();
+            $(window).on('resize', refresh);
+        });
+    </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <input type="hidden" class="activeli_list" value="ev" />
+
+    <section class="inner_mid_section" id="device">
+    <div class="container inner-mid-container">
+    <div class="energy_mid_box">
+                  <asp:HiddenField ID="hdnFlag" Value="load" runat="server" ClientIDMode="Static" />
+
+    <asp:HiddenField ID="hdnDR" Value="0" runat="server" ClientIDMode="Static" />
+        <div class="cover_top_area">
+        <h1><img src="images/icon_ev_sidebar.svg" style="padding-right:5px; margin-top: -3px; float: left;" />
+              <span class="head_icon_flat icon_ev"></span>
+            <span globalize="ML_ELECTRIC_VEHICLE_Header_ElectricVehicle"><%= CustomerPortal.Translator.T("ML_ELECTRIC_VEHICLE_Header_ElectricVehicle") %></span></h1>
+            
+            <div class="cover_right_top_area">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderSearch" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            </div>
+         <div class="sidebar_toggle">Sidebar Navigation</div>
+               	 <div class="nav_left"> 
+                	<ul>
+                    	<li class="icon_ev_sidebar"  style="display:<%=CustomerPortal.SessionAccessor.CustomerType=="Commercial"?"none":"block"%>">
+                           <div style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EVVehicle)%>"> <a href="electric-vehicle.aspx" globalize="ML_ELECTRIC_VEHICLE_Title_ElectricVehicle"><%= CustomerPortal.Translator.T("ML_ELECTRIC_VEHICLE_Title_ElectricVehicle") %></a></div></li>
+                        <li class="icon_charging_station" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EVChargingStations)%>"><a href="charging-stations.aspx" globalize="ML_ELECTRIC_VEHICLE_Anchor_ChargingStations"><%= CustomerPortal.Translator.T("ML_ELECTRIC_VEHICLE_Anchor_ChargingStations") %></a></li>               
+                    </ul>
+            <div class="banner_left_img">
+                <a href="#">
+                    <img id="IDBannerEV" clientidmode="Static" src="" alt="" globalize="ML_ElectricVehicle_div_refreshmap" onclick="BannerClick(this.id);"/></a>
+                       <a href="#"><img id="IDBannerEVI" clientidmode="Static" src="" alt="" onclick="BannerClick(this.id);"/></a>
+            </div>
+
+                </div>
+       <div class="right_content_box">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server"></asp:ContentPlaceHolder>
+           </div>
+        </div>
+    </div>
+    </section>
+</asp:Content>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Usage" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Usage.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Usage.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Usage.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUsage_MobUsageReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobUsageReport" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_MobUsageReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobUsageReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_NetUsageReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetUsageReport" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_NetUsageReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetUsageReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_MobGetWaterIndexRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetWaterIndexRate" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_MobGetWaterIndexRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetWaterIndexRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_NetGetWaterIndexRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetWaterIndexRate" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_NetGetWaterIndexRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetWaterIndexRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_MobGetWaterUsagePlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetWaterUsagePlan" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_MobGetWaterUsagePlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetWaterUsagePlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_NetGetWaterUsagePlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetWaterUsagePlan" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_NetGetWaterUsagePlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetWaterUsagePlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_MobSetWaterIndexRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobSetWaterIndexRate" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_MobSetWaterIndexRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobSetWaterIndexRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_NetSetWaterIndexRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetSetWaterIndexRate" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_NetSetWaterIndexRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetSetWaterIndexRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_MobSetFixedWaterRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobSetFixedWaterRate" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_MobSetFixedWaterRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobSetFixedWaterRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_NetSetFixedWaterRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetSetFixedWaterRate" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_NetSetFixedWaterRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetSetFixedWaterRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_MobGetFixedWaterRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetFixedWaterRate" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_MobGetFixedWaterRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetFixedWaterRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_NetGetFixedWaterRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetFixedWaterRate" />
+  </wsdl:message>
+  <wsdl:message name="IUsage_NetGetFixedWaterRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetFixedWaterRateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUsage">
+    <wsdl:operation name="MobUsageReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsage/MobUsageReport" message="tns:IUsage_MobUsageReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsage/MobUsageReportResponse" message="tns:IUsage_MobUsageReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetUsageReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsage/NetUsageReport" message="tns:IUsage_NetUsageReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsage/NetUsageReportResponse" message="tns:IUsage_NetUsageReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobGetWaterIndexRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsage/MobGetWaterIndexRate" message="tns:IUsage_MobGetWaterIndexRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsage/MobGetWaterIndexRateResponse" message="tns:IUsage_MobGetWaterIndexRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGetWaterIndexRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsage/NetGetWaterIndexRate" message="tns:IUsage_NetGetWaterIndexRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsage/NetGetWaterIndexRateResponse" message="tns:IUsage_NetGetWaterIndexRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobGetWaterUsagePlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsage/MobGetWaterUsagePlan" message="tns:IUsage_MobGetWaterUsagePlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsage/MobGetWaterUsagePlanResponse" message="tns:IUsage_MobGetWaterUsagePlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGetWaterUsagePlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsage/NetGetWaterUsagePlan" message="tns:IUsage_NetGetWaterUsagePlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsage/NetGetWaterUsagePlanResponse" message="tns:IUsage_NetGetWaterUsagePlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobSetWaterIndexRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsage/MobSetWaterIndexRate" message="tns:IUsage_MobSetWaterIndexRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsage/MobSetWaterIndexRateResponse" message="tns:IUsage_MobSetWaterIndexRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetSetWaterIndexRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsage/NetSetWaterIndexRate" message="tns:IUsage_NetSetWaterIndexRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsage/NetSetWaterIndexRateResponse" message="tns:IUsage_NetSetWaterIndexRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobSetFixedWaterRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsage/MobSetFixedWaterRate" message="tns:IUsage_MobSetFixedWaterRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsage/MobSetFixedWaterRateResponse" message="tns:IUsage_MobSetFixedWaterRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetSetFixedWaterRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsage/NetSetFixedWaterRate" message="tns:IUsage_NetSetFixedWaterRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsage/NetSetFixedWaterRateResponse" message="tns:IUsage_NetSetFixedWaterRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobGetFixedWaterRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsage/MobGetFixedWaterRate" message="tns:IUsage_MobGetFixedWaterRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsage/MobGetFixedWaterRateResponse" message="tns:IUsage_MobGetFixedWaterRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGetFixedWaterRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsage/NetGetFixedWaterRate" message="tns:IUsage_NetGetFixedWaterRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsage/NetGetFixedWaterRateResponse" message="tns:IUsage_NetGetFixedWaterRate_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUsage" type="tns:IUsage">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MobUsageReport">
+      <soap:operation soapAction="http://tempuri.org/IUsage/MobUsageReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetUsageReport">
+      <soap:operation soapAction="http://tempuri.org/IUsage/NetUsageReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobGetWaterIndexRate">
+      <soap:operation soapAction="http://tempuri.org/IUsage/MobGetWaterIndexRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGetWaterIndexRate">
+      <soap:operation soapAction="http://tempuri.org/IUsage/NetGetWaterIndexRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobGetWaterUsagePlan">
+      <soap:operation soapAction="http://tempuri.org/IUsage/MobGetWaterUsagePlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGetWaterUsagePlan">
+      <soap:operation soapAction="http://tempuri.org/IUsage/NetGetWaterUsagePlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobSetWaterIndexRate">
+      <soap:operation soapAction="http://tempuri.org/IUsage/MobSetWaterIndexRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetSetWaterIndexRate">
+      <soap:operation soapAction="http://tempuri.org/IUsage/NetSetWaterIndexRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobSetFixedWaterRate">
+      <soap:operation soapAction="http://tempuri.org/IUsage/MobSetFixedWaterRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetSetFixedWaterRate">
+      <soap:operation soapAction="http://tempuri.org/IUsage/NetSetFixedWaterRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobGetFixedWaterRate">
+      <soap:operation soapAction="http://tempuri.org/IUsage/MobGetFixedWaterRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGetFixedWaterRate">
+      <soap:operation soapAction="http://tempuri.org/IUsage/NetGetFixedWaterRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Usage">
+    <wsdl:port name="BasicHttpBinding_IUsage" binding="tns:BasicHttpBinding_IUsage">
+      <soap:address location="http://64.58.161.201/adminservice6.0/Usage.svc/SoapService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

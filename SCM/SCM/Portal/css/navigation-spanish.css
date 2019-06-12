@@ -1,0 +1,1100 @@
+
+/* -- Main Navigation Medium -- */
+
+nav.main ul.tabs
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    float: right;
+}
+
+
+    nav.main ul.tabs li
+    {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        float: left;
+        /*border-left: 1px solid #e6e7e8;*/
+        width:72px;
+    }
+
+    nav.main ul.tabs li a {
+        background-position:center 50% !important;
+
+
+    }
+
+        nav.main ul.tabs li a
+        {
+            display: block;
+            color: #53565a;
+            font-size: 92.3%;
+            text-decoration: none;
+            padding: 5px 0 1px;
+        }
+            nav.main ul.tabs li a span
+            {
+                font-size: 9px;
+                display: block;
+                padding: 28px 0px 1px;
+                text-decoration: none;
+                text-indent: -9999px;
+            }
+
+            nav.main ul.tabs li a:hover, nav.main ul.tabs li.active a, nav.main ul.tabs li a.active
+            {
+                background-color: #eeeeee !important;
+            }
+
+        nav.main ul.tabs li.home a
+        {
+            background: url(../images/nav_img_medium/icon_home_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.home a:hover, nav.main ul.tabs li.home a.active
+            {
+                color: #fff;
+                background: url(../images/nav_img_medium/icon_home_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+             nav.main ul.tabs li.dashboard_home a
+        {
+            background: url(../images/nav_img_medium/icon_home_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.dashboard_home a:hover, nav.main ul.tabs li.dashboard_home a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_home_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+        nav.main ul.tabs li.footprint a
+        {
+            background: url(../images/nav_img_medium/icon_footprint_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.footprint a:hover, nav.main ul.tabs li.footprint a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_footprint_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main ul.tabs li.ev a
+        {
+            background: url(../images/nav_img_medium/icon_ev_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+          /*nav.main ul.tabs li.ev a:hover, nav.main ul.tabs li.ev a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_ev_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main ul.tabs li.sh a
+        {
+            background: url(../images/nav_img_medium/icon_smart_home_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.sh a:hover, nav.main ul.tabs li.sh a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_smart_home_sidebar_RO.png) no-repeat center 5px;
+            }*/
+/*Smart Building*/
+             nav.main ul.tabs li.sb a
+        {
+            background: url(../images/nav_img_medium/icon_smart_building.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.sb a:hover, nav.main ul.tabs li.sb a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_smart_building_RO.png) no-repeat center 5px;
+            }*/
+/*Smart Building*/
+        nav.main ul.tabs li.nitiF a
+        {
+            background: url(../images/nav_img_medium/icon_notif_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.nitiF a:hover, nav.main ul.tabs li.nitiF a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_notif_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main ul.tabs li.outages a
+        {
+            background: url(../images/nav_img_medium/icon_outages_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.outages a:hover, nav.main ul.tabs li.outages a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_outage_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main ul.tabs li.connect a
+        {
+            background: url(../images/nav_img_medium/icon_connectme_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.connect a:hover, nav.main ul.tabs li.connect a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_connectme_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main ul.tabs li.service a
+        {
+            background: url(../images/nav_img_medium/icon_service_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+           /*nav.main ul.tabs li.service a:hover, nav.main ul.tabs li.service a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_service_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main ul.tabs li.efficency a
+        {
+            background: url(../images/nav_img_medium/icon_efficiency_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            nav.main_large ul.tabs li.marketplace a
+        {
+            background: url(../images/nav_img_large/icon_marketplace_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.efficency a:hover, nav.main ul.tabs li.efficency a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_efficiency_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main ul.tabs li.billing a
+        {
+            background: url(../images/nav_img_medium/icon_biling_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.billing a:hover, nav.main ul.tabs li.billing a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_biling_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main ul.tabs li.cs a
+        {
+            background: url(../images/nav_img_medium/icon_cs_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.cs a:hover, nav.main ul.tabs li.cs a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_cs_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main ul.tabs li.usage a
+        {
+            background: url(../images/nav_img_medium/icon_usage_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.usage a:hover, nav.main ul.tabs li.usage a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_usage_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+        nav.main ul.tabs li.myaccount a
+        {
+            background: url(../images/nav_img_medium/icon_myaccount_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main ul.tabs li.myaccount a:hover, nav.main ul.tabs li.myaccount a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_myaccount_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+
+/*-- End Main Navigation Medium --*/
+
+/*-- Main Navigation Large --*/
+
+nav.main_large ul.tabs
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    float: right;
+}
+
+
+    nav.main_large ul.tabs li
+    {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        float: left;
+        /*border-left: 1px solid #e6e7e8;*/
+           width: 67px;
+    }
+
+        nav.main_large ul.tabs li a
+        {
+            display: block;
+            color: #53565a;
+            font-size: 92.3%;
+            text-decoration: none;
+            padding: 5px 0 1px;
+            background-position:center 50% !important;
+        }
+
+            nav.main_large ul.tabs li a span
+            {
+                font-size: 9px;
+                display: block;
+                padding: 37px 0px 1px;
+                text-decoration: none;
+                text-indent:-9999px;
+            }
+
+            nav.main_large ul.tabs li a:hover, nav.main_large ul.tabs li.active a, nav.main_large ul.tabs li a.active 
+            {
+               background-color: #eeeeee !important;
+            }
+
+        nav.main_large ul.tabs li.home a
+        {
+            background: url(../images/nav_img_large/icon_home_sidebar.png) no-repeat center 5px;
+            display: block;
+            
+        }
+
+            /*nav.main_large ul.tabs li.home a:hover, nav.main_large ul.tabs li.home a.active
+            {
+                color: #fff;
+                background: url(../images/nav_img_large/icon_home_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+             nav.main_large ul.tabs li.dashboard_home a
+        {
+            background: url(../images/nav_img_large/icon_home_sidebar.svg) no-repeat center 5px;
+            display: block;
+            background-size:43px auto;
+        }
+
+            /*nav.main_large ul.tabs li.dashboard_home a:hover, nav.main_large ul.tabs li.dashboard_home a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_home_sidebar_RO.png) no-repeat center 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }*/
+
+
+        nav.main_large ul.tabs li.footprint a
+        {
+            background: url(../images/nav_img_large/icon_footprint_sidebar.svg) no-repeat 43% 2px;
+            display: block;
+                background-size: 31px auto;
+                background-position:43% 50% !important;
+        }
+
+            /*nav.main_large ul.tabs li.footprint a:hover, nav.main_large ul.tabs li.footprint a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_footprint_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.ev a
+        {
+            background: url(../images/nav_img_large/icon_ev_sidebar.svg) no-repeat center 5px;
+            display: block;
+              background-size: 43px auto;
+        }
+
+         /*nav.main_large ul.tabs li.ev a:hover, nav.main_large ul.tabs li.ev a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_ev_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.sh a
+        {
+            background: url(../images/nav_img_large/icon_smart_home_sidebar.svg) no-repeat center 5px;
+            display: block;
+            background-size: 44px auto;
+        }
+
+            /*nav.main_large ul.tabs li.sh a:hover, nav.main_large ul.tabs li.sh a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_smart_home_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+            /*Smart Building*/
+            nav.main_large ul.tabs li.sb a
+        {
+            background: url(../images/nav_img_large/icon_smart_building.svg) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_large ul.tabs li.sb a:hover, nav.main_large ul.tabs li.sb a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_smart_building_RO.png) no-repeat center 5px;
+            }*/
+            /*Smart Building*/
+
+        nav.main_large ul.tabs li.nitiF a
+        {
+            background: url(../images/nav_img_large/icon_notif_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size: 50px auto;
+        }
+
+           /*nav.main_large ul.tabs li.nitiF a:hover, nav.main_large ul.tabs li.nitiF a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_notif_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.outages a
+        {
+            background: url(../images/nav_img_large/icon_outages_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size: 43px auto;
+        }
+
+            /*nav.main_large ul.tabs li.outages a:hover, nav.main_large ul.tabs li.outages a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_outage_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.connect a
+        {
+            background: url(../images/nav_img_large/icon_connectme_sidebar.svg) no-repeat center 5px;
+            display: block;
+            background-size: 40px auto;
+        }
+
+            /*nav.main_large ul.tabs li.connect a:hover, nav.main_large ul.tabs li.connect a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_connectme_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.service a
+        {
+            background: url(../images/nav_img_large/icon_service_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size: 43px auto;
+        }
+
+           /*nav.main_large ul.tabs li.service a:hover, nav.main_large ul.tabs li.service a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_service_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.efficency a
+        {
+            background: url(../images/nav_img_large/icon_efficiency_sidebar.svg) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_large ul.tabs li.efficency a:hover, nav.main_large ul.tabs li.efficency a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_efficiency_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.billing a
+        {
+            background: url(../images/nav_img_large/icon_biling_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size:40px auto;
+        }
+
+            /*nav.main_large ul.tabs li.billing a:hover, nav.main_large ul.tabs li.billing a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_biling_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.cs a
+        {
+            background: url(../images/nav_img_large/icon_cs_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size: 43px auto;
+        }
+
+            /*nav.main_large ul.tabs li.cs a:hover, nav.main_large ul.tabs li.cs a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_cs_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+       nav.main_large ul.tabs li.usage a
+        {
+            background: url(../images/nav_img_large/icon_usage_sidebar.svg) no-repeat center 5px;
+            display: block;
+             padding-left:6px;
+            padding-right:6px;
+             background-size: 48px auto;    
+        }
+
+            /*nav.main_large ul.tabs li.usage a:hover, nav.main_large ul.tabs li.usage a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_usage_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+        nav.main_large ul.tabs li.myaccount a
+        {
+            background: url(../images/nav_img_large/icon_myaccount_sidebar.svg) no-repeat center 5px;
+            display: block;
+               background-size: 46px auto;
+        }
+
+            /*nav.main_large ul.tabs li.myaccount a:hover, nav.main_large ul.tabs li.myaccount a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_large/icon_myaccount_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+
+/*-- End Main Navigation Large --*/
+
+
+
+
+
+/*-- Main Navigation Small --*/
+
+
+nav.main_small ul.tabs
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    float: right;
+}
+
+
+    nav.main_small ul.tabs li
+    {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        float: left;
+        /*border-left: 1px solid #dedede;*/
+    }
+
+        nav.main_small ul.tabs li a
+        {
+            display: block;
+            color: #53565a;
+            font-size: 92.3%;
+            text-decoration: none;
+            padding: 5px 0 1px;
+        }
+
+            nav.main_small ul.tabs li a span
+            {
+                font-size: 11px;
+                display: block;
+                padding: 19px 6px 1px;
+                text-decoration: none;
+            }
+
+            nav.main_small ul.tabs li a:hover, nav.main_small ul.tabs li.active a, nav.main_small ul.tabs li a.active
+            {
+                background-color: #eeeeee !important;
+            }
+
+        nav.main_small ul.tabs li.home a
+        {
+            background: url(../images/icon_home_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.home a:hover, nav.main_small ul.tabs li.home a.active
+            {
+                color: #fff !important;
+                background: url(../images/icon_home_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+             nav.main_small ul.tabs li.dashboard_home a
+        {
+            background: url(../images/icon_home_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.dashboard_home a:hover, nav.main_small ul.tabs li.dashboard_home a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_home_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+        nav.main_small ul.tabs li.footprint a
+        {
+            background: url(../images/icon_footprint_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.footprint a:hover, nav.main_small ul.tabs li.footprint a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_footprint_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_small ul.tabs li.ev a
+        {
+            background: url(../images/icon_ev_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.ev a:hover, nav.main_small ul.tabs li.ev a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_ev_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_small ul.tabs li.sh a
+        {
+            background: url(../images/icon_smart_home_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.sh a:hover, nav.main_small ul.tabs li.sh a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_smart_home_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+            /*Smart Building*/
+            nav.main_small ul.tabs li.sb a
+        {
+            background: url(../images/icon_smart_Building_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.sb a:hover, nav.main_small ul.tabs li.sb a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_smart_Building_sidebar_RO.png) no-repeat center 5px;
+            }*/
+            /*Smart Building*/
+
+        nav.main_small ul.tabs li.nitiF a
+        {
+            background: url(../images/icon_notif_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.nitiF a:hover, nav.main_small ul.tabs li.nitiF a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_notif_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_small ul.tabs li.outages a
+        {
+            background: url(../images/icon_outages_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.outages a:hover, nav.main_small ul.tabs li.outages a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_outage_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_small ul.tabs li.connect a
+        {
+            background: url(../images/icon_connectme_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.connect a:hover, nav.main_small ul.tabs li.connect a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_connectme_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_small ul.tabs li.service a
+        {
+            background: url(../images/icon_service_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+           /*nav.main_small ul.tabs li.service a:hover, nav.main_small ul.tabs li.service a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_service_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_small ul.tabs li.efficency a
+        {
+            background: url(../images/icon_efficiency_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.efficency a:hover, nav.main_small ul.tabs li.efficency a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_efficiency_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_small ul.tabs li.billing a
+        {
+            background: url(../images/icon_biling_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.billing a:hover, nav.main_small ul.tabs li.billing a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_biling_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_small ul.tabs li.cs a
+        {
+            background: url(../images/icon_cs_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.cs a:hover, nav.main_small ul.tabs li.cs a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_cs_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_small ul.tabs li.usage a
+        {
+            background: url(../images/icon_usage_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.usage a:hover, nav.main_small ul.tabs li.usage a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_usage_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+        nav.main_small ul.tabs li.myaccount a
+        {
+            background: url(../images/icon_myaccount_sidebar.png) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_small ul.tabs li.myaccount a:hover, nav.main_small ul.tabs li.myaccount a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/icon_myaccount_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+/*-- End Main Navigation Small --*/
+
+
+
+.changing_nav {
+    position:absolute;
+    right: -40px;
+    top: -2px;
+}
+
+.changing_nav ul {
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+
+.changing_nav ul li {
+    margin:0px;
+    padding:0px;
+    float:left;
+}
+
+.changing_nav ul li a {
+    display:block;
+    text-decoration:none;
+    padding:2px 3px;
+}
+@media only screen and (min-width:300px) and (max-width:767px) {
+    .main_large {
+        width:100%;
+    }   
+}
+@media only screen and (min-width:768px) and (max-width:1024px) {
+ 
+    nav.main_large ul.tabs li {
+        width:auto !important;
+    }
+
+
+      nav.main ul.tabs li {
+          width:auto !important;
+      }
+
+      nav.main_large ul.tabs li {
+
+      }
+
+      nav.main ul.tabs li a {
+        background-position:center 50% !important;
+
+    }
+
+      @media all and (orientation:portrait) {  
+                    /* Styles for Portrait screen */     
+                     nav.main_small ul.tabs li a span {
+                        width:40px;
+                    }
+
+                       nav.main ul.tabs li a span {
+                        width:40px;
+                    }
+
+                        nav.main_large ul.tabs li a span {
+                        width:40px;
+                    }
+                }  
+
+                @media all and (orientation:landscape) {  
+                    /* Styles for Landscape screen */                      
+                nav.main_small ul.tabs li a span {
+                    text-indent: -999px;
+                    width: 41px;
+                 }
+                 nav.main ul.tabs li a span {
+                    text-indent: -999px;
+                    width: 41px;
+                 }
+                  nav.main_large ul.tabs li a span {
+                    text-indent: -999px;
+                    width: 41px;
+                 }
+                }  
+    }
+
+
+@media only screen and (min-width:992px) and (max-width:1024px) {
+  
+                   
+                    /* Styles for Landscape screen */     
+                  nav.main_small ul.tabs {
+                      float:right;
+
+                  }  
+                       nav.main_small ul.tabs li a {
+                            background-position: center 12px !important;
+                       }    
+                                                        
+                nav.main_small ul.tabs li a span {
+                    text-indent: inherit;
+                    width: auto;
+                    padding: 19px 1px 1px;
+                    text-indent: -9999px !important;
+                     width: 55px;
+                 }
+                 nav.main ul.tabs li a span {
+                     text-indent: inherit;
+                       width: auto;
+                       padding: 19px 1px 1px ;
+                        text-indent: -9999px !important;
+                     width: 55px;
+                 }
+                  nav.main_large ul.tabs li a span {
+                     text-indent: inherit;
+                       width: auto;
+                       padding: 19px 1px 1px;
+                        text-indent: -9999px !important;
+                     width: 55px;
+                 }
+
+                
+        nav.main_small ul.tabs li a span {
+        padding: 19px 1px 1px 1px;
+        }
+        nav.main ul.tabs li a span {
+            padding: 19px 1px 1px 1px;
+        }
+        nav.main_large ul.tabs li a span {
+            padding: 19px 1px 1px 1px;
+        }
+                 
+               
+  
+}
+
+@media only screen and (min-width:600px) and (max-width:1280px) {
+    .changing_nav {
+        display: none;
+    }
+
+    nav.main_small ul.tabs li a span {
+          padding: 19px 7px 1px;
+    }
+}
+@media (min-width:320px) and (max-width:480px) {
+    nav.main_large ul.tabs li {
+        width: 25%;
+        }
+
+}
+
+@media (max-width:767px) {
+    
+    nav.main ul.tabs li
+    {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        float: left;
+        /*border-left: 1px solid #e6e7e8;*/
+        width: 116px;
+        text-align: center;
+    }
+
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+       .dashboard_new .mid-container {
+        padding-bottom:50px !important;
+    }
+        /*-- Main Navigation Icon For Ihpone Device--*/
+       nav.main_large ul.tabs li a span {
+           padding: 21px 0px 1px;
+         }
+
+       .logo_large {
+           padding:5px 0px !important;
+       }
+
+       nav.main_large ul.tabs li a span {
+           width: 40px
+       }
+
+       nav.main_large ul.tabs {
+        margin: 0px -16px 0 0;
+       }
+
+        nav.main_large ul.tabs li.home a
+        {
+            background: url(../images/nav_img_large/icon_home_sidebar.svg) no-repeat center 5px;
+            display: block;
+        }
+
+            /*nav.main_large ul.tabs li.home a:hover, nav.main_large ul.tabs li.home a.active
+            {
+                color: #fff;
+                background: url(../images/nav_img_medium/icon_home_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+             nav.main_large ul.tabs li.dashboard_home a
+        {
+            background: url(../images/nav_img_large/icon_home_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size:28px auto;
+        }
+
+            /*nav.main_large ul.tabs li.dashboard_home a:hover, nav.main_large ul.tabs li.dashboard_home a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_home_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+        nav.main_large ul.tabs li.footprint a
+        {
+            background: url(../images/nav_img_large/icon_footprint_sidebar.svg) no-repeat center 5px;
+            display: block;
+              background-size:19px auto;
+        }
+
+            /*nav.main_large ul.tabs li.footprint a:hover, nav.main_large ul.tabs li.footprint a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_footprint_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.ev a
+        {
+            background: url(../images/nav_img_large/icon_ev_sidebar.svg) no-repeat center 5px;
+            display: block;
+            background-size:28px auto;
+        }
+
+            /*nav.main_large ul.tabs li.ev a:hover, nav.main_large ul.tabs li.ev a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_ev_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.sh a
+        {
+            background: url(../images/nav_img_large/icon_smart_home_sidebar.svg) no-repeat center 5px;
+            display: block;
+            background-size:28px auto;
+        }
+
+            /*nav.main_large ul.tabs li.sh a:hover, nav.main_large ul.tabs li.sh a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_smart_home_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.nitiF a
+        {
+            background: url(../images/nav_img_large/icon_notif_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size:28px auto;
+        }
+
+
+            /*nav.main_large ul.tabs li.nitiF a:hover, nav.main_large ul.tabs li.nitiF a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_notif_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.outages a
+        {
+            background: url(../images/nav_img_large/icon_outages_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size:28px auto;
+        }
+
+            /*nav.main_large ul.tabs li.outages a:hover, nav.main_large ul.tabs li.outages a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_outage_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.connect a
+        {
+            background: url(../images/nav_img_large/icon_connectme_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size:28px auto;
+        }
+
+            /*nav.main_large ul.tabs li.connect a:hover, nav.main_large ul.tabs li.connect a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_connectme_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.service a
+        {
+            background: url(../images/nav_img_large/icon_service_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size:28px auto;
+        }
+
+           /*nav.main_large ul.tabs li.service a:hover, nav.main_large ul.tabs li.service a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_service_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.efficency a
+        {
+            background: url(../images/nav_img_large/icon_efficiency_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size:28px auto;
+        }
+
+            /*nav.main_large ul.tabs li.efficency a:hover, nav.main_large ul.tabs li.efficency a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_efficiency_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.billing a
+        {
+            background: url(../images/nav_img_large/icon_biling_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size:28px auto;
+        }
+
+            /*nav.main_large ul.tabs li.billing a:hover, nav.main_large ul.tabs li.billing a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_biling_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.cs a
+        {
+            background: url(../images/nav_img_large/icon_cs_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size:28px auto;
+        }
+
+            /*nav.main_large ul.tabs li.cs a:hover, nav.main_large ul.tabs li.cs a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_cs_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+        nav.main_large ul.tabs li.usage a
+        {
+            background: url(../images/nav_img_large/icon_usage_sidebar.svg) no-repeat center 5px;
+            display: block;
+             background-size:32px;
+        }
+
+            /*nav.main_large ul.tabs li.usage a:hover, nav.main_large ul.tabs li.usage a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_usage_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+        nav.main_large ul.tabs li.myaccount a
+        {
+            background: url(../images/nav_img_large/icon_myaccount_sidebar.svg) no-repeat center 5px;
+            display: block;
+            background-size:28px auto;
+        }
+
+            /*nav.main_large ul.tabs li.myaccount a:hover, nav.main_large ul.tabs li.myaccount a.active
+            {
+                color: #fff;
+                background: #7c7c7c url(../images/nav_img_medium/icon_myaccount_sidebar_RO.png) no-repeat center 5px;
+            }*/
+
+
+
+/*-- End Main Navigation Medium --*/
+}

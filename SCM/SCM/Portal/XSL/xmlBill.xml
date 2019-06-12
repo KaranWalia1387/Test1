@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Billing Dashboard Data-->
+<Billing>
+  <PowerBill>
+    <MeterNumber>1771</MeterNumber>
+    <CurrentMeterReading>12700.23</CurrentMeterReading>
+    <PriorMeterReading>12233.85</PriorMeterReading>
+    <PowerUsageThisPeriod>466.38 kWh</PowerUsageThisPeriod>
+    <TotalPowerCharges>$79.69</TotalPowerCharges>
+  </PowerBill>
+  <GasBill>
+    <TotalGasUsage>128.18 CCF</TotalGasUsage>
+    <TotalGasCharges>$21.58</TotalGasCharges>
+  </GasBill>
+  <SolidWasteBill>
+    <SolidResourceFee>$24.75</SolidResourceFee>
+    <SolidWasteTax>$30.00</SolidWasteTax>
+    <RecycleCharges>$35.00</RecycleCharges>
+  </SolidWasteBill>
+</Billing>

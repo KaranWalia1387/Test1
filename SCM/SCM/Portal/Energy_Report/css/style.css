@@ -1,0 +1,1113 @@
+﻿/*
+	Author: Manoj Kumar Sharma
+*/
+
+@charset "utf-8";
+
+
+
+		
+.energy_mid_box .right_content_box {
+    height:97% !important;
+}
+
+/* Inner Energy Page Css */
+
+.account_info h1 {
+     color: #006699;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 0;
+    padding: 0 0 12px;
+    border-bottom:0 !important;
+}
+
+ .tab-pane h1 {
+     color: #006699;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 0;
+    border-bottom:0 !important;
+    padding: 0 0 12px;
+}
+
+	
+.energy_mid_box_2_left {
+	width:100%;
+	float:left;
+}
+	
+.energy_mid_box-2  {
+    margin-left: 0px;
+	margin-bottom:15px;
+    padding: 0 0 24px 0px;
+    width:100%;
+	position:relative;
+	}
+	
+	.points {
+		float:right;
+		background:#f4f4f4;
+		color:#777779;
+		font-size:12px;
+		 padding:6px 10px;
+		 text-align:center;
+		 margin:8px 0 7px;
+		 border-radius:5px;
+	}
+	
+	
+.energy_mid_box_right  {
+    height:auto;
+    margin-left: 0px;
+	margin-bottom:40px;
+    padding: 0 0 15px 0px;
+    width:100%;
+	}
+	
+.energy_mid_box_right .row {
+	height:100%;
+}
+
+.inner-mid-container .row {
+	height:100%;
+}
+
+
+
+/*--  New Css ---*/
+
+
+.account_info {
+    width: 92%;
+}
+.account_summry_main ul {
+		padding:0;
+		margin:0;
+		list-style:none;
+		color:#77777b;
+		}
+		
+	.account_summry_main ul li {
+		border-bottom:1px solid #f5f5f5;
+		padding:15px 0;
+        margin:0;
+		}	
+		
+	.account_summry_main ul li p {
+		clear: both;
+    color: #777779;
+    display: inline;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    padding:1px 0 0;
+    width: 100%;	
+		}
+		
+	.noti ul li {
+		border-bottom:0 !important;
+		margin-bottom:3px;
+	}
+		
+	.account_summry_main ul li a {
+		margin:0;
+		padding:0 4px 0px 7px;
+		text-decoration:underline;
+		font-size:12px;
+		font-weight:bold;
+		color:#94d60a;
+		text-transform:uppercase;
+	}
+	.account_summry_main ul li em {
+		border: 1px solid #f84a32;
+    border-radius: 60%;
+    color: #f84a32;
+    font-style: normal;
+    padding: 1px 5px;
+	}
+		
+		
+	.account_summry_main ul li p span {
+		float:right;
+		font-size:14px;
+		}
+		
+	.account_summry_main ul li:last-child {
+		border-bottom:0px;	
+		}
+		
+	.account_summry_main ul li:last-child p span {
+		color:#777779;
+		font-size:18px;
+		}
+	
+	
+	
+@media (max-width:991px) {
+	.contact_box a {
+		display:block;
+		  width: 100%;
+		}
+	.gallons_dollars_box ul li span {
+		width:auto;
+		}
+		
+	.line_gdp {
+		 margin-right: 10px;
+	  }
+	}
+	
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/MyriadPro-Regular.otf')  format('opentype'),
+	     url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf')  format('truetype'), url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Light';
+  src: url('./fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),  url('./fonts/MyriadPro-Light.woff') format('woff'), url('./fonts/MyriadPro-Light.ttf')  format('truetype'), url('./fonts/MyriadPro-Light.svg#MyriadPro-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+	
+.account_info_main {
+		display: table;
+		width:100%;
+		color:#77777b;
+		padding-bottom: 15px;
+		}	
+	.account_info .address_left_box {
+		float:left;
+		width:32%;
+		font-weight:bold;
+		 font-size: 18px;
+		}
+		.account_info .address_right_box {
+		float:left;
+		width:68%;
+		font-weight:normal ;
+		 font-size: 18px;
+		 font-family: 'MyriadPro-Light';
+		}
+		
+		.energy_mid_box .col-xs-12, .energy_mid_box .col-md-6, .energy_mid_box .col-sm-6 {
+			padding-left:5px;
+			padding-right:5px;
+		}
+		
+		.bottom_bg {
+			background:#f4f4f4;
+			float:left;
+			width:100%;
+			margin-top:25px;
+		}
+		
+		.top_head {
+			color: #77777b;
+			display: block;
+			font-size: 18px;
+			padding: 6px 11px;
+			width:60%;
+			float:left;
+			}
+			
+			.top_head img {
+				padding-right:5px;
+    padding-top:6px;
+    vertical-align: top;
+			}
+			
+		.top_head_wter {
+			color: #77777b;
+			display: block;
+			font-size: 18px;
+			padding: 6px 11px;
+			width:98%;
+			border-bottom:1px solid #ccc;
+			float:left;
+			}
+			
+			.top_head_wter img {
+				padding-right:5px;
+    padding-top:1px;
+    vertical-align: top;
+			}
+			
+			
+			
+	.top_main_area {
+		float: left;
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    top: 2px;
+    width: 100%;
+	}
+			
+
+
+
+			
+@media (min-width:768px) and (max-width:991px) {
+	
+	.account_info {
+    width: 99%;
+}
+
+    .water_score_new_listing ul li {
+    border: 0 none;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 20px 26px 4px;
+}
+
+    .new_chart_area {
+    margin: 0;
+    padding: 0;
+    background:#f4f4f4;
+}
+
+    .new_chart_area img {
+        margin:0 auto;
+        display:block;
+    }
+		
+		.energy_mid_box_2_left {
+			float: left;
+			margin-top:0px;
+			width:100%;
+		}
+		
+		.right_chart_area {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.popup_overlay_new_audit {
+    background: rgba(54, 189, 226, 0.6) none repeat scroll 0 0;
+    height: 52px;
+    left:215px !important;
+    padding: 9px 11px;
+    position: absolute;
+    top: 104px;
+    width: 94px;
+}
+		
+		.fixed_tabs {
+			left: -1px;
+			position: absolute;
+			top: -38px;
+		}
+		
+		.nav-tabs > li {
+			float: left;
+			margin-bottom: 8px;
+			transform: rotate(0deg);
+			width: auto;
+			margin-right: 5px;
+		}
+		
+		.nav-tabs {
+    border: 0 none;
+    float: left !important;
+    margin: 6px 0 0;
+    padding: 0;
+}
+
+	.nav-tabs > li > a {
+		color: #777779;
+		display: block;
+		padding: 6px 24px;
+		position: relative;
+		transform: rotate(0deg) !important;
+	}
+	
+	
+.top_main_area {
+    border-bottom: 0 solid #e3e4e9;
+    float: right;
+    left: 560px;
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    width: 98%;
+}
+
+.energy_mid_box_right {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 92%;
+    margin-bottom: 60px;
+    margin-left: 1%;
+    padding: 0 0 25px;
+    width: 97%;
+}
+
+.inner_mid_section {
+    height: 84%;
+    margin-top: 15px;
+}
+	
+	}
+	
+@media (min-width:993px) and (max-width:1024px) {
+	
+	.energy_mid_box_2_left {
+    float: left;
+    margin-left: 1%;
+    width:100%;
+	}
+	
+	.new_chart_area > img {
+    width: 98%;
+}
+.water_score_new_listing img {
+    width: 87%;
+}
+.water_score_new_listing ul li {
+    float: left;
+    margin: 0;
+    padding: 20px 0 4px !important;
+}
+
+.water_score_new_listing p {
+    clear: both;
+    color: #777779;
+    font-size: 11px !important;
+    line-height: 17px !important;
+    margin: 0;
+    float:left;
+    padding: 0 0 1px;
+}
+.water_score_new p {
+    color: #777779;
+    font-size: 12px;
+    margin: 0;
+    padding: 5px 0 6px;
+}
+.water_score_new_listing ul li {
+    padding: 7px 0 4px !important;
+}
+
+.water_score_new b {
+    display: inline-block;
+    padding: 0 !important;
+}
+
+.points {
+    background: #f4f4f4 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #777779;
+    float: right;
+    font-size: 12px;
+    margin:8px 0 7px;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.new_chart_area {
+    margin: 0 0 10px !important;
+    padding: 0;
+}
+.water_score_new_gallon {
+    margin: 0;
+	margin-top: 0 !important;
+    padding: 0;
+    text-align: right;
+    width: 101%;
+}
+
+.popup_overlay_new_audit {
+    background: rgba(54, 189, 226, 0.6) none repeat scroll 0 0;
+    height: 52px;
+    left: 124px;
+    padding: 9px 11px;
+    position: absolute;
+    top: 104px;
+    width: 94px;
+}
+
+.right_chart_area > img {
+    width: 98%;
+}
+
+.home_section {
+    background: rgba(0, 0, 0, 0) url("../images/house_image.png") no-repeat scroll left top !important;
+    display: block;
+    float: left;
+    height: 243px;
+    margin: 20px 0 10px -20px !important;
+    padding: 0;
+    position: relative;
+    width: 333px !important;
+}
+
+.socail_media_icons ul li {
+    color: #777779;
+    float: left;
+    font-size: 10px;
+    margin: 0;
+    padding: 0 9px;
+}
+
+h1 {
+    color: #36bee3;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 16px 0 0;
+    padding: 0 0 12px;
+}
+.water_score_new_gallon ul li {
+    color: #777779;
+    float: left;
+    font-size: 10px;
+    margin: 0;
+    padding: 0px 2px 0px !important;
+}
+
+.new_chart_area {
+    margin: 0;
+    background:#f4f4f4;
+    padding: 0;
+}
+	
+	 nav.main_large ul.tabs li a {
+    background-position: center 12px !important;
+    text-indent: -9999px !important;
+}
+		nav.main_large ul.tabs li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			width: 56px !important;
+		}
+	}
+			
+@media (min-width:768px) and (max-width:992px) {
+	.logo img {
+		max-width:100%;
+		padding-top: 10px;
+	  }
+	  
+	 nav.main_large ul.tabs li {
+		width: auto !important;
+	}
+	nav.main_large ul.tabs li a span {
+    width: 40px;
+}
+nav.main_large ul.tabs li a span {
+    padding: 21px 0 1px;
+}
+	 nav.main_large ul.tabs li a {
+    background-position: center 12px !important;
+    text-indent: -9999px !important;
+}
+
+	
+	  
+	}
+	
+	
+@media (min-width:1400px) and (max-width:2424px) {
+	header {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 4px #cfcfcf;
+    margin:0px 0 0;
+    padding: 0;
+    position: static;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+.inner_mid_section {
+    margin-bottom: 50px;
+    margin-top: 12px;
+}
+.header-top {
+    background: #f4f4f4 none repeat scroll 0 0;
+    height: 24px;
+    position: static;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+	}
+	
+
+
+/* Tab Navigation */
+.nav-tabs {
+    margin: 6px 0 0;
+    padding: 0;
+    border: 0;
+	float:right;    
+}
+.nav-tabs > li > a {
+    display: block;
+    padding: 6px 24px;
+	 /*-webkit-transform: rotate(180deg);
+	 -moz-transform: rotate(180deg);
+	 -o-transform: rotate(180deg);
+	 -ms-transform: rotate(180deg);
+	 transform: rotate(180deg);*/
+	color:#777779;
+    position: relative;
+}
+
+.nav-tabs > li > a {
+    background: #e3e4e9;
+    border-radius: 0;
+	border-radius:5px 5px 0px 0px;
+	border:0;
+}
+
+.nav-tabs > li > a:hover {
+    background: #006699;
+	color:#fff !important;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover {
+    background: #006699 !important;
+	color:#fff !important;
+	outline:none;
+	border:0 !important;
+}
+
+/* Tab Content */
+.tab-pane {
+    border-radius: 0;
+    border-bottom: 1px solid #f4f4f4;
+    float: left;
+    padding: 5px 20px 25px;
+    width: 100%;
+}
+
+.water_score_new {
+	border-bottom:1px solid #f4f4f4;
+	margin:0;
+}
+
+.water_score_new span {
+	float:left;
+	text-align:left;
+	margin:0px 10px 0px 0px;
+}
+
+.water_score_new b {
+    display: inline-block;
+    padding: 5px 0 0;
+}
+
+.water_score_new p {
+	margin:0;
+	font-size:12px;
+	padding:5px 0px 16px;
+	color:#777779;
+}
+
+.water_score_new_listing {
+	margin:0;
+	padding:0;
+}
+
+.water_score_new_listing ul {
+	margin:0 0 0px;
+	list-style:none;
+	padding:0;
+}
+
+/* For IE 9 */
+@media screen and (min-width:0\0) {
+    .water_score_new_listing ul {
+	margin:0 0 40px;
+	list-style:none;
+	padding:0;
+    display:inline-block;
+        }
+    }
+
+
+.water_score_new_listing ul li {
+	margin:0;
+	float:left;
+	padding:20px 20px 4px;
+    display:block;
+    border:0;
+    width:20%;
+    text-align:center;
+}
+.water_score_new_listing ul li span {
+	margin:0 0px 0px 0px;
+	padding:0;
+	text-align:center;
+	display:block;
+	font-size:18px;
+    clear:both;
+	color:#94d60a;
+}
+
+.water_score_new_listing ul li:first-child {
+	padding-left:0;
+}
+
+.water_score_new_listing p {
+	margin:0;
+	font-size:12px;
+	padding:0px 0px 1px;
+	clear:both;
+    float:left;
+    display:block;
+	line-height:23px;
+	color:#777779;
+}
+
+#energy_title_1, #energy_title_2 , #water_title_1, #water_title_2 {
+    font-weight:bold;
+        color: #6a6b6b;
+        font-size: 12px;
+    margin-top: 1px;
+}
+
+#energy_desc_1, #energy_desc_1, #water_desc_1, #water_desc_2, #energy_desc_2 {
+    font-size:12px;
+    text-align:justify;
+    height: 39px;
+    overflow: hidden;
+    margin-top: 10px;
+    line-height:13px;
+}
+
+.use_power_box {
+        height: 271px;
+         padding: 15px 23px 0 0px !important;
+         text-align: center;
+}
+
+.water_score_new_tips_area {
+	background:#f4f4f5;
+	margin:0;
+	padding:7px;
+    min-height: 106px;
+    position:relative;
+}
+.water_score_new_tips_area p img {
+	  float: left;
+       margin: 3px 13px 2px 3px;
+    text-align: left;
+}
+
+.water_score_new_tips_area b {
+    display: inline-block;
+    padding:0px 0 4px;
+	font-size:14px;
+}
+
+.water_score_new_tips_area p {
+	margin:0;
+	font-size:10px;
+	padding:0px 0px 1px;
+	clear:both;
+	color:#777779;
+}
+
+.water_score_new_gallon {
+	margin:0;
+	padding:0;
+}
+
+.water_score_new_gallon ul {
+	margin:0;
+	list-style:none;
+	padding:0;
+}
+
+    .water_score_new_gallon ul li {
+        margin: 0;
+        float: left;
+        padding: 8px 3px 4px 10px;
+        font-size: 10px;
+        color: #777779;
+        font-weight: normal;
+        margin-right: 8px;
+        height:auto !important;
+        margin-left: 0px;
+    }
+.water_score_new_gallon > ul > li
+{
+    margin:0px !important;
+    width:55%;
+}
+.water_score_new_gallon > ul > li:last-child
+{
+    margin:0px !important;
+    width:45%;
+}
+@media (min-width:1200px) and (max-width:3500px) {
+.water_score_new_gallon {
+       position: relative;
+    bottom: -1px;
+    width: 71%;
+    float: left;
+    text-align: center;
+    padding: 0 0px 0 0;
+}
+}
+@media (min-width:992px) and (max-width:1024px) {
+     .water_score_new_gallon{
+            position: static;
+               bottom: 5px;
+                 left: 5%;
+                 padding-top:4px;
+          }
+}
+@media (min-width:768px) and (max-width:991px) {
+     .water_score_new_gallon{
+             position: absolute;
+               bottom: 5px;
+             left: 126px;
+             width:75%;
+          }
+}
+@media (min-width:300px) and (max-width:767px) {
+    .water_score_new_gallon > ul > li {
+        margin: 16px 0 0 !important;
+       width: 72% !important;
+    }
+}
+
+.water_score_new_gallon ul li img {
+    padding-right:5px;
+    /*height:14px;*/
+}
+.water_score_new_gallon ul li:first-child {
+	padding-left:0;
+}
+
+.new_chart_area {
+	margin:0px 0px 0px;
+	padding:0;
+}
+
+
+.right_text_styles p {
+	margin:0;
+	font-size:12px;
+	padding:0px 0px 1px;
+	clear:both;
+	color:#777779;
+}
+
+.right_chart_area {
+	margin:0px 0px 0px;
+	padding:0;
+}
+
+.home_section {
+    background:#f4f4f4 url("../images/house_image.png") no-repeat scroll center top;
+    display: block;
+    float: left;
+    height: 243px;
+    margin:7px auto 10px;
+    padding: 0;
+    position: relative;
+    width: 98%;
+}
+
+.popup_overlay_new_audit {
+    background: rgba(54, 189, 226, 0.6);
+    height: 52px;
+    left: 158px;
+    position: absolute;
+    top: 104px;
+    width: 94px;
+	padding: 9px 11px;
+}
+
+.popup_overlay_new_audit img {
+    margin: 0 10px 0 0;
+}
+
+.popup_overlay_new_audit p {
+	margin:0;
+	font-size:12px;
+	padding:3px 10px 4px;
+	clear:both;
+	display:block;
+	color:#fff !important;
+}
+
+
+.teat_styles p {
+	margin:0;
+	font-size:12px;
+	padding:3px 0px 4px;
+	clear:both;
+	color:#777779;
+}
+
+.teat_styles p a {
+	margin:0;
+	padding:0;
+	text-decoration:underline;
+	color:#94d60a;
+	font-weight:bold;
+}
+
+.teat_styles p a:hover {
+	text-decoration:none;
+}
+
+.teat_styles .points {
+    background: #f4f4f4 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #777779;
+    float: right;
+    font-family: "MyriadPro-Light";
+    font-size: 12px;
+    margin: 2px 0 7px;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.socail_media_icons ul {
+	margin:0;
+	list-style:none;
+	padding:0;
+}
+
+.socail_media_icons ul li {
+	margin:0;
+	float:left;
+	font-size:10px;
+	padding:1px 7px;
+	color:#777779;
+    border:0;
+	font-family: "MyriadPro-Light";
+}
+.socail_media_icons ul li:first-child {
+	padding-left:0;
+}
+
+.not_points {
+    margin-top:6px;
+}
+
+
+
+/* battery Css*/
+	
+	.wrapper-mains
+	{
+	float:left;
+	width:100%;
+	text-align:center;
+	}
+	.main-battery
+	{
+	background:url(../images/battery.png);
+	display:inline-block;
+	height:64px;
+	width:37px;
+	position:relative;
+	}
+	
+	
+.content{
+    z-index:9;
+    position:relative;
+}
+.progress {
+    background: #a8de37 none repeat scroll 0 0;
+    border: 0 solid red;
+    bottom: 2px;
+    height: 0;
+    left: 2px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    width: 89%;
+    z-index: 1;
+	border-radius:0px !important;
+}
+
+
+	.main-home
+	{
+	background:url(../images/home.png);
+	display:inline-block;
+	height:64px;
+	width:55px;
+	position:relative;
+	overflow:hidden;
+	}
+.progress2 {
+    border: 0 solid red;
+    border-radius: 0 !important;
+    bottom: 2px;
+    height: 5px;
+    left: 8px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    width: 71%;
+    z-index: 1;
+}
+.progress-img {
+    background: rgba(0, 0, 0, 0) url("../images/home2.png") no-repeat scroll 0 -1px;
+    height: 6px;
+    width: 39px;
+}
+.bg2
+{
+background-color:#006699;
+height:40px;
+width:100%;
+}
+	/* battery ends */
+
+
+    /* House css */
+
+    .houseplan
+	{
+	position:relative;
+	background:url(../images/housemap.png);
+	width:345px;
+	height:237px;
+	display:inline-block;
+	}
+	.altrng
+	{
+	position:absolute;
+	border:solid 0px red;
+	overflow:hidden;
+	cursor:pointer;
+	-webkit-transition:all 300ms ease-in-out 0s;
+	-o-transition:all 300ms ease-in-out 0s;
+	-ms-transition:all 300ms ease-in-out 0s;
+	-moz-transition:all 300ms ease-in-out 0s;
+	transition:all 300ms ease-in-out 0s;
+	}
+	.a1 {
+    height: 53px;
+    left: 71px;
+    top: 42px;
+        width: 156px;
+        text-indent:-99999px;
+        color:#fff;
+            font-size: 12px;
+   padding-top: 11px;
+	}
+	.a1:hover
+	{
+	background-color:#006699;
+	opacity:.7;
+    text-indent:0px;
+
+	}
+	/*.a2 {
+    height: 53px;
+    left: 127px;
+    top: 42px;
+    width: 100px;
+	}*/
+		/*.a2:hover
+	{
+	background-color:#006699;
+	opacity:.7;
+	}*/
+	.a3 {
+    height: 57px;
+    left: 226px;
+    top: 38px;
+    width: 76px;
+    color:#fff;
+            font-size: 12px;
+    text-indent:-99999px;
+	}
+		.a3:hover
+	{
+	background-color:#006699;
+	opacity:.7;
+     text-indent:0px;
+	}
+	.a4 {
+		height: 57px;
+		left: 62px;
+		top: 101px;
+		width: 59px;
+        color:#fff;
+            font-size: 12px;
+        text-indent:-99999px;
+	}
+		.a4:hover
+	{
+	background-color:#006699;
+	opacity:.7;
+     text-indent:0px;
+	}
+	.a5 {
+    height: 57px;
+    left: 123px;
+    top: 101px;
+    width: 106px;
+    color:#fff;
+         padding-top: 12px;
+            font-size: 12px;
+    text-indent:-99999px;
+}
+		.a5:hover
+	{
+	background-color:#006699;
+	opacity:.7;
+     text-indent:0px;
+	}
+	.a6 {
+    height: 58px;
+    left: 230px;
+    top: 100px;
+    width: 72px;
+    color:#fff;
+            font-size: 12px;
+    text-indent:-99999px;
+	}
+		.a6:hover
+	{
+	background-color:#006699;
+	opacity:.7;
+     text-indent:0px;
+	}
+	.a7 {
+    height: 58px;
+    left: 62px;
+    top: 163px;
+    width: 240px;
+    color:#fff;
+        padding-top: 13px;
+            font-size: 12px;
+    text-indent:-99999px;
+	}
+	.a7:hover
+	{
+	background-color:#006699;
+	opacity:.7;
+     text-indent:0px;
+	}
+
+    /* End House Css */
+
+
+    .compare_chart {
+        width:100%;
+        margin:0;
+        padding:0;
+    }

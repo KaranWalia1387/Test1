@@ -1,0 +1,207 @@
+
+.energy_mid_box {
+    padding-bottom:12px !important;
+}
+ 
+        .inner_uni1 {
+            height: 81% !important;
+        }
+
+        .inner_uni2 {
+            height: 80% !important;
+        }
+
+            .inner_uni2 .setting_save_box {
+                padding-top: 12px !important;
+            }
+
+        .inner_uni3 {
+            height: 78% !important;
+        }
+
+            .inner_uni3 .setting_save_box {
+                padding-top: 4px !important;
+            }
+
+        .inner_uni4 {
+            height: 75% !important;
+        }
+
+        .panel {
+            height:100%;
+        }
+
+        .panel-body {
+            height:100%;
+        }
+
+        .table-inbox-wrap {
+            float: left;
+            /*height: 96%;*/
+            width: 100%;
+        }
+
+        ul.MailListing {
+            height: 100% !important;
+        }
+        .delete_1 {
+            border: 1px solid #e7e7e7;
+    padding: 5px 10px;
+    display: inline-block;
+    background: #fcfcfc;
+    color: #afafaf;
+    border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+    }
+
+        /*@media screen and (-webkit-min-device-pixel-ratio: 0) {
+            ul.MailListing {
+                height: 384px !important;
+            }
+        }*/
+
+        @media only screen and (max-width: 480px) {
+            .right_content_box {
+                overflow: scroll !important;
+            }
+
+                .right_content_box .top-notif-inbox-section, .right_content_box .message-section {
+                    width: 500px;
+                }
+        }
+
+        @media (min-width:1500px) and (max-width:2800px) {
+            ul.MailListing {
+                height: 100% !important;
+                list-style-type: none;
+                margin: 0;
+                overflow: auto;
+                padding: 0;
+            }
+
+            .message-section {
+                float: left;
+                font-size: 12px;
+                height: 92.6%;
+                margin: 0;
+                width: 100%;
+            }
+        }
+
+        .message-written-area {
+            width: 86%;
+            float: left;
+            margin: 0px 0 0 23px;
+            border: 0px !important;
+            clear: inherit;
+        }
+
+        .DetailsMessageContainer {
+            border-bottom: 1px solid #EFEFEF;
+            width: 100%;
+            float: left;
+        }
+
+        @media (min-width:768px) and (max-width:991px) {
+            ul.MailListing {
+                height: 789px !important;
+            }
+        }
+
+        .ajax__htmleditor_editor_container {
+            background: #f3f3f3 !important;
+            border: 1px solid #f3f3f3 !important;
+        }
+
+        .ajax__htmleditor_editor_toptoolbar, .ajax__htmleditor_editor_bottomtoolbar {
+            padding: 3px !important;
+        }
+
+        @media (min-width:992px) and (max-width:1024px) {
+            ul.MailListing {
+                height: 445px !important;
+            }
+
+            .energy_mid_box .right_content_box {
+                height: 96.9%;
+            }
+        }
+     
+        /* Start pagination */
+        .Pager {
+            padding-left: 18px;
+        }
+
+            .Pager span {
+                text-align: center;
+                color: #fff;
+                display: inline-block;
+                width: 20px;
+                background-color: #006699;
+                margin-right: 3px;
+                line-height: 150%;
+                border: 1px solid #006699;
+            }
+
+            .Pager a {
+                text-align: center;
+                display: inline-block;
+                width: 20px;
+                background-color: #94D60A;
+                color: #fff;
+                border: 1px solid #93D40C;
+                margin-right: 3px;
+                line-height: 150%;
+                text-decoration: none;
+            }
+
+        .divPagesize {
+            float: left;
+            width: 84px;
+            margin-left: 18px;
+            margin-top: -2px;
+            display: none;
+        }
+
+        li > [data-wysihtml5-command="createLink"] {
+            display: none;
+        }
+        /* End pagination */
+        .compose-btn > button.btn-sm.btnDelete {
+            cursor: pointer;
+        }
+
+        .btn {
+            cursor: pointer;
+        }
+
+         .Nodatadiv {
+            color: red;
+            text-align: center;
+            padding-top: 11%;
+            font-size: 17px;
+        }
+
+         .cgreen {
+                color:#333333;
+                }
+
+        ul.wysihtml5-toolbar li a[title="Insert image"] { display: none; }
+
+       @media (min-width:1025px) and (max-width:1450px) {
+            ul.MailListing {
+                height:96% !important;
+                margin-top:-4px !important;
+                overflow:auto;
+            }
+        }
+
+       .childPanel.childPanel {
+            height:95%;
+        }
+
+
+       .toast-middle-center {
+
+           background: none!important;
+       }

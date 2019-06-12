@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Service.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_MobServiceReasons_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobServiceReasons" />
+  </wsdl:message>
+  <wsdl:message name="IService_MobServiceReasons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobServiceReasonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NetServiceReasons_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetServiceReasons" />
+  </wsdl:message>
+  <wsdl:message name="IService_NetServiceReasons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetServiceReasonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_MobServiceReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobServiceReport" />
+  </wsdl:message>
+  <wsdl:message name="IService_MobServiceReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobServiceReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NetServiceReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetServiceReport" />
+  </wsdl:message>
+  <wsdl:message name="IService_NetServiceReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetServiceReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_MobSetServiceRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobSetServiceRequest" />
+  </wsdl:message>
+  <wsdl:message name="IService_MobSetServiceRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobSetServiceRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NetSetServiceRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetSetServiceRequest" />
+  </wsdl:message>
+  <wsdl:message name="IService_NetSetServiceRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetSetServiceRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_MobAddUpdDelReasons_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobAddUpdDelReasons" />
+  </wsdl:message>
+  <wsdl:message name="IService_MobAddUpdDelReasons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobAddUpdDelReasonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NetAddUpdDelReasons_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetAddUpdDelReasons" />
+  </wsdl:message>
+  <wsdl:message name="IService_NetAddUpdDelReasons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetAddUpdDelReasonsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="MobServiceReasons">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/MobServiceReasons" message="tns:IService_MobServiceReasons_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/MobServiceReasonsResponse" message="tns:IService_MobServiceReasons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetServiceReasons">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/NetServiceReasons" message="tns:IService_NetServiceReasons_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/NetServiceReasonsResponse" message="tns:IService_NetServiceReasons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobServiceReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/MobServiceReport" message="tns:IService_MobServiceReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/MobServiceReportResponse" message="tns:IService_MobServiceReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetServiceReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/NetServiceReport" message="tns:IService_NetServiceReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/NetServiceReportResponse" message="tns:IService_NetServiceReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobSetServiceRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/MobSetServiceRequest" message="tns:IService_MobSetServiceRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/MobSetServiceRequestResponse" message="tns:IService_MobSetServiceRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetSetServiceRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/NetSetServiceRequest" message="tns:IService_NetSetServiceRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/NetSetServiceRequestResponse" message="tns:IService_NetSetServiceRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobAddUpdDelReasons">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/MobAddUpdDelReasons" message="tns:IService_MobAddUpdDelReasons_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/MobAddUpdDelReasonsResponse" message="tns:IService_MobAddUpdDelReasons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetAddUpdDelReasons">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/NetAddUpdDelReasons" message="tns:IService_NetAddUpdDelReasons_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/NetAddUpdDelReasonsResponse" message="tns:IService_NetAddUpdDelReasons_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MobServiceReasons">
+      <soap:operation soapAction="http://tempuri.org/IService/MobServiceReasons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetServiceReasons">
+      <soap:operation soapAction="http://tempuri.org/IService/NetServiceReasons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobServiceReport">
+      <soap:operation soapAction="http://tempuri.org/IService/MobServiceReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetServiceReport">
+      <soap:operation soapAction="http://tempuri.org/IService/NetServiceReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobSetServiceRequest">
+      <soap:operation soapAction="http://tempuri.org/IService/MobSetServiceRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetSetServiceRequest">
+      <soap:operation soapAction="http://tempuri.org/IService/NetSetServiceRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobAddUpdDelReasons">
+      <soap:operation soapAction="http://tempuri.org/IService/MobAddUpdDelReasons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetAddUpdDelReasons">
+      <soap:operation soapAction="http://tempuri.org/IService/NetAddUpdDelReasons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://64.58.161.201/adminservice6.0/Service.svc/SoapService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

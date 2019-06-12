@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c96a502a-010b-47fc-88cd-71bdab4aae44" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/GreenFootprint.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GreenFootprint.xsd" MetadataType="Schema" ID="91726a98-d16f-4e76-ad26-625005c8bea3" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/GreenFootprint.svc?xsd=xsd2" />
+    <MetadataFile FileName="GreenFootprint1.xsd" MetadataType="Schema" ID="550392ad-6b31-4cd3-8469-f22078aaaddc" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/GreenFootprint.svc?xsd=xsd0" />
+    <MetadataFile FileName="GreenFootprint.wsdl" MetadataType="Wsdl" ID="bc2a5fe3-41b0-43aa-9fc8-bc9b2b012efe" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/GreenFootprint.svc?wsdl" />
+    <MetadataFile FileName="GreenFootprint.disco" MetadataType="Disco" ID="be85fe4b-e4d2-4960-9176-5f6b77caa800" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/GreenFootprint.svc?disco" />
+    <MetadataFile FileName="GreenFootprint2.xsd" MetadataType="Schema" ID="72dea981-a8da-4978-95e2-cef7947ac330" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/GreenFootprint.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

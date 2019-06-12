@@ -1,0 +1,199 @@
+﻿
+        .SearchIcon {
+            background: url("../images/SearchIcon.png") no-repeat scroll left top;
+            cursor: pointer;
+            height: 28px;
+            display: inline-block;
+            margin: 0 5px 3px 0;
+            width: 27px;
+            float: left;
+        }
+
+        .TableCellHeaderSearch input[type="text"], input[type="password"], textarea {
+            padding: 5px 10px 5px;
+            border-radius: 0;
+            width: 80%;
+            border: 1px solid #d6d6d6;
+            float: left;
+            font-size: 13px;
+            font-weight: normal;
+        }
+
+        .TableCellHeaderSearch {
+            float: right;
+            padding: 0px 0px 0px;
+            width: 197px;
+            display: none;
+        }
+
+        .nav-tabs > li.active2 > a, .nav-tabs > li.active2 > a:hover {
+            background: #006699 none repeat scroll 0 0 !important;
+            border: 0 none !important;
+            color: #fff !important;
+            outline: medium none;
+        }
+
+        .top_main_area {
+            width: 200px;
+        }
+
+        @media (min-width:768px) and (max-width:991px) {
+            .inner_mid_section {
+                height: 82% !important;
+            }
+        }
+
+        @media (min-width:992px) and (max-width:1024px) {
+            nav.main_large ul.tabs li a {
+                background-position: center 50% !important;
+            }
+        }
+
+
+        .rank_listing {
+            display: inline;
+            float: right;
+            margin: 0;
+            padding: 0;
+        }
+
+            .rank_listing ul {
+                list-style: outside none none;
+                margin: 0;
+                padding: 0;
+            }
+
+                .rank_listing ul li {
+                    border: 0 none;
+                    display: block;
+                    float: left;
+                    margin: 0;
+                    padding: 0 2px;
+                }
+
+        .new_rank {
+            margin: 0;
+            padding: 0;
+        }
+
+            .new_rank b {
+                color: #808080;
+                font-size: 18px;
+                font-weight: normal;
+                padding: 10px 0;
+            }
+
+            .new_rank p {
+                border-bottom: 1px solid #ccc;
+                color: #808080;
+                font-size: 14px;
+                margin: 0;
+                padding: 5px 0 13px;
+            }
+
+        .rank_bottom_progress_bar {
+            margin: 5px 0 0;
+            padding: 0;
+        }
+
+        .glns_per_day span {
+            color: #576468;
+            font-size: 11px;
+            line-height: 23px;
+        }
+
+        .glns_per_day ul {
+            display: table;
+            list-style: outside none none;
+            margin: 0;
+            padding: 10px 0 8px 1px;
+            width: 100%;
+        }
+
+            .glns_per_day ul li {
+                border: 0 none;
+                display: table;
+                margin-bottom: 15px;
+                padding: 0;
+                width: 100%;
+            }
+
+        .glns_per_day .heading_name {
+            color: #576468;
+            float: left;
+            font-size: 13px;
+            line-height: 16px;
+            padding-right: 13px;
+            text-align: right;
+            width: 33%;
+        }
+
+        .line_gdp_gray {
+            background: #e3deda none repeat scroll 0 0;
+            display: block;
+            float: left;
+            height: 19px;
+            margin-right: 0;
+            width: 50%;
+        }
+
+        .line_gdp_blue {
+            background: #5bb9d3 none repeat scroll 0 0;
+            float: left;
+            height: 19px;
+            margin-right: 0;
+            width: 25%;
+        }
+
+        .line_gdp_green {
+            background: #98c232 none repeat scroll 0 0;
+            float: left;
+            height: 19px;
+            margin-right: 0;
+            width: 48%;
+        }
+
+        .glns_per_day .gdp_text_gray {
+            color: #7f7f7f;
+            float: left;
+            font-size: 13px;
+            line-height: 19px;
+            padding-left: 6px;
+        }
+
+        .glns_per_day .gdp_text_blue {
+            color: #5bb9d3;
+            float: left;
+            font-size: 13px;
+            line-height: 19px;
+            padding-left: 6px;
+        }
+
+        .glns_per_day .gdp_text_green {
+            color: #9ac037;
+            float: left;
+            font-size: 13px;
+            line-height: 19px;
+            padding-left: 6px;
+        }
+
+        ul.rating_box1 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+
+        .rating_box1 li {
+            float: left;
+            /* margin-left: 10px; */
+            width: auto;
+            padding: 0px !important;
+            margin: 0px 0 0 10px;
+        }
+
+
+        #chartDiv svg > rect, #chartNeighboursDiv svg > rect {
+            fill: none !important;
+        }
+    

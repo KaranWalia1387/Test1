@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Efficiency.master.cs" Inherits="CustomerPortal.Efficiency" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderhead" runat="server">
+    </asp:ContentPlaceHolder>
+     <%: System.Web.Optimization.Styles.Render("~/Content/cssEfficiencyMaster") %>
+    <%: System.Web.Optimization.Scripts.Render("~/Bundles/jsEfficiencyMaster")%>
+    
+    <script type="text/javascript">
+
+      
+        function imgError(image) {
+            image.onerror = "";
+            image.src = "images/no_img.png";
+            return true;
+        }
+        function removeHTML(text) {
+            var el = document.createElement("div");
+            el.innerHTML = text;
+            r = el.innerText = el.textContent;
+            return r;
+        }
+        function printarea1() {
+           
+            $('.textDesc').hide();
+            $('.descWithoutHtml').show();
+            $('.Nodatadiv').hide();
+            var contents = document.getElementsByClassName('efficiency_area')[0].innerHTML;
+            $('.textDesc').show();
+            $('.descWithoutHtml').hide();
+            $('.Nodatadiv').show();
+            contents = contents.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+           var frame1 = document.createElement('iframe');
+            frame1.name = "frame1";
+            frame1.style.position = "absolute";
+            frame1.style.top = "-1000000px";
+            document.body.appendChild(frame1);
+            var frameDoc = (frame1.contentWindow) ? frame1.contentWindow : (frame1.contentDocument.document) ? frame1.contentDocument.document : frame1.contentDocument;
+            frameDoc.document.open();
+            frameDoc.document.write('<html><head>');
+        
+            frameDoc.document.write('</head><body>');
+            frameDoc.document.write(contents);
+            frameDoc.document.write('</body></html>');
+            frameDoc.document.close();
+            setTimeout(function () {
+                window.frames["frame1"].focus();
+               
+                window.frames["frame1"].print();
+                document.body.removeChild(frame1);
+               
+               
+            }, 500);
+            return false;
+        }
+
+        function printarea() {
+            window.print();
+        }
+
+        $(document)
+            .on("keypress",
+                "#txtSearch",
+                function(e) {
+                    var keycode = (e.keyCode ? e.keyCode : e.which);
+                    if (keycode == 13) {
+                        e.preventDefault();
+                        return false;
+                    }
+
+
+                });
+
+        $('#txtSearch').click(function (e) {
+            e.preventDefault();
+            return false;
+        });
+    </script>
+   
+
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+
+    <section class="inner_mid_section" id="devices">
+    <div class="container inner-mid-container" ng-app="EfficiencyApp" ng-controller="EfficiencyController">
+        	<div class="energy_mid_box">
+                <h1 class="headEfficiency"> 
+                    <img src="images/icon_efficiency_sidebar.svg" style="padding-right:5px; margin-top: -3px; float: left;    width: 28px;" />
+                    <span class="head_icon_flat icon_efficiency"></span>
+                    <span globalize="ML_ENERGY_EFFICIENCY_Navigation_EnergyEffeciency" id="spnEfficiency" runat="server" clientidmode="Static"> <%= CustomerPortal.Translator.T("ML_ENERGY_EFFICIENCY_Navigation_EnergyEffeciency") %></span>
+
+                     <div  style="float: right;padding: 0px;margin-top: -7px; display: <%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencySearch)%>">
+                        <div class="TableCellHeaderSearch">             
+                            <input id="txtSearch" type="text" ng-model="searchText" placeholder="Search Keyword" title="Search Keyword"  globalize="ML_Efficiency_txtBox_SearchKeyword" maxlength="100"/>
+                            <span class="SearchIcon" id="btnSearch">&nbsp;</span>
+                        </div>
+                     </div>
+                    <img src="images/print-icon.png" style="padding-right: 7px; margin-top: -5px; float: right;display:none; cursor:pointer;" onclick="printarea();" class="printbtn" />
+                </h1>
+               	
+                 <div class="nav_left"> 
+                	<ul>
+                    	<li class="icon_rebates" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencyRebate)%>"><a href="<%=string.Format("{0}/rebates.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>" globalize="ML_Programs_Navigation_Rebates"><%= CustomerPortal.Translator.T("ML_Programs_Navigation_Rebates") %></a></li>
+                        <li class="icon_dr_programes" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencyPrograms)%>"><a href="<%=string.Format("{0}/programs.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>" globalize="ML_Programs_Navigation_Programs"><%= CustomerPortal.Translator.T("ML_Programs_Navigation_Programs") %></a></li>
+                        <li class="icon_saving_tips" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencySavingTips)%>"><a href="<%=string.Format("{0}/saving-tips.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>" globalize="ML_Programs_Navigation_Savings_Tips"><%= CustomerPortal.Translator.T("ML_Programs_Navigation_Savings_Tips") %></a></li>
+                        <li class="educational_tips" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencyEducationTips)%>"><a href="<%=string.Format("{0}/educational-tips.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>" globalize="ML_Programs_Navigation_Educational_Tips"><%= CustomerPortal.Translator.T("ML_Programs_Navigation_Educational_Tips") %></a></li> 
+                        <li class="my_applications" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencyMyApplications)%>"><a href="<%=string.Format("{0}/myapplications.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>" globalize="ML_Programs_Navigation_MyApplications"><%= CustomerPortal.Translator.T("ML_Programs_Navigation_MyApplications") %></a></li> 
+                     
+                         <li class="icon_annual_goal" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencyGoal)%>"><a href="<%=string.Format("{0}/yearly-budget.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>" globalize="ML_BILLING_Navigation_YearlyBudget"><%= CustomerPortal.Translator.T("ML_BILLING_Navigation_YearlyBudget") %></a></li>
+                    <li class="icon_efficiency_rank" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencyRank)%>"><a href="<%=string.Format("{0}/efficiency-rank.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>" globalize="ML_BILLING_Navigation_EfficiencyRank"><%= CustomerPortal.Translator.T("ML_BILLING_Navigation_EfficiencyRank") %></a></li>
+                        <% if (CustomerPortal.SessionAccessor.IsDRPrograms)
+                           { %>
+                               <li class="icon_dr_pro_icon"><a href="<%=string.Format("{0}/DRPrograms.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>" globalize="ML_Programs_Navigation_DR_Response"><%= CustomerPortal.Translator.T("ML_Programs_Navigation_DR_Response") %></a></li> 
+                        <li class="dr-up-coming-events"><a href="<%=string.Format("{0}/DRUpcoming.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>">DR Upcoming Events</a></li>
+                          <% }  %>  
+                           <% if (CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.Power, false) == false)
+                              { %>
+                        <li class="icon_energy_report" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencyHomeReport)%>"><a href="<%=string.Format("{0}/Energy_Report/Water_Report.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>"  globalize="ML_Efficiency_Lbl_MyHomeReport"><%= CustomerPortal.Translator.T("ML_Efficiency_Lbl_MyHomeReport") %></a></li>
+                          <% }  %>  
+                                   <% else { %>
+                        <li class="icon_energy_report" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencyHomeReport)%>"><a href="<%=string.Format("{0}/Energy_Report/Energy_Report.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>"  globalize="ML_Efficiency_Lbl_MyHomeReport"><%= CustomerPortal.Translator.T("ML_Efficiency_Lbl_MyHomeReport") %></a></li>
+                          <% }  %>
+                         <li class="icon_energy_audit" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencyAboutHome)%>"><a href="<%=string.Format("{0}/AboutmyHome/index.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>"  globalize="ML_AboutMyHome_Header_AboutMyHome"><%= CustomerPortal.Translator.T("ML_AboutMyHome_Header_AboutMyHome") %></a></li>
+                     
+                        <li class="low_income_icon" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencyEnergyAssistance)%>"><a href="<%=string.Format("{0}/EA/LowIncomeHome.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>" globalize="ML_Nav_EnergyAssistance"><%= CustomerPortal.Translator.T("ML_Nav_EnergyAssistance") %></a></li>
+                      
+                	    <li class="Marketplace_icon" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.EfficiencyMarketPlace)%>"><a href="<%=string.Format("{0}/MarketPlace.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>" >Market Place</a></li>
+
+                    </ul>
+                          <div class="banner_left_img">
+          
+            </div>
+            
+                </div>
+            
+                       <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+        
+    </asp:ContentPlaceHolder>
+                  
+          
+        </div>
+    </div>
+</section>
+    <!-- End Section -->
+    <span id="titletext" style="display: none"><%= CustomerPortal.Translator.T("ML_Programs_title_Programs") %></span>
+    <span  id="SearchErrMsg" style="display: none"><%= CustomerPortal.Translator.T("ML_EnergyEfficiency_ErrMsg_SearchErr") %></span>
+    <span  id="SearchNullErr" style="display: none"><%= CustomerPortal.Translator.T("ML_EnergyEfficiency_ErrMsg_SearchNullErr") %></span>
+    <span  id="titleSearch" style="display: none"><%= CustomerPortal.Translator.T("ML_Efficiency_txtBox_SearchKeyword") %></span>
+    <asp:HiddenField ID="hidAttachmentPath" runat="server" Value="" />
+
+</asp:Content>

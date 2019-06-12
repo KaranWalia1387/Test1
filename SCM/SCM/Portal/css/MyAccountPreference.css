@@ -1,0 +1,55 @@
+﻿.banner_left_img img {
+    padding: 5px 0;
+}
+
+.electric_vehicle_box .default-address-1 input[type="radio"], input[type="checkbox"] {
+    margin: 2px 0 0;
+}
+
+.inner_uni1 {
+    height: 81% !important;
+}
+
+.inner_uni2 {
+    height: 80% !important;
+}
+
+    .inner_uni2 .setting_save_box {
+        padding-top: 12px !important;
+    }
+
+.inner_uni3 {
+    height: 78% !important;
+}
+
+    .inner_uni3 .setting_save_box {
+        padding-top: 4px !important;
+    }
+
+.inner_uni4 {
+    height: 75% !important;
+}
+
+.radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
+    margin-left: 0;
+}
+
+.radio label, .checkbox label {
+    cursor: default !important;
+}
+
+@media (max-width:480px) {
+    .marketing_tbl tr td {
+        float: left;
+        width: 100% !important;
+        background: none !important;
+    }
+
+    table.marketing_tbl tr:nth-child(2n+1) {
+        background: none !important;
+    }
+
+    .mng_acc_sele {
+        line-height: 22px;
+    }
+}

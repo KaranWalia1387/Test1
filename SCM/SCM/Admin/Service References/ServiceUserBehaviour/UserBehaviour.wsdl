@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UserBehaviour" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/UserBehaviour.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/UserBehaviour.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/UserBehaviour.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUserBehaviour_MobUserBehaviourReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobUserBehaviourReport" />
+  </wsdl:message>
+  <wsdl:message name="IUserBehaviour_MobUserBehaviourReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobUserBehaviourReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserBehaviour_NetUserBehaviourReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetUserBehaviourReport" />
+  </wsdl:message>
+  <wsdl:message name="IUserBehaviour_NetUserBehaviourReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetUserBehaviourReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserBehaviour_MobUserBehaviourReportNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobUserBehaviourReportNew" />
+  </wsdl:message>
+  <wsdl:message name="IUserBehaviour_MobUserBehaviourReportNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobUserBehaviourReportNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserBehaviour_NetUserBehaviourReportNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetUserBehaviourReportNew" />
+  </wsdl:message>
+  <wsdl:message name="IUserBehaviour_NetUserBehaviourReportNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetUserBehaviourReportNewResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUserBehaviour">
+    <wsdl:operation name="MobUserBehaviourReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserBehaviour/MobUserBehaviourReport" message="tns:IUserBehaviour_MobUserBehaviourReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserBehaviour/MobUserBehaviourReportResponse" message="tns:IUserBehaviour_MobUserBehaviourReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetUserBehaviourReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserBehaviour/NetUserBehaviourReport" message="tns:IUserBehaviour_NetUserBehaviourReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserBehaviour/NetUserBehaviourReportResponse" message="tns:IUserBehaviour_NetUserBehaviourReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobUserBehaviourReportNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserBehaviour/MobUserBehaviourReportNew" message="tns:IUserBehaviour_MobUserBehaviourReportNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserBehaviour/MobUserBehaviourReportNewResponse" message="tns:IUserBehaviour_MobUserBehaviourReportNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetUserBehaviourReportNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserBehaviour/NetUserBehaviourReportNew" message="tns:IUserBehaviour_NetUserBehaviourReportNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserBehaviour/NetUserBehaviourReportNewResponse" message="tns:IUserBehaviour_NetUserBehaviourReportNew_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUserBehaviour" type="tns:IUserBehaviour">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MobUserBehaviourReport">
+      <soap:operation soapAction="http://tempuri.org/IUserBehaviour/MobUserBehaviourReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetUserBehaviourReport">
+      <soap:operation soapAction="http://tempuri.org/IUserBehaviour/NetUserBehaviourReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobUserBehaviourReportNew">
+      <soap:operation soapAction="http://tempuri.org/IUserBehaviour/MobUserBehaviourReportNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetUserBehaviourReportNew">
+      <soap:operation soapAction="http://tempuri.org/IUserBehaviour/NetUserBehaviourReportNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserBehaviour">
+    <wsdl:port name="BasicHttpBinding_IUserBehaviour" binding="tns:BasicHttpBinding_IUserBehaviour">
+      <soap:address location="http://64.58.161.201/adminservice6.0/UserBehaviour.svc/SoapService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

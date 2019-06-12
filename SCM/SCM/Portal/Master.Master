@@ -1,0 +1,702 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="CustomerPortal.Master" %>
+
+<%@ Register Src="~/UserControls/HeaderMenu.ascx" TagPrefix="uc1" TagName="HeaderMenu" %>
+<%@ Register Src="~/UserControls/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+<%--<%@ Register Src="~/UserControls/ChatControl.ascx" TagPrefix="uc1" TagName="ChatControl" %>--%>
+<%@ Register Src="LanguageDropdown.ascx" TagPrefix="uc2" TagName="LanguageDrpdwn" %>
+<%@ Register Src="~/UserControls/PasswordIndicator.ascx" TagPrefix="uc1" TagName="PasswordIndicator" %>
+<%@ Register Src="~/UserControls/UpdateUserId.ascx" TagPrefix="uc1" TagName="UpdateUserId" %>
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title></title>
+    <!-- Message for disable javascript in Browser -->
+    <noscript>
+        For full functionality of this site it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com/" target="_blank">instructions how to enable JavaScript in your web browser</a>.
+    </noscript>
+    <script
+        src="<%#string.Format("{0}/js/jquery-1.7.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <%--Added for Live functionality which is available onle in Lower version of jQuery--%>
+    <script type="text/javascript">
+        var k = jQuery.noConflict();
+
+    </script>
+    <script src="<%#string.Format("{0}/js/jquery-1.12.3.min.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <link id="navigationcss" href="<%#string.Format("{1}/css/{0}",(((CustomerPortal.SessionAccessor.LanguageCode==null ||  CustomerPortal.SessionAccessor.LanguageCode=="EN"))?"navigation.css":"navigation-spanish.css"),CustomerPortal.SessionAccessor.BaseUrl)%>" rel="stylesheet" type="text/css" />
+    <%--Removed Commercial Check which will be handled using CSS--%>
+    <script src="<%#string.Format("{0}/js/ui/jquery-ui.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <%--Before changing jquery UI version , check if system logs out self --%>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <script src="<%#string.Format("{0}/js/Translator.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <script src="<%#string.Format("{0}/js/popup.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <script src="<%#string.Format("{0}/js/common.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <script src="<%#string.Format("{0}/js/AuditInformation.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <script src="<%#string.Format("{0}/js/bootstrap-switch.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <link href="<%#string.Format("{0}/js/w2Ui/w2ui-1.4.2.min.css",CustomerPortal.SessionAccessor.BaseUrl)%>" rel="stylesheet" />
+    <script src="<%#string.Format("{0}/js/w2Ui/w2ui-1.4.2.min.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <script src="<%#string.Format("{0}/js/Validate.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <link href="<%#string.Format("{0}/css/error.css",CustomerPortal.SessionAccessor.BaseUrl)%>" rel="stylesheet" />
+    <script src="<%#string.Format("{0}/js/loader.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <link href="<%#string.Format("{0}/css/bootstrap.min.css",CustomerPortal.SessionAccessor.BaseUrl)%>" rel="stylesheet" />
+    <link id="stylecss" href="<%#string.Format("{1}/css/{0}","style-"+CustomerPortal.SessionAccessor.LanguageCode+".css",CustomerPortal.SessionAccessor.BaseUrl)%>" rel="stylesheet" type="text/css" media="all" />
+    <script src="<%#string.Format("{0}/js/bootstrap.min.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <link rel="stylesheet" href="<%#string.Format("{0}/js/js-2/jquery.ui.all.css",CustomerPortal.SessionAccessor.BaseUrl)%>" />
+    <script src="<%#string.Format("{0}/js/fancybox/jquery.fancybox.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <link href="<%#string.Format("{0}/js/fancybox/jquery.fancybox.css",CustomerPortal.SessionAccessor.BaseUrl)%>" rel="stylesheet" />
+    <script src="js/detect.js"></script>
+    <!-- This is to detect type of browser used-->
+    <script src="<%#string.Format("{0}/js/jquery.disable.autocomplete.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+
+    <link href="<%#string.Format("{0}/Toaster/toastr.css",CustomerPortal.SessionAccessor.BaseUrl)%>" rel="stylesheet" />
+    <!-- this is for toaster popup-->
+    <script src="<%#string.Format("{0}/Toaster/toastr.min.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <%--<link href="<%#string.Format("{0}/css/strength.css",CustomerPortal.SessionAccessor.BaseUrl)%>" rel="stylesheet" type="text/css" />--%>
+    <script src="<%#string.Format("{0}/js/PasswordIndicator.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <%--Logout Code Start--%>
+    <link href="<%#string.Format("{0}/css/jquery-ui.css",CustomerPortal.SessionAccessor.BaseUrl)%>" rel="stylesheet" />
+    <script src="<%#string.Format("{0}/js/ui/jquery-migrate-1.2.1.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <script src="<%#string.Format("{0}/js/store.min.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <script src="<%#string.Format("{0}/js/jquery-idleTimeout.min.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+    <%--Logout Code End--%>
+    <link rel="stylesheet" href="<%#string.Format("{0}/js/themes/base/jquery.ui.all.css",CustomerPortal.SessionAccessor.BaseUrl)%>">
+    <script src="<%#string.Format("{0}/js/ui/jquery.ui.core.js",CustomerPortal.SessionAccessor.BaseUrl)%>"></script>
+    <script src="<%#string.Format("{0}/js/ui/jquery.ui.widget.js",CustomerPortal.SessionAccessor.BaseUrl)%>"></script>
+    <script src="<%#string.Format("{0}/js/ui/jquery.ui.position.js",CustomerPortal.SessionAccessor.BaseUrl)%>"></script>
+    <script src="<%#string.Format("{0}/js/ui/jquery.ui.autocomplete.js",CustomerPortal.SessionAccessor.BaseUrl)%>"></script>
+    <script src="<%#string.Format("{0}/js/placeholder.js",CustomerPortal.SessionAccessor.BaseUrl)%>"></script>
+    <script src="<%#string.Format("{0}/js/summernote.js",CustomerPortal.SessionAccessor.BaseUrl)%>"></script>
+    <link href="<%#string.Format("{0}/css/summernote.css",CustomerPortal.SessionAccessor.BaseUrl)%>" rel="stylesheet" type="text/css" />
+    <link id="languagecss" href="<%#string.Format("{1}/css/{0}",((CustomerPortal.SessionAccessor.ModernStyleOption==true)?((CustomerPortal.SessionAccessor.LanguageCode=="ES")?"style-ES-fontstyle.css":(CustomerPortal.SessionAccessor.LanguageCode=="FR")?"style-FR-fontstyle.css":""):""),CustomerPortal.SessionAccessor.BaseUrl)%>" rel="stylesheet" type="text/css" />
+    <script src="<%#string.Format("{0}/js/Language_Dropdown.js",CustomerPortal.SessionAccessor.BaseUrl)%>" type="text/javascript"></script>
+
+    <style type="text/css">
+        /* Added by prashant */
+        .strengthdiv {
+            width: 100%;
+            float: left;
+            text-align: left;
+        }
+
+        .modal-body {
+            overflow-x:hidden !important;
+        }
+
+        /* Language drop down css */
+
+        #ddlLanguage_msdd {
+            width: auto;
+            outline: none;
+            cursor: pointer;
+        }
+
+            #ddlLanguage_msdd #ddlLanguage_title > img {
+                width: 21px;
+                padding-right: 5px;
+                margin-top: -2px;
+            }
+
+            #ddlLanguage_msdd > div {
+                font-size: 11px;
+                padding-left: 7px;
+                line-height: 17px;
+                border-radius: 4px;
+            }
+
+        #ddlLanguage_child > ul {
+            background: #fff;
+            border: 1px solid #ccc;
+            list-style: none;
+            padding-left: 0px;
+            width: 104px;
+            font-size: 12px;
+            margin-left: -8px;
+            float: left;
+            margin-top: 1px;
+        }
+
+            #ddlLanguage_child > ul li {
+                cursor: pointer;
+                border-bottom: 1px solid #ccc;
+                padding: 6px 7px 6px 7px;
+                line-height: normal;
+                width: 100%;
+                border-left: 0px !important;
+                background-image: none;
+            }
+
+                #ddlLanguage_child > ul li > img {
+                    width: 22px;
+                    padding-right: 7px;
+                    float: left;
+                }
+
+                #ddlLanguage_child > ul li:hover {
+                    background: #f9f9f9;
+                }
+
+        .filter {
+            background: #fff url("<%#CustomerPortal.SessionAccessor.BaseUrl%>/images/arrowdown.png") no-repeat scroll 95% 50%;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            margin: 0 10px 0 0;
+            overflow: hidden;
+            padding: 0;
+            width: 100%;
+        }
+
+
+        /* End Language drop down css */
+
+        .dropdown.dropdown dt a span {
+            padding: 1px 3px 1px !important;
+        }
+
+        .dropdown.dropdown dt a span {
+            font-size: 11px !important;
+        }
+
+        .dropdown img.flag.flag {
+            width: 14px;
+        }
+
+        @media (min-width:1600px) and (max-width:3500px) {
+            #habla_panel_div#habla_panel_div {
+                overflow: hidden !important;
+            }
+
+            #habla_both_div#habla_both_div {
+                position: relative !important;
+                right: -90px !important;
+                background-size: 68% !important;
+            }
+        }
+    </style>
+    <script type="text/javascript" src='<%#string.Format("{0}/js/ImageDropdown.js",CustomerPortal.SessionAccessor.BaseUrl)%>'></script>
+    <link href='<%#string.Format("{0}/css/style-EN-fontstyle.css",CustomerPortal.SessionAccessor.BaseUrl)%>' rel="stylesheet" runat="server" id="linkCSSFlat" visible="True" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript">
+        w2utils.locale('js/w2ui/locale/<%#CustomerPortal.SessionAccessor.LanguageCode%>.js');
+
+        $(window).load(function () {
+            $("#myModal_terms div.modal-body").html($("#termsconditions").val());
+            $("#myModal_privacy div.modal-body").html($("#privacypolicy").val());
+        });
+
+        $(document).ready(function () {
+            if ($('#ddlAddress option').length <= 1)
+                $('#AddressInfo').hide();
+            else
+                $('#AddressInfo').show();
+            $('#hdnLanguageCode').val('<%#CustomerPortal.SessionAccessor.LanguageCode%>');
+
+            // for disabling autofill on change password popup password fields
+            $('#txtNewPass,#txtPass,#txtConfirmPass').disableAutocomplete();
+            $('img[src*="print-icon.png"]').hide();
+            if ($('div').hasClass('modal')) {
+                $("div.modal").attr("data-backdrop", "static");
+            }
+            else {
+            }
+            //code commented for removing password indicator to be used in next release
+            $('#txtNewPass').strength({
+                strengthClass: 'strength',
+                strengthMeterClass: 'strength_meter',
+                strengthButtonClass: 'button_strength',
+                strengthButtonText: 'Show Password',
+                strengthButtonTextToggle: 'Hide Password'
+            });
+            // spanish issue
+            // for password meter attribute to be same as txtpassword refer to password meter
+            $('#txtpasswordmeter').attr('title', $('#txtNewPass').attr('title'));
+            $('#txtpasswordmeter').attr('placeholder', $('#txtNewPass').attr('placeholder'));
+
+            var chartorentation = Master.GetChartType().value;
+            $('#hdnChartOrentation').val(chartorentation);
+
+        });
+
+
+        function ValidateAllPageFieldsSingleMessageForPwd(tblid) {
+            $('#' + tblid + ' input[type=text],input[type=password],textarea').each(function () {
+                if ($(this).val().trim().length == 0)
+                    $(this).val('');
+                $(this).removeClass('errorbox');
+            });
+            var ctrlObj;
+
+
+            ctrlObj = k('#' + tblid + ' [value=][mandatory="1"],textarea[mandatory=1][value=]');
+
+            if (ctrlObj.length > 1) {
+                ctrlObj[0].focus();
+
+                if (errorCnt == 0) {
+
+                    $('#pwdError').html('Please enter all mandatory information.');
+                    errorCnt = 1;
+                }
+                $('#pwdError').fadeIn(500).delay(5000).fadeOut(1000);
+
+                if ($('#AllMandatory').text() == '') {
+                    $('#pwdError').html('Please enter all mandatory information.');
+                }
+                else {
+                    $('#pwdError').html($('#AllMandatory').text());
+                }
+                $('.w2ui-tag-body').hide();
+                for (var i = 0; i < ctrlObj.length; i++) {
+
+                    ctrlObj[i].className = "errorbox";
+                }
+
+                return false;
+            }
+            else if (ctrlObj.length == 1) {
+                if (ctrlObj[0].tagName.toLowerCase() == 'select') {
+                    error.showerror(ctrlObj[0], "Please select " + getmessage(ctrlObj[0]));
+                    return false;
+                }
+                else {
+                    if (getmessage(ctrlObj[0]) == "Mobile number") {
+                        error.showerror(ctrlObj[0], "Please enter your 10 digit mobile number");
+                        ctrlObj[0].focus();
+                        return false;
+                    }
+                    else {
+                        error.showerror(ctrlObj[0], $("#ValidErrorMsg").text() + " " + getmessage(ctrlObj[0]));
+                        ctrlObj[0].focus();
+                        return false;
+                    }
+
+                }
+            }
+            else if (ctrlObj.length == 0) {
+                return true;
+            }
+        }
+        function openfancybox(url, width, showhome) {
+            $("#hdnShowHome").val(showhome);
+            $.fancybox({
+                'width': width,
+                'height': '90%',
+                'autoScale': true,
+                'transitionIn': 'fade',
+                'transitionOut': 'fade',
+                'href': url,
+                'type': 'iframe',
+
+
+            });
+            return false;
+        }
+        $(document).ready(function () {
+            $(".setting_area_arrow").click(function () {
+                $(".setting_area").slideToggle();
+            });
+            $(".sidebar_toggle").click(function () {
+                $(".nav_left").slideToggle();
+            });
+            // add selector for textfield(show password) for enter event
+            $('#changepwdbody input[type="password"],#changepwdbody input[type="text"]').keypress(function (e) {
+                try {
+                    if (e.keyCode == 13) {
+                        $('#btnChangePassword').click();
+                        e.preventDefault();
+                    }
+                }
+                catch (e) { }
+            });
+
+            $(".changing_nav ul li a").click(function () {
+                var id = $(this).attr("id");
+                var logosize = $(this).attr("logosize");
+
+                $("#hdnnavigationClass").val(id);
+                $("#hdnlogosize").val(logosize);
+                $("#headermenu").attr("class", id);
+                $("#headerlogo").attr("class", logosize);
+                HeaderMenu.SetCookieForHeader(id, logosize);
+                setselectedfontoption();
+            });
+
+            $("#login").click(function () {
+                $("div.login-panel").toggle();
+            });
+            var result = Master.getTokentime().value;
+            if (result[0] == '1') {
+                __doPostBack('', '');
+            }
+            else {
+                setInterval(function () { __doPostBack('', ''); }, result[1]);
+            }
+            $(document).click(function (e) {
+                if (!$(e.target).is('.login, .login-panel, .login-panel *')) {
+                    $(".login-panel").hide();
+                }
+            });
+
+            $('#btnChangePassword').click(function () {
+                var txtOldPwd = $('#txtPass').val().trim();
+                var txtPwd = $('#txtNewPass').val().trim();
+                var txtConfPwd = $('#txtConfirmPass').val().trim();
+                if (ValidateAllPageFieldsSingleMessage('changepwdbody')) {
+                    //if (txtOldPwd == txtPwd) {
+                    //    error.showerror($('#txtNewPass'), $('#PwdCurrentNewError').text());//"Existing password and new password can not be same.");
+                    //    return false;
+                    //}
+                    //else if (txtPwd != txtConfPwd) {
+                 if (txtPwd != txtConfPwd) {
+                        error.showerror('#txtNewPass', '');
+                        error.showerror($('#txtConfirmPass'), $('#PwdNewConfirmError').text());
+                        return false;
+                    }
+                    //else if (ValidatePassword2(txtPwd)) {
+
+                  if (ValidatePassword2(txtPwd)) {
+                        var result = Master.ChangeUserPassword(txtOldPwd, txtPwd).value;
+                        if (result != null && result.Rows.length > 0) {
+
+                            //bug id 37381 resolved
+                            if (result.Rows[0]["STATUS"] == '1') {
+                                toastr.success(result.Rows[0]["Message"]);
+                                $('#btnclosepopup').click();
+                            }
+                            else {
+                                // toastr.error(result.Rows[0]["Message"]);
+                                //w2confirm(result.Rows[0]["Message"], function (obj) {
+                                w2alert(result.Rows[0]["Message"], 'Notification', function () {
+                                    $('#txtPass').val('');
+                                    if (result.Rows[0]["AttemptLeft"] == 0) {
+                                        window.location.href = "SignOut.aspx";
+                                    }
+                                });
+
+                                
+                            }
+                        }
+                        else {
+
+                            toastr.error("Error! Your password has not been changed. Please try again later");
+
+                            return false;
+                        }
+                    }
+                    return false;
+                }
+                else
+                    return false;
+            });
+
+            $('#btnCancel').click(function () {
+                $('#changepwdbody input[type="password"],#changepwdbody input[type="text"]').val('').removeClass('errorbox');
+                //$('div[data-meter-progress="txtNewPass"]').removeClass().attr('class', '');
+                //$('div[data-meter="txtNewPass"]').removeClass().attr('class', '').html('');
+            });
+
+
+            $('.close').click(function () {
+                $('#changepwdbody input[type="password"],#changepwdbody input[type="text"]').each(function (i, obj) {
+                    if ($(obj).hasClass('errorbox')) {
+                        $(obj).removeClass('errorbox');
+                    }
+                    $(obj).val('');
+                });
+                // added to change the class of progress meter
+                //$('div[data-meter-progress="txtNewPass"]').removeClass().attr('class', '');
+                //$('div[data-meter="txtNewPass"]').removeClass().attr('class', '').html($('').text());
+
+                if ($($('#change-pwd-divPopup span[id=errorMsg]')).css('display') != 'none') {
+                    $($('#change-pwd-divPopup span[id=errorMsg]')).css('display', 'none');
+                }
+
+            });
+
+            $('#btnclosepopup').click(function () {
+                $('#changepwdbody input[type="password"],#changepwdbody input[type="text"]').val('');
+                // added to change the class of progress meter
+                //$('div[data-meter-progress="txtNewPass"]').removeClass().attr('class', '');
+                //$('div[data-meter="txtNewPass"]').removeClass().attr('class', '').html($('').text());;
+
+                if (location.href.indexOf('BillDashboard.aspx') > 0) {
+
+                    $('#txtWater').val($('#waterPay').val());
+                    $('#txtElectric').val($('#electricPay').val());
+                    $('#txtSolid').val($('#solidPay').val());
+                    $('#txtGas').val($('#gasPay').val());
+                    if ($('#txtWater').hasClass('errorbox'))
+                        $('#txtWater').removeClass('errorbox');
+                    if ($('#txtElectric').hasClass('errorbox'))
+                        $('#txtElectric').removeClass('errorbox');
+                    if ($('#txtSolid').hasClass('errorbox'))
+                        $('#txtSolid').removeClass('errorbox');
+                    if ($('#txtGas').hasClass('errorbox'))
+                        $('#txtGas').removeClass('errorbox');
+                }
+
+            });
+
+            $('.addressDropdown').change(function () {
+                $('#hdnflag').val('1');
+            });
+
+            setselectedfontoption();
+
+        });
+        function setselectedfontoption() {
+
+            $(".changing_nav ul li a img").attr('style', '');
+            if ($("#hdnlogosize").val() == 'logo_large') {
+                $("#main_large img").attr('style', 'border:1px solid;padding:1px');
+            }
+            else {
+                $("#main img").attr('style', 'border:1px solid;padding:1px');
+            }
+        }
+
+        //Code to bind Flag to Drop Down
+        $(document).ready(function (e) {
+            $('li.dropdown a').click(function (e) {
+            $('#LanguageDrpdwn_dp_language').hide();
+
+        });
+            try {
+                ///   $("#ddlLanguage").msDropDown();
+            } catch (e) {
+                alert(e.message);
+            }
+          
+        });
+    </script>
+    <%--<uc1:ChatControl runat="server" ID="ChatControl" />--%>
+    <style type="text/css">
+        #pswd_info {
+             top: 133px !important;
+            left: 80px !important;
+        }
+         .w2ui-tag .w2ui-tag-body {
+    top: -29px;
+    left: -334px;
+}
+.w2ui-tag .w2ui-tag-body:before {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgba(60, 60, 60, 0.82);
+    margin: 2px 0 0 15px;
+    bottom: -12px;
+}
+
+        #change-pwd-divPopup .popup_area {
+            height: auto !important;
+        }
+
+        #pwdError {
+            background: rgba(60,60,60,.82);
+            color: white;
+            left: 20%;
+        }
+
+        #errorMsg {
+            float: right;
+            position: absolute;
+            top: 10px;
+            right: 9%;
+            background: rgba(60,60,60,.82);
+            color: white;
+            padding: 3px 8px;
+            box-shadow: 0px 1px 3px #ccc;
+            display: none;
+            z-index: 9999;
+        }
+
+        #ddlLanguage {
+            border: none !important;
+            width: 100%;
+        }
+
+        /*#pswd_info {
+            top: 40px !important;
+        }*/
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:HiddenField ID="hdnflag" runat="server" ClientIDMode="Static" Value="1" />
+        <asp:HiddenField ID="hdnPrePaid" runat="server" ClientIDMode="Static" Value="1" />
+        <input id="hdnCommonUrl" type="hidden" value="<%=CustomerPortal.SessionAccessor.BaseUrl%>" />
+        <asp:HiddenField runat="server" ID="hdnLanguageCode" ClientIDMode="Static"></asp:HiddenField>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="setting_area_arrow"></div>
+                        <div class="setting_area">
+                            <div class="inner-content-log">
+                                <ul>
+                                    <li>
+                                        <span style="color:#006699"><%= CustomerPortal.Translator.T(setGreeting()) %></span>
+                                        <asp:Label runat="server" ID="lblCustName" Style="padding-top: 5px; padding-right: 3px;" ToolTip="Customer Name"></asp:Label></li>
+                                    <li id="AddressInfo" runat="server" clientidmode="Static"><span style="color:#006699"><%= CustomerPortal.Translator.T("ML_Master_li_Select_Address") %></span>
+                                        <asp:DropDownList ID="ddlAddress" runat="server" OnSelectedIndexChanged="ddlAddress_SelectedIndexChanged" globalize="ML_DASHBOARD_SELECT_ADDRESS" AutoPostBack="true" Style="width: 190px;" class="addressDropdown" ToolTip="Address" ClientIDMode="Static">
+                                        </asp:DropDownList>
+                                    </li>
+                                    <li id="faqlink" style="display: <%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.FAQ)%>;">
+                                                <a href="#" class="faq_header" onclick="openfancybox('<%=string.Format("{0}/FAQ.aspx?LanguageCode="+CustomerPortal.SessionAccessor.LanguageCode+"",CustomerPortal.SessionAccessor.BaseUrl)%>','90%',true)" style="margin-left: 10px;" title="FAQs" globalize="ML_Login_Lbl_Faq"><%= CustomerPortal.Translator.T("ML_Login_Lbl_Faq") %></a>
+                                            </li>
+                                    <li>
+
+                                        <uc2:LanguageDrpdwn runat="server" ID="LanguageDrpdwn" />
+                                    </li>
+                                    <li id="helplink" style="display: <%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.Help)%>;">
+                                        <a href="#" onclick="openfancybox('<%=string.Format("{0}/help_html/index.html",CustomerPortal.SessionAccessor.BaseUrl)%>','90%',true)" style="margin-left: 10px;" title="Help"><%= CustomerPortal.Translator.T("ML_SideMenu_Help") %></a>
+                                    </li>
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <span style="height: 40px;">
+                                            <%--  <img src="images/profile-icon.png" style="margin-top: -1px;" /></span>--%>
+                                            <img src='<%=string.Format("{0}/images/profile-icon.png",CustomerPortal.SessionAccessor.BaseUrl)%>' style="margin-top: -1px;" /></span>
+                                    </a>
+                                        <ul class="dropdown-menu">
+                                            <div class="arrow_bdr"></div>
+                                            <li>
+                                                <asp:LinkButton ID="lnkbtnSettings" runat="server" class="setting_header" OnClick="btnSetting_Click" ToolTip="Settings" globalize="ML_Master_lnkbtn_Settings"><%= CustomerPortal.Translator.T("ML_Master_lnkbtn_Settings") %></asp:LinkButton>
+                                            </li>
+                                            
+                                            <li>
+                                                <asp:LinkButton data-target="#change-pwd-divPopup" class="chang_pwd_header" data-toggle="modal" runat="server" ClientIDMode="Static"><%= CustomerPortal.Translator.T("ML_SideMenu_Change_Password") %> </asp:LinkButton>
+                                            </li>
+                                               <li>
+                                                <asp:LinkButton data-target="#change-userid-divPopup" class="chang_uid_header" data-toggle="modal" runat="server" ClientIDMode="Static"><%= CustomerPortal.Translator.T("ML_Master_lbl_ChangeUsrID") %> </asp:LinkButton>
+                                            </li>
+                                            <li>
+                                                <span title="Sign Out" onclick="$.fn.idleTimeout().logout();" class="logout_header" style="font-size: 12px; cursor: pointer;" globalize="ML_SideMenu_LogOut"><%= CustomerPortal.Translator.T("ML_SideMenu_LogOut") %></span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <uc1:HeaderMenu runat="server" ID="HeaderMenu" />
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <uc1:Footer runat="server" ID="Footer" />
+        <asp:HiddenField runat="server" ID="hdnShowHome" ClientIDMode="Static"></asp:HiddenField>
+        <asp:HiddenField ID="hdnAttachmentPath" runat="server" ClientIDMode="Static" />
+        <asp:HiddenField ID="hdnChartOrentation" runat="server" ClientIDMode="Static" />
+        <asp:HiddenField ID="hdnUsage" runat="server" ClientIDMode="Static" />
+        <asp:HiddenField ID="hdOutageModuleEnabled" runat="server" ClientIDMode="Static" />
+        <asp:HiddenField ID="hdnWaterAllocation" runat="server" ClientIDMode="Static" />
+        <asp:HiddenField ID="hdnFileExtension" runat="server" ClientIDMode="Static" />
+    </form>
+</body>
+
+<div class="modal fade" id="change-pwd-divPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog popup_area">
+        <div class="modal-content" id="changePwdPopup">
+            <div class="modal-header">
+                <button type="button" id="btnclosepopup" class="close " data-dismiss="modal">
+                    <img src="images/cross-icon.png" /></button>
+                <h4 class="modal-title-changepwd" id="myModalLabel"><%= CustomerPortal.Translator.T("ML_SideMenu_Change_Password") %></h4>
+                <span id="pwdError"></span>
+            </div>
+            <div class="modal-body" id="changepwdbody">
+                <div class="popup_area_home">
+                    <div class="popup_left_content_area_home"><%= CustomerPortal.Translator.T("ML_Master_div_Existing_Password") %>: </div>
+                    <input type="password" style="display: none" />
+                    <div class="popup_right_content_area_home">
+                        <input type="password" id="txtPass" maxlength="16" mandatory="1" title="Existing Password" globalize="ML_CHANGEPWDPOPUP_EXPWD" autocomplete="off" />
+                    </div>
+
+                    <div style="clear: both;"></div>
+
+
+                    <div class="popup_left_content_area_home"><%= CustomerPortal.Translator.T("ML_PasswordReset_Lbl_NewPass") %>: </div>
+                    <div class="popup_right_content_area_home" style="position: relative;">
+                        <input id="txtNewPass" type="password" maxlength="16" mandatory="1" title="New Password" globalize="ML_CHANGEPWDPOPUP_NEWPWD" autocomplete="off" />
+                        
+                    </div>
+
+                    <div style="clear: both;"></div>
+
+                    <div class="popup_left_content_area_home"><%= CustomerPortal.Translator.T("ML_Register_Lbl_ConfrmPasswrd") %>:  </div>
+                    <div class="popup_right_content_area_home">
+                        <input id="txtConfirmPass" type="password" maxlength="16" mandatory="1" title="Confirm Password" globalize="ML_CHANGEPWDPOPUP_CONFIRMPWD" autocomplete="off" />
+                    </div>
+
+                    <div style="clear: both;"></div>
+
+                </div>
+                <div class="bottom_area_home">
+                    <input id="btnChangePassword" type="button" style="margin-bottom:0;" class="submit-button" value='<%# CustomerPortal.Translator.TT_ProductName("ML_Master_btn_Submit") %>' />
+                    <input id="btnCancel" type="reset" class="cancel-button" style="margin-bottom:0;" value='<%# CustomerPortal.Translator.TT_ProductName("ML_Master_btn_Clear") %>' />
+
+                </div>
+            </div>
+
+            <uc1:PasswordIndicator runat="server" ID="PasswordIndicator" />
+
+        </div>
+    </div>
+    
+</div>
+<uc1:UpdateUserId runat="server" id="UpdateUserId" />
+<div id="page_loader" class="loader-none">
+</div>
+<span globalize="ML_Validate_Msg" id="ValidErrorMsg" style="display: none"><%= CustomerPortal.Translator.T("ML_Validate_Msg") %></span>
+<span globalize="ML_service_request_ErrMsg_PlEnter" id="PleaseEnter" style="display: none"><%= CustomerPortal.Translator.T("ML_service_request_ErrMsg_PlEnter") %></span>
+<span globalize="ML_AddUpdatePayment_Span_Msg_EnterAllMandInfo" id="AllErrMsg" style="display: none"><%= CustomerPortal.Translator.T("ML_AddUpdatePayment_Span_Msg_EnterAllMandInfo") %></span>
+<span globalize="ML_LoginSupport_lbl_PwdDoNotMatch" id="PwdNewConfirmError" style="display: none"><%= CustomerPortal.Translator.T("ML_LoginSupport_lbl_PwdDoNotMatch") %></span>
+<span globalize="ML_LoginSupport_lbl_CurrentNewNotMatch" id="PwdCurrentNewError" style="display: none"><%= CustomerPortal.Translator.T("ML_LoginSupport_lbl_CurrentNewNotMatch") %></span>
+<span id="lblCompareNoData" style="display: none" globalize="ML_Dashboard_Lbl_NoCompareData"><%= CustomerPortal.Translator.T("ML_Dashboard_Lbl_NoCompareData") %></span>
+<span id="lblUsageNoData" style="display: none" globalize="ML_Dashboard_Lbl_NoUsageData"><%= CustomerPortal.Translator.T("ML_Dashboard_Lbl_NoUsageData") %></span>
+<span globalize="ML_Error_Msg_AlphabetOnly" id="ML_Error_Msg_AlphabetOnly" style="display: none"><%= CustomerPortal.Translator.T("ML_Error_Msg_AlphabetOnly") %></span>
+<span globalize="ML_toastr_confirm_btn" id="ML_toastr_confirm_btn" style="display: none"><%= CustomerPortal.Translator.T("ML_toastr_confirm_btn") %></span>
+<span globalize="ML_Msg_PasswordCheck_Reasonable" id="ML_Msg_PasswordCheck_Reasonable" style="display: none"><%= CustomerPortal.Translator.T("ML_Msg_PasswordCheck_Reasonable") %> </span>
+<span globalize="ML_Msg_PasswordCheck_Strong" id="ML_Msg_PasswordCheck_Strong" style="display: none"><%= CustomerPortal.Translator.T("ML_Msg_PasswordCheck_Strong") %> </span>
+<span globalize="ML_Msg_PasswordCheck_VeryStrong" id="ML_Msg_PasswordCheck_VeryStrong" style="display: none"><%= CustomerPortal.Translator.T("ML_Msg_PasswordCheck_VeryStrong") %> </span>
+<span globalize="ML_MyAccount_PayemntInfo_InvalidPassword" id="ML_MyAccount_PayemntInfo_InvalidPassword" style="display: none"><%= CustomerPortal.Translator.T("ML_MyAccount_PayemntInfo_InvalidPassword") %></span>
+<span globalize="ML_passwordmeter_lbl_show" id="ML_passwordmeter_lbl_show" style="display: none"><%= CustomerPortal.Translator.T("ML_passwordmeter_lbl_show") %></span>
+<span globalize="ML_passwordmeter_lbl_hide" id="ML_passwordmeter_lbl_hide" style="display: none"><%= CustomerPortal.Translator.T("ML_passwordmeter_lbl_hide") %></span>
+<span globalize="ML_Registration_Span_ErrMsg_Valid-Password" id="ML_Registration_Span_ErrMsg_Valid-Password" style="display: none"><%= CustomerPortal.Translator.T("ML_Registration_Span_ErrMsg_Valid-Password") %></span>
+<span globalize="ML_Err_ValidUsrID" id="ML_Err_ValidUsrID" style="display: none"><%= CustomerPortal.Translator.T("ML_Err_ValidUsrID") %></span>
+<span globalize="ML_Msg_ServiceAccountZeroNotAllowed" id="ML_Msg_ServiceAccountZeroNotAllowed" style="display: none"><%= CustomerPortal.Translator.T("ML_Msg_ServiceAccountZeroNotAllowed") %></span>
+
+    
+<script type="text/javascript">
+
+    var sessionTimeout = '<%= Session.Timeout %>';
+    var seconds = sessionTimeout * 60;
+    seconds = seconds - 35;
+    $(document).ready(function () {
+        $(document).idleTimeout({
+            redirectUrl: '<%=CustomerPortal.SessionAccessor.BaseUrl%>' + '/signout.aspx', // redirect to this url 
+            idleTimeLimit: seconds,
+            activityEvents: 'click keypress scroll wheel mousewheel', // separate each event with a space 
+            dialogDisplayLimit: 30, // Time to display the warning dialog before logout (and optional callback) in seconds 
+            sessionKeepAliveTimer: false // Set to false to disable pings. 
+        });
+
+        $('.ui-button-text').click(function () {
+            window.location.reload();
+        })
+    });
+
+</script>
+</html>

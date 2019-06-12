@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="UserManagement.master.cs" Inherits="AdminPanel.UserManagement" %>
+
+<%@ Import Namespace="AdminPanel" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <div class="left-side">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <ul class="tabs sidebar-menu">
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.UserManagementReport, StringComparer.InvariantCultureIgnoreCase))
+                   { %><li class="sidebar_userreport"><a href="Customer.aspx">Customers</a></li>
+                <% }
+                   if (SessionAccessor.UserRightList.Contains(UserRights.UserManagementUserCreate, StringComparer.InvariantCultureIgnoreCase))
+                   { %><li class="sidebar_adduser" style="display: none"><a href="User.aspx">Users</a></li>
+                <% }
+                   if (SessionAccessor.UserRightList.Contains(UserRights.UserManagementReport, StringComparer.InvariantCultureIgnoreCase))
+                   { %><li class="sidebar_ipinfo"><a href="Ipinfo.aspx" style="display: block">Locked Customers</a></li>
+                <% }
+
+                   if (SessionAccessor.UserRightList.Contains(UserRights.UserManagementReport, StringComparer.InvariantCultureIgnoreCase))
+                   { %><li class="sidebar_blockedipinfo"><a href="BlockedIP.aspx" style="display: block">Blocked IP</a></li>
+                <% }
+                   if (SessionAccessor.UserRightList.Contains(UserRights.UserManagementReport, StringComparer.InvariantCultureIgnoreCase))
+                   { %><li class="sidebar_blockedAccountinfo"><a href="BlockedAccountReport.aspx" style="display: block">Blocked Account</a></li>
+                <% }
+
+                   if (SessionAccessor.UserRightList.Contains(UserRights.UserManagementReport, StringComparer.InvariantCultureIgnoreCase))
+                   { %>
+                <% }%>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </div>
+
+    <div class="right-side">
+        <a href="javascript:void(0);" id="button-sidebar" class="button-sidebar ir"></a>
+        <div class="inner-right-section">
+           <%-- <asp:ScriptManager ID="ScriptManager" runat="server">
+    </asp:ScriptManager>--%>
+            <div class="right-content-area">
+
+                <asp:ContentPlaceHolder ID="rightpanel" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- END right-content-area -->
+        </div>
+    </div>
+
+    <script src="../js/highchart_js/highcharts.js"></script>
+    <script src="../js/highchart_js/common-chart.js"></script>
+    <script src="../js/highchart_js/highcharts-3d.js"></script>
+    <script src="../js/highchart_js/highcharts-more.js"></script>
+    <script src="//code.highcharts.com/modules/drilldown.js"></script>
+
+    <script type="text/javascript">
+        $(".csr_header").addClass('active');
+    </script>
+</asp:Content>

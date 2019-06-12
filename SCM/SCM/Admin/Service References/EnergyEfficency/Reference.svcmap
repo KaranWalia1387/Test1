@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6981aa40-9716-4b1a-8ec6-1ce80aad3166" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/EnergyEfficency.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EnergyEfficency.xsd" MetadataType="Schema" ID="c872fb07-2f4f-4201-967a-0f8e7fab79c1" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/EnergyEfficency.svc?xsd=xsd2" />
+    <MetadataFile FileName="EnergyEfficency.disco" MetadataType="Disco" ID="dc891c21-a0ba-4e8a-921e-bf94d7378804" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/EnergyEfficency.svc?disco" />
+    <MetadataFile FileName="EnergyEfficency.wsdl" MetadataType="Wsdl" ID="d2eb06e3-891a-46c3-b574-642b240bb07e" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/EnergyEfficency.svc?wsdl" />
+    <MetadataFile FileName="EnergyEfficency1.xsd" MetadataType="Schema" ID="4590ca32-9366-4e58-9bd4-64a2eeebf65d" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/EnergyEfficency.svc?xsd=xsd0" />
+    <MetadataFile FileName="EnergyEfficency2.xsd" MetadataType="Schema" ID="a961c9ab-49c5-4846-aac2-75d4a6213989" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/EnergyEfficency.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

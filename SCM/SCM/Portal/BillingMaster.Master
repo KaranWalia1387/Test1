@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="BillingMaster.master.cs" Inherits="CustomerPortal.BillingMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <%: System.Web.Optimization.Styles.Render("~/Content/cssBillingMaster") %>
+    <%: System.Web.Optimization.Scripts.Render("~/Bundles/jsBillingMaster")%>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style type="text/css">.text_area_bill {width: 96%;    height: 200px;margin-bottom:15px;    border-radius: 5px;} .popup_area .popup_area_home .popup_right_content_area_home input[type="text"].inpt_width_align{width:96% !important;}</style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#billQuery").click(function () {    
+                $("#billQuery").addClass("active");                
+            });
+            $("#billQuery_contact #btnclosepopup").click(function () {
+                
+                $("#billQuery").removeClass("active");
+            });
+            $("#billQuery_contact .submit-button").click(function () {
+                $("#billQuery").removeClass("active");
+            });
+
+        });
+        </script>
+    <style type="text/css">
+        #billQuery_contact{
+                z-index: 9999999;
+        }
+         #errorMsg { 
+            right: 7px !important;
+            top:38px !important
+        }
+    </style>
+
+    <section class="inner_mid_section" id="devices">
+    <div class="container inner-mid-container"> 
+    <div class="energy_mid_box">
+            <h1><img src="images/icon_biling_sidebar.svg" style="padding-right:7px; margin-top: -1px; float: left;" />
+                 <span class="head_icon_flat icon_billing"></span>
+                <span globalize="ML_Title_Billing"><%= CustomerPortal.Translator.T("ML_Title_Billing") %></span>
+                <img src="images/print-icon.png" style="padding-right: 7px; margin-top: -1px; float: right; display:none" onclick="printarea();" id="PrintIcon" />
+
+                 <div style="float:right;font-size: 13px;margin-top: -4px;font-weight: normal;visibility:hidden" runat="server" id="ExcelDiv" clientidmode="Static">
+                     <asp:ImageButton ID="btnExporttoExcel" style="float:left;" runat="server" ImageUrl="~/images/table-export.svg" ClientIDMode="Static" OnClick="lnkExporttoExcel_Click"/>
+                     <asp:LinkButton ID="lnkExporttoExcel" runat="server" globalize="ML_POWERUSAGE_LBL_ExporttoExcel" Text="Export to Excel" ClientIDMode="Static" OnClick="lnkExporttoExcel_Click" Style="text-decoration: none !important;float:left;padding:4px 10px 0 9px; color: #4a7eb6 !important;"><%= CustomerPortal.Translator.T("ML_POWERUSAGE_LBL_ExporttoExcel") %></asp:LinkButton>
+                </div>
+            </h1>
+        <div class="sidebar_toggle">Sidebar Navigation</div>   
+         <div class="nav_left">
+                <ul runat="server" id="billList" >
+                    <li class="icon_utility_bill active" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.BillingUtilityBill,true,"")%>"><a href="BillDashboard.aspx" globalize="ML_BILLING_Navigation_BillDashboard"><%= CustomerPortal.Translator.T("ML_BILLING_Navigation_BillDashboard") %></a></li>
+                         <% if (CustomerPortal.SessionAccessor.PrepaidPayment != "Prepaid") {%>
+                            <%if (CustomerPortal.SessionAccessor.PaymentMode == 1)
+                              { %>
+                                   <li class="recurring_bill" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.BillingRecurringBill)%>"><a href="kubra/recurringpayment.aspx" globalize="ML_Billing_RecurringBill_Title"><%= CustomerPortal.Translator.T("ML_Billing_RecurringBill_Title") %></a></li> 
+                             <% }
+                              else
+                              {%>
+                                 <li class="recurring_bill" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.BillingRecurringBill)%>" ><a href="recurringpayment.aspx" globalize="ML_Billing_RecurringBill_Title"><%= CustomerPortal.Translator.T("ML_Billing_RecurringBill_Title") %></a></li>
+                             <% }
+                             %>
+                     <%} %>
+                    <li class="icon_history" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.BillingHistory,true,"") %>"><a href="BillingHistory.aspx" globalize="ML_BILLING_Navigation_BillingHistory"><%= CustomerPortal.Translator.T("ML_BILLING_Navigation_BillingHistory") %></a></li>
+                    <% if (CustomerPortal.SessionAccessor.PrepaidPayment != "Prepaid") {%>
+                    <li id="budgetBill" class="icon_budget_bill"  style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.BillingBudgetMyBill,true,"")%>"><a href="BudgetBill.aspx" globalize="ML_BILLING_Navigation_BudgetBill"><%= CustomerPortal.Translator.T("ML_BILLING_Navigation_BudgetBill") %></a></li>
+                    <%} %>
+                    <li id="billQuery" class="icon_dispute_bill" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.BillingBillingQueries,true,"") %>"><a href="#billQuery_contact" data-target="#billQuery_contact" data-toggle="modal"  globalize="ML_BILLING_Navigation_ConnectMe"><%= CustomerPortal.Translator.T("ML_BILLING_Navigation_ConnectMe") %></a><%--<a href="connect-me.aspx?pid=b" globalize="ML_BILLING_Navigation_ConnectMe">Billing Queries</a>--%></li>
+                     <li class="icon_payment_location" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.BillingPaymentLocation,true,"") %>"><a href="PaymentLocationsMap.aspx" globalize="ML_BILLING_Navigation_PaymentLocationsMap" ><%= CustomerPortal.Translator.T("ML_BILLING_Navigation_PaymentLocationsMap") %></a></li>
+                         <% if (CustomerPortal.SessionAccessor.PrepaidPayment != "Prepaid") {%>
+                    <li class="icon_rate_analysis"  style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.BillingRateAnalysis) %>"><a href="RateAnalysis.aspx"  globalize="ML_Billing_lbl_RateAnalysis" ><%= CustomerPortal.Translator.T("ML_Billing_lbl_RateAnalysis") %></a></li>
+                    
+                     <li class="icon_label_pay" style="display:<%=(CustomerPortal.SessionAccessor.PrepaidPayment!="Prepaid"?(CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.BillingLevelPay)):"none")%>"><a href="LevelPlan.aspx"  globalize="ML_LevelPlay_Heading" ><%= CustomerPortal.Translator.T("ML_LevelPlay_Heading") %></a></li>
+                 <%} %>
+                </ul>
+                 <div class="banner_left_img">
+                    <a href=""> 
+                         <img id="IDBannerBilling" clientidmode="Static" alt="" src=""  onclick="return BannerClick(this.id);" /></a>
+                </div>
+              </div>
+       <div class="right_content_box" style="position:relative;">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+        
+    </asp:ContentPlaceHolder>
+           </div>
+        </div>
+    </div>
+    </section>
+
+    <div class="modal fade" id="billQuery_contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog popup_area">
+        <div class="modal-content" id="BillQueryPopup">
+            <div class="modal-header">
+                <button type="button" id="btndclosepopup" class="close " onclick="resetForm();" data-dismiss="modal">
+
+                    <img src="images/cross-icon.png" /></button>
+                <h4 class="modal-title-changepwd" ><%= CustomerPortal.Translator.T("ML_BILLING_Navigation_ConnectMe") %></h4>
+                <span id="pwdError"></span>
+            </div>
+            <div class="modal-body" >
+                <div class="popup_area_home" id="popup_area">
+                    <div class="popup_left_content_area_home"><%= CustomerPortal.Translator.T("ML_SrvcRqust_Date") %> </div>
+                  
+                    <div class="popup_right_content_area_home">
+                        <%--<asp:Label ID="MyDateLabelId" ClientIDMode="Static" runat="server" Text='<%# System.DateTime.Now.ToString("MM/dd/yyyy") %>'></asp:Label>--%>
+                        <asp:Label ID="MyDateLabelId" ClientIDMode="Static" runat="server" ></asp:Label>
+                    </div>
+
+                    <div style="clear: both;"></div>
+
+
+                    <div class="popup_left_content_area_home"><%= CustomerPortal.Translator.T("ML_ConnectMe_TxtSubject") %> </div>
+                    <div class="popup_right_content_area_home">
+                        <%--<input id="txtSubject" ClientIDMode="Static" globalize="ML_BILLING_Navigation_ConnectMe" value="<%= CustomerPortal.Translator.T("ML_BILLING_Navigation_ConnectMe") %>" maxlength="50" type="text" title="Subject" mandatory="1" placeholder="Subject" class="inpt_width_align" />--%>
+                        <input id="txtSubject" ClientIDMode="Static" globalize="ML_BILLING_Navigation_ConnectMe"  maxlength="50" type="text" title="Subject" mandatory="1" placeholder="" class="inpt_width_align" />
+
+                      
+                    </div>
+
+                    <div style="clear: both;"></div>
+
+                    <div class="popup_left_content_area_home"><%= CustomerPortal.Translator.T("ML_CONNECTME_Lbl_Comments") %> </div>
+                    <div class="popup_right_content_area_home">
+                        <textarea id="txtComment"  class="text_area_bill" Rows="7" ClientIDMode="Static" maxlength="500" globalize="ML_ConnectMe_TxtComments"  title="Comments" mandatory="1" placeholder="Up to 500 characters"></textarea>
+                       
+                    </div>
+
+                    <div style="clear: both;"></div>
+
+                    
+                    <div class="popup_left_content_area_home"><%= CustomerPortal.Translator.T("ML_CONNECTME_Lbl_AddAttach") %></div>
+                    <div class="popup_right_content_area_home">
+                      <p>
+                            <span class="submit-button btn btn-primary btn-file ieBtn"  >
+                              <%= CustomerPortal.Translator.T("ML_SrvcRqust_ChooseF") %> 
+                            <asp:FileUpload ID="flupload" ClientIDMode="Static"  runat="server" globalize="ML_SrvcRqust_i_NoFile" onchange="File_OnChange(this)" Style="float: left; width: 230px;" />
+
+                            </span><i style="width: 162px;display: inline-block;overflow: hidden;text-overflow: ellipsis;padding-top: 6px;" id="nofile" globalize="ML_SrvcRqust_i_NoFile"><%= CustomerPortal.Translator.T("ML_CONNECTME_txtbx_NoAttachment") %> </i>
+                            <img id="btnRemoveFile" alt="Remove" src="images/notification_icon/Payment_DeleteIcon.png"
+                                onclick="return removeFile();" style="display:none;vertical-align: top;padding-top: 8px;" />
+                        </p>
+                    </div>
+
+                    <div style="clear: both;"></div>
+
+                </div>
+                <div class="bottom_area_home">
+                   <%-- <input id="btnSubmit" type="button" globalize="ML_Master_btn_Submit"  class="submit-button" value='<%# CustomerPortal.Translator.T("ML_Master_btn_Submit") %>' />--%>
+
+                      <asp:Button globalize="ML_Master_btn_Submit" CssClass="submit-button" ID="btnSubmit" runat="server" Text='<%# CustomerPortal.Translator.T("ML_Master_btn_Submit") %>'  ClientIDMode="Static"
+                 OnClientClick="return false;" />
+                   <%-- <input id="btnChangePassword" type="button" class="submit-button" value='<%# CustomerPortal.Translator.T("ML_Master_btn_Submit") %>' />
+                    <input id="btnCancel" type="reset" class="cancel-button" value='<%# CustomerPortal.Translator.T("ML_Master_btn_Clear") %>' />--%>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <span  id="IDSubject" style="display: none"><%= CustomerPortal.Translator.TT_ProductName("ML_ConnectMe_Span_ErrMsg_Subject") %></span>
+    <span  id="IDComment" style="display: none"><%= CustomerPortal.Translator.TT_ProductName("ML_SERVICES_Txt_EnterComment") %></span>
+<span  id="IDCommentFailed" style="display: none"><%= CustomerPortal.Translator.TT_ProductName("ML_Connectme_ErrMsg_Comment_Failed") %></span>
+<span  id="IDFileFailed" style="display: none"><%= CustomerPortal.Translator.TT_ProductName("ML_Connectme_ErrMsg_FileFailed") %></span>
+</asp:Content>
+

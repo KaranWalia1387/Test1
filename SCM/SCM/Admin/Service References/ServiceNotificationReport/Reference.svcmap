@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0adad66e-19cf-4b2a-9eee-fd0b28516e1f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/Notifications.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Notifications.wsdl" MetadataType="Wsdl" ID="1990631c-4657-4450-a1e8-df9ffa5a4306" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Notifications.svc?wsdl" />
+    <MetadataFile FileName="Notifications.xsd" MetadataType="Schema" ID="ed6fde27-708c-474b-b93b-02902b54fb3d" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Notifications.svc?xsd=xsd0" />
+    <MetadataFile FileName="Notifications1.xsd" MetadataType="Schema" ID="81734ef5-5914-4b99-9f7f-61b7d04aedb0" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Notifications.svc?xsd=xsd2" />
+    <MetadataFile FileName="Notifications.disco" MetadataType="Disco" ID="9573b5ea-4bc9-46f4-95d1-210c9dfd6e01" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Notifications.svc?disco" />
+    <MetadataFile FileName="Notifications2.xsd" MetadataType="Schema" ID="863e0a18-aaaf-490e-aef7-42c6666a0b25" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Notifications.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,306 @@
+﻿/*
+	Author: Manoj Kumar Sharma
+*/
+
+@charset "utf-8";
+
+@import url('../css/scm_font_icon.css');
+@import url('../css/navigation-font.css');
+
+
+html, body {
+    font-family: 'merriweather_sansregular', sans-serif !important;
+    font-size: 13px;
+    color: #53565a;
+    background-color: #f4f4f4 !important;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweather_sansbold';
+    src: url('../fonts/merriweathersans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-bold-webfont.woff') format('woff'),
+         url('../fonts/merriweathersans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/merriweathersans-bold-webfont.svg#merriweather_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'merriweather_sansbold_italic';
+    src: url('../fonts/merriweathersans-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/merriweathersans-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/merriweathersans-bolditalic-webfont.svg#merriweather_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweather_sansextrabold';
+    src: url('../fonts/merriweathersans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/merriweathersans-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/merriweathersans-extrabold-webfont.svg#merriweather_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweather_sansXBdIt';
+    src: url('../fonts/merriweathersans-extrabolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-extrabolditalic-webfont.woff') format('woff'),
+         url('../fonts/merriweathersans-extrabolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/merriweathersans-extrabolditalic-webfont.svg#merriweather_sansXBdIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweather_sansitalic';
+    src: url('../fonts/merriweathersans-italic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-italic-webfont.woff') format('woff'),
+         url('../fonts/merriweathersans-italic-webfont.ttf') format('truetype'),
+         url('../fonts/merriweathersans-italic-webfont.svg#merriweather_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweather_sanslight';
+    src: url('../fonts/merriweathersans-light-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-light-webfont.woff') format('woff'),
+         url('../fonts/merriweathersans-light-webfont.ttf') format('truetype'),
+         url('../fonts/merriweathersans-light-webfont.svg#merriweather_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweather_sanslight_italic';
+    src: url('../fonts/merriweathersans-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/merriweathersans-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/merriweathersans-lightitalic-webfont.svg#merriweather_sanslight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweather_sansregular';
+    src: url('../fonts/merriweathersans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/merriweathersans-regular-webfont.woff') format('woff'),
+         url('../fonts/merriweathersans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/merriweathersans-regular-webfont.svg#merriweather_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.current_area.current_area ul li span {
+        font-family: 'merriweather_sansregular'!important;
+    }
+
+.energy_mid_box h1 {
+    font-family: 'merriweather_sansregular'!important;
+}
+
+.nav_login_section ul li a {
+    font-family: 'merriweather_sansregular',sans-serif !important;
+}
+
+    .left-ar > h1 {
+        font-family:  'merriweather_sansregular'!important;
+    }
+
+    .left-ar > h3 {
+        font-family:  'merriweather_sansregular'!important;
+    }
+
+.ui-widget-header.ui-widget-header {
+    font-family: 'merriweather_sansregular' !important;
+}
+
+.ui-dialog-buttonset > button, .ui-dialog-buttonset > button > button {
+    font-family:'merriweather_sansregular' !important;
+}
+
+.ui-widget {
+    font-family: 'merriweather_sansregular' !important;
+}
+
+
+span.required {
+    font-size:14px !important;
+}
+
+.currency span {
+    font-size:12px !important;
+}
+
+.currency ul li a { 
+    font-size:80.3% !important;
+    }
+
+
+.heading-container > h3, .top_level_nav ul li a, .custom-tabs > ul > li > a, .custom-tabs > ul > li > a:focus, .custom-tabs > ul > li > a:hover, #myCarousel#myCarousel .carousel-caption.carousel-caption > h2, #myCarousel#myCarousel .carousel-caption.carousel-caption > h3, .ftr-widget > ul > li > a, .footer-widget-title {
+        font-family: 'merriweather_sansregular', sans-serif !important;
+}
+#myCarousel .carousel-caption > h2 {
+     font-size:40px !important;
+    }
+
+#myCarousel .carousel-caption > p {
+    font-family: 'merriweather_sansregular', sans-serif !important;
+    font-size:25px !important;
+}
+
+.tablet-view h3 > a > img {
+    display:none;
+}
+#moduleUsages .tablet-view h3 > img {
+    display:none;
+}
+#Module9 .tablet-view h3 > img {
+    display:none;
+}
+
+.tablet-view span.icon {
+    font-size: 23px;
+    float: left;
+    position: relative;
+    top: -3px;
+    padding-right: 5px;
+    color: #39b0d2;
+}
+#CompareSpendingModule .tablet-view span.icon {
+    font-size: 23px;
+    float: left;
+    position: relative;
+    top: -3px;
+    padding-right: 5px;
+    color: #39b0d2;
+}
+
+/*#headerlogo > a > img {
+    display:none;
+}*/
+
+#headerlogo > a > img.modern_logo {
+    display:block;
+}
+
+.billing_bottom_buttons > .pay_bill.pay_bill:first-child {
+     margin-left: 2px !important;
+}
+.billing-area .pay_bill.pay_bill a {
+   background: #39b0d2 url("../images/arrow-4.png") no-repeat 90% center !important;
+    /*background-size: 17px !important;*/
+    padding-right: 19px;
+    width: 104px;
+    padding: 6px 22px 6px 2px;
+    margin-top: 5px;
+}
+
+.myaccount-area b {
+    color:#39b0d2 !important
+}
+
+nav.main_large ul.tabs li {
+        width: 73px !important;
+}
+.tablet-view #notificationLoader, 
+.tablet-view .outage-area, 
+.tablet-view .electricity-area, 
+.tablet-view .notification-area, 
+.tablet-view .water-area, 
+.tablet-view .electric-area,
+.tablet-view #divCompareSpendingZip,
+.tablet-view #divCompareSpendingUtl,
+.tablet-view #divCompareSpendingPrev,
+.tablet-view #efficiencyLoader,
+.tablet-view #myAccountLoader,
+.tablet-view #smartHomeLoader   {
+                            float: left;
+                        width: 100%;
+                    }
+
+
+.modern_theme {
+    display:inline-block;
+}
+
+.gen_theme {
+    display:none;
+}
+
+.PinLabel {
+    color: #000000;
+    display: block;
+    font-weight: bold;
+    left: 17px;
+    position: absolute;
+    text-align: center;
+    top: 17px;
+    width: 15px;
+}
+
+header {
+    position:inherit !important;
+}
+
+
+ #iLinkProjected .glyphicon-info-sign.glyphicon-info-sign::before {
+        position: relative;
+        top: -4px !important;
+    }
+
+ 
+#IDEff {
+    line-height: 22px;
+}
+.table-inbox-wrap {
+    font-size:12px;
+}
+
+#AddressSpan {
+    color: #950202;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    padding-left: 3px;
+}
+
+.outerprelogin_PinLabel .MessageContainer .PinLabel {
+        left: 17px !important;
+}

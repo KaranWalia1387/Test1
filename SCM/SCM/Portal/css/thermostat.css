@@ -1,0 +1,72 @@
+﻿table.programtable
+{
+    width: 98%;
+    margin-left: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+    table.programtable tr
+    {
+        margin: 5px 0;
+    }
+
+        table.programtable tr:first-child td
+        {
+            background-color: #069 !important;
+        }
+
+        table.programtable tr:nth-child(1)
+        {
+            background-color: #999 !important;
+            color: #fff;
+            width: 9%;
+        }
+
+        table.programtable tr td:nth-child(1)
+        {
+            background-color: #069;
+            color: #fff;
+            border-bottom: solid 1px #fff;
+        }
+
+        table.programtable tr td
+        {
+            padding: 5px 10px;
+            border-right: solid 1px #ccc;
+            cursor: pointer;
+        }
+
+            table.programtable tr td div
+            {
+                display: inline-block;
+            }
+
+            table.programtable tr td:nth-child(1)
+            {
+                background-color: #069;
+                color: #fff;
+                width: 16%;
+            }
+
+.time
+{
+    width: 46%!important;
+}
+
+table.programtable tr:nth-child(2n+1)
+{
+    background-color: #E2E2E2 !important;
+}
+
+.coolvalue
+{
+    margin: 0px 5px;
+    padding: 2px;
+}
+
+.heatvalue
+{
+    margin: 0px 5px;
+    padding: 2px;
+}

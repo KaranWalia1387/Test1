@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="CompareSpendingNestedMaster.master.cs" Inherits="CustomerPortal.CompareSpendingNestedMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <section class="inner_mid_section">
+    <div class="container inner-mid-container">
+    <div class="energy_mid_box">
+                  <asp:HiddenField ID="hdnFlag" Value="load" runat="server" ClientIDMode="Static" />
+
+    <asp:HiddenField ID="hdnDR" Value="0" runat="server" ClientIDMode="Static" />
+            	<h1><img src="images/icon_cs_sidebar.png" style="padding-right:7px; margin-top: -3px; float: left;" /><span globalize="ML_Compare_Spending_Screen_Title_Compare_Spending">Compare</span></h1>
+          <div class="sidebar_toggle">Sidebar Navigation</div>       	
+         <div class="nav_left"> 
+                	<ul>
+                    	<li class="sidebar_power"><a href="saving-leader.aspx" globalize="ML_Compare_Spending_Seg_Title_Power">Power</a></li>
+                        <li class="sidebar_gas"><a href="CompareSpendingGas.aspx" globalize="ML_Compare_Spending_Seg_Title_Gas">Gas</a></li>
+                        <li class="sidebar_water"><a href="CompareSpendingWater.aspx" globalize="ML_Compare_Spending_Seg_Title_Water">Water</a></li>
+                    </ul>
+                    <div class="banner_left_img">
+                        
+                        <a href="#">
+                                <img id="IDBannerCompare" clientidmode="Static" runat="server" alt="" onclick="BannerClick(this.id);"/></a>
+                        <a href="#"><img id="IDBannerCompareI" clientidmode="Static" runat="server" alt="" onclick="BannerClick(this.id);"/></a>
+                                                 
+                    </div>
+                </div>
+       <div class="right_content_box">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+        
+    </asp:ContentPlaceHolder>
+           </div>
+        </div>
+    </div>
+    </section>
+
+</asp:Content>

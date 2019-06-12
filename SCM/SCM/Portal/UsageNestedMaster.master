@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="UsageNestedMaster.master.cs" Inherits="CustomerPortal.MasterPages.UsageNestedMaster" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <section class="inner_mid_section">
+    <div class="container inner-mid-container">
+        	<div class="energy_mid_box">
+            	<h1>Usage</h1>
+               	 <div class="nav_left"> 
+                	<ul>
+                    	<li class="sidebar_power" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.Power) %>"><a href="#">Power</a></li>
+                        <li class="sidebar_gas"><a href="#">Gas</a></li>
+                        <li class="sidebar_water"style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.Water) %>"><a href="#">Water</a></li>
+                        <li class="sidebar_solar"><a href="#">Solar</a></li>                       
+                    </ul>
+                </div>
+                <div class="right_content_box preLoader">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server"></asp:ContentPlaceHolder>
+                   </div>
+                </div>
+        </div>
+        </section>
+</asp:Content>

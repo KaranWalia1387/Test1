@@ -1,0 +1,302 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="AdminReport.master.cs" Inherits="AdminPanel.AdminReport" %>
+
+<%@ Import Namespace="AdminPanel" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+        /*.grid-section {
+            overflow:auto !important;
+            float:left;
+        }*/
+        .Graph-area {
+            width: 100% !important;
+        }
+
+
+        .lgnd_box_right .left-active-sprites > ul > li.graph > a.active {
+            background: rgba(0, 0, 0, 0) url("../images/line-chart-active.png") no-repeat scroll center top !important;
+            display: block;
+        }
+
+        .lgnd_box_right .left-active-sprites ul li.graph a {
+            background: rgba(0, 0, 0, 0) url("../images/line-chart.png") no-repeat scroll center top !important;
+            display: block;
+            height: 18px;
+            margin: 0;
+            padding: 0;
+            width: 18px;
+        }
+
+
+        .current_area {
+            height: 73px;
+        }
+
+        .inner-right-section .grid-section {
+            background: #fff none repeat scroll 0 0;
+            clear: both;
+            margin: 0 !important;
+        }
+
+        .right_unit_box {
+            text-align: right !important;
+            width: auto !important;
+            position: absolute !important;
+            right: 20px !important;
+            font-size: 20px;
+            margin-top: -5px;
+        }
+
+        .power_graph_heading {
+            display: table;
+            width: 100%;
+            position: relative !important;
+        }
+
+        .usage_date_time {
+            float: right !important;
+            padding: 10px 15px !important;
+            width: 66% !important;
+            text-align: left !important;
+        }
+
+        .lgnd_box_right {
+            float: left !important;
+            padding: 10px 14px !important;
+            text-align: left !important;
+            width: auto !important;
+        }
+
+
+            .lgnd_box_right .left-active-sprites > ul {
+                float: left !important;
+            }
+
+        .usage_date_time b {
+            color: #33adc7 !important;
+            font-size: 14px !important;
+        }
+        #divFilter {            
+            margin-top: 5px !important;
+        }
+        .left-active-sprite {
+            width:auto;
+        }
+        .top-header-area.top-header-area, .top-header-area.top-header-area h2 {
+                padding-bottom: 5px !important;
+            }
+
+    .average_usage_header.average_usage_header > span {
+        width: 100%!important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        float: left;
+    }
+  
+    </style>
+    <link href="../css/AdminReport_main.css" rel="stylesheet" />
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var liArray = $('#GenDiv.current_area ul').find("li");
+            var liCount = 0;
+            for (var i = 0 ; i < liArray.length ; i++) {
+                if (liArray[i].style.display == "" || liArray[i].style.display == "block") {
+                    liCount++;
+                }
+            }
+            var widthPer = 100 / liCount;
+            $('#GenDiv.current_area ul li').css('width', widthPer + '%');
+        });
+
+        </script>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="left-side sidebar-offcanvas">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <ul class="tabs sidebar-menu">                
+    </asp:ScriptManager>
+                <li class="sidebar_dashboard"><a href="Dashboard.aspx">Dashboard</a></li>
+                <%--Start: Sidebar for analytics reports--%>
+                <li id="analytics" class="sidebar_dashboardanalytic" style="display: none"><a href="#collapseOne">Analytics Reports</a>
+                    <ul id="collapseOne" class="collapse">
+                        <li class="sidebar_servicereq"><a id="servicereq" href="ServiceRequest.aspx">Service Request Analysis</a></li>
+                        <li class="sidebar_servicereqtrend"><a id="servicereqtrend" runat="server" href="ServiceRequestTrend.aspx">Service Request Trend Analysis</a></li>
+                        <li class="sidebar_outage_analytic"><a id="outage" runat="server" href="OutageAnalysis.aspx">Outage Analysis</a></li>
+                        <li class="sidebar_currentoutage"><a id="currentoutage" runat="server" href="CurrentOutageDetailed.aspx">Current Outage Detailed Analysis</a></li>
+                        <li class="sidebar_electricusage"><a id="electricusage" runat="server" href="ElectricUsageAnalysis.aspx">Electric Usage Analysis</a></li>
+                        <li class="sidebar_generation_analytic"><a id="generation" runat="server" href="GenerationUsageAnalysis.aspx">Solar Analysis</a></li>
+                        <li class="sidebar_waterusage"><a id="waterusage" runat="server" href="WaterUsage.aspx">Water Usage Analysis</a></li>
+                        <li class="sidebar_gasusage"><a id="gasusage" runat="server" href="GasUsage.aspx">Gas Usage Analysis</a></li>
+                        <li class="sidebar_evusage"><a id="evusage" runat="server" href="ElectricVehicleUsage.aspx">Electric Vehicle Usage Analysis</a></li>
+                        <li class="sidebar_customeranalysis"><a id="customeranalysis" runat="server" href="CustomerAnalysis.aspx">Customer Analysis</a></li>
+                        <li class="sidebar_loginanalysis"><a id="FailedLogin" runat="server" href="LoginDetails.aspx">Failed Login Analysis</a></li>
+                    </ul>
+                </li>
+                <%--End: Sidebar for analytics reports--%>
+
+                <%if (SessionAccessor.UserRightList.Contains(UserRights.ReportUsageAccess))
+                  { %>
+                <li class="sidebar_usage" style="display: <%=SessionAccessor.IsModuleEnabled(Features.Usage) %>"><a href="Usage1.aspx">Usage</a></li>
+                <% }
+                  if (SessionAccessor.UserRightList.Contains(UserRights.ReportBillingAccess))
+                  { %>
+                <li class="sidebar_billing" style="display: <%=SessionAccessor.IsModuleEnabled(Features.Billing) %>"><a href="Billing.aspx">Billing</a></li>
+                <% }
+                  if (SessionAccessor.UserRightList.Contains(UserRights.ReportOutageAccess))
+                  { %>
+                <li class="sidebar_outage" style="display: <%=SessionAccessor.IsModuleEnabled(Features.Outages) %>"><a href="Outage.aspx">Outages</a></li>
+                <% }
+                  if (SessionAccessor.UserRightList.Contains(UserRights.ReportSolarAccess))
+                  { %>
+                <li class="sidebar_generation" style="display: <%=SessionAccessor.IsModuleEnabled(Features.Solar) %>"><a href="Generation1.aspx">Solar</a></li>
+                <% }
+                  if (SessionAccessor.UserRightList.Contains(UserRights.ReportNotificationAccess))
+                  { %>
+                <li class="sidebar_nitiF" style="display: <%=SessionAccessor.IsModuleEnabled(Features.Notification) %>"><a href="SampleNotification.aspx">Notifications</a></li>
+                <% }
+                   if (SessionAccessor.UserRightList.Contains(UserRights.ReportConnectMeAccess))
+                   { %>
+                <li class="sidebar_connectme" style="display: <%=SessionAccessor.IsModuleEnabled(Features.ConnectMe) %>"><a href="Connectme1.aspx">Connect Me</a></li>
+                <% }
+                   if (SessionAccessor.scmexpress != "1")
+                   {
+                       if (SessionAccessor.UserRightList.Contains(UserRights.ReportServiceAccess))
+                       { %>
+                <li class="sidebar_service" style="display: <%=SessionAccessor.IsModuleEnabled(Features.Services) %>"><a href="servicesample.aspx">Services</a></li>
+                <%}
+                   }
+                   if (SessionAccessor.UserRightList.Contains(UserRights.ReportEfficiencyAccess))
+                   { %>
+                <li class="sidebar_efficency" style="display: <%=SessionAccessor.IsModuleEnabled(Features.Efficiency) %>"><a href="EfficiencySample.aspx">Efficiency<span class="caret-lane"></span></a>
+                    <ul id="sidebar-programs">
+                        <li class="sidebar_programs"><a href="programs.aspx">Programs</a></li>
+                        <li class="sidebar_rebates"><a href="rebates.aspx">Rebates</a></li>
+                    </ul>
+
+                </li>
+                <% }
+
+                   if (SessionAccessor.UserRightList.Contains(UserRights.ReportUserBehaviourAccess))
+                   { %>
+                <li class="sidebar_admin"><a href="DashboardUserBehaviour.aspx">Customer Behavior<span class="caret-lane"></span></a>
+                    <ul id="sidebar-userbehaviour">
+                        <li class="sidebar_payment"><a href="Online-Payment.aspx">Online Payment</a></li>
+                        <li class="sidebar_device"><a href="Device-Used.aspx">Device Used</a></li>
+                        <li class="sidebar_resolution"><a href="resolution.aspx">Screen Resolution</a></li>
+                        <li class="sidebar_browser"><a href="Browser-Used.aspx">Browser Used</a></li>
+                        <li class="sidebar_heat"><a href="HeatMapSample.aspx">Login Details</a></li>
+                    </ul>
+                </li>
+                <% }
+
+                   if (SessionAccessor.UserRightList.Contains(UserRights.ReportUserAccess))
+                   { %>
+                <li class="sidebar_myaccount"><a href="User.aspx">Customers</a></li>
+                <% }
+
+                      if (SessionAccessor.UserRightList.Contains(UserRights.ReportTextMessageAccess) && (SessionAccessor.scmexpress != "1"))
+                      { %>
+                <li class="sidebar_textmessage" style="display: <%=SessionAccessor.IsModuleEnabled(Features.MyAccounbtSettingsText) %>"><a href="TextMessages.aspx">Text Message</a></li>
+                <% }
+
+
+                   if (SessionAccessor.UserRightList.Contains(UserRights.ReportPaperLessAccess))
+                   { %>
+                <li class="sidebar_paperless" style="display: <%=SessionAccessor.IsModuleEnabled(Features.MyAccountSettingsPaperlessBill) %>"><a href="PaperlessBillSample.aspx">Paperless Billing</a></li>
+                <% }
+                   if (SessionAccessor.UserRightList.Contains(UserRights.ReportEmailAccess))
+                   { %>
+                <li class="sidebar_email" style="display: <%=SessionAccessor.IsModuleEnabled(Features.MyAccountSettingsEmail) %>"><a href="Email.aspx">Email</a></li>
+                <% }
+                   if (SessionAccessor.scmexpress != "1" && (SessionAccessor.UserRightList.Contains(UserRights.ReportIVRAccess)))
+                   {    %>
+                <li class="sidebar_ivr" style="display: <%=SessionAccessor.IsModuleEnabled(Features.MyAccountSettingsIVR) %>"><a href="IVR.aspx">IVR</a></li>
+                <%}
+                   if (SessionAccessor.UserRightList.Contains(UserRights.ReportPushNotificationAccess))
+                   { %>
+                <li class="sidebar_PushNotification" style="display: <%=SessionAccessor.IsModuleEnabled(Features.MyAccountSettingsPushNotification) %>"><a href="Push-Notification.aspx">Push Notification</a></li>
+                <% }
+                    if (SessionAccessor.UserRightList.Contains(UserRights.ReportMarketingPrefAccess))
+                    { %>
+                <li class="sidebar_MarketingPreference" style="display: <%=SessionAccessor.IsModuleEnabled(Features.MyAccountMarketingPreference) %>"><a href="Marketing-Preference.aspx">Marketing Preference</a></li>
+                <% }
+                 if (SessionAccessor.UserRightList.Contains(UserRights.ReportCrashLogAccess))
+                 { %>
+                <%if (SessionAccessor.IsSuperAdmin)
+                  { %>
+                <li class="sidebar_CrashLogService"><a href="CrashLogService.aspx">Crash Log </a></li>
+                <% }%>
+
+                <% }
+                if (SessionAccessor.UserRightList.Contains(UserRights.ReportBannerAccess))
+                { %>
+                <li class="sidebar_configurebanner_inner banner_icon_12"><a href="Banner-Clicks.aspx">Banners</a></li>
+                <% } %>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+
+
+
+    <aside class="right-side">
+        <a href="javascript:void(0);" id="button-sidebar" class="button-sidebar ir"></a>
+        <div class="inner-right-section" id="devices">
+            <div class="right-content-area">
+                <asp:ContentPlaceHolder ID="rightpanel" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </aside>
+
+    <script src="../js/highchart_js/highcharts.js"></script>
+
+    <script src="../js/highchart_js/common-chart.js"></script>
+    <script src="../js/highchart_js/highcharts-3d.js"></script>
+    <script src="../js/highchart_js/highcharts-more.js"></script>
+
+    <script src="../js/highchart_js/grouped-categories.js"></script>
+
+
+    <script src="../js/AdminReport_CommonFunctions.js"></script>
+    <script type="text/javascript">
+        $(".report").addClass('active');
+    </script>
+    <style>
+        #collapseOne li a, .in li a {
+            cursor: pointer;
+        }
+
+        .ajax__calendar_body {
+            height: 121px;
+            
+        .filt rBt  {
+       edium one;
+  er-radiu : 4px 
+                      co
+            
+          displ
+                     hei
+        
+         padding: 5px 19px;
+         th: 153p ;
+                 
+        -style select {
+                    pad i
+                   }
+            
+        t
+
+        ea .filter_area ui {
+        ;
+        
+            
+             l
+
+        _ui .select-style {              margin-top: -6px;
+        }
+    </style>
+
+</asp:Content>

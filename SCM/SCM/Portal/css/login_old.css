@@ -1,0 +1,835 @@
+﻿@charset "utf-8";
+html, body {
+	height:100%;
+}
+body {
+	margin: 0px;
+	color: #56565a;
+	font-size: 12px !important;
+	font-family:Arial, Helvetica, sans-serif;
+	background: #f4f4f4 !important;
+	}
+
+.back_button {
+    display:none;
+}
+/* Header */
+header {
+	background:#fff;
+	margin:0px;
+	padding:0px;
+	box-shadow:0px 0px 4px #cfcfcf;
+	}
+	
+.logo a {
+	display:block;
+	outline:none;	
+	}
+	
+	.logo img {
+		padding:7px 0 8px 4px;		
+		}
+		
+	/*.connect_with_us {
+		background:#e1e1e1 url(../images/bg_connect_with_us.png) no-repeat left top;
+		display: table;
+		width: 100%;
+		height:71px;
+		padding:0 0 0 16%;
+		}
+		
+	.connect_with_us p {
+		float:left;
+		color:#403f3f;
+		font-size:108.3%;
+		padding:25px 0 0;		
+		}
+		
+	.connect_with_us ul {
+		float:right;		
+		margin:0;
+		padding:0px;
+		list-style:none;
+		}
+	
+	.connect_with_us ul li {
+		float:left;
+		padding:23px 13px 17px;
+		margin:0px;
+		}
+
+	.connect_with_us ul li a {
+		display:block;
+		text-decoration:none;
+		 color:#e1e1e1;
+		 outline:none;
+		}
+		
+	.connect_with_us ul li.facebook a {
+		background:url(../images/icon_fb_login.png) no-repeat center top;
+        display: block;
+    height: 31px;
+    padding: 0;
+    width: 38px;		
+		}
+		
+	.connect_with_us ul li.facebook a:hover {
+		background:url(../images/icon_fb_login_ro.png) no-repeat center top;		
+		}
+		
+	.connect_with_us ul li.twitter a {
+		background:url(../images/icon_twitter_login.png) no-repeat center 3px;
+        display: block;
+    height: 29px;
+    padding: 0;
+    width:28px;
+		}
+		
+	.connect_with_us ul li.twitter a:hover {
+		background:url(../images/icon_twitter_login_ro.png) no-repeat center 3px;
+		}
+	
+	.connect_with_us ul li.linkedin a {
+		background:url(../images/icon-linkedin.png) no-repeat center top;
+        display: block;
+    height:26px;
+    padding: 0;
+    width: 26px;
+		}
+		
+	.connect_with_us ul li.linkedin a:hover {
+		background:url(../images/icon-linkedin-ro.png) no-repeat center top;
+		}*/
+		
+	
+		
+
+/* Login page Style */
+
+.login-page {
+	background: #ffffff; /* Old browsers */	
+	padding-top:32px;
+	padding-bottom:35px;
+	margin-top:51px;
+	position:relative;
+	display:inline-block;
+    width:100%;
+	border:1px solid #d2d2d2;
+	}
+
+.loginpage-form  {
+	padding: 0 0% 0 23px;
+	}
+	
+.loginpage-form h1  {
+	color:#87c301;
+	font-size:230.8%;
+	font-weight:normal;
+	padding:0 0 10px 0;
+	margin-top:0px;
+	}
+	
+.loginpage-form h3 {
+	font-size:141.7%;
+	color:#5e5e5e;
+	padding: 5px 0 7px 0;
+	margin:0px;
+	}
+
+.login-page input[type="text"], .login-page input[type="password"] {
+        padding: 5px 0px 4px 50px !important;
+        width: 100% !important;
+        border-radius:0;
+    }
+
+        .login-page input[type="text"]:focus, input[type="password"]:focus {
+            outline: none !important;
+        }
+
+
+.login-page .login-page-user {
+	background: url("../images/user-name-icon.jpg") no-repeat left center;
+    display: block;
+    float: left;
+    position: absolute;
+    width: 36px;
+    height: 31px;
+    z-index: 1;
+    top: 32px;
+    left: 1px;
+	}
+
+.login-page input[type="text"]:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-text-fill-color: #c1c1c1 !important;
+    background: url("../images/user-name-icon.jpg") no-repeat left center !important;
+    outline: none !important;
+}	
+
+.form-group {
+    position: relative;
+}
+
+.login-page-password {
+    background: url("../images/password-icon.jpg") no-repeat left 2px;
+    display: block;
+    float: left;
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    z-index: 1;
+    top: 30px;
+    left: 1px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .login-page-password {
+    background: url("../images/password-icon.jpg") no-repeat left 2px;
+    display: block;
+    float: left;
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    z-index: 9999;
+    top: 30px;
+    left: 1px;
+}
+}
+
+.forgot-password {
+    color: #6f6f6f;
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+}
+.forgot-password ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.forgot-password ul li {
+    border-left: 1px solid #595959;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.forgot-password ul li:first-child {
+    border: 0 none;
+}
+.forgot-password ul li a {
+    color: #2561ad;
+    font-size: 107.7%;
+    padding: 2px 13px;
+    text-decoration: none;
+}
+.forgot-password ul li a:hover {
+    color: #959595;
+}
+
+	
+.login-page-image {
+	text-align: left;
+	padding-top:9px;
+	width: 96.6%;
+	}	 
+	
+.login-page-image img {
+	padding-bottom:27px;
+	max-width: 100%;
+	}
+	
+.login-page-image .carousel-indicators {
+	bottom: -19px !important;
+	}
+	
+	.login-page-image .carousel-indicators li {
+		background-color: #e1e1e1;
+		margin:0 6px 0 6px;
+		width: 12px;
+		height: 12px;
+		}
+			
+	.login-page-image .carousel-indicators .active {
+		background-color: #57565b;
+		}
+		
+	.btn-default-login {
+		display:block;
+		float:right;
+		border:0px !important;
+		color:#f0f0f0 !important;
+		font-size:16px;
+		outline:none;
+		padding: 6px 0!important;
+          width: 120px;
+		margin: 18px 0 19px 0;
+		background:#88be1c !important;
+		transition:all 0.5s ease-in;
+		-moz-transition:all 0.5s ease-in;
+		-webkit-transition:all 0.5s ease-in;
+        font-weight:bold;
+		}
+		
+	.btn-default-login:hover {		
+		background:#56565a !important;
+		transition:all 0.5s ease-in;
+		-moz-transition:all 0.5s ease-in;
+		-webkit-transition:all 0.5s ease-in;
+		}
+
+
+    .btn-default-login-submit {
+		display:block;
+		float:right;
+		border:0px;
+		color:#f0f0f0;
+		/*font-size:143.7%;*/
+        font-size:16px;
+		outline:none;
+		padding: 6px 0!important;
+          width: 120px;
+		margin: 18px 0 19px 0;
+		background:#88be1c;
+		transition:all 0.5s ease-in;
+		-moz-transition:all 0.5s ease-in;
+		-webkit-transition:all 0.5s ease-in;
+        border-radius:2px;
+		}
+		
+	.btn-default-login-submit:hover {		
+		background:#56565a;
+		transition:all 0.5s ease-in;
+		-moz-transition:all 0.5s ease-in;
+		-webkit-transition:all 0.5s ease-in;
+		}
+
+    .btn-default-login-cancel {
+		display:block;
+		float:left;
+		border:0px;
+		color:#f0f0f0;
+		/*font-size:143.7%;*/
+        font-size:16px;
+		outline:none;
+		padding: 6px 0!important;
+          width: 120px;
+		margin: 18px 0 19px 0;
+		background:#88be1c;
+		transition:all 0.5s ease-in;
+		-moz-transition:all 0.5s ease-in;
+		-webkit-transition:all 0.5s ease-in;
+        border-radius:2px;
+		}
+		
+	.btn-default-login-cancel:hover {		
+		background:#56565a;
+		transition:all 0.5s ease-in;
+		-moz-transition:all 0.5s ease-in;
+		-webkit-transition:all 0.5s ease-in;
+		}
+
+    .log_smw_btn {
+        clear: both;
+        float: left;
+        width: 96%;
+    }
+
+
+		
+.login-form-text [type="checkbox"] {
+	margin-top:1px !important;
+		}
+
+/* Footer */
+footer {
+	background: #fff;
+	color: #000;
+	text-align: center;
+	position: fixed;
+	padding:4px 10px;
+	width: 100%;
+	bottom: 0px;
+	z-index: 9999;
+	box-shadow:10px 0 10px #cfcfcf;
+	}
+	
+footer .copy-right {
+	margin:7px 0px 0px;
+	padding:0px;
+	text-align:left;
+	font-size:10px;
+}
+
+footer .footlinks {
+	margin:7px 0px 0px 0px;
+	padding:0px;
+	text-align:center;
+}
+
+
+footer .footer-logo {
+	float:right;
+	margin:4px 0px;
+}
+
+
+@media (max-width:767px){
+	.logo a {
+		text-align:center;
+		}
+	}
+
+#RegisteredHomeContainer {
+display:none;
+}
+
+.bg {
+background-color: white;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0px;
+left: 0px;
+display:none;
+}
+
+
+/*--About My Home--*/
+
+
+@media screen and (min-width:0\0) {
+
+    .about_my_home {
+	max-width:53%;
+	background:#fff;
+	box-shadow: 0px 0px 4px #cfcfcf;
+	padding:0px !important;
+	height:480px !important;
+	top:50% !important;
+	left:50% !important;
+	z-index:999 !important;
+	margin:auto !important;
+    margin-left:-26.5% !important;
+    margin-top:-240px !important;
+	}
+
+}
+
+
+
+.about_my_home {
+	max-width:53%;
+	background:#fff;
+	box-shadow: 0px 0px 4px #cfcfcf;
+	padding:0px !important;
+	height:480px;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:999;
+	margin:auto;
+	}
+	
+.about_my_home h1 {
+    background:#f2f2f2;
+    border-bottom: 2px solid #cecece;
+    color: #53565a;
+    font-size: 123.1%;
+    font-weight: bold;
+	position:relative;
+    margin:0px;
+    padding: 13px 0 13px 15px;
+}
+
+.about_my_home .close_icon {
+	margin:0px;
+	position:absolute;
+	top:8px;
+	right:8px;
+	display:block;
+	
+}
+
+.about_my_home .upper_text {
+	margin:10px 15px;
+	padding:0px;
+	color:#808080;
+	font-size:14px;	
+}
+
+.about_my_home .mid_area_home {
+	width:84%;
+	margin:2% auto 0px;
+	display:block;
+	color:#808080;
+	font-size:14px;	
+}
+
+.about_my_home .mid_area_home .left_content_area_home {
+	width:36%;
+	float:left;
+	margin:0px 0px 18px;
+	padding-top: 6px;	
+	
+}
+
+.about_my_home .mid_area_home .right_content_area_home {
+	width:64%;
+	float:left;
+	margin:0px 0px 18px;
+}
+
+.about_my_home .mid_area_home .right_content_area_home .blank_text {
+	padding-top: 6px;		
+}
+
+.about_my_home .mid_area_home .right_content_area_home select {
+    border: 1px solid #d6d6d6;
+    padding: 5px 0;
+	width:89.5%
+}
+
+.about_my_home .mid_area_home .right_content_area_home input[type="text"] {
+    border: 1px solid #d6d6d6;
+    outline: medium none;
+    padding: 5px;
+	width:89%
+}
+
+.about_my_home .mid_area_home input[type="checkbox"] {
+    background: none repeat scroll 0 0 #f4f4f4;
+    border: 1px solid #b9b9b9;
+    float: left;
+    margin:4px 2% 0 0;
+    outline: medium none;
+    transform: scale(1.3);
+}
+
+.about_my_home .mid_area_home .check {
+	margin:0px;
+	padding:0px;
+	font-style:normal;
+}
+
+.about_my_home .bottom_area_home {
+	border-top:2px solid #b9b9b9;
+	padding:10px;
+	margin-top:25px;
+}
+
+.buttons_area {
+		width:100%;
+		padding:2% 0 0%;
+		float:left;
+		margin:0px;
+		font-size:12px;
+		border-bottom:2px solid #f4f4f4;
+		}
+		
+	.submit-button {
+		background: none repeat scroll 0 0 #006699;
+		border: medium none;
+		border-radius: 2px;
+		color: #f0f0f0;
+		float: right;
+		font-size: 14px;
+		height: 30px;
+		margin-bottom:15px;
+		padding: 3px 27px;
+		text-align: center;
+	}
+	
+	.cancel-button {
+		background: none repeat scroll 0 0 #006699;
+		border: medium none;
+		border-radius: 2px;
+		color: #f0f0f0;
+		float: left;
+		font-size: 14px;
+		height: 30px;
+		margin-bottom:15px;
+		margin-left:13px;
+		padding: 3px 27px;
+		text-align: center;
+	}
+
+    @media screen and (max-width:1024px) {
+.forgot-password {
+    color: #6f6f6f;
+    display: block;
+    float: left;
+    margin-top: 10px;
+    text-align: right;
+    width: 480px;
+}
+
+
+}
+@media (min-width:991px) and (max-width:1024px) {
+       .w2ui-tag .w2ui-tag-body {
+         left: -93px !important;
+      top: 3px !important;
+
+        }
+    }
+
+@media screen and (max-width:767px) {
+	
+		.about_my_home {
+		height:556px;
+		background:#fff;
+	}
+       .forgot-password {
+    color: #6f6f6f;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    width: 340px;
+}
+
+.forgot-password ul li {
+    float:none;
+    display:inline-block;
+}
+		
+}
+
+
+
+/* ---------------------------  Registration Page Css ---------------------------*/
+
+
+/* Login page Style */
+
+.registration-page {
+	background: #ffffff; /* Old browsers */	
+	padding-top:16px;
+	padding-bottom:15px;
+	margin-top:18px;
+	position:relative;
+	display:table;
+	border:1px solid #d2d2d2;
+	font-size:14px;
+    width:100%;
+	}
+
+.loginpage-form  {
+	padding: 0 0% 0 23px;
+	}
+	
+.registration-form h1  {
+	color:#87c301;
+	font-size:170.8%;
+	font-weight:normal;
+	padding:0 0 10px 0;
+	margin-top:0px;
+	}
+	
+.loginpage-form h3 {
+	font-size:141.7%;
+	color:#5e5e5e;
+	padding: 5px 0 7px 0;
+	margin:0px;
+	}
+	
+.registration-form input[type="text"], .registration-form input[type="password"]{
+	width: 87%;
+	padding: 5px 5px;
+	margin-bottom: 16px;
+	border: 1px solid#ccc;
+	color:#999;
+	}
+/*BUG 6196 - Start*/
+.registration-form select {
+	width: 86.9%;
+	padding: 5px 5px;
+	margin-bottom: 16px;
+	border: 1px solid#ccc;
+	color:#999;
+	}
+/*BUG 6196 - end*/
+.registration-form .user_id input[type="text"]{
+	width: 33%;
+	}
+	
+.registration_btn {
+	float:right;
+	width:120px!important;
+	padding:6px 0!important;
+	background:#88be1c!important;
+	color:#f0f0f0!important;
+	border-radius:2px;
+	text-align:center;
+	font-size:16px!important;
+    margin-right: 48px;
+	border:0px;	
+	}
+
+.registration_btn:focus {
+      color: #FFFFFF!important;
+      text-decoration: none;
+      outline: none;
+    }
+
+.registration_btn:hover {
+     background:#56565a;
+     color:#fff ;
+     text-decoration:none;
+}
+
+#errorMsg {
+    z-index:9999;
+}
+
+
+
+a.registration_btn:hover {
+	color:#fff;
+    text-decoration:none;
+    background:#56565a;
+}
+
+.reg_button {
+    border-top: 2px solid #ccc;
+    float: left;
+    padding:13px 0 2px;
+    width: 100%;
+}
+	
+.cancel_btn_1 {
+	}
+	
+@media (max-width:991px) {
+.registration-form .user_id input[type="text"]{
+	width: 87%;
+	}
+}
+
+.form-group ul
+{
+    margin: 0px 0px 0px 15px;
+    padding: 0px;
+}
+
+.form-group ul li
+{
+    margin: 0px;
+    list-style-type:none;
+    padding: 0px;
+}
+
+    .form-group ul li a
+    {
+        text-decoration: none;
+        font-size: 14px;
+        display: block;
+    }
+
+#lblMsg {
+    background: none repeat scroll 0 0 #fff;
+    border-left: 3px solid #f00;
+    box-shadow: 1px 0 4px #ccc;
+    color: Red;
+    font-size: 14px;
+    left: 59%;
+    padding: 12px 15px;
+    position: absolute;
+    top: -48px !important;
+    width: 40%;
+    z-index: 9999;
+    display:none;
+}
+
+.ul_listing ul {
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+}
+
+.ul_listing ul li {
+    margin:0px;
+    padding:0px;
+    background:url("../images/login-support-icon.png") no-repeat left 7px;
+}
+
+.ul_listing ul li a {
+    margin:0px;
+    padding:3px 21px;
+    display:block;
+}
+
+
+/*-- Iphone Device Css */
+    @media (max-width:767px) {
+        .connect_with_us ul li{
+            padding: 23px 8px 17px;
+        }
+
+
+        .connect_with_us {
+            height: 31px;
+            display:none;
+        }
+        .connect_with_us p {
+            padding: 13px 0 0;
+        }
+
+        .connect_with_us ul li {
+            padding: 8px 8px 2px;
+        }
+        .login-page {
+            padding-top: 11px;
+            padding-bottom: 14px;
+            margin-top: 16px;
+        }
+
+        .logo img {
+            padding: 7px 0 7px 4px;
+        }
+       
+        .loginpage-form {
+            padding: 0px 0px 0 0px;
+        }
+
+        .loginpage-form h1 {
+            padding: 0 0 0px 0;
+        }
+
+        .btn-default-login {
+            margin: 0px 0 3px 0;
+        }
+    }
+
+    @media (max-width:474px) {
+        .logo a {
+            background-size: 95% !important;
+        }
+
+         .registration_btn {
+                width:80px;
+                margin-right: 18px;
+            }
+
+         .forgot-password {
+    color: #6f6f6f;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    width: 340px;
+}
+.forgot-password {
+    float: left;
+}
+
+
+    }
+
+    #btnClearSaveHomeInfo.canceladd.canceladd {
+    float:left;
+    }
+
+#btnClearSaveHomeInfo#btnClearSaveHomeInfo {
+    float:left !important;
+    }

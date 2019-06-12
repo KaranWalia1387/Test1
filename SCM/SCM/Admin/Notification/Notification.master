@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Notification.master.cs" Inherits="AdminPanel.Notification.Notification" %>
+
+<%@ Import Namespace="AdminPanel" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+        label {
+            font-weight: normal !important;
+            display: inline !important;
+            padding: 0 !important;
+        }
+        input[type="image"] {
+            margin-left:10px;
+        }
+    </style>
+    <script>
+
+        $(document).ready(function () {
+            if ($('ul.sidebar-menu  li.sidebar_nitiF').hasClass('active')) {
+                $('#sidebar-programs').addClass('show');
+                $('#sidebar-programs').removeClass('hide');
+            }
+            else if ($('ul.sidebar-menu  li.sidebar_outbox').hasClass('active')) {
+                $('#sidebar-programs').removeClass('show');
+            }
+            else {
+                $('#sidebar-programs').addClass('hide');
+                $('#sidebar-programs').removeClass('show');
+            }
+        });
+    </script>
+    <aside class="left-side sidebar-offcanvas">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <ul class="tabs sidebar-menu" id="accordion">
+
+                <li id="notification" class="sidebar_nitiF">
+                    <a href="#collapseOne">Notification<span class="caret-lane"></span></a>
+                    <ul id="sidebar-programs">
+                        <%--NEW UI 12/18/2014--%>
+                        <li class="sidebar_outage_inner" alt="1" style="display: <%=AdminPanel.SessionAccessor.IsModuleEnabled(AdminPanel.Features.NotificationOutages) %>"><a id="outage" alt="1">Outage&nbsp;<label id="unReadOutage" class="lblOutage"></label></a></li>
+                        <li class="sidebar_billing_inner" alt="4" style="display: <%=AdminPanel.SessionAccessor.IsModuleEnabled(AdminPanel.Features.NotificationBilling ) %>"><a id="billing" alt="4">Billing&nbsp;<label id="unReadBilling" class="lblBilling"></label></a></li>
+                        <% if (SessionAccessor.scmexpress != "1")
+                           {     %>
+                        <li class="sidebar_service_inner" alt="3" style="display: <%=AdminPanel.SessionAccessor.IsModuleEnabled(AdminPanel.Features.NotificationServices) %>"><a id="service" alt="3">Services&nbsp;<label id="unReadService" class="lblService"></label></a></li>
+                        <%}%>
+                        <li class="sidebar_connectme_inner" alt="2" style="display: <%=AdminPanel.SessionAccessor.IsModuleEnabled(AdminPanel.Features.NotificationConnectMe) %>"><a id="connectme" alt="2">Connect Me&nbsp;<label id="unReadConnectMe" class="lblConnectme"></label></a></li>
+                        <% if (SessionAccessor.scmexpress != "1")
+                           { %>
+                        <li class="sidebar_demandresponse_inner" alt="5" style="display: <%=AdminPanel.SessionAccessor.IsModuleEnabled(AdminPanel.Features.NotificationDR) %>"><a id="demandresponse" alt="5">Demand Response&nbsp;<label id="unReadDemandResponse" class="lblDemandResponse"></label></a></li>
+                        <% }%>
+                        <li class="sidebar_leakalert_inner" alt="13" style="display: <%=AdminPanel.SessionAccessor.IsModuleEnabled(AdminPanel.Features.NotificationLeakAlert) %>"><a id="leakalert" alt="13">High Usage Alert&nbsp;<label id="unLeakAlert" class="lblLeakalert"></label></a></li>
+                        <li class="sidebar_loginissues_inner" alt="6"><a id="loginissue">Login Issues&nbsp;<label id="unReadLoginIssues" class="lblLoginIssue"></label></a></li>
+                        <li class="sidebar_sent_inner" alt="8" style="display: <%=AdminPanel.SessionAccessor.IsModuleEnabled(AdminPanel.Features.NotificationSent) %>"><a id="sentitem" alt="8">Sent &nbsp;<label id="unReadSent" class="lblSent"></label></a></li>
+                        <li class="sidebar_saved_inner" alt="10" style="display: <%=AdminPanel.SessionAccessor.IsModuleEnabled(AdminPanel.Features.NotificationSaved) %>"><a id="saved" alt="10">Saved Mail &nbsp;<label id="lblSavedMail" class="lblSavedMail"></label></a></li>
+                        <li class="sidebar_trash_inner" alt="9" style="display: <%=AdminPanel.SessionAccessor.IsModuleEnabled(AdminPanel.Features.NotificationTrash) %>"><a id="trash" alt="9">Trash &nbsp;<label id="lblTrashMail" class="lblTrashMail"></label></a></li>
+                        <li class="sidebar_allmail_inner active" alt="11" style="display: <%=AdminPanel.SessionAccessor.IsModuleEnabled(AdminPanel.Features.NotificationAll) %>"><a id="allmail" alt="11">All Email&nbsp;<label id="unReadInbox" class="lblInbox"></label></a></li>
+                    </ul>
+                </li>
+                <li class="sidebar_autoresponse_inner"><a id="autoresponse" href="AutoResponse.aspx">Auto Response&nbsp;<label id="lblautoresponse" class="lblautoresponse"></label></a></li>
+                <li class="sidebar_outbox"><a href="Notification-Outbox.aspx" id="outbox">Send Notification</a></li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <aside class="right-side">
+        <a href="javascript:void(0);" id="button-sidebar" class="button-sidebar ir"></a>
+        <div class="inner-right-section">
+            <div class="right-content-area">
+                <asp:ContentPlaceHolder ID="rightpanel" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </aside>
+
+    <script type="text/javascript" src="../js/jscolor/jscolor.js"></script>
+    <script type="text/javascript">
+        $(".sidebar_allmail_inner").addClass('active');
+        $(".noti_header").addClass('active');
+    </script>
+    <style>
+        #collapseOne li a, .in li a {
+            cursor: pointer;
+        }
+    </style>
+</asp:Content>

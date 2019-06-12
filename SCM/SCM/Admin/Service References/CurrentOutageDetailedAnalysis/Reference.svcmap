@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="997e41b5-baf7-4eda-824c-e522f8c7dfcd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/CurrentOutageDetailedAnalysis.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CurrentOutageDetailedAnalysis.xsd" MetadataType="Schema" ID="0a7cc8c5-15ed-48ff-ad0c-d3cbbe9ab8dc" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CurrentOutageDetailedAnalysis.svc?xsd=xsd2" />
+    <MetadataFile FileName="CurrentOutageDetailedAnalysis.wsdl" MetadataType="Wsdl" ID="8807f3c2-e031-47f0-a8ef-f790a9e49c2f" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CurrentOutageDetailedAnalysis.svc?wsdl" />
+    <MetadataFile FileName="CurrentOutageDetailedAnalysis1.xsd" MetadataType="Schema" ID="67418496-81a1-4c50-bb6e-d9ebe3409efb" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CurrentOutageDetailedAnalysis.svc?xsd=xsd0" />
+    <MetadataFile FileName="CurrentOutageDetailedAnalysis.disco" MetadataType="Disco" ID="f58dbcae-7ca3-4dfd-bfc7-f43413306704" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CurrentOutageDetailedAnalysis.svc?disco" />
+    <MetadataFile FileName="CurrentOutageDetailedAnalysis2.xsd" MetadataType="Schema" ID="79088058-d5f2-4318-bda0-d8f4bd4f39e9" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CurrentOutageDetailedAnalysis.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

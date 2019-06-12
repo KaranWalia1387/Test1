@@ -1,0 +1,961 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="AdminPanel.Master" %>
+
+<%@ Import Namespace="AdminPanel" %>
+<%@ Register Src="~/UserControl/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+<%@ Register Src="~/UserControl/PasswordIndicator.ascx" TagPrefix="uc1" TagName="PasswordIndicator" %>
+<%@ Register Src="~/UserControl/CustomerSearchControl.ascx" TagPrefix="uc1" TagName="CustomerSearchControl" %>
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link href="<%#string.Format("{0}/css/main.css",AdminPanel.Common.url)%>" rel="stylesheet" type="text/css" />
+    <link href="<%#string.Format("{0}/css/bootstrap.min.css",AdminPanel.Common.url)%>" rel="stylesheet" type="text/css" />
+    <link href="<%#string.Format("{0}/css/font-awesome.css",AdminPanel.Common.url)%>" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script type="text/javascript" src="<%#string.Format("{0}/js/modernizr-2.0.6.js",AdminPanel.Common.url)%>"></script>
+    <script src="<%#string.Format("{0}/js/jquery-1.7.min.js",AdminPanel.Common.url)%>" type="text/javascript"></script>
+    <script type="text/javascript">var k = jQuery.noConflict();</script>
+    <script src="<%#string.Format("{0}/js/1.11.1jquery.min.js",AdminPanel.Common.url)%>" type="text/javascript"></script>
+    <script type="text/javascript" src="<%#string.Format("{0}/js/bootstrap.min.js",AdminPanel.Common.url)%>"></script>
+    <script src="<%#string.Format("{0}/js/app.js",AdminPanel.Common.url)%>"></script>
+    <script src="<%#string.Format("{0}/js/Validate.js",AdminPanel.Common.url)%>"></script>
+    <script src="<%#string.Format("{0}/js/Common-Function.js",AdminPanel.Common.url)%>" type="text/javascript"></script>
+    <script src="<%#string.Format("{0}/js/loader.js",AdminPanel.Common.url)%>"></script>
+    <script src="<%#string.Format("{0}/js/fancybox/jquery.fancybox.js",AdminPanel.Common.url)%>"></script>
+    <script src="<%#string.Format("{0}/js/jquery.disable.autocomplete.js",AdminPanel.Common.url)%>"></script>
+    <link href="<%#string.Format("{0}/js/fancybox/jquery.fancybox.css",AdminPanel.Common.url)%>" rel="stylesheet" />
+    <link href="<%#string.Format("{0}/css/jquery-ui.css",AdminPanel.Common.url)%>" rel="stylesheet" />
+    <script src="<%#string.Format("{0}/js/ui/jquery-migrate-1.2.1.js",AdminPanel.Common.url)%>" type="text/javascript"></script>
+    <script src="<%#string.Format("{0}/js/ui/jquery-ui.js",AdminPanel.Common.url)%>" type="text/javascript"></script>
+   <%-- <script src="<%#string.Format("{0}/js/ui/jquery-ui.js",AdminPanel.Common.url)%>"></script>--%>
+    <link rel="stylesheet" href="<%#string.Format("{0}/js/themes/base/jquery.ui.all.css",AdminPanel.Common.url)%>">
+    <script src="<%#string.Format("{0}/js/ui/jquery.ui.core.js",AdminPanel.Common.url)%>"></script>
+    <script src="<%#string.Format("{0}/js/ui/jquery.ui.widget.js",AdminPanel.Common.url)%>"></script>
+    <script src="<%#string.Format("{0}/js/ui/jquery.ui.position.js",AdminPanel.Common.url)%>"></script>
+    <script src="<%#string.Format("{0}/js/ui/jquery.ui.autocomplete.js",AdminPanel.Common.url)%>"></script>
+    <script src="<%#string.Format("{0}/js/placeholder.js",AdminPanel.Common.url)%>"></script>
+    <script src="<%#string.Format("{0}/js/Translator.js",AdminPanel.Common.url)%>" type="text/javascript"></script>
+    <%-- scripts added for multiple tabs logout --%>
+    <script src="<%#string.Format("{0}/js/store.min.js",AdminPanel.Common.url)%>" type="text/javascript"></script>
+    <script src="<%#string.Format("{0}/js/jquery-idleTimeout.min.js",AdminPanel.Common.url)%>" type="text/javascript"></script>
+    <%--scripts added for password indicator--%>
+    <link href="<%#string.Format("{0}/css/strength.css",AdminPanel.Common.url)%>" rel="stylesheet" />
+    <script src="<%#string.Format("{0}/js/PasswordIndicator.js",AdminPanel.Common.url)%>"></script>
+     <script src="<%#string.Format("{0}/js/highchart_js/highcharts.js",AdminPanel.Common.url)%>"></script> 
+    <script src="<%#string.Format("{0}/js/highchart_js/common-chart.js",AdminPanel.Common.url)%>"></script>
+     <script src="<%#string.Format("{0}/js/jquery.mask.min.js",AdminPanel.Common.url)%>"></script>
+    <script src="<%#string.Format("{0}/js/summernote.js",AdminPanel.Common.url)%>"></script>
+    <link href="<%#string.Format("{0}/css/summernote.css",AdminPanel.Common.url)%>" rel="stylesheet" type="text/css" />
+     <link href="<%#string.Format("{0}/css/main-font-style.css",AdminPanel.Common.url)%>" rel="stylesheet" type="text/css" />
+  
+
+    <script type="text/javascript">
+
+        $(document).keypress(function (event) {
+            try {
+                var keycode = (event.keyCode ? event.keyCode : event.which);
+                if (keycode == 13) {
+                    ClickImgSearch();
+                    //e.preventDefault();
+                }
+            }
+            catch (e) { console.log(e.message); }
+        });
+
+
+        $(document).on('click', function (e) {
+            if ($(e.target).closest('.searchbox').length) {
+                $(".searchtext").show();
+                $(".searchbox").addClass("bgcolr");
+                $(".setting_area .inner-content-log ul li.top_search a").css("margin-top", "-1px");
+            } else if (!$(e.target).closest('.searchtext').length) {
+                $('.searchtext').hide();
+                $(".searchbox").removeClass("bgcolr");
+                $(".setting_area .inner-content-log ul li.top_search a").css("margin-top", "1px");
+            }
+        });
+
+
+        $(document).ready(function () {
+            var checkSession = Common.checksession().value;
+            if (checkSession) {
+                window.location.href = '<%#string.Format("{0}/default.aspx",AdminPanel.Common.url)%>';
+            }
+
+            // added for password indicator 
+            $('#txtNewPass').strength({
+                strengthClass: 'strength',
+                strengthMeterClass: 'strength_meter',
+                strengthButtonClass: 'button_strength',
+                strengthButtonText: 'Show Password',
+                strengthButtonTextToggle: 'Hide Password'
+            });
+
+            $('#btnclosepopup').click(function () {
+                $('#change-pwd-divPopup input[type=password],#change-pwd-divPopup input[type=text]').val('');
+                $('div[data-meter="txtNewPass"]').removeClass().attr('class', '').html('');
+               // $('div[data-meter-progress="txtNewPass"]').removeClass().attr('class', '')
+            })
+
+            $('#btnChangePassword').click(function () {
+                var txtOldPwd = $('#txtPass').val().trim();
+                var txtPwd = $('#txtNewPass').val().trim();
+                var txtConfPwd = $('#txtConfirmPass').val().trim();
+                debugger;
+                if (ValidatePage('changepwdbody')) {
+                    if (txtOldPwd == txtPwd) {
+                        alert('Existing Password and New Password cannot be same');
+                        return false;
+                    }
+                    else if (txtPwd != txtConfPwd) {
+                        alert('Passwords do not match, please enter the same password');
+                        return false;
+                    }
+                    else if (ValidatePassword2(txtPwd)) {
+
+                        parameter = { "oldPassword": txtOldPwd, "newPassword": txtPwd };
+                        $.ajax({
+                            type: "POST",
+                            url: '<%#string.Format("{0}/Home.aspx/ChangeAdminPassword",AdminPanel.Common.url)%>',
+                            data: JSON.stringify(parameter),
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: OnSuccess,
+                            error: OnError
+                        });
+                        function OnSuccess(data, status) {
+                            var result = $.parseJSON(data.d);
+                            if (result != null && result.length > 0) {
+                                alert(result[0].Message);
+                                if (result[0].Status == '1') {
+                                    $('#btnclosepopup').click();
+                                }
+                            }
+                            else {
+                                //alert("We apologize for the inconvenience but the Service is currently unavailable, please try again later");
+                                alert("This portal is temporarily unavailable. Please try again later. We apologize for the inconvenience");
+                                return false;
+                            }
+                        }
+                        function OnError(request, status, error) {
+                            // alert("We apologize for the inconvenience but the Service is currently unavailable, please try again later");
+                            alert("This portal is temporarily unavailable. Please try again later. We apologize for the inconvenience");
+                        }
+                    }
+            return false;
+        }
+        else
+            return false;
+            });
+
+            $('#btnCancel').click(function () {
+                $('#change-pwd-divPopup input[type=password],#change-pwd-divPopup input[type=text]').val('');
+                $('div[data-meter="txtNewPass"]').removeClass().attr('class', '').html('');
+               // $('div[data-meter-progress="txtNewPass"]').removeClass().attr('class', '')
+
+            });
+
+            var open = true;
+            $('.field_header').find('a').attr('href', $('#smwLink').val());
+            $('.siq_header').find('a').attr('href', $('#siqLink').val());
+            $('.siqadmin_header').find('a').attr('href', $('#siqadminLink').val());
+
+            $("#menu_navigator").click(function () {
+                $(".SelectContainer").toggleClass("SelectContainer_grid");
+                $(".FromContainer").toggleClass("FromContainer_grid");
+                $(".SubjectContainer").toggleClass("SubjectContainer_grid");
+                $(".TimeContainer").toggleClass("TimeContainer_grid");
+                $("ul.tabs ul li").css("padding-left", "0");
+                $('.left-side').toggleClass('lw-width');
+                $(".right-side").toggleClass("new-right-side");
+                try {
+                    CRMDeshboard();
+                }
+                catch (e) { }
+                if (open) {
+                    open = false;
+                    $("#button-sidebar").css("background", "url('../images/close-arrow.png') no-repeat center center");
+                } else {
+                    open = true;
+                    $("#button-sidebar").css("background", "url('../images/open-arrow.png') no-repeat center center");
+                }
+                if ($(".jqgrid").jqxGrid != null)
+                    $(".jqgrid").jqxGrid('updatebounddata');
+                $('.grid_main_box').toggleClass("padleft");
+                try {
+                    processed_json = dtOutageChartjs;
+                    $('#outageschart').empty();
+                    Bindheigh('column', 'outageschart', false);
+                    //
+                    processed_json = dtUsageChartjs;
+                    $('#usagechart').empty();
+                    Bindheigh('column', 'usagechart', true);
+                    //
+                    processed_json = Generationjs;
+                    $('#generationchart').empty();
+                    Bindheigh('column', 'generationchart', true);
+                }
+                catch (e) { console.log(e.message); }
+            });
+
+
+            function openfancybox(url, width, showhome) {
+                $.fancybox({
+                    'width': width,
+                    'height': '90%',
+                    'autoScale': true,
+                    'transitionIn': 'fade',
+                    'transitionOut': 'fade',
+                    'href': url,
+                    'type': 'iframe',
+                });
+                return false;
+            }
+        });
+
+
+function ClickImgSearch() {
+    try {
+        if ($('#inputSearch').val().length) {
+            $(".searchtext").show();
+            $(".searchbox").addClass("bgcolr");
+            $(".setting_area .inner-content-log ul li.top_search a").css("margin-top", "-1px");
+            $('#inputSearch').focus();
+            if ($('#inputSearch').val() != "") {
+                if (window.location.pathname.lastIndexOf('customer.aspx') < 0)
+                    location.href = ($("#hdnCommonUrl").val() + "/usermanagement/customer.aspx?SearchText=" + $('#inputSearch').val());
+                else
+                    SearchResult();
+            }
+            else {
+                alert("Please enter text to search");
+                return false;
+            }
+        } else if (!$('#inputSearch').val().length) {
+            $('.searchtext').hide();
+            $(".searchbox").removeClass("bgcolr");
+            $(".setting_area .inner-content-log ul li.top_search a").css("margin-top", "1px");
+        }
+    }
+    catch (e) {
+        console.log(e.message);
+    }
+    return false;
+}
+    </script>
+
+    <style>
+        #change-pwd-divPopup > .popup_area {
+            height: auto !important;
+            width: 600px;
+        }
+
+        .bgcolr {
+            background: #fff;
+            border: 1px solid #44b85e;
+            border-left: 0;
+        }
+
+        .ui-dialog {
+            z-index: 99999 !important;
+        }
+
+        .ui-widget-overlay {
+            z-index: 99998 !important;
+        }
+
+        #pwdError {
+            background: rgba(60,60,60,.82);
+            color: white;
+            left: 20%;
+        }
+
+        a.menu-mavigation:hover {
+            text-decoration: none;
+            outline: 0;
+        }
+
+        #page_loader {
+            background-image: url('../images/ajax-loader.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            opacity: .7;
+            display: none;
+            position: absolute;
+            top: 0px;
+            z-index: 99999999;
+        }
+
+        .tooltip.bottom {
+            margin-top: -6px;
+            font-size: 10px;
+            text-transform: uppercase;
+        }
+
+            .tooltip.bottom .tooltip-arrow {
+                border-bottom-color: #93D400;
+            }
+
+        .tooltip-inner {
+            background: #93D400;
+        }
+
+        #PopupChangePassword .form-control {
+            width: 94%;
+            float: left;
+            border-radius: 0px;
+            height: auto;
+            padding: 3px 2px;
+        }
+
+        .top_search input[type="text"] {
+            border: 1px solid #44b85e;
+            border-right: 0;
+            border-radius: 20px 0 0 20px;
+            float: left;
+            font-size: 11px;
+            height: 23px;
+            padding: 0 3px 2px 7px;
+            width: 150px;
+            margin-top: 1px;
+            position: absolute;
+            right: 35px;
+            top: 0px;
+            outline: none;
+        }
+
+            .top_search input[type="text"]:focus {
+                border: 1px solid #44b85e;
+                border-right: 0;
+            }
+
+        .top_search img.search_btn {
+            float: left;
+            cursor: pointer;
+        }
+
+        .top_search .searchtext {
+            display: none;
+        }
+
+    /* Universal Search */
+    
+        .uni-srch-ico {
+            position: absolute;
+            left: 0;
+            width: 34px;
+            height: 50px;
+            background: #22aec9;
+        } 
+
+         .uni_top_space {
+              /*margin: auto;
+          top: 0;*/
+          bottom: 0;
+                  top: 14.2%;
+          }
+
+        .uni_search_wrapper {
+            position: absolute;
+            left: 0;
+            width: auto;
+            height: auto;
+            z-index: 99999;
+             height: 482px;
+        }
+
+        #gird_show_css {
+            z-index: 9999999999;
+        }
+
+        .uni_grid_wrapper {
+            display: none;
+        }
+       
+        .uni_grid_wrapper {
+            position: absolute;
+            left: 353px;
+            min-width: 700px;
+            height: 456px;
+            z-index: 99999;
+            background: #fff;
+            border-radius: 3px;
+            border: 1px solid #c4c4c4;
+        }
+        
+        .uni-srch-ico > .fa {
+                color: #fff;
+                font-size: 24px;
+                padding: 12px 4px;
+            cursor: pointer;
+        }
+        
+        .icon-addon.addon-md .glyphicon,
+        .icon-addon .glyphicon, 
+        .icon-addon.addon-md .fa,
+        .icon-addon .fa {
+            position: absolute;
+            z-index: 2;
+            left: 10px;
+            font-size: 14px;
+            width: 20px;
+            margin-left: -2.5px;
+            text-align: center;
+            padding: 10px 0;
+            top: 1px;
+        }
+
+        .uni_src_left_box {
+            background: #fff;
+            width: 100%;
+            float: left;            
+             border: 1px solid #c4c4c4;
+             border-top-right-radius: 3px;
+             border-bottom-right-radius: 3px;
+            height: 457px;
+        }
+
+ .uni_src_left_box > h3 {
+            background: #e7e7e7;
+            margin: 0px 0 10px 0;
+            padding: 12px;
+            font-size: 17px;
+    }
+
+ .uni_grid_wrapper_box > h3 {
+     background: #e7e7e7;
+    margin: 0px 0 10px 0;
+    padding: 12px;
+    font-size: 17px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+ }
+
+ .search_inpt_top {
+         padding: 15px;
+        width: 100%;
+        float: left;
+ }
+
+        .uni_src_left_box .form-control {
+     padding-left: 12px;
+    background: #fafafa;
+    border: #f0f0f0 solid 1px;
+    margin-bottom: 20px !important;
+    width: 100%;
+    text-align:left;
+  }
+
+  .modal-open .modal.userDetails {
+          z-index: 99999999999 !important;
+  }
+
+  #page_loader {
+          z-index: 99999999999999;
+  }
+
+        .uni_src_left_box .search_inpt_brdr .form-control {
+        padding-left: 40px;
+  }
+
+  .search_inpt_brdr {
+        border-bottom: #f0f0f0 solid 1px;
+            padding-bottom: 8px;
+  }
+
+  .uni_search_wrapper {
+            display: none;
+     }
+
+  .close_uni_popup {
+            float: right;
+            cursor: pointer;
+     }
+
+  .button_uni > a {
+            display: block;
+            float: right;
+            width: 130px;
+            padding: 6px 0;
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+            background: #22aec9;
+            border-radius: 2px;
+            text-align: center;
+  }
+
+  .ui-datepicker-trigger {
+          position: absolute;
+    right: 7px;
+    top: 32px;
+  }
+
+  .close_uni_grid {
+            float: right;
+            cursor: pointer;
+  }
+
+  .uni_grid_wrapper_box > h3 {
+            margin-bottom: 0px;
+  }
+
+  .grid_uni_box {
+            float: left;
+            width: 100%;
+            height: 413px;
+            overflow: auto;
+            background: #fff;
+  }
+
+        .grid_uni_box .uni_grid_txt {
+                text-align: center;
+                font-size: 20px;
+        }
+
+        #gird_show_css .modal-body {
+                float: left;
+                width: 100%;
+                background: #fff;
+            padding: 1px 0 0 0;
+        }
+
+        
+#gird_show_css.modal {
+    text-align: center;
+}
+
+    #gird_show_css.modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+
+#gird_show_css .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#gird_show_css.modal.fade .modal-dialog {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#gird_show_css.modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    //-webkit-transform: translate3d(0, -300px, 0);
+    //transform: translate3d(0, -300px, 0);
+    opacity: 1;
+}
+
+#gird_show_css .modal-body, #gird_show_css .modal-content {
+     box-shadow: 0 0 0 0 !important;
+}
+
+ #gird_show_css .modal-dialog.modal-lg, #gird_show_css .modal-content.modal-lg {
+          width: 850px;
+          left: 50px;
+    }
+
+.close {
+    opacity: 9 !important;
+}
+
+        .close_uni_popup .fa.fa-close, .close_uni_popup .fa.fa-close:hover {
+    font-weight: normal;
+    color: #000 !important;
+    opacity: 9 !important;
+    font-size: 18px;
+    position: relative;
+    top: -3px;
+    text-shadow: none;
+    z-index: 99999;
+ }
+
+@media (min-width:1500px) and (max-width:3000px) {
+    #gird_show_css .modal-dialog.modal-lg, #gird_show_css .modal-content.modal-lg {
+          width: 1147px;
+                left: 0;
+    }
+
+     .uni_top_space {          
+        top: 24.7%;
+        }
+
+     .uni-srch-ico.uni_top_space {
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    
+.uni-srch-ico.uni_top_space {
+            top: 0;
+            bottom: 0;
+            margin: auto;
+}
+
+.icon-addon.addon-md > label {
+        margin-bottom: 9px !important;
+    float: left;
+    width: 100%;
+}
+.popup_right_content_area_home #pswd_info {
+    left: 0 !important;
+    top: 40px!important;
+}
+
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var duration = 'slow';
+
+            $('.uni-srch-ico').click(function () {
+                $('.uni_search_wrapper').show('slide', { direction: 'left' }, duration);
+                 $(".modal-backdrop").show();
+               
+            });
+            $('.close_uni_popup').click(function () {
+                $('.uni_search_wrapper').hide('slide', { direction: 'left' }, duration);
+                $(".modal-backdrop").hide();
+                $(".add_grid_right_box").hide();
+                clearPopupFields();
+            });
+
+         
+            $(".gird_show_css").click(function () {               
+          //     $(".uni_grid_wrapper").show();
+                // $(".add_grid_right_box").show();
+                
+           });
+            
+            $(".close_uni_grid.close_uni_grid2").click(function () {
+                $("#gird_show_css").hide();
+                $("body").removeClass("modal-open");
+                // $(".modal-backdrop").hide();
+            });
+           $(".gird_show_css").click(function () {
+               $("#gird_show_css").show();
+               // $(".modal-backdrop").hide();
+           });
+
+        });
+
+        $(function () {
+            $("#datepicker").datepicker({
+                showOn: "button",
+                buttonImage: "images/calendar.gif",
+                buttonImageOnly: true,
+                buttonText: "Select date"
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+   
+    <script type="text/javascript">
+        var attachmentpath = '<%=string.Format("{0}/Attachments",AdminPanel.Common.url)%>'
+    </script>
+    
+
+    <form id="form1" runat="server" defaultfocus="imgSearch">
+        <asp:ScriptManager ID="scriptmanager1" runat="server"></asp:ScriptManager>
+        <div class="modal-backdrop fade in" style="display: none;"></div>
+        <uc1:CustomerSearchControl runat="server" ID="CustomerSearchControl" />
+
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-md-offset-3">
+                        <div class="setting_area">
+                            <div class="inner-content-log">
+                                <ul>
+                                   <% if (SessionAccessor.UserRightList.Contains(UserRights.DashboardConfiguration))
+                                       { %>
+                                    <li><a href="<%= string.Format("{0}/Admin_help_htm/index.html", AdminPanel.Common.url) %>" title="Help" class="help_header" target="_blank">Help</a></li>
+
+                                    <% } %>
+                                    <li>
+                                        <asp:Label ID="lblUserName" runat="server" CssClass="UserLabel"></asp:Label></li>
+                                
+                                    <li class="top_search" style="display: none">
+                                        <input tabindex="1" type="text" name="Search" title="Search" class="searchtext" maxlength="30" placeholder="Search" id="inputSearch" class="search" autocomplete="off" />
+                                        <a href="#" id="imgSearch" runat="server" class="searchbox" onclick="return ClickImgSearch();"><i class="fa fa-search srch_icon" aria-hidden="true"></i></a>
+
+                                    </li>
+                                   
+
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <span style="height: 40px;">
+                                          <%--  <img src="images/profile-icon.png" style="margin-top: -1px;" /></span>--%>
+                                              <img src="<%= string.Format("{0}/images/profile-icon.png", AdminPanel.Common.url) %>" style="margin-top: -1px;" /></span>
+                                    </a>
+                                        <ul class="dropdown-menu">
+                                            <div class="arrow_bdr"></div>
+
+                                            <li>
+                                                <asp:LinkButton data-target="#change-pwd-divPopup" data-toggle="modal" class="chang_pwd_header" runat="server" Text="Change Password" globalize="ML_SideMenu_Change_Password" ClientIDMode="Static" />
+                                            </li>
+                                         
+                                           
+                                                   <% if (SessionAccessor.UserRightList.Contains(UserRights.DashboardConfiguration) && (SessionAccessor.IsSuperAdmin))
+                                       { %>
+                                    <li style="display: none !important;"><a href="<%= string.Format("{0}/Configuration/configure-authentication.aspx", AdminPanel.Common.url) %>" title="Settings">Settings</a></li>
+                                    <% } %>
+
+                                               
+                                          
+                                            <li>
+                                                  <a id="imgLogoff" onclick="$.fn.idleTimeout().logout();" title="SignOut" class="logout_header" style="cursor: pointer; text-decoration: none; color: #88989b">Sign Out </a>                                                
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="container">
+                <div class="row demand_res_nav">
+                    <div class="col-xs-12 col-sm-4 col-md-4" style="width: 30%">
+                        <div class="header-logo" style="width: 400px;">
+                            <a class="menu-mavigation" id="menu_navigator" style="padding-left: 22px;">
+                                <img src="<%=string.Format("{0}/images/navbar_icon.png",AdminPanel.Common.url)%>" alt="" />
+                            </a>
+                            <a href="<%=string.Format("{0}/Home.aspx",AdminPanel.Common.url)%>" class="logo" style="padding-left: 10px;">
+                                <img src="<%=string.Format("{0}/images/logo.png",AdminPanel.Common.url)%>" alt="Logo-Header" /></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8" style="width: 70%">
+                        <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button" style="display: none;">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar">
+                                <img src="<%=string.Format("{0}/images/icon-nav.png",AdminPanel.Common.url)%>" /></span>
+                        </a>
+                        <div class="top-nav pull-right">
+                            <ul>
+                                <li class="home" data-toggle="tooltip" data-placement="bottom" title="HOME"><a href="<%=string.Format("{0}/home.aspx",AdminPanel.Common.url)%>"><span>HOME</span></a></li>
+
+                                <% if (SessionAccessor.UserRightList.Contains(UserRights.EfficiencyShow))
+                                   { %>
+                                <li class="user-mgt" data-toggle="tooltip" data-placement="bottom" title="EFFICIENCY" style="display: <%=SessionAccessor.IsModuleEnabled(Features.Efficiency) %>">
+
+
+                                    <% if (SessionAccessor.UserRightList.Contains(UserRights.UserManagementReport, StringComparer.InvariantCultureIgnoreCase))
+                                       { %>
+                                    <a href="<%=string.Format("{0}/configuration/configure-saving-tips.aspx",AdminPanel.Common.url)%>"><span>EFFICIENCY</span></a><% }
+                                       else if (SessionAccessor.UserRightList.Contains(UserRights.UserManagementUserCreate, StringComparer.InvariantCultureIgnoreCase))
+                                       { %>
+                                    <a href="<%=string.Format("{0}/configuration/configure-saving-tips.aspx",AdminPanel.Common.url)%>"><span>EFFICIENCY</span></a><% }
+                                       else
+                                       { %><a href="#">User Management</a><% } %>
+                                </li>
+
+                                <%} if (SessionAccessor.UserRightList.Contains(UserRights.OutageCancellation))
+                                   { %><li class="confi" style="display: <%=SessionAccessor.IsModuleEnabled(Features.Outages) %>" data-toggle="tooltip" data-placement="bottom" title="OUTAGES"><a href="<%=string.Format("{0}/configuration/Outage-Cancellation.aspx",AdminPanel.Common.url)%>"><span>OUTAGES</span></a></li>
+                                <%}%>
+
+
+                                <%   if (SessionAccessor.UserRightList.Contains(UserRights.ConfigurationCEAshow))
+                                     { %><li class="report" data-toggle="tooltip" data-placement="bottom" title="CUSTOMER ENGAGEMENT ANALYTICS"><a href="<%=string.Format("{0}/AdminReports/Dashboard.aspx",AdminPanel.Common.url)%>"><span>CUSTOMER ENGAGEMENT ANALYTICS</span></a></li>
+                                <%}%>
+
+                                <% if (SessionAccessor.UserRightList.Contains(UserRights.DashboardDemandResp))
+                                   {%>
+                                <li class="icon_thermostat" data-toggle="tooltip" data-placement="bottom" title="DEMAND RESPONSE" visible="true" id="moduleDR" runat="server"><a href="<%=string.Format("{0}/Demand-Response/dashboard.aspx",AdminPanel.Common.url)%>"><span>DEMAND RESPONSE</span></a></li>
+                                <%} %>
+
+                                <% if (SessionAccessor.UserRightList.Contains(UserRights.NotificationShow))
+                                   {%>
+                                <%--change as per bug id 9213--%>
+                                <li class="noti_header" data-toggle="tooltip" data-placement="bottom" title="NOTIFICATION" style="display: <%=SessionAccessor.IsModuleEnabled(Features.Notification) %>"><a href="<%=string.Format("{0}/Notification/Notification-Inbox.aspx",AdminPanel.Common.url)%>"><span>NOTIFICATION</span></a></li>
+                                <%} %>
+
+                                <% if (SessionAccessor.UserRightList.Contains(UserRights.AdministrationShow))
+                                   {%>
+                                <li class="crm_header " data-toggle="tooltip" data-placement="bottom" title="ADMINISTRATION"><a href="<%=string.Format("{0}/Configuration/configure-billing.aspx",AdminPanel.Common.url)%>"><span>ADMINISTRATION</span></a></li>
+                                <%} %>
+
+                                <% if (SessionAccessor.UserRightList.Contains(UserRights.DashboardUserManagemnt, StringComparer.InvariantCultureIgnoreCase) || (SessionAccessor.UserRightList.Contains(UserRights.UserManagementUserCreate, StringComparer.InvariantCultureIgnoreCase)))
+                                   {%>
+                                <li class="csr_header " data-toggle="tooltip" data-placement="bottom" title="CSR - WORKBENCH"><a href="<%=string.Format("{0}/UserManagement/Customer.aspx",AdminPanel.Common.url)%>"><span>CSR - WorkBench</span></a></li>
+                                <%}
+
+                                   if (SessionAccessor.UserRightList.Contains(UserRights.DashboardCRM))
+                                   { %><li class="crm_header1 " data-toggle="tooltip" data-placement="bottom" title="CRM"><a href="<%=string.Format("{0}/CRM/Crm-Dashboard.aspx",AdminPanel.Common.url)%>"><span>CRM</span></a></li>
+                                <%} %>
+                                <%--<%if (Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["smwLink"]) != null)--%>
+                                <%if (SessionAccessor.UserRightList.Contains(UserRights.FieldServiceView))
+                                  { %>
+                                <li class="field_header " data-toggle="tooltip" data-placement="bottom" title="FIELD SERVICE VIEW"><a href="#" target="_self"><span>Field Service View</span></a></li>
+                                <%} %>
+                                <% if (SessionAccessor.UserRightList.Contains(UserRights.WIQ))
+                                   {%>
+                                <li class="siq_header " data-toggle="tooltip" data-placement="bottom" title="WATER IQ ANALYTICS"><a href="#" target="_self"><span>SIQ</span></a></li>
+                                <li class="siqadmin_header" style="display: none; visibility: hidden;" data-toggle="tooltip" data-placement="bottom" title="SIQ Admin"><a href="#" target="_self"><span>SIQ Admin</span></a></li>
+                                <%} %>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="change-pwd-divPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog popup_area">
+                    <div class="modal-content" id="changePwdPopup">
+                        <div class="modal-header">
+                            <button type="button" id="btnclosepopup" class="close " data-dismiss="modal">
+                                <img src="<%=string.Format("{0}/images/popup_close.png",AdminPanel.Common.url)%>" title="Close" /></button>
+                            <h4 class="modal-title-changepwd" id="myModalLabel" globalize="ML_SideMenu_Change_Password">Change Password </h4>
+                            <span id="pwdError"></span>
+                        </div>
+                        <div class="modal-body" id="changepwdbody">
+                            <div class="popup_area_home">
+                                <div class="popup_left_content_area_home" globalize="">Existing Password: </div>
+                                <%--According to BRD Sheet--%>
+                                <input type="password" style="display: none" />
+                                <div class="popup_right_content_area_home">
+                                    <input type="password" id="txtPass" maxlength="16" mandatory="1" title="Click to enter a Existing Password"  autocomplete="off" ValidateMessage="Please enter Existing Password" />
+                                </div>
+
+                                <div style="clear: both;"></div>
+                                <div class="popup_left_content_area_home" globalize="">New Password: </div>
+                                <%--According to BRD Sheet--%>
+                                <div class="popup_right_content_area_home" style="position:relative;">
+                                    <input id="txtNewPass" type="password" maxlength="16" mandatory="1" title="New Password" globalize="ML_CHANGEPWDPOPUP_NEWPWD" autocomplete="off" ValidateMessage="Please enter New Password"/>
+                                      <uc1:PasswordIndicator runat="server" ID="PasswordIndicator" />
+                                </div>
+
+                                <div style="clear: both;"></div>
+                                <div class="popup_left_content_area_home" globalize="">Confirm Password:  </div>
+                                <%--According to BRD Sheet--%>
+                                <div class="popup_right_content_area_home">
+                                    <input id="txtConfirmPass" type="password" maxlength="16" mandatory="1" title="Confirm Password" globalize="ML_CHANGEPWDPOPUP_CONFIRMPWD" autocomplete="off" ValidateMessage="Please confirm the Password" />
+                                </div>
+
+                                <div style="clear: both;"></div>
+
+                            </div>
+                            <div class="bottom_area_home">
+                                <input id="btnChangePassword" type="button" class="submit-button" value="Submit" globalize="ML_Master_btn_Submit" />
+                                <input id="btnCancel" type="reset" class="cancel-button" value="Clear" globalize="ML_Master_btn_Clear" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="PopupChangePassword" class="popheading" style="display: none; background-color: White; width: 400px; padding-bottom: 8px; border: 1px solid #008ddd;">
+                <div class="popheading">
+                    <asp:HiddenField ID="HiddenFieldCustid" runat="server" ClientIDMode="Static" />
+                    <div class="modal-header">
+                        <button class="close" type="button" id="ClosePopupChangepass" alt="Close" title="Close" data-dismiss="modal">&times;</button>
+
+                        <h4 class="modal-title">Change Password</h4>
+
+                    </div>
+                </div>
+                <div class="popchngepwd  " id="outboxChangepass">
+                    <div class="form-group">
+                        <div class="user-outbox-area">
+                            <label>New Password </label>
+                        </div>
+                        <div class="Text-outbox-area">
+                            <asp:TextBox runat="server" TextMode="Password" ID="txtpassword" mandatory="1" Style="width: 94%; float: left;" CssClass="form-control txtmsgsubject" title="New Password" ClientIDMode="Static"></asp:TextBox>
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group">
+                        <div class="user-outbox-area">
+                            <label>Confirm Password</label>
+                        </div>
+                        <div class="Text-outbox-area">
+                            <asp:TextBox runat="server" ID="txtConfirmpassword" TextMode="Password" mandatory="1" Style="width: 94%; float: left;" CssClass="form-control txtmsgsubject" title="Confirm Password" ClientIDMode="Static"></asp:TextBox>
+
+                        </div>
+                    </div>
+                    <div class="outage_sbt_box" style="text-align: right; width: 100%; border-top: 1px solid #ccc;">
+                        <input type="button" id="btnsavePasswoord" value="Save" class="submitBtn" onclick="return ChangePassword();" />
+                    </div>
+                </div>
+            </div>
+
+          
+        </header>
+        <asp:HiddenField ID="portalweb" runat="server" ClientIDMode="Static" />
+        <%if (Convert.ToString(System.Configuration.ConfigurationManager.AppSettings["smwLink"]) != "")
+          { %>
+        <input id="smwLink" value="<%=System.Configuration.ConfigurationManager.AppSettings["smwLink"]%>" type="hidden" />
+        <% }%>
+        <input id="siqLink" value="<%=System.Configuration.ConfigurationManager.AppSettings["siqLink"]%>" type="hidden" />
+        <input id="siqadminLink" value="<%=System.Configuration.ConfigurationManager.AppSettings["siqadminLink"]%>" type="hidden" />
+
+        <!-- END header -->
+        <div class="inner_mid_section">
+            <div class="container inner-mid-container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <uc1:Footer runat="server" ID="Footer" />
+        <div id="page_loader2" style="display: none">
+            Loading....
+        </div>
+
+
+        <div id="page_loader">
+        </div>
+        <input id="hdnCommonUrl" type="hidden" value="<%=AdminPanel.Common.url%>" />
+        <asp:HiddenField ID="hdnFileExtension" runat="server" ClientIDMode="Static" />
+         <asp:HiddenField ID="HdnPhoneNo" ClientIDMode="Static" runat="server" />
+    <asp:HiddenField ID="HdnEmailId" ClientIDMode="Static" runat="server" />
+    <span globalize="ML_Connectme_ErrMsg_FileSize" id="IDfilesize" style="display: none"></span>
+        <span globalize="ML_Connectme_ErrMsg_FileExt" id="IDfileExt" style="display: none"></span>
+    </form>
+</body>
+
+<script type="text/javascript">
+    var sessionTimeout = '<%= Session.Timeout %>';
+    var seconds = sessionTimeout * 60;
+    seconds = seconds - 35;
+    $(document).ready(function () {
+        $(document).idleTimeout({
+            redirectUrl: '<%=AdminPanel.Common.url%>' + '/signout.aspx',
+            idleTimeLimit: seconds, // 15 seconds 
+            activityEvents: 'click keypress scroll wheel mousewheel', // separate each event with a space 
+            dialogDisplayLimit: 30, // Time to display the warning dialog before logout (and optional callback) in seconds 
+            sessionKeepAliveTimer: false // Set to false to disable pings. 
+        });
+    });
+</script>
+    
+</html>

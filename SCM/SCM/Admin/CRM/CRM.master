@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="CRM.master.cs" Inherits="AdminPanel.CRM.CRM" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+  
+    <%--<script type="text/javascript" src="../js/crm-script.js"></script>--%>
+    <script src="../js/highchart_js/highcharts.js"></script>
+    <script src="../js/highchart_js/common-chart.js"></script>
+    <script src="../js/highchart_js/highcharts-3d.js"></script>
+    <script src="../js/highchart_js/highcharts-more.js"></script>
+    <script src="../js/highchart_js/grouped-categories.js"></script>
+    <link href="../css/AdminReport_main.css" rel="stylesheet" />
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    
+    <style>
+        .inner-right-section .top-header-area {
+            border-bottom: 1px solid #ededed;
+        }
+        #jqxgrid {
+            border-radius: 0 !important;
+        }
+
+        #gridbox {
+            border-radius: 0 !important;
+        }
+
+        .jqx-widget .jqx-grid-cell, .jqx-widget .jqx-grid-column-header, .jqx-widget .jqx-grid-group-cell {
+            border-color: #ddd !important;
+        }
+
+        input:disabled:not([type="button"]), select:disabled, textarea:disabled, input[readonly]:not([type="button"]), select[readonly], textarea[readonly] {
+            background-color: #fff !important;
+        }
+
+          .jqx-fill-state-hover {
+            background:#f8fafb !important;
+        }
+
+          .jqx-fill-state-pressed {
+              background:#edeeee !important;
+          }
+
+        .jqx-grid-column-header {
+            padding-left: 10px;
+            font-size: 13px !important;
+        }
+
+      
+
+        .jqx-grid-cell-alt {
+            background: #f8fafb !important;
+        }
+
+        .add_seg_details table tr td, .add_seg_details table tr th {
+            padding: 6px 10px;
+        }
+
+        /*#divFilter .content {
+            background-color: #f4f4f4;
+            cursor: initial;
+            float: left;
+            height: auto;
+            padding: 7px 1px 5px 13px;
+            width: 100%;
+        }*/
+
+        .filter-section {
+            float: left;
+            margin: -5px 0 0 !important;
+            padding: 0;
+        }
+
+        .filter_button, .filter_button.active {
+            margin-top: 3px !important;
+        }
+
+        .add_seg_details {
+            display: block;
+            float: left;
+            width: 100%;
+        }
+
+            .add_seg_details .table {
+                width: 99.2%;
+                margin: 3px auto;
+                text-align: left;
+            }
+
+            .add_seg_details table tr td, .add_seg_details table tr th {
+                text-align: left;
+            }
+
+        span.status {
+            display: block;
+            padding-top: 7px;
+            color: #acacac !important;
+        }
+
+
+        #jqxgrid span.active {
+            color: #94d60a !important;
+            background: none !important;
+            text-align: left;
+        }
+
+        .add_btn a {
+            text-decoration: none !important;
+        }
+
+        .inner-right-section {
+            height: 97%;
+        }
+        @media (min-width:1367px) and (max-width:3000px) {
+            .inner-right-section {
+                height: 99%;
+            }
+        }
+
+        .inner-right-section .grid-section.sgmntn_wrapper {
+            margin:0 0 0 0;
+        }
+
+    </style>
+    <aside class="left-side sidebar-offcanvas">
+        <!-- sidebar: style can be found in sidebar.less -->
+        
+    </asp:ScriptManager>
+        <section class="sidebar">
+            <ul class="tabs sidebar-menu" id="accordion">
+                <li class="sidebar_dashboard crm"><a href="Crm-Dashboard.aspx">CRM Dashboard</a></li>
+                <li class="sidebar_sgmntns"><a href="crm-segmentations.aspx">Segment</a></li>
+                <li class="campaign_configurations"><a href="crm-campaign-configuration.aspx">Campaign</a></li>
+                <li class="templates"><a href="crm-template.aspx">Template</a></li>
+                <li class="attributes"><a href="crm-attribute.aspx">Attribute</a></li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <aside class="right-side">
+        <a href="javascript:void(0);" id="button-sidebar" class="button-sidebar ir"></a>
+        <div class="inner-right-section">
+            <div class="right-content-area">
+                <asp:ContentPlaceHolder ID="rightpanel" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </aside>
+   
+    <script type="text/javascript" src="../js/jscolor/jscolor.js"></script>
+    <script type="text/javascript">
+        $(".crm_header1").addClass('active');
+       
+    </script>
+    <style>
+        #collapseOne li a, .in li a {
+            cursor: pointer;
+        }
+
+        #PopupAddTopic {
+            left: 15% !important;
+            top: 0% !important;
+        }
+    </style>
+</asp:Content>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c8bca23c-5606-4f6e-9630-73385a3a7543" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/GasUsageAnalysis.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GasUsageAnalysis.xsd" MetadataType="Schema" ID="5fcb3b5f-2aef-4159-be41-e5e39e3cdeba" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/GasUsageAnalysis.svc?xsd=xsd2" />
+    <MetadataFile FileName="GasUsageAnalysis.disco" MetadataType="Disco" ID="38cae0c7-fd30-42de-9c93-0207ae122bf3" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/GasUsageAnalysis.svc?disco" />
+    <MetadataFile FileName="GasUsageAnalysis1.xsd" MetadataType="Schema" ID="98ddded2-d4a7-4662-9d8f-c26b0cb9850e" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/GasUsageAnalysis.svc?xsd=xsd1" />
+    <MetadataFile FileName="GasUsageAnalysis2.xsd" MetadataType="Schema" ID="1d40a76f-ad8e-4593-b245-c3c5ef46b737" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/GasUsageAnalysis.svc?xsd=xsd0" />
+    <MetadataFile FileName="GasUsageAnalysis.wsdl" MetadataType="Wsdl" ID="b6e67a26-dabe-444b-826f-13fe37601ef6" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/GasUsageAnalysis.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

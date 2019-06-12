@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DRProgram" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://sus_dsc.sus.local/SCM_Service/DRProgram.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://sus_dsc.sus.local/SCM_Service/DRProgram.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://sus_dsc.sus.local/SCM_Service/DRProgram.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDRProgram_GetDRProgram_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDRProgram" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetDRProgram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDRProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUserDrProram_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDrProram" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUserDrProram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDrProramResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUserDREvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDREvent" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUserDREvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDREventResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_SetDRProgramEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDRProgramEvent" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_SetDRProgramEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDRProgramEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUsersDREventDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersDREventDetail" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUsersDREventDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersDREventDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetPromotionEventNotify_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPromotionEventNotify" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetPromotionEventNotify_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPromotionEventNotifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_SetPromotionEventNotify_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetPromotionEventNotify" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_SetPromotionEventNotify_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetPromotionEventNotifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUserDrProgrameTitle_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDrProgrameTitle" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUserDrProgrameTitle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDrProgrameTitleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetDRProgramMob_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDRProgramMob" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetDRProgramMob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDRProgramMobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUserDrProramMob_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDrProramMob" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUserDrProramMob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDrProramMobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUserDREventMob_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDREventMob" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUserDREventMob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDREventMobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_SetDRProgramEventMob_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDRProgramEventMob" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_SetDRProgramEventMob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDRProgramEventMobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUsersDREventDetailMob_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersDREventDetailMob" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUsersDREventDetailMob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersDREventDetailMobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetPromotionEventNotifyMob_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPromotionEventNotifyMob" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetPromotionEventNotifyMob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPromotionEventNotifyMobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_SetPromotionEventNotifyMob_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetPromotionEventNotifyMob" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_SetPromotionEventNotifyMob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetPromotionEventNotifyMobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUserDrProgrameTitleMob_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDrProgrameTitleMob" />
+  </wsdl:message>
+  <wsdl:message name="IDRProgram_GetUserDrProgrameTitleMob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDrProgrameTitleMobResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDRProgram">
+    <wsdl:operation name="GetDRProgram">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/GetDRProgram" message="tns:IDRProgram_GetDRProgram_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/GetDRProgramResponse" message="tns:IDRProgram_GetDRProgram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDrProram">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/GetUserDrProram" message="tns:IDRProgram_GetUserDrProram_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/GetUserDrProramResponse" message="tns:IDRProgram_GetUserDrProram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDREvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/GetUserDREvent" message="tns:IDRProgram_GetUserDREvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/GetUserDREventResponse" message="tns:IDRProgram_GetUserDREvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDRProgramEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/SetDRProgramEvent" message="tns:IDRProgram_SetDRProgramEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/SetDRProgramEventResponse" message="tns:IDRProgram_SetDRProgramEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDREventDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/GetUsersDREventDetail" message="tns:IDRProgram_GetUsersDREventDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/GetUsersDREventDetailResponse" message="tns:IDRProgram_GetUsersDREventDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPromotionEventNotify">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/GetPromotionEventNotify" message="tns:IDRProgram_GetPromotionEventNotify_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/GetPromotionEventNotifyResponse" message="tns:IDRProgram_GetPromotionEventNotify_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPromotionEventNotify">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/SetPromotionEventNotify" message="tns:IDRProgram_SetPromotionEventNotify_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/SetPromotionEventNotifyResponse" message="tns:IDRProgram_SetPromotionEventNotify_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDrProgrameTitle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/GetUserDrProgrameTitle" message="tns:IDRProgram_GetUserDrProgrameTitle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/GetUserDrProgrameTitleResponse" message="tns:IDRProgram_GetUserDrProgrameTitle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDRProgramMob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/GetDRProgramMob" message="tns:IDRProgram_GetDRProgramMob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/GetDRProgramMobResponse" message="tns:IDRProgram_GetDRProgramMob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDrProramMob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/GetUserDrProramMob" message="tns:IDRProgram_GetUserDrProramMob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/GetUserDrProramMobResponse" message="tns:IDRProgram_GetUserDrProramMob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDREventMob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/GetUserDREventMob" message="tns:IDRProgram_GetUserDREventMob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/GetUserDREventMobResponse" message="tns:IDRProgram_GetUserDREventMob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDRProgramEventMob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/SetDRProgramEventMob" message="tns:IDRProgram_SetDRProgramEventMob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/SetDRProgramEventMobResponse" message="tns:IDRProgram_SetDRProgramEventMob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDREventDetailMob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/GetUsersDREventDetailMob" message="tns:IDRProgram_GetUsersDREventDetailMob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/GetUsersDREventDetailMobResponse" message="tns:IDRProgram_GetUsersDREventDetailMob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPromotionEventNotifyMob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/GetPromotionEventNotifyMob" message="tns:IDRProgram_GetPromotionEventNotifyMob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/GetPromotionEventNotifyMobResponse" message="tns:IDRProgram_GetPromotionEventNotifyMob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPromotionEventNotifyMob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/SetPromotionEventNotifyMob" message="tns:IDRProgram_SetPromotionEventNotifyMob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/SetPromotionEventNotifyMobResponse" message="tns:IDRProgram_SetPromotionEventNotifyMob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDrProgrameTitleMob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDRProgram/GetUserDrProgrameTitleMob" message="tns:IDRProgram_GetUserDrProgrameTitleMob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDRProgram/GetUserDrProgrameTitleMobResponse" message="tns:IDRProgram_GetUserDrProgrameTitleMob_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDRProgram" type="tns:IDRProgram">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDRProgram">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/GetDRProgram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDrProram">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/GetUserDrProram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDREvent">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/GetUserDREvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDRProgramEvent">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/SetDRProgramEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDREventDetail">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/GetUsersDREventDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPromotionEventNotify">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/GetPromotionEventNotify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPromotionEventNotify">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/SetPromotionEventNotify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDrProgrameTitle">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/GetUserDrProgrameTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDRProgramMob">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/GetDRProgramMob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDrProramMob">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/GetUserDrProramMob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDREventMob">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/GetUserDREventMob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDRProgramEventMob">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/SetDRProgramEventMob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDREventDetailMob">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/GetUsersDREventDetailMob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPromotionEventNotifyMob">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/GetPromotionEventNotifyMob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPromotionEventNotifyMob">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/SetPromotionEventNotifyMob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDrProgrameTitleMob">
+      <soap:operation soapAction="http://tempuri.org/IDRProgram/GetUserDrProgrameTitleMob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DRProgram">
+    <wsdl:port name="BasicHttpBinding_IDRProgram" binding="tns:BasicHttpBinding_IDRProgram">
+      <soap:address location="http://sus_dsc.sus.local/SCM_Service/DRProgram.svc/SoapService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

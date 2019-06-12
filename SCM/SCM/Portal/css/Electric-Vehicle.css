@@ -1,0 +1,117 @@
+﻿
+        .esriPopup .actionsPane .zoomTo {
+            display: none;
+        }
+
+        .esriPopupWrapper {
+            height: 121px;
+        }
+
+        .contentPane {
+            height: 79px;
+        }
+
+        .ajax__slider_h_rail {
+            width: 198px !important;
+            float: left !important;
+        }
+
+        .right_content_box_1 {
+            height: 87%;
+            overflow: auto;
+            position: relative;
+        }
+
+        .energy_mid_box .right_content_box {
+            height: 96%;
+        }
+
+        @media only screen and (min-width:768px) and (max-width:1024px) {
+            .ajax__slider_h_rail {
+                width: 159px !important;
+            }
+
+            .right-area-tabular-ev select {
+                width: 163px !important;
+                margin-bottom: 6px;
+            }
+
+            .all_bill_box .left-area-tabular-ev {
+                width: 42%;
+            }
+        }
+
+        @media only screen and (min-width:768px) and (max-width:991px) {
+            .right-area-tabular-ev a.view_web {
+                margin-left: 80px;
+            }
+        }
+
+        .right-area-tabular-ev input[type="text"], input[type="password"], textarea {
+            padding: 0 3px !important;
+        }
+
+        .customer_txt_name select {
+            float: left;
+            margin-right: 3%;
+            width: 25%;
+        }
+
+        .inner_uni1 .right_content_box_1 {
+            height: 88% !important;
+        }
+
+        .inner_uni3 .right_content_box_1 {
+            height: 87% !important;
+        }
+
+        .inner_uni5 .right_content_box_1 {
+            height: 86% !important;
+        }
+
+        .dv_slider_wrapper {
+            margin-top: 4px !important;
+        }
+
+            .dv_slider_wrapper #dvSlider {
+                width: 72%;
+                float: left;
+                margin-right: 19px;
+                margin-top: 3px;
+                border-radius:0px !important;
+            }
+
+        .ui-slider-handle {
+            margin-left: -16px !important;
+        }
+
+        @media (min-width:992px) and (max-width:1024px) {
+            .dv_slider_wrapper #dvSlider {
+                width: 61%;
+            }
+        }
+
+        @media (min-width:768px) and (max-width:991px) {
+            .dv_slider_wrapper #dvSlider {
+                width: 58%;
+            }
+        }
+
+        @media (max-width:767px) {
+            .all_bill_box .white_div {
+                clear: both;
+            }
+
+            select.vehicle_select {
+                width: 90% !important;
+            }
+
+            #dvSlider {
+                width: 58% !important;
+            }
+        }
+
+        #txt_SliderVal {
+            width: 30px !important;
+        }
+    

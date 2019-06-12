@@ -1,0 +1,10 @@
+﻿ 
+        .energy_mid_box .right_content_box {
+    margin-left: 0%;
+    overflow: visible !important;
+    width: 80%;
+}
+        .energy_mid_box {
+            position: static;
+        }
+    

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="702cf629-1345-427d-9503-4bb351a951b1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/Billing.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Billing.disco" MetadataType="Disco" ID="ebf72062-e017-4a19-963c-ffa433bbbcca" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Billing.svc?disco" />
+    <MetadataFile FileName="Billing.xsd" MetadataType="Schema" ID="b9962431-f7fa-4cf0-8af5-f281904f7c2e" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Billing.svc?xsd=xsd1" />
+    <MetadataFile FileName="Billing.wsdl" MetadataType="Wsdl" ID="714f649c-9d2b-4d80-a657-beca5cbbc948" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Billing.svc?wsdl" />
+    <MetadataFile FileName="Billing1.xsd" MetadataType="Schema" ID="427581e5-17d7-4c2d-add6-da85f4492afe" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Billing.svc?xsd=xsd0" />
+    <MetadataFile FileName="Billing2.xsd" MetadataType="Schema" ID="d20b8be6-f3de-4be1-a5ba-ff4c87e653ce" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Billing.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

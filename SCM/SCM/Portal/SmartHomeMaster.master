@@ -1,0 +1,281 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="SmartHomeMaster.master.cs" Inherits="CustomerPortal.SmartHomeMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <%: System.Web.Optimization.Styles.Render("~/Content/cssSmartHomeMaster") %>
+    <%: System.Web.Optimization.Scripts.Render("~/Bundles/jsSmartHomeMaster")%>
+    <%--<link href="css/Sprinkler.css" rel="stylesheet" />--%>
+  <%--  <style type="text/css">
+        .energy_mid_box .right_content_box {
+            height: 97%;
+        }
+
+        .inner_mid_section_box1 {
+            height: 80% !important;
+        }
+
+            .inner_mid_section_box1 .right_top_box-1 {
+                height: 85% !important;
+                overflow: auto;
+            }
+
+        .inner_uni1 {
+            height: 80% !important;
+            overflow: auto;
+        }
+
+        .inner_uni5 {
+            height: 76% !important;
+            overflow: auto;
+        }
+
+        .inner_uni3 {
+            height: 78% !important;
+            overflow: auto;
+        }
+
+        .inner_uni1 .setting_save_box {
+            padding-top: 13px;
+        }
+
+        .inner_mid_section_box1 .setting_save_box {
+            padding-top: 15px;
+        }
+
+        .inner_mid_section_box1 .energy_mid_box {
+            padding-bottom: 12px;
+        }
+
+        .inner_uni3 .setting_save_box {
+            padding-top: 9px;
+        }
+
+        .inner_uni3 .energy_mid_box {
+            padding-bottom: 36px;
+        }
+
+        .right_content_box_1 {
+            height: 87%;
+            overflow: auto;
+            position: relative;
+        }
+
+        .inner_mid_section_box1 .right_content_box_1 {
+            height: 84% !important;
+        }
+
+        @media (min-width:1400px) {
+            .right_content_box_1 {
+                height: 89% !important;
+            }
+        }
+
+        .inner_uni1 .right_content_box_1 {
+            height: 87% !important;
+        }
+
+        .inner_uni3 .right_content_box_1 {
+            height: 87% !important;
+        }
+
+        .inner_uni5 .right_content_box_1 {
+            height: 87% !important;
+        }
+
+        .energy_mid_box .right_content_box {
+            overflow:visible !important;
+            width: 79%;
+            margin-left: 1%;
+
+        }
+        @media (max-width:767px) {
+            .energy_mid_box .right_content_box {
+                width: 99.5%;
+                }
+            .setting_save_box {
+                float: left;
+            }
+            .sidebar_toggle {
+                width: 100%;
+                float:left;
+            }
+            .right_content_box_1{
+                height: 94%;
+            }
+        }
+        
+
+/*.dropbtn {
+    background: url(../images/icon_dryer.svg) no-repeat 106% top;
+    padding: 10px 0 10px 27%;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+.nav_left ul .dropbtn:hover {
+    background: url(../images/bg_nav_sidebar_hover.png) no-repeat 106% top;
+    width: 106%;
+    background-size: 100% 100%;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width:100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}*/
+
+    </style>--%>
+
+    <script type="text/javascript">
+        var metas = document.getElementsByTagName('meta');
+        var i;
+        if (navigator.userAgent.match(/iPhone/i)) {
+            for (i = 0; i < metas.length; i++) {
+                if (metas[i].name == "viewport") {
+                    metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+                }
+            }
+            document.addEventListener("gesturestart", gestureStart, false);
+        }
+        function gestureStart() {
+            for (i = 0; i < metas.length; i++) {
+                if (metas[i].name == "viewport") {
+                    metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+                }
+            }
+        }
+    </script>
+   <%-- <script type="text/javascript" src="js/detect-zoom.js"></script>
+    <script type="text/javascript">
+        function refresh() {
+            //var zoom = $('#zoom');
+            var device = $('#device');
+            //zoom.text(window.detectZoom.zoom().toFixed(2));
+            //device.text(window.detectZoom.device().toFixed(2));
+            if ((window.detectZoom.device().toFixed(1) >= 1.09) && (window.detectZoom.device().toFixed(1) < 1.20)) {
+                $("#device").addClass('inner_uni1');
+                $("#device").removeClass('inner_mid_section_box1');
+                $("#device").removeClass('inner_uni3');
+                $("#device").removeClass('inner_uni5');
+            }
+            else if ((window.detectZoom.device().toFixed(1) >= 1.20) && (window.detectZoom.device().toFixed(1) < 1.30)) {
+                $("#device").removeClass('inner_uni1');
+                $("#device").removeClass('inner_uni3');
+                $("#device").removeClass('inner_uni5');
+                $("#device").addClass('inner_mid_section_box1');
+            }
+            else if ((window.detectZoom.device().toFixed(1) >= 1.30) && (window.detectZoom.device().toFixed(1) < 1.50)) {
+                $("#device").removeClass('inner_uni1');
+                $("#device").removeClass('inner_mid_section_box1');
+                $("#device").removeClass('inner_uni5');
+                $("#device").addClass('inner_uni3');
+            }
+            else if ((window.detectZoom.device().toFixed(1) >= 1.50) && (window.detectZoom.device().toFixed(1) < 1.70)) {
+                $("#device").removeClass('inner_uni1');
+                $("#device").removeClass('inner_mid_section_box1');
+                $("#device").removeClass('inner_uni3');
+                $("#device").addClass('inner_uni5');
+            }
+            else {
+                $("#device").removeClass('inner_uni1');
+                $("#device").removeClass('inner_mid_section_box1');
+                $("#device").removeClass('inner_uni3');
+                $("#device").removeClass('inner_uni5');
+            }
+
+        }
+        $("document").ready(function () {
+            refresh();
+            $(window).on('resize', refresh);
+        });
+    </script>--%>
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <section class="inner_mid_section" id="device">
+    <div class="container inner-mid-container">
+    <div class="energy_mid_box">
+        <div class="cover_top_area">
+    <h1><img src="images/icon_smart_home_sidebar.svg" style="padding-right:5px; margin-top: -3px; float: left;" />
+          <span class="head_icon_flat icon_smarthome"></span>
+        <span globalize="ML_SmartHm_div_SH"><%= CustomerPortal.Translator.T("ML_SmartHm_div_SH") %></span></h1>
+        <div class="cover_right_top_area" style="text-align:right;">
+            <% if (string.Equals(CustomerPortal.SessionAccessor.ThermoStateVersion, "ladwp"))
+               { %>
+                     <a href="Central_air_system.aspx" class="thermostate" style="padding-top: 10px; padding-bottom:9px;" globalize="ML_SmartHmMstr_a_Thermost"><%= CustomerPortal.Translator.T("ML_SmartHmMstr_a_Thermost") %></a>
+              <% }
+               else
+               { %>
+                   <a href="Central-air-system.aspx" class="thermostate" style="padding-top: 10px; padding-bottom:9px;" globalize="ML_SmartHmMstr_a_Thermost"><%= CustomerPortal.Translator.T("ML_SmartHmMstr_a_Thermost") %></a>
+              <% } %>           
+                
+        </div>
+            </div>
+          <div class="sidebar_toggle">Sidebar Navigation</div>
+                 <div class="nav_left">
+                      
+                	<ul>
+                    	<li class="icon_dish_washer"><a href="smart-dishwasher.aspx" globalize="ML_SmartHmMstr_a_DW"><%= CustomerPortal.Translator.T("ML_SmartHmMstr_a_DW") %></a></li>
+                        <li class="icon_lighting"><a href="smart-light.aspx" globalize="ML_SmartHmMstr_a_L"><%= CustomerPortal.Translator.T("ML_SmartHmMstr_a_L") %></a></li>
+                        <li class="icon_center_system"><a href="smart-centralairsystem.aspx" globalize="ML_SmartHmMstr_a_CAS"><%= CustomerPortal.Translator.T("ML_SmartHmMstr_a_CAS") %></a></li>
+                        <li class="icon_tv"><a href="smart-television.aspx" globalize="ML_SmartHmMstr_a_TV"><%= CustomerPortal.Translator.T("ML_SmartHmMstr_a_TV") %></a></li>
+                        <li class="icon_refrigerator"><a href="smart-refrigerator.aspx" globalize="ML_SmartHmMstr_a_Refrige"><%= CustomerPortal.Translator.T("ML_SmartHmMstr_a_Refrige") %></a></li>
+                        <li class="icon_washing_machin"><a href="smart-washingmachine.aspx" globalize="ML_SmartHmMstr_a_WM"><%= CustomerPortal.Translator.T("ML_SmartHmMstr_a_WM") %></a></li>
+                        <li class="icon_jacuzzi"><a href="smart-jacuzzi.aspx" globalize="ML_SmartHmMstr_a_Jac"><%= CustomerPortal.Translator.T("ML_SmartHmMstr_a_Jac") %></a></li>
+                        <li class="icon_water_heater"><a href="smart-waterheater.aspx" globalize="ML_SmartHmMstr_a_WH"><%= CustomerPortal.Translator.T("ML_SmartHmMstr_a_WH") %></a></li>
+                        <li class="icon_dryer"><a href="smart-dryer.aspx" globalize="ML_SmartHmMstr_a_Dryer"><%= CustomerPortal.Translator.T("ML_SmartHmMstr_a_Dryer") %></a></li>
+                        <li class="icon_sprinkler"><a href="<%=string.Format("{0}/SprinklerDevice.aspx",CustomerPortal.SessionAccessor.BaseUrl)%>">Sprinkler</a></li>
+                    </ul>
+                </div>
+     <div class="right_content_box">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server"></asp:ContentPlaceHolder>
+         </div>
+       </div>
+     </div>
+</section>
+   <%-- <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+</script>--%>
+</asp:Content>

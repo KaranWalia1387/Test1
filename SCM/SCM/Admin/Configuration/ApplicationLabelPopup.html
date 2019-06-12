@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .popup_head {
+            background: #999999;
+            padding: 8px 10px;
+            color: #fff;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .inner_div_cont {
+            padding: 5px 5px !important;        
+        }
+        .table-responsive {
+            margin: 0% 0% 0% 0%;
+            padding: 0px;
+            width: 100%;
+        }
+
+        #divupdate table tr td {
+        position:relative}
+        #divupdate table tr td  span{
+            position:absolute;
+            right: 0;
+            top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="modal-header popup_head" ng-controller="Nav">
+        <a href="#" class="close" data-dismiss="modal" id="closeApplicationLabel1" style="opacity: 9; ">
+            <img src="../images/popup_close.png" title="Close" ng-click="cancel()" />
+        </a>
+        <h4 id="hModelHeader1" class="modal-title">Update Application Label :{{item[0].Controlid}}</h4>
+    </div>
+    <div  class="modal-body inner_div_cont">
+        <div id="divupdate" class="grid-section table-responsive">
+
+            <table class="table table-bordered">
+                <tr>
+                    <th style="width: 60px;">Language</th>
+                    <th>ControlText</th>
+                    <th>ControlTitle</th>
+                    <th>ControlPlaceHolder</th>
+                    <th>ErrorMessage</th>
+                    <th>AltTitle</th>
+                    <th>ControlType</th>
+                </tr>
+
+                <tr ng-repeat="i in item">
+
+                    <td>
+                        {{i.LanguageCode}}
+                    </td>
+
+                    <td>
+                       <input type="text" id="txtENControlText"  title="ControlText" ng-model="i.ControlText">
+                        <!--<textarea id="txtENControlText" rows="4" cols="100" title="ControlText" ng-model="i.ControlText"></textarea>-->
+                 <!--<span class="required" style="color: #950202; padding-left: 3px; font-size: 19px;">*</span>-->
+                        </td>
+                  
+                    <td>
+                        
+                        <input type="text" id=""  title="ControlTitle" ng-model="i.ControlTitle" />
+                    </td>
+                    <td>
+                        <input type="text" id="txtControlPlaceholder"  title="ControlPlaceHolder" ng-model="i.ControlPlaceholder"  />
+                    </td>
+                    <td>
+                        <input type="text" id="txtErrorMessage"  title="ErrorMessage" ng-model="i.ErrorMessage"  />
+                    </td>
+                    <td>
+                        <input type="text" id="txtAltTitle" title="AltTitle" ng-model="i.AltTitle" />
+                    </td>
+                    <td>
+                        <input type="text" id="txtControlType"  title="ControlType" ng-model="i.ControlType" />
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div class="modal-footer">
+        
+        <button id="btnCancel" class="submitBtn" ng-click="cancel()">Cancel</button>
+        <button class="submitBtn" ng-click="ok(item)">Save</button>
+    </div>
+
+
+
+
+
+</body>
+</html>

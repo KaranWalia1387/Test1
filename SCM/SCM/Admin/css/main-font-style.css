@@ -1,0 +1,1753 @@
+﻿@charset "utf-8";
+
+@import url('font-content-code.css');
+
+
+@font-face {
+    font-family: 'scmadminfonts';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/scmadminfonts.eot");
+    src: url("../fonts/scmadminfonts.eot?#iefix") format("embedded-opentype"), url("../fonts/scmadminfonts.woff") format("woff"), url("../fonts/scmadminfonts.ttf") format("truetype");
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.user-written-area label {
+        font-family: MyriadPro-Regular !important;
+}
+
+/* --  Start Header Navigation  -- */
+
+.top-nav ul li a {
+    text-align: center;
+}
+
+    .top-nav ul li a:before {
+        font-family: 'scmadminfonts' !important;
+        /* text-align: center; */
+        font-size: 28px;
+        position: relative;
+        top: 10px;
+        color: #0290b5;
+    }
+
+    .top-nav ul li a:hover:before, .top-nav ul li.active a:before {
+        color: #fff;
+    }
+
+.top-nav.top-nav ul li a, .top-nav.top-nav ul li a:hover, .top-nav.top-nav ul li.active a {
+    background-image: none !important;
+}
+
+.top-nav ul li.home a:before {
+    content: "\e949";
+}
+
+.top-nav ul li.home:hover a:before, .top-nav ul li.home.active a:before {
+    content: "\e949";
+}
+
+.top-nav ul li.user-mgt a:before {
+    content: "\e90e";
+}
+
+.top-nav ul li.user-mgt:hover a:before, .top-nav ul li.user-mgt.active a:before {
+    content: "\e90e";
+}
+
+.top-nav ul li.confi a:before {
+    content: "\e964" !important;
+    float: left;
+        top: 15px !important;
+    font-size: 28px !important;
+}
+
+.top-nav ul li.confi:hover a:before, .top-nav ul li.confi.active a:before {
+    content: "\e964" !important;
+    float: left;
+       top: 15px !important;
+    font-size: 28px !important;
+}
+
+.top-nav ul li.report a:before {
+    content: "\e90f";
+}
+
+.top-nav ul li.report:hover a:before, .top-nav ul li.report.active a:before {
+    content: "\e90f";
+}
+.top-nav ul li.icon_thermostat a:before {
+     content: "\e90a" !important;
+     float:left;
+    font-family: 'scmadminfonts' !important;
+    font-size: 25px !important;
+    top: 15px !important;
+}
+.top-nav ul li.icon_thermostat:hover a:before, .top-nav ul li.icon_thermostat.active a:before {
+     content: "\e90a" !important;
+    float:left;
+    font-family: 'scmadminfonts' !important;
+    font-size: 25px !important;
+    top: 15px !important;
+    }
+/*.top-nav ul li.icon_thermostat a:before {
+    font: normal normal normal 23px/1 FontAwesome !important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    left: 17px;
+    top: 13px;
+    font-size: 26px;
+    text-indent: 0px !important;
+    content: "\f080";
+    float: left;
+}
+
+.top-nav ul li.icon_thermostat:hover a:before, .top-nav ul li.icon_thermostat.active a:before {
+    font: normal normal normal 23px/1 FontAwesome !important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    left: 17px;
+    top: 13px;
+    font-size: 26px;
+    text-indent: 0px !important;
+    content: "\f080";
+    float: left;
+}*/
+
+.top-nav ul li.noti_header a:before {
+    content: "\e958";
+}
+
+.top-nav ul li.noti_header:hover a:before, .top-nav ul li.noti_header.active a:before {
+    content: "\e958";
+}
+
+.top-nav ul li.crm_header a:before {
+    content: "\e91a";
+}
+
+.top-nav ul li.crm_header:hover a:before, .top-nav ul li.crm_header.active a:before {
+    content: "\e91a";
+}
+
+.top-nav ul li.csr_header a:before {
+    content: "\e90b";
+}
+
+.top-nav ul li.csr_header:hover a:before, .top-nav ul li.csr_header.active a:before {
+    content: "\e90b";
+}
+
+
+.top-nav.top-nav ul li.crm_header1.crm_header1 a {
+    background-image: none !important;
+}
+
+.top-nav ul li.crm_header1.crm_header1 a:before {
+    content: "\e91b";
+    font-size: 32px;
+    top: 10px;
+}
+
+.top-nav ul li.crm_header1:hover a:before, .top-nav ul li.crm_header1.active a:before {
+    content: "\e91b";
+    font-size: 32px;
+    top: 10px;
+}
+
+.top-nav ul li.field_header a:before {
+    content: "\e943";
+}
+
+.top-nav ul li.field_header:hover a:before, .top-nav ul li.field_header.active a:before {
+    content: "\e943";
+}
+
+.top-nav ul li.siq_header a:before {
+    content: "\e998";
+}
+
+.top-nav ul li.siq_header:hover a:before, .top-nav ul li.siq_header.active a:before {
+    content: "\e998";
+}
+
+.top-nav ul li.siqadmin_header a:before {
+    content: "\e949";
+}
+
+.top-nav ul li.siqadmin_header:hover a:before, .top-nav ul li.siqadmin_header.active a:before {
+    content: "\e949";
+}
+
+
+
+/* End Header Navigtion  */
+
+/* Dashboard Icons */
+
+.dashboard-area ul li, .dashboard-area ul li:hover, .dashboard-area ul li a:hover {
+    background-image: none !important;
+}
+
+.dashboard-area ul li {
+    text-align: center;
+    position: relative;
+}
+
+    .dashboard-area ul li a:before {
+        font-family: 'scmadminfonts' !important;
+        /* text-align: center; */
+        font-size: 93px;
+        position: absolute;
+        top: 26px;
+        color: #0290b5 !important;
+        left: 0;
+        right: 0;
+    }
+
+    .dashboard-area ul li a:hover:before {
+        color: #fff !important;
+    }
+
+    .dashboard-area ul li.efficiecny a:before {
+        content: "\e90e";
+    }
+
+    .dashboard-area ul li.efficiecny a:hover:before {
+        content: "\e90e";
+    }
+
+    .dashboard-area ul li.outage a:before {
+        content: "\e964";
+    }
+
+    .dashboard-area ul li.outage a:hover:before {
+        content: "\e964";
+    }
+
+    .dashboard-area ul li.cea a:before {
+        content: "\e90f";
+    }
+
+    .dashboard-area ul li.cea a:hover:before {
+        content: "\e90f";
+    }
+    .dashboard-area ul li.thermo a:before {
+        content: "\e90a" !important;
+        float:left;
+    font-family: 'scmadminfonts' !important;
+        }
+    .dashboard-area ul li.thermo a:hover:before {
+        content: "\e90a" !important;
+        float:left;
+    font-family: 'scmadminfonts' !important;
+    }
+    /*.dashboard-area ul li.thermo a:before {
+        font: normal normal normal 23px/1 FontAwesome !important;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        top: 43px;
+        font-size: 90px !important;
+        text-indent: 0px !important;
+        content: "\f080";
+    }
+
+    .dashboard-area ul li.thermo a:hover:before {
+        font: normal normal normal 23px/1 FontAwesome !important;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        top: 43px;
+        font-size: 90px !important;
+        text-indent: 0px !important;
+        content: "\f080";
+    }*/
+
+    .dashboard-area ul li.notification_home a:before {
+        content: "\e958";
+    }
+
+    .dashboard-area ul li.notification_home a:hover:before {
+        content: "\e958";
+    }
+
+    .dashboard-area ul li.csr a:before {
+        content: "\e90b";
+    }
+
+    .dashboard-area ul li.csr a:hover:before {
+        content: "\e90b";
+    }
+
+    .dashboard-area ul li.user_dash a:before {
+        content: "\e91a";
+    }
+
+    .dashboard-area ul li.user_dash a:hover:before {
+        content: "\e91a";
+    }
+
+    .dashboard-area ul li.crm_home a:before {
+        content: "\e91b";
+    }
+
+    .dashboard-area ul li.crm_home a:hover:before {
+        content: "\e91b";
+    }
+
+    .dashboard-area ul li.field_serv a:before {
+        content: "\e943";
+    }
+
+    .dashboard-area ul li.field_serv a:hover:before {
+        content: "\e943";
+    }
+
+    .dashboard-area ul li.DassiqLink a:before {
+        content: "\e998";
+    }
+
+    .dashboard-area ul li.DassiqLink a:hover:before {
+        content: "\e998";
+    }
+
+/* End Dashboard Css */
+
+/* -- Start Left Navigation -- */
+
+ul.tabs.tabs.tabs li a, ul.tabs.tabs.tabs li a:hover, ul.tabs.tabs li.active a {
+    background-image: none !important;
+}
+ul.tabs.tabs li a, ul.tabs.tabs li a:hover, ul.tabs.tabs li.active.active  a{
+      background-image: none !important;
+}
+
+
+ul.tabs.tabs li {
+    position: relative;
+}
+
+    ul.tabs.tabs li a:before {
+        font-family: 'scmadminfonts' !important;
+        /* text-align: center; */
+        font-size: 20px;
+        position: absolute;
+        left: 23px !important;
+        top: 8px !important;
+        color: #0290b5 !important;
+    }
+
+    ul.tabs.tabs li a:hover:before, ul.tabs.tabs li.active a:before {
+        color: #fff !important;
+    }
+
+ul.tabs.tabs.tabs ul > li > a:before {
+    color: #0290b5 !important;
+}
+
+ul.tabs.tabs.tabs ul > li > a:hover:before, ul.tabs.tabs.tabs ul > li.active > a:before {
+    color: #fff !important;
+}
+
+ul.tabs > li.sidebar_efficency > a:before {
+    content: "\e90e" !important;
+    background-image: none !important;
+}
+
+ul.tabs > li.sidebar_efficency:hover > a {
+    background-image: none !important;
+}
+
+ul.tabs > li.sidebar_efficency > a:hover:before, ul.tabs > li.sidebar_efficency.active > a:before {
+    content: "\e90e" !important;
+    background-image: none !important;
+}
+
+ul.tabs > li.sidebar_efficency:hover:before > a {
+    content: "\e90e" !important;
+    color: #fff !important;
+}
+
+
+ul.tabs li.sidebar_programs.sidebar_programs a:before {
+    content: "\e970" !important;
+}
+
+ul.tabs li.sidebar_programs.sidebar_programs a:hover:before, ul.tabs li.sidebar_programs.sidebar_programs.active a:before {
+    content: "\e970" !important;
+}
+
+ul.tabs li.sidebar_rebates.sidebar_rebates a:before {
+    content: "\e972" !important;
+}
+
+ul.tabs li.sidebar_rebates.sidebar_rebates a:hover:before, ul.tabs li.sidebar_rebates.sidebar_rebates.active a:before {
+    content: "\e972" !important;
+}
+
+ul.tabs li.sidebar_outage a:before {
+    content: "\e964" !important;
+}
+
+ul.tabs li.sidebar_outage a:hover:before, ul.tabs li.sidebar_outage.active a:before {
+    content: "\e964" !important;
+}
+
+ul.tabs li.sidebar_dashboard a:before {
+    content: "\e931" !important;
+}
+
+ul.tabs li.sidebar_dashboard a:hover:before, ul.tabs li.sidebar_dashboard.active a:before {
+    content: "\e931" !important;
+}
+
+
+
+
+
+
+ul.tabs li.sidebar_usage a:before {
+    content: "\e995" !important;
+}
+
+ul.tabs li.sidebar_usage a:hover:before, ul.tabs li.sidebar_usage.active a:before {
+    content: "\e995" !important;
+}
+
+ul.tabs li.sidebar_billing a:before {
+    content: "\e913" !important;
+}
+
+ul.tabs li.sidebar_billing a:hover:before, ul.tabs li.sidebar_billing.active a:before {
+    content: "\e913" !important;
+}
+
+ul.tabs li.sidebar_outage a:before {
+    content: "\e964" !important;
+}
+
+ul.tabs li.sidebar_outage a:hover:before, ul.tabs li.sidebar_outage.active a:before {
+    content: "\e964" !important;
+}
+
+ul.tabs li.sidebar_generation a:before {
+    content: "\e987" !important;
+}
+
+ul.tabs li.sidebar_generation a:hover:before, ul.tabs li.sidebar_generation.active a:before {
+    content: "\e987" !important;
+}
+
+ul.tabs li.sidebar_nitiF a {
+    background-image: inherit !important;
+}
+
+    ul.tabs li.sidebar_nitiF a:before {
+        content: "\e958" !important;
+        background-image: none !important;
+    }
+
+ul.tabs > li.sidebar_nitiF.sidebar_nitiF:hover > a {
+    background-image: none !important;
+}
+
+ul.tabs li.sidebar_nitiF a:hover:before, ul.tabs li.sidebar_nitiF.active a:before {
+    content: "\e958" !important;
+    background-image: none !important;
+}
+
+ul.tabs li.sidebar_connectme a:before {
+    content: "\e922" !important;
+    font-size:22px !important;
+}
+
+ul.tabs li.sidebar_connectme a:hover:before, ul.tabs li.sidebar_connectme.active a:before {
+    content: "\e922" !important;
+}
+
+ul.tabs li.sidebar_service a:before {
+    content: "\e984" !important;
+}
+
+ul.tabs li.sidebar_service a:hover:before, ul.tabs li.sidebar_service.active a:before {
+    content: "\e984" !important;
+}
+
+ul.tabs li.sidebar_efficency a:before {
+    content: "\e90e" !important;
+}
+
+ul.tabs li.sidebar_efficency a:hover:before, ul.tabs li.sidebar_efficency.active a:before {
+    content: "\e90e" !important;
+}
+
+ul.tabs li.sidebar_admin a:before {
+    content: "\e929" !important;
+    background-image: none !important;
+}
+
+ul.tabs li.sidebar_admin a:hover:before, ul.tabs li.sidebar_admin.active a:before {
+    content: "\e929" !important;
+    background-image: none !important;
+}
+
+ul.tabs.tabs > li.sidebar_admin.sidebar_admin:hover > a {
+    background-image: none !important;
+}
+
+ul.tabs li.sidebar_payment.sidebar_payment a:before {
+    content: "\e961" !important;
+}
+
+ul.tabs li.sidebar_payment.sidebar_payment a:hover:before, ul.tabs li.sidebar_payment.sidebar_payment.active a:before {
+    content: "\e961" !important;
+}
+
+ul.tabs li.sidebar_device.sidebar_device a:before {
+    content: "\e934" !important;
+}
+
+ul.tabs li.sidebar_device.sidebar_device a:hover:before, ul.tabs li.sidebar_device.sidebar_device.active a:before {
+    content: "\e934" !important;
+}
+
+ul.tabs li.sidebar_resolution.sidebar_resolution a:before {
+    content: "\e976" !important;
+}
+
+ul.tabs li.sidebar_resolution.sidebar_resolution a:hover:before, ul.tabs li.sidebar_resolution.sidebar_resolution.active a:before {
+    content: "\e976" !important;
+}
+
+ul.tabs li.sidebar_browser.sidebar_browser a:before {
+    content: "\e917" !important;
+}
+
+ul.tabs li.sidebar_browser.sidebar_browser a:hover:before, ul.tabs li.sidebar_browser.sidebar_browser.active a:before {
+    content: "\e917" !important;
+}
+
+ul.tabs li.sidebar_heat.sidebar_heat a:before {
+    content: "\e955" !important;
+}
+
+ul.tabs li.sidebar_heat.sidebar_heat a:hover:before, ul.tabs li.sidebar_heat.sidebar_heat.active a:before {
+    content: "\e955" !important;
+}
+
+
+
+
+
+
+
+
+
+ul.tabs li.sidebar_myaccount a:before {
+    content: "\e996" !important;
+}
+
+ul.tabs li.sidebar_myaccount a:hover:before, ul.tabs li.sidebar_myaccount.active a:before {
+    content: "\e996" !important;
+}
+
+
+ul.tabs li.sidebar_textmessage a:before {
+    content: "\e991" !important;
+}
+
+ul.tabs li.sidebar_textmessage a:hover:before, ul.tabs li.sidebar_textmessage.active a:before {
+    content: "\e991" !important;
+}
+
+ul.tabs li.sidebar_paperless a:before {
+    content: "\e965" !important;
+}
+
+ul.tabs li.sidebar_paperless a:hover:before, ul.tabs li.sidebar_paperless.active a:before {
+    content: "\e965" !important;
+}
+
+ul.tabs li.sidebar_email a:before {
+    content: "\e939" !important;
+}
+
+ul.tabs li.sidebar_email a:hover:before, ul.tabs li.sidebar_email.active a:before {
+    content: "\e939" !important;
+}
+
+ul.tabs li.sidebar_ivr a:before {
+    content: "\e950" !important;
+}
+
+ul.tabs li.sidebar_ivr a:hover:before, ul.tabs li.sidebar_ivr.active a:before {
+    content: "\e950" !important;
+}
+
+ul.tabs li.sidebar_PushNotification a:before {
+    content: "\e971" !important;
+}
+
+ul.tabs li.sidebar_PushNotification a:hover:before, ul.tabs li.sidebar_PushNotification.active a:before {
+    content: "\e971" !important;
+}
+
+ul.tabs li.sidebar_MarketingPreference a:before {
+    content: "\e957" !important;
+}
+
+ul.tabs li.sidebar_MarketingPreference a:hover:before, ul.tabs li.sidebar_MarketingPreference.active a:before {
+    content: "\e957" !important;
+}
+
+ul.tabs li.sidebar_CrashLogService a:before {
+    content: "\e924" !important;
+}
+
+ul.tabs li.sidebar_CrashLogService a:hover:before, ul.tabs li.sidebar_CrashLogService.active a:before {
+    content: "\e924" !important;
+}
+
+ul.tabs li.sidebar_configurebanner_inner.banner_icon_12 a:before {
+    content: "\e911" !important;
+}
+
+ul.tabs li.sidebar_configurebanner_inner.banner_icon_12 a:hover:before, ul.tabs li.sidebar_configurebanner_inner.banner_icon_12.active a:before {
+    content: "\e911" !important;
+}
+
+
+/* Demand Response icons */
+ul.tabs li.icon-device-thermo.icon-device-thermo a, ul.tabs li.icon-home-thermo.icon-home-thermo a,
+ul.tabs li.icon-device-thermo.icon-device-thermo a:hover, ul.tabs li.icon-device-thermo.icon-device-thermo.active a,
+ul.tabs li.icon-home-thermo.icon-home-thermo a:hover, ul.tabs li.icon-home-thermo.icon-home-thermo.active a {
+    background-image: none !important;
+    padding: 12px 0 14px 64px !important;
+}
+
+    ul.tabs li.icon-device-thermo.icon-device-thermo a:before {
+        content: "\e922" !important;
+    }
+
+    ul.tabs li.icon-device-thermo.icon-device-thermo a:hover:before, ul.tabs li.icon-device-thermo.icon-device-thermo.active a:before {
+        content: "\e922" !important;
+    }
+
+    ul.tabs li.icon-home-thermo.icon-home-thermo a:before {
+        content: "\e992" !important;
+    }
+
+    ul.tabs li.icon-home-thermo.icon-home-thermo a:hover:before, ul.tabs li.icon-home-thermo.icon-home-thermo.active a:before {
+        content: "\e992" !important;
+    }
+
+ul.tabs li.icon-dr-thermo a:before {
+    /*content: "\e932" !important;*/
+    content: "\e90a" !important;
+}
+
+ul.tabs li.icon-dr-thermo:hover a:before, ul.tabs li.icon-dr-thermo.active a:before {
+    content: "\e90a" !important;
+}
+
+ul.tabs li.icon-dr-thermo.icon-dr-thermo a, ul.tabs li.icon-dr-thermo.icon-dr-thermo:hover a, ul.tabs li.icon-dr-thermo.icon-dr-thermo.active a {
+    padding: 12px 0 14px 64px !important;
+}
+
+ul.tabs li.icon-dr-thermo a:before {
+    content: "\e90a" !important;
+}
+
+ul.tabs li.icon-dr-thermo:hover a:before, ul.tabs li.icon-dr-thermo.active a:before {
+    content: "\e90a" !important;
+}
+
+/* -- Notification Css  -- */
+ul.tabs li.sidebar_nitiF a {
+    content: "\e958";
+}
+
+    ul.tabs li.sidebar_nitiF a:hover:before, ul.tabs li.sidebar_nitiF.active a:before {
+        content: "\e958";
+    }
+
+ul.tabs li.sidebar_outage_inner.sidebar_outage_inner a:before {
+    content: "\e964" !important;
+}
+
+ul.tabs li.sidebar_outage_inner.sidebar_outage_inner:hover a:before, ul.tabs li.sidebar_outage_inner.sidebar_outage_inner.active a:before {
+    content: "\e964" !important;
+}
+
+ul.tabs li.sidebar_billing_inner.sidebar_billing_inner a:before {
+    content: "\e913" !important;
+}
+
+ul.tabs li.sidebar_billing_inner.sidebar_billing_inner:hover a:before, ul.tabs li.sidebar_billing_inner.sidebar_billing_inner.active a:before {
+    content: "\e913" !important;
+}
+
+ul.tabs li.sidebar_service_inner.sidebar_service_inner a:before {
+    content: "\e984" !important;
+}
+
+ul.tabs li.sidebar_service_inner.sidebar_service_inner:hover a:before, ul.tabs li.sidebar_service_inner.sidebar_service_inner.active a:before {
+    content: "\e984" !important;
+}
+
+
+ul.tabs li.sidebar_connectme_inner.sidebar_connectme_inner a:before {
+    content: "\e922" !important;
+}
+
+ul.tabs li.sidebar_connectme_inner.sidebar_connectme_inner:hover a:before, ul.tabs li.sidebar_connectme_inner.sidebar_connectme_inner.active a:before {
+    content: "\e922" !important;
+}
+
+ul.tabs li.sidebar_demandresponse_inner.sidebar_demandresponse_inner a:before {
+    content: "\e90a" !important;
+}
+
+ul.tabs li.sidebar_demandresponse_inner.sidebar_demandresponse_inner:hover a:before, ul.tabs li.sidebar_demandresponse_inner.sidebar_demandresponse_inner.active a:before {
+    content: "\e90a" !important;
+}
+
+ul.tabs li.sidebar_loginissues_inner.sidebar_loginissues_inner a:before {
+    content: "\e956" !important;
+}
+
+ul.tabs li.sidebar_loginissues_inner.sidebar_loginissues_inner a:hover:before, ul.tabs li.sidebar_loginissues_inner.sidebar_loginissues_inner.active a:before {
+    content: "\e956" !important;
+}
+
+ul.tabs li.sidebar_sent_inner.sidebar_sent_inner a:before {
+    /*content: "\e9ad" !important;*/
+	content: "\e983" !important;
+}
+
+ul.tabs li.sidebar_sent_inner.sidebar_sent_inner:hover a:before, ul.tabs li.sidebar_sent_inner.sidebar_sent_inner.active a:before {
+   /*content: "\e9ad" !important;*/
+	content: "\e983" !important;
+}
+
+ul.tabs li.sidebar_saved_inner.sidebar_saved_inner a:before {
+    content: "\e978" !important;
+}
+
+ul.tabs li.sidebar_saved_inner.sidebar_saved_inner:hover a:before, ul.tabs li.sidebar_saved_inner.sidebar_saved_inner.active a:before {
+    content: "\e978" !important;
+}
+
+ul.tabs li.sidebar_trash_inner.sidebar_trash_inner a:before {
+    content: "\e993" !important;
+}
+
+ul.tabs li.sidebar_trash_inner.sidebar_trash_inner:hover a:before, ul.tabs li.sidebar_trash_inner.sidebar_trash_inner.active a:before {
+    content: "\e993" !important;
+}
+
+
+ul.tabs li.sidebar_allmail_inner.sidebar_allmail_inner a:before, ul.tabs li.sidebar_allMail_inner.sidebar_allmail_inner a:focus:before {
+    content: "\e905" !important;
+}
+
+ul.tabs > li.sidebar_allmail_inner.sidebar_allmail_inner > a:hover:before, ul.tabs > li.sidebar_allMail_inner.sidebar_allmail_inner.active > a:before {
+    content: "\e905" !important;
+}
+
+ul.tabs ul li.active a#allmail:before {
+    content: "\e905" !important;
+}
+
+ul li.sidebar_autoresponse_inner a:before {
+    content: "\e908" !important;
+}
+
+ul li.sidebar_autoresponse_inner a:hover:before, ul li.sidebar_autoresponse_inner.active a:before {
+    content: "\e908" !important;
+}
+
+ul.tabs li.sidebar_outbox a:before {
+    content: "\e982" !important;
+}
+
+ul.tabs li.sidebar_outbox a:hover:before, ul.tabs li.sidebar_outbox.active a:before {
+    content: "\e982" !important;
+}
+
+ul.tabs li.sidebar_leakalert_inner a#leakalert {
+    background-image: none !important;
+}
+
+    ul.tabs li.sidebar_leakalert_inner a#leakalert:hover, ul.tabs li.sidebar_leakalert_inner.active a#leakalert {
+        background-image: none !important;
+    }
+
+    ul.tabs li.sidebar_leakalert_inner a#leakalert:before {
+        content: "\e951" !important;
+    }
+
+    ul.tabs li.sidebar_leakalert_inner a#leakalert:hover:before, ul.tabs li.sidebar_leakalert_inner.active a#leakalert:before {
+        content: "\e951" !important;
+    }
+
+ul.tabs li.sidebar_userreport a:before {
+    content: "\e996" !important;
+}
+
+ul.tabs li.sidebar_userreport a:hover:before, ul.tabs li.sidebar_userreport.active_new a:before {
+    content: "\e996" !important;
+}
+
+ul.tabs li.sidebar_PaymentLocations a:before {
+    content: "\e953" !important;
+}
+
+ul.tabs li.sidebar_PaymentLocations a:hover:before, ul.tabs li.sidebar_PaymentLocations.active_new a:before {
+    content: "\e953" !important;
+}
+
+ul.tabs li.sidebar_Emailtemplate a:before {
+    content: "\e940" !important;
+}
+
+ul.tabs li.sidebar_Emailtemplate a:hover:before, ul.tabs li.sidebar_Emailtemplate.active_new a:before {
+    content: "\e940" !important;
+}
+ul.tabs li.sidebar_MobileDashobard a:before {
+    content: "\e91e" !important;
+}
+
+ul.tabs li.sidebar_MobileDashobard a:hover:before, ul.tabs li.sidebar_MobileDashobard.active_new a:before {
+    content: "\e91e" !important;
+}
+
+ul.tabs li.sidebar_configurebanner a:before {
+    content: "\e911" !important;
+}
+
+ul.tabs li.sidebar_configurebanner a:hover:before, ul.tabs li.sidebar_configurebanner.active_new a:before {
+    content: "\e911" !important;
+}
+
+ul.tabs li.sidebar_Settings a:before {
+    content: "\e986" !important;
+}
+
+ul.tabs li.sidebar_Settings a:hover:before, ul.tabs li.sidebar_Settings.active_new a:before {
+    content: "\e986" !important;
+}
+
+ul.tabs li.sidebar_MultiManguage_app a:before {
+    content: "\e906" !important;
+}
+
+ul.tabs li.sidebar_MultiManguage_app a:hover:before, ul.tabs li.sidebar_MultiManguage_app.active_new a:before {
+    content: "\e906" !important;
+}
+
+ul.tabs li.sidebar_PaymentOption a:before {
+    content: "\e966" !important;
+}
+
+ul.tabs li.sidebar_PaymentOption a:hover:before, ul.tabs li.sidebar_PaymentOption.active_new a:before {
+    content: "\e966" !important;
+}
+
+ul.tabs li.sidebar_Role a:before {
+    content: "\e977" !important;
+}
+
+ul.tabs li.sidebar_Role a:hover:before, ul.tabs li.sidebar_Role.active_new a:before {
+    content: "\e977" !important;
+}
+
+ul.tabs li.sidebar_Feature a:before {
+    content: "\e901" !important;
+}
+
+ul.tabs li.sidebar_Feature a:hover:before, ul.tabs li.sidebar_Feature.active_new a:before {
+    content: "\e901" !important;
+}
+
+ul.tabs li.sidebar_SocialMedia a:before {
+    content: "\e997" !important;
+}
+
+ul.tabs li.sidebar_SocialMedia a:hover:before, ul.tabs li.sidebar_SocialMedia.active_new a:before {
+    content: "\e997" !important;
+}
+
+ul.tabs li.sidebar_Footprint a:before {
+    content: "\e946" !important;
+}
+
+ul.tabs li.sidebar_Footprint a:hover:before, ul.tabs li.sidebar_Footprint.active_new a:before {
+    content: "\e946" !important;
+}
+
+
+
+
+ul.tabs li.sidebar_TermsConditions a:before {
+    content: "\e990" !important;
+}
+
+ul.tabs li.sidebar_TermsConditions a:hover:before, ul.tabs li.sidebar_TermsConditions.active_new a:before {
+    content: "\e990" !important;
+}
+
+ul.tabs li.sidebar_PrivacyPolicy a:before {
+    content: "\e969" !important;
+}
+
+ul.tabs li.sidebar_PrivacyPolicy a:hover:before, ul.tabs li.sidebar_PrivacyPolicy.active_new a:before {
+    content: "\e969" !important;
+}
+
+ul.tabs li.sidebar_configurebanner_inner a:before {
+    content: "\e911" !important;
+}
+
+ul.tabs li.sidebar_configurebanner_inner a:hover:before, ul.tabs li.sidebar_configurebanner_inner.active_new a:before {
+    content: "\e911" !important;
+}
+
+ul.tabs li.sidebar_RegistrationTemplate a:before {
+    content: "\e974" !important;
+}
+
+ul.tabs li.sidebar_RegistrationTemplate a:hover:before, ul.tabs li.sidebar_RegistrationTemplate.active_new a:before {
+    content: "\e974" !important;
+}
+
+
+
+ul.tabs li.sidebar_configurationsetting a:before {
+    content: "\e921" !important;
+}
+
+ul.tabs li.sidebar_configurationsetting a:hover:before, ul.tabs li.sidebar_configurationsetting.active_new a:before {
+    content: "\e921" !important;
+}
+
+ul.tabs li.sidebar_cust_conf.sidebar_cust_conf a:before {
+    content: "\e930" !important;
+}
+
+ul.tabs li.sidebar_cust_conf.sidebar_cust_conf a:hover:before, ul.tabs li.sidebar_cust_conf.sidebar_cust_conf.active_new a:before {
+    content: "\e930" !important;
+}
+
+ul.tabs li.sidebar_service_conf.sidebar_service_conf a:before {
+    content: "\e985" !important;
+}
+
+ul.tabs li.sidebar_service_conf.sidebar_service_conf a:hover:before, ul.tabs li.sidebar_service_conf.sidebar_service_conf.active_new a:before {
+    content: "\e985" !important;
+}
+
+ul.tabs li.sidebar_admin_conf.sidebar_admin_conf a:before {
+    content: "\e902" !important;
+}
+
+ul.tabs li.sidebar_admin_conf.sidebar_admin_conf a:hover:before, ul.tabs li.sidebar_admin_conf.sidebar_admin_conf.active_new a:before {
+    content: "\e902" !important;
+}
+
+ul.tabs li.sidebar_adser_conf.sidebar_adser_conf a:before {
+    content: "\e904" !important;
+}
+
+ul.tabs li.sidebar_adser_conf.sidebar_adser_conf a:hover:before, ul.tabs li.sidebar_adser_conf.sidebar_adser_conf.active_new a:before {
+    content: "\e904" !important;
+}
+
+
+
+
+
+
+ul.tabs li.sidebar_NotificationTemplate a:before {
+    content: "\e959" !important;
+}
+
+ul.tabs li.sidebar_NotificationTemplate a:hover:before, ul.tabs li.sidebar_NotificationTemplate.active_new a:before {
+    content: "\e959" !important;
+}
+
+ul.tabs li.sidebar_NotificationWorkflow a:before {
+    content: "\e960" !important;
+}
+
+ul.tabs li.sidebar_NotificationWorkflow a:hover:before, ul.tabs li.sidebar_NotificationWorkflow.active_new a:before {
+    content: "\e960" !important;
+}
+
+ul.tabs li.sidebar_Scheduler_Maintenance a:before {
+    content: "\e979" !important;
+}
+
+ul.tabs li.sidebar_Scheduler_Maintenance a:hover:before, ul.tabs li.sidebar_Scheduler_Maintenance.active_new a:before {
+    content: "\e979" !important;
+}
+
+ul.tabs li.sidebar_DeactivationSettings a:before {
+    content: "\e980" !important;
+}
+
+ul.tabs li.sidebar_DeactivationSettings a:hover:before, ul.tabs li.sidebar_DeactivationSettings.active_new a:before {
+    content: "\e980" !important;
+}
+
+ul.tabs li.sidebar_Disclaimer a:before {
+    content: "\e935" !important;
+}
+
+ul.tabs li.sidebar_Disclaimer a:hover:before, ul.tabs li.sidebar_Disclaimer.active_new a:before {
+    content: "\e935" !important;
+}
+
+ul.tabs li.sidebar_FAQ a:before {
+    content: "\e942" !important;
+}
+
+ul.tabs li.sidebar_FAQ a:hover:before, ul.tabs li.sidebar_FAQ.active_new a:before {
+    content: "\e942" !important;
+}
+
+
+
+ul.tabs li.sidebar_ipinfo a:before {
+    content: "\e954" !important;
+}
+
+ul.tabs li.sidebar_ipinfo a:hover:before, ul.tabs li.sidebar_ipinfo.active_new a:before {
+    content: "\e954" !important;
+}
+
+ul.tabs li.sidebar_blockedipinfo a:before {
+    content: "\e916" !important;
+    font-size: 18px;
+}
+
+ul.tabs li.sidebar_blockedipinfo a:hover:before, ul.tabs li.sidebar_blockedipinfo.active_new a:before {
+    content: "\e916" !important;
+    font-size: 18px;
+}
+
+ul.tabs li.sidebar_blockedAccountinfo a:before {
+    content: "\e915" !important;
+}
+
+ul.tabs li.sidebar_blockedAccountinfo a:hover:before, ul.tabs li.sidebar_blockedAccountinfo.active_new a:before {
+    content: "\e915" !important;
+}
+
+
+ul.tabs li.sidebar_dashboard.crm a:before {
+    content: "\e926" !important;
+}
+
+ul.tabs li.sidebar_dashboard.crm a:hover:before, ul.tabs li.sidebar_dashboard.crm.active a:before {
+    content: "\e926" !important;
+}
+
+ul.tabs li.sidebar_sgmntns a:before {
+    content: "\e981" !important;
+    font-size: 24px;
+    left: 21px !important;
+    top: 5px !important;
+}
+
+ul.tabs li.sidebar_sgmntns a:hover:before, ul.tabs li.sidebar_sgmntns.active_new a:before {
+    content: "\e981" !important;
+    font-size: 24px;
+    left: 21px !important;
+    top: 5px !important;
+}
+
+ul.tabs li.campaign_configurations a:before {
+    content: "\e918" !important;
+}
+
+ul.tabs li.campaign_configurations a:hover:before, ul.tabs li.campaign_configurations.active_new a:before {
+    content: "\e918" !important;
+}
+
+ul.tabs li.templates a:before {
+    content: "\e944" !important;
+}
+
+ul.tabs li.templates a:hover:before, ul.tabs li.templates.active_new a:before {
+    content: "\e944" !important;
+}
+
+ul.tabs li.attributes a:before {
+    content: "\e907" !important;
+}
+
+ul.tabs li.attributes a:hover:before, ul.tabs li.attributes.active_new a:before {
+    content: "\e907" !important;
+}
+
+
+
+.fa-warning:before, .fa-exclamation-triangle:before {
+    content: "\e964" !important;
+    font-family: 'scmadminfonts' !important;
+}
+
+.fa-signal:before {
+    content: "\e995" !important;
+    font-family: 'scmadminfonts' !important;
+}
+
+.fa-sun-o:before {
+    content: "\e987" !important;
+    font-family: 'scmadminfonts' !important;
+}
+
+.fa-wrench:before {
+    content: "\e984" !important;
+    font-family: 'scmadminfonts' !important;
+}
+
+.fa-user:before {
+    content: "\e996" !important;
+    font-family: 'scmadminfonts' !important;
+}
+
+.dash_heading_img {
+    display: none;
+}
+
+.hide_for_flat_ico {
+    display: none;
+}
+.flat_ico_admin {
+    display:block !important;
+}
+
+.flat_ico_admin:before {
+    font-family: 'scmadminfonts';
+    position: relative;
+    left: 0;
+    font-size: 20px;
+    float: left;
+    color: #22ADC8;
+    padding-right: 8px;
+}
+
+/*#expand_outage:before {
+       font-family: 'scmadminfonts';
+    position: relative;
+    left: 0;
+    font-size: 20px;
+    float: left;
+    color: #22ADC8;
+    padding-right: 8px;
+    content: "\e996" !important;
+  }*/
+
+.icon-admin-expand:before, .icon-admin-contract:before {
+    font-size: 18px;
+    padding-right: 0px;
+    cursor: pointer;
+}
+
+.fa-plus-circle:before {
+    content: "\e900" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #0290b5 !important;
+    font-size: 19px;
+    position: relative;
+    bottom: -1px;
+}
+
+.fa-external-link:before {
+    color: #0290b5 !important;
+}
+
+.fa-filter:before {
+    content: "\e945" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #0290b5 !important;
+    font-size: 18px;
+    position: relative;
+    bottom: -1px;
+}
+.fa-external-link:before {
+    content: "\e93c" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #0290b5 !important;
+    font-size: 18px;
+    position: relative;
+    bottom: -1px;
+    margin-right: 4px;
+}
+
+.crm-dashboard-area .left-active-sprite ul li.pie a,
+.crm-dashboard-area .left-active-sprite ul li.pie.active a,
+.crm-dashboard-area .left-active-sprite ul li.graph a,
+.crm-dashboard-area .left-active-sprite ul li.graph.active a,
+.crm-dashboard-area .left-active-sprite ul li.chart a,
+.crm-dashboard-area .left-active-sprite ul li.chart.active a {
+    background-image: none !important;
+    position: relative;
+}
+
+    .crm-dashboard-area .left-active-sprite ul li.pie a:before {
+        content: "\e967" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #758386 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        text-align: center;
+        top: 7px;
+    }
+
+    .crm-dashboard-area .left-active-sprite ul li.pie.active a:before {
+        content: "\e967" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #2fadc7 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        text-align: center;
+        top: 7px;
+    }
+
+    .crm-dashboard-area .left-active-sprite ul li.graph a:before {
+        content: "\e912" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #758386 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        text-align: center;
+        top: 7px;
+    }
+
+    .crm-dashboard-area .left-active-sprite ul li.graph.active a:before {
+        content: "\e912" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #2fadc7 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        text-align: center;
+        top: 7px;
+    }
+
+    .crm-dashboard-area .left-active-sprite ul li.chart a:before {
+        content: "\e802" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #758386 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        text-align: center;
+        top: 7px;
+    }
+
+    .crm-dashboard-area .left-active-sprite ul li.chart.active a:before {
+        content: "\e802" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #2fadc7 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        text-align: center;
+        top: 7px;
+    }
+
+
+
+.lgnd_box_right .left-active-sprites > ul > li.chart > a,
+.lgnd_box_right .left-active-sprites ul li.chart a.active,
+.lgnd_box_right .left-active-sprites ul li.graph a,
+.lgnd_box_right .left-active-sprites > ul > li.graph > a.active,
+.inner-dashboard-area .left-active-sprite ul li.chart a,
+.inner-dashboard-area .left-active-sprite ul li.chart a.active,
+.inner-dashboard-area .left-active-sprite ul li.graph a,
+.inner-dashboard-area .left-active-sprite ul li.graph a.active {
+    background-image: none !important;
+    position: relative;
+}
+
+    .lgnd_box_right .left-active-sprites > ul > li.chart > a:before, .inner-dashboard-area .left-active-sprite ul li.chart a:before {
+        content: "\e802" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #758386 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        text-align: center;
+        top: 0px;
+    }
+
+    .lgnd_box_right .left-active-sprites ul li.chart a.active:before, .inner-dashboard-area .left-active-sprite ul li.chart a.active:before {
+        content: "\e802" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #2fadc7 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        text-align: center;
+        top: 0px;
+    }
+
+    .inner-dashboard-area .left-active-sprite ul li.chart a:before, .inner-dashboard-area .left-active-sprite ul li.chart a.active:before {
+        top: -2px;
+    }
+
+.inner-dashboard-area#devices .left-active-sprite ul li.chart a:before, .inner-dashboard-area#devices .left-active-sprite ul li.chart a.active:before {
+    top: 0px;
+}
+
+.lgnd_box_right .left-active-sprites ul li.graph a:before, .inner-dashboard-area .left-active-sprite ul li.graph a:before {
+    content: "\e912" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #758386 !important;
+    font-size: 18px;
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    text-align: center;
+    top: 0px;
+}
+
+.lgnd_box_right .left-active-sprites > ul > li.graph > a.active:before, .inner-dashboard-area .left-active-sprite ul li.graph a.active:before {
+    content: "\e912" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #2fadc7 !important;
+    font-size: 18px;
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    text-align: center;
+    top: 0px;
+}
+
+.fa-arrow-circle-left:before {
+    content: "\e909" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #0290b5;
+}
+
+.activeGrid.activeGrid, .grid.grid, .map1.map1, .activeMap.activeMap {
+    background: none !important;
+    position: relative;
+}
+
+.grid:before {
+    content: "\e802" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #758386 !important;
+    font-size: 18px;
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    text-align: center;
+    top: 3px;
+    font-style: normal;
+}
+
+.activeGrid:before {
+    content: "\e802" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #2fadc7 !important;
+    font-size: 18px;
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    text-align: center;
+    top: 3px;
+    font-style: normal;
+}
+
+.map1:before {
+    content: "\e806" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #758386 !important;
+    font-size: 18px;
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    text-align: center;
+    top: 3px;
+    font-style: normal;
+}
+
+.activeMap:before {
+    content: "\e806" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #2fadc7 !important;
+    font-size: 18px;
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    text-align: center;
+    top: 3px;
+    font-style: normal;
+}
+
+.lgnd_box_right .left-active-sprites ul li.graph.line_grph_css a, .lgnd_box_right .left-active-sprites > ul > li.graph.line_grph_css > a.active {
+    background-image: none !important;
+}
+
+    .lgnd_box_right .left-active-sprites ul li.graph.line_grph_css a:before {
+        background: url(../images/line-chart.png) no-repeat scroll center top !important;
+        content: "" !important;
+        top: 3px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .lgnd_box_right .left-active-sprites > ul > li.graph.line_grph_css > a.active:before {
+        background: url(../images/line-chart-active.png) no-repeat scroll center top !important;
+        content: "" !important;
+        top: 3px;
+        width: 20px;
+        height: 20px;
+    }
+
+.lgnd_box_right.lgnd_box_right {
+    padding: 6px 14px 10px !important;
+    width:190px;
+}
+
+.usage_date_time.usage_date_time {
+    padding: 10px 15px 6px !important;
+}
+
+.inner-right-section .grid-section.grid-section {
+    margin: 0px 0px 0px 0px !important;
+}
+
+.left-active-sprite.left-active-sprite {
+    width: auto;
+    float: none;
+    margin: 0px;
+    padding-left: 0;
+}
+
+.outage_toggle_box ul li.customer_list_img a,
+.outage_toggle_box ul li.customer_list_img.active a,
+.outage_toggle_box ul li.outage_history_img a,
+.outage_toggle_box ul li.outage_history_img.active a,
+.outage_toggle_box ul li.outage_detls_img a,
+.outage_toggle_box ul li.outage_detls_img.active a {
+    background-image: none !important;
+    position: relative;
+}
+
+    .outage_toggle_box ul li.customer_list_img a:after {
+        content: "\e996" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #758386 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 14px !important;
+        text-align: left;
+        top: 12px;
+        font-style: normal;
+    }
+
+    .outage_toggle_box ul li.customer_list_img.active a:after {
+        content: "\e996" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #2fadc7 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 14px !important;
+        text-align: left;
+        top: 12px;
+        font-style: normal;
+    }
+
+    .outage_toggle_box ul li.outage_history_img a:after {
+        content: "\e999" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #758386 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 14px !important;
+        text-align: left;
+        top: 12px;
+        font-style: normal;
+    }
+
+    .outage_toggle_box ul li.outage_history_img.active a:after {
+        content: "\e999" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #2fadc7 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 14px !important;
+        text-align: left;
+        top: 12px;
+        font-style: normal;
+    }
+
+    .outage_toggle_box ul li.outage_detls_img a:after {
+        content: "\e964" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #758386 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 14px !important;
+        text-align: left;
+        top: 12px;
+        font-style: normal;
+    }
+
+    .outage_toggle_box ul li.outage_detls_img.active a:after {
+        content: "\e964" !important;
+        font-family: 'scmadminfonts' !important;
+        color: #2fadc7 !important;
+        font-size: 18px;
+        position: absolute;
+        left: 14px !important;
+        text-align: left;
+        top: 12px;
+        font-style: normal;
+    }
+
+
+#lnkCurrent > img, #lnkPlanned > img {
+    display: none;
+}
+
+#lnkCurrent:before {
+    content: "\e800" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #2fadc7 !important;
+    font-size: 18px;
+    position: relative;
+    left: 0;
+    float: left;
+    top: -3px;
+}
+
+#lnkPlanned:before {
+    content: "\e999" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #2fadc7 !important;
+    font-size: 18px;
+    position: relative;
+    left: 0;
+    float: left;
+    top: -3px;
+}
+
+.hide_flat_ico {
+    display:none;
+}
+.flat_ico_css {
+    display:block !important;
+        float: left;
+    padding-right: 8px;
+    margin-left: 11px;
+}
+.flat_ico_css:before {
+    font-family: 'scmadminfonts' !important;
+    color: #2fadc7 !important;
+    font-size: 18px;
+    position: relative;
+    left: 0;
+    float: left;
+    top: -2px;
+}
+
+.pie, .activePie {
+    background-image:none !important;
+        position: relative;
+}
+.cus_grid_ico.cus_grid_ico:before {
+    top: -3px !important;
+}
+.pie:before {
+ content: "\e967" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #758386 !important;
+    font-size: 18px;
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    text-align: center;
+    top: -3px;
+    font-style: normal;
+    }
+
+.activePie{
+    content: "\e967" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #2fadc7 !important;
+    font-size: 18px;
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    text-align: center;
+    top: 3px;
+    font-style: normal;
+}
+.pie_flat_ico {
+    position:relative;
+    top:0px !important;
+}
+
+.pie_flat_ico.pie_flat_ico .activePie:before  {
+    content: "\e967" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #2fadc7 !important;
+    font-size: 18px;
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    text-align: center;
+    top: 0px;
+    font-style: normal;
+}
+.left-active-sprite a #pieGraph {
+    position:relative;
+}
+.map_flat_ico .activeMap:before, .map_flat_ico .map1:before{
+     top: -3px !important;
+}
+.pie_flat_ico.pie_flat_ico .activePie {
+     top:0px !important;
+}
+.pie_flat_ico.pie_flat_ico .activePie:before, .pie_flat_ico.pie_flat_ico .pie:before {
+        top: -3px !important;
+    }
+
+
+.inner-dashboard-area .left-active-sprite ul li.pie a.active,
+.inner-dashboard-area .left-active-sprite ul li.pie a,
+.crm-dashboard-area .left-active-sprite ul li.pie a, 
+.crm-dashboard-area .left-active-sprite ul li.pie.active a {
+    background-image:none !important;
+    position:relative !important;
+      
+}
+.inner-dashboard-area.pie_ico_dash .left-active-sprite ul li.pie:before,
+.inner-dashboard-area.pie_ico_dash .left-active-sprite ul li.pie:before,
+.crm-dashboard-area.pie_ico_dash .left-active-sprite ul li.pie:before,
+.crm-dashboard-area.pie_ico_dash .left-active-sprite ul li.pie.active:before  {
+    content:"" !important;
+
+}
+.inner-dashboard-area.pie_ico_dash .left-active-sprite ul li.pie a:before, .crm-dashboard-area.pie_ico_dash .left-active-sprite ul li.pie a:before {
+   content: "\e967" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #758386 !important;
+    font-size: 18px;
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    text-align: center;
+    top: 0px;
+    font-style: normal;
+        bottom: 0px;
+            height: 18px;
+    }
+
+.inner-dashboard-area.pie_ico_dash .left-active-sprite ul li.pie a.active:before, .crm-dashboard-area.pie_ico_dash .left-active-sprite ul li.pie.active a:before {
+  content: "\e967" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #2dadc8 !important;
+    font-size: 18px;
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    text-align: center;
+     top: 0px;
+    font-style: normal;
+        bottom: 0px;
+        height: 18px;
+}
+
+.flat_map_align:before {
+    top: -1px !important;
+}
+.lgnd_box_right .left-active-sprites > ul > li.graph > a.active, .lgnd_box_right .left-active-sprites ul li.graph a {
+    background-image:none !important;
+}
+.fa-edit:before, .fa-pencil-square-o.fa-pencil-square-o:before {
+        content: "\f044";
+          color: #0290b5 !important;
+            font-size: 18px;
+            position: relative;
+            top: -3px;
+}
+
+.fa-times.fa-times:before {
+        content: "\f00d";
+    font-size: 18px;
+    position: relative;
+    top: -4px;
+    /*color: #2dadc8;*/
+}
+
+.action_cus .fa.fa-pencil-square-o.Gridimage:before {
+    color: #747474 !important;
+    font-size: 13px !important;
+    padding-left: 0PX !important;
+    top: 0px;
+}
+/*.fa.fa-pencil-square-o.Gridimage {
+     content: "\e967" !important;
+    font-family: 'scmadminfonts' !important;
+    color: #2fadc7 !important;
+    font-size: 18px;
+}*/
+
+
+.flat_ico_admin.ico_popup_size:before  {
+        top: 4px;
+        font-size: 17px;
+        padding-right:0px;
+    }

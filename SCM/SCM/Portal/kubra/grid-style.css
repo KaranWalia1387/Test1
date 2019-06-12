@@ -1,0 +1,84 @@
+﻿/*
+	Author: Manoj Kumar Sharma
+*/
+
+@charset "utf-8";
+
+html, body
+{
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 13px;
+    color: #666;
+    background-color: #f4f4f4 !important;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+.w2ui-grid .w2ui-grid-body table td {
+	border-right:0px !important;
+}
+.w2ui-grid .w2ui-grid-body table td {
+    padding: 0px 0 0px 17px !important;
+}
+#grid_wugrid_records tr {
+    border-bottom: 5px solid #fff !important;
+	background:#f4f4f4 !important;
+	border-radius:5px !important;
+    height: 47px !important;
+}
+.w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.w2ui-selected, .w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr td.w2ui-selected{
+border-bottom: 5px solid #fff !important;
+	background-color:#f4f4f4 !important;
+	border-radius:5px !important;
+    height: 47px !important;
+}
+.w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.w2ui-even, .w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.w2ui-odd {
+border-bottom: 5px solid #fff !important;
+	background-color:#f4f4f4 !important;
+	border-radius:5px !important;
+    height: 47px !important;
+}
+
+tr#grid_wugrid_rec_top {
+	display:none !important;
+}
+
+.w2ui-grid .w2ui-grid-body .w2ui-grid-records {
+    bottom: 0;
+    left: 8px !important;
+    position: absolute;
+    right: 8px !important;
+}
+
+.w2ui-grid-data img {
+    margin-right: 8px;
+}
+
+.w2ui-grid {
+    border-radius: 2px;
+    border-top: 1px solid silver !important;
+	border-left:0px !important;
+	border-right:0px !important;
+    overflow: hidden !important;
+    position: relative;
+}
+
+.w2ui-grid .w2ui-grid-body table .w2ui-head {
+    background-image: linear-gradient(#f9f9f9, #e4e4e4);
+    border-bottom: 1px solid #c5c5c5;
+    border-right: 1px solid #c5c5c5 !important;
+    border-left: 1px solid #c5c5c5 !important;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#grid_wugrid_body {
+    height: 278px !important;
+    top: 0 !important;
+}
+
+#grid_wugrid_records tr:nth-child(1) {
+    padding:0px !important;
+    height:0px !important;
+}

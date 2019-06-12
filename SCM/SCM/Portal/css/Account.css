@@ -1,0 +1,565 @@
+﻿
+/* ---------------------------  Registration Page Css ---------------------------*/
+
+
+/* Login page Style */
+
+.registration-page {
+	background: #ffffff; /* Old browsers */	
+	padding-top:16px;
+	padding-bottom:15px;
+	margin-top:18px;
+	position:relative;
+	display:table;
+	border:1px solid #d2d2d2;
+	font-size:14px;
+    width:100%;
+	}
+/*input[type="text"], input[type="password"], select, input[readonly] {
+    border: 1px solid #bebebe;
+    background:#f2f2f2 !important;
+    border-radius:0px;
+}*/
+.loginpage-form  {
+	padding: 0 0% 0 23px;
+	}
+	
+.registration-form h1  {
+	color:#87c301;
+	font-size:170.8%;
+	font-weight:normal;
+	padding:0 0 10px 0;
+	margin-top:0px;
+	}
+	
+.loginpage-form h3 {
+	font-size:141.7%;
+	color:#5e5e5e;
+	padding: 5px 0 7px 0;
+	margin:0px;
+	}
+	
+.registration-form input[type="text"], .registration-form input[type="password"]{
+	width: 87%;
+	padding: 5px 5px;
+	margin-bottom: 16px;
+	border: 1px solid#ccc;
+	color:#675E5E;
+      height:29px;
+	}
+/*BUG 6196 - Start*/
+.registration-form select {
+	width: 86.9%;
+	padding: 5px 5px;
+	margin-bottom: 16px;
+	border: 1px solid#ccc;
+	color:#999;
+    height:26px;
+	}
+/*BUG 6196 - end*/
+.registration-form .user_id input[type="text"]{
+	width: 33%;
+	}
+	
+.registration_btn {
+	float:right;
+	width:120px!important;
+	padding:6px 0!important;
+	background:#3a4885!important;
+	color:#f0f0f0!important;
+	border-radius:0px !important;
+	text-align:center;
+	font-size:16px!important;
+    margin-right: 48px;
+	border:0px !important;	
+    font-weight:bold;
+	}
+
+.registration_btn:focus {
+      color: #FFFFFF!important;
+      text-decoration: none;
+      outline: none;
+    }
+
+.registration_btn:hover {
+     background:#7c7c7c !important;
+     color:#fff ;
+     text-decoration:none;
+}
+
+#errorMsg {
+    z-index:9999;
+}
+
+
+
+a.registration_btn:hover {
+	color:#fff;
+    text-decoration:none;
+    background:#7c7c7c;
+}
+
+.reg_button {
+    border-top: 2px solid #ccc;
+    float: left;
+    padding:13px 0 2px;
+    width: 100%;
+}
+	
+.cancel_btn_1 {
+	}
+	
+@media (max-width:991px) {
+.registration-form .user_id input[type="text"]{
+	width: 87%;
+	}
+}
+
+
+#lblMsg {
+    background: #fff none repeat scroll 0 0;
+    border-left: 3px solid #f00;
+    box-shadow: 1px 0 4px #ccc;
+    font-size: 14px;
+    left: -9%;
+    padding: 12px 15px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2147483647;
+    display:none;
+}
+
+
+
+
+/* Login page Style */
+
+
+        #grid_wugrid_toolbar {
+            display: none !important;
+        }
+
+        #grid_wugrid_body {
+            top: 0 !important;
+        }
+
+        label#lblcardtype img {
+            margin-right: 3px;
+        }
+
+        .input-phone {
+            background: #fff;
+        }
+
+        .profile-details {
+            width: 100%;
+            padding: 11px 22px;
+        }
+
+        .gray-box {
+            padding: 9px 22px;
+        }
+
+        .gray-box_rem_marg {
+            padding: 6px 22px !important;
+            position:relative;
+        }
+        
+
+        .selector-text {
+            margin: 0px;
+            font-weight: bold;
+        }
+
+        .power-plan-selector span {
+            padding: 0px;
+        }
+
+        .inner-right-sub {
+            padding-top: 0px;
+        }
+
+        .my_account_divider {
+            border-top: 1px solid #ccc;
+            float: left;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            margin-top: 11px;
+            width: 100%;
+        }
+
+        .profile-details .name-feild {
+            font-weight: bold;
+        }
+
+        .profile-details table td, th {
+            padding: 7px 10px 6px;
+            width: 20%;
+            border: 1px solid #ccc;
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+
+        .my_acc_tbl .address-1 {
+            width: 100%;
+        }
+
+        .my_acc_tbl .address-icon {
+            width: 7% !important;
+            cursor: pointer;
+        }
+
+        .acc_inner_box_1 .profile-details:nth-child(odd) {
+            background: #f4f4f4;
+        }
+
+        .acc_inner_box_1 .profile-details input {
+            margin-top: 1px;
+        }
+
+        .inner_uni1 {
+            height: 81% !important;
+        }
+
+        .inner_uni2 {
+            height: 80% !important;
+        }
+
+            .inner_uni2 .setting_save_box {
+                padding-top: 12px !important;
+            }
+
+        .inner_uni3 {
+            height: 78% !important;
+        }
+
+            .inner_uni3 .setting_save_box {
+                padding-top: 4px !important;
+            }
+
+        .inner_uni4 {
+            height: 75% !important;
+        }
+
+        .w2ui-popup {
+            z-index: 999999999 !important;
+        }
+
+        header, .header-top {           
+            z-index: 999999;
+        }
+        .dropdown ul.dropdown-menu {
+                z-index: 999999999 !important;
+        }
+        .w2ui-grid .w2ui-grid-body table td {
+            padding-left: 17px !important;
+        }
+
+        .modal {
+            z-index: 999999 !important;
+        }
+        
+        #errorMsg {
+            top: 10px !important;
+            right: 100px !important;
+        }
+        #divAddAccount .modal-body {
+            overflow: visible !important;
+        }
+       #divAddAccount #errorMsg {
+                top: -33px !important;
+                margin-right: 50px !important;
+            }
+        #divAddAccountmodal span{
+            top: -35px !important;
+            right:40px !important;
+        }
+        #divAddressPopup_123 .modal-footer {
+            padding: 15px 15px 0;
+        }
+
+        #divAddressPopup_123 input[type="text"], #divAddressPopup_123 select {
+            margin-bottom: 10px;
+            width: 96%;
+            border-color: #D6D6D6;
+            color: black;
+        }
+
+
+        .modal-content .left_loading_area {
+            width: 100%;
+            margin: 5% 0;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .modal-content .right_cont_area {
+            width: 65%;
+            margin: 0;
+        }
+
+        .editMainHide {
+            display: none;
+        }
+
+        .popup_area {
+            bottom: auto;
+            left: auto;
+            margin: auto;
+            max-width: 56%;
+            padding: 0 !important;
+            position: relative;
+            right: auto;
+            top: auto;
+            width: 420px;
+            height: auto !important;
+            z-index: 999;
+        }
+
+            .popup_area .popup_area_home .popup_left_content_area_home {
+                float: left;
+                margin: 0 0 1px;
+                padding-top: 6px;
+                width: 100%;
+            }
+
+            .popup_area .popup_area_home .popup_right_content_area_home {
+                float: left;
+                margin: 0 0 3px;
+                width: 100%;
+            }
+
+        #changePwdPopup {
+            margin-left: -20%;
+            width: 141%;
+        }
+
+        .popup_area #changePwdPopup .popup_area_home .popup_left_content_area_home, .popup_area #changeUserId .popup_area_home .popup_left_content_area_home  {
+            width: 36% !important;
+        }
+        
+        .popup_area #changePwdPopup .popup_area_home .popup_right_content_area_home, .popup_area #changeUserId .popup_area_home .popup_right_content_area_home {
+            width: 64% !important;
+            margin: 0 0 10px;
+        }
+        #change-userid-divPopup .popup_area {
+            width: 600px;
+        }
+        .result {
+            color: #000 !important;
+        }
+
+        @media (max-width:480px) {
+            .header-top {
+                z-index: 9999999 !important;
+            }
+            .registration_btn {
+                 width: 81px !important;
+            }
+            .submit-button {
+                font-size: 15px;
+                padding: 3px 7px !important;
+            }
+            .profile-details table td, th {
+                 padding: 4px 10px 1px;
+            }
+
+            #divAddressPopup .col-xs-3, #divAddressPopup .col-xs-9 {
+                width: 100%;
+            }
+
+            .name-feild {
+                color: #53565a;
+                float: left;
+                font-size: 12px;
+                width: 40%;
+            }
+
+            #accountdetails .profile-details input[type="text"], input[type="password"], textarea {
+                width: 55%;
+            }
+
+            #changePwdPopup {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+        .default-address-1 {
+            padding-left: 12px;
+        }
+
+      
+        @media screen and (min-width:0\0) {
+            .edgeb.edgeb {
+                width: 6.1% !important;
+            }
+            .acc_del_box_1.acc_del_box_1 {
+                height: 37px !important;
+            }
+             tr:nth-child(2) .acc_del_box_1.acc_del_box_1 {
+               margin-top: -1px;
+               border-bottom: 0px solid #ccc !important;
+            }
+        }
+          /* Microsoft Edge Browser 12+ (All) - @supports method */
+
+        @supports (-ms-accelerator:true) {
+            .edgeb.edgeb {
+                width: 6.1% !important;
+            }
+            .acc_del_box_1.acc_del_box_1 {
+                height: 37px !important;
+            }
+           tr:nth-child(2) .acc_del_box_1.acc_del_box_1 {
+               margin-top: -1px;
+               border-bottom: 0px solid #ccc !important;
+            }
+        }
+        @charset "<Internet Explorer 11 and Microsoft Edge>"; _:-ms-lang(x), .edgeb.edgeb { width: 6.1% !important; }
+             .acc_del_box_1.acc_del_box_1 {
+                height: 37px !important;
+            }
+           tr:nth-child(2) .acc_del_box_1.acc_del_box_1 {
+               margin-top: -1px;
+               border-bottom: 1px solid #ccc !important;
+            }
+    
+        .sec_ques_box {
+            float: left;
+            width: 100%;
+            margin-bottom: 10px;
+            line-height: 24px;
+        }
+
+            .sec_ques_box > div {
+                white-space: nowrap;
+            }
+            .w2ui-tag.w2ui-tag {
+                    z-index: 9999999 !important;
+                    width: 100px;
+                    
+            }
+            #w2ui-tag-txtEmailID.w2ui-tag, 
+            #w2ui-tag-txtStreetNumber.w2ui-tag, 
+            #w2ui-tag-txtDL.w2ui-tag, 
+            #w2ui-tag-txtZipCode.w2ui-tag, 
+            #w2ui-tag-txtAccno.w2ui-tag, 
+            #w2ui-tag-txtPrimaryPhone.w2ui-tag, 
+            #w2ui-tag-txtSsn2.w2ui-tag, 
+            #w2ui-tag-txtPass.w2ui-tag,
+            #w2ui-tag-txtNewPass.w2ui-tag {
+                    z-index: 9999999 !important;
+            }
+
+            #w2ui-tag-txtConfirmPass.w2ui-tag, #w2ui-tag-txtUserid.w2ui-tag, #w2ui-tag-txtNewUserId.w2ui-tag, #w2ui-tag-ddlState.w2ui-tag {
+                 z-index: 99999999 !important;
+            }
+            /*.w2ui-tag.w2ui-tag > div {
+                    width: 260px !important;
+                   white-space: inherit !important;
+            }*/
+
+            .w2ui-tag .w2ui-tag-body.w2ui-tag-body {
+                    bottom: 6px;
+                left: -240px;
+            }
+            .w2ui-tag .w2ui-tag-body.w2ui-tag-body:before {
+                border-left: 5px solid transparent;
+                border-top: 5px solid rgba(60,60,60,.82);
+                border-right: 5px solid transparent;
+                margin: 15px 0 0 -15px;
+                left: 22%;
+                    bottom: -10px;
+                top: inherit !important;
+            }
+
+        .w2ui-tag-body {
+            min-width: 130px;
+        }
+
+        #btnUpdateAddress {
+            width: 135px !important;
+        }
+
+        @media (min-width:320px) and (max-width:480px) {
+            #btnUpdateAddress {
+                width: 150px !important;
+            }
+        }
+
+        @media (min-width:768px) and (max-width:991px) {
+            .inner_mid_section select {
+                margin-bottom: 10px;
+            }
+        }
+
+        .delete_box {
+            border-bottom: 0px;border-left:0px;width: 10%; border-top:2px solid #ccc;
+			border-bottom: 0px;
+			border-left: 0px;
+			width: 10%;
+			border-top: 2px solid #ccc;
+        }
+        @-moz-document url-prefix() { 
+           .delete_box {
+                border-top:0px solid #ccc !important;
+            }
+        }
+
+        button.closepopup {
+    background: none;
+    border: none;
+    float: right;
+}
+
+    .acc_del_box_1{
+        border-bottom:1px solid #ccc !important;
+            height: 38px !important;
+                margin-bottom: -1px;
+               border-right: 0 solid #ccc !important;
+    }
+@-moz-document url-prefix() {
+    .acc_del_box_1 {
+        margin-top: -1px;
+    }
+}
+
+
+.mailingaddressclose {
+    color: #000;
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 1 !important;
+    text-shadow: 0 1px 0 #fff;
+        background: none;
+    border: none;
+    float: right;
+}
+
+.my_acc_tbl .address-icon.address-icon.address-icon2 {
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+    float: right;
+    height: 37px;
+    padding-left: 9px;
+    padding-top: 8px;
+    position: absolute;
+    right: 12px;
+    text-align: center;
+    top: -1px;
+    width: 48px !important;
+}
+
+ #w2ui-tag-cust_City, #w2ui-tag-cust_Zip, #w2ui-tag-cust_address1
+{
+    z-index:9999999 !important;
+}
+
+ .edgeb .default-address-1 {
+     width:100%;
+    float: left;
+ }

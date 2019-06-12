@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="14dfd43c-1d74-4d1f-ab4c-8cd314455a7f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/CompareSpending.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CompareSpending.wsdl" MetadataType="Wsdl" ID="a3ae228f-e5cb-47b6-be3b-27c73592b8ec" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CompareSpending.svc?wsdl" />
+    <MetadataFile FileName="CompareSpending.xsd" MetadataType="Schema" ID="788fab09-2fba-4b18-80a3-39bb4cf0ab2a" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CompareSpending.svc?xsd=xsd2" />
+    <MetadataFile FileName="CompareSpending1.xsd" MetadataType="Schema" ID="45a80b75-fefb-4f51-a2b1-840b0d1b1911" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CompareSpending.svc?xsd=xsd1" />
+    <MetadataFile FileName="CompareSpending2.xsd" MetadataType="Schema" ID="3d88ca36-58e2-4936-b498-27dd025124d9" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CompareSpending.svc?xsd=xsd0" />
+    <MetadataFile FileName="CompareSpending.disco" MetadataType="Disco" ID="7ef750e4-f9fb-4a52-a8ce-ee258d313a28" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CompareSpending.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

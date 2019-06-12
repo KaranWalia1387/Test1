@@ -1,0 +1,186 @@
+﻿/********************* Menu Images  *********************/
+.ImagesNav{text-align:center;}
+.DashboardImage, .OutageMapImage, .SavingLeader, .UsageImage, .NotificationsImage, .BillingImage, .ElectricVehicleImage, .SmartHomeImage, .GetSmartImage, .GreenFootprintImage, .EnergyEfficiencyImage, .ConnectMeImage, .ServicesImage, .MyAccountImage, 
+.OutageIcon, .UsageIcon, .NotificationIcon, .GreenFootPrintIcon, .BillingIcon, .ElectricVehicleIcon, .SmartHomeIcon, .EnergyEfficencyIcon, .EnergyEfficencyIcon, .MyAccountIcon, .PageSetting, 
+.PowerIcon, .WaterIcon, .BillRatesIcon, .generationIcon, .wasteBillIcon,
+.SafetyNotificationIcon, .BillingNotificationsIcon, .ServiceNotificationsIcon, .PowerNotificationsIcon, .WaterNotificationsIcon, .AdminIcon, 
+.BillCurrentIcon, .BillIcon, .BillHistoryIcon, .PayNowIcon, .DisputeBillIcon, .BudgetBillIcon, .waterBillIcon, .powerBillIcon, 
+.CharginStationIcon, .SavingLeaderIcon, .ConnectMeIcon, .ServicesIcon, .SettingIcon, .ProfileIcon, .WeatherIcon, .SavingTipsIcon, .EducationTipsIcon, .NewRabetesIcon, .NewProgramIcon, .MonthlyBudgetIcon, .YearlyBudgetIcon, .EffciencyRankIcon, .DemandResponse,.kwh_button a, .dollar_button a,  .ccf_button a, .gas_button a, .hcf_button a,  .hourly a, .daily a, .monthly a, .yearly a
+{background:url(../images/residential_sprite.png) no-repeat; display:inline-block; text-decoration: none; text-indent:-9999px;margin: 0px -2px;}
+
+.EnergyEfficiencyImage {
+    width:78px !Important;
+}
+.ServicesImage {width:86px !Important;}
+ 
+/**  Header Menu Icon  **/
+a .DashboardImage{background-position:-4px 3px; width:78px;}
+a .DashboardImage:hover, a.active .DashboardImage{background-position:-5px -75px;}
+
+a .OutageMapImage{ background-position:-115px 3px; width:83px; }
+a .OutageMapImage:hover, a.active .OutageMapImage{background-position:-115px -76px;}
+
+a .UsageImage{background-position:-232px 3px; width:79px; }
+a .UsageImage:hover, a.active .UsageImage{background-position:-232px -76px;  }
+
+a .NotificationsImage{background-position:-336px 3px;width:96px; }
+a .NotificationsImage:hover, a.active .NotificationsImage{background-position:-336px -76px; }
+
+a .BillingImage{background-position:-458px 3px; width:69px; }
+a .BillingImage:hover, a.active .BillingImage{background-position:-458px -76px;}
+
+a .ElectricVehicleImage{background-position:-562px 3px;width:75px; }
+a .ElectricVehicleImage:hover, a.active .ElectricVehicleImage{background-position:-562px -76px; }
+
+
+ 
+a .SmartHomeImage{background-position:-674px 3px; width:86px; }
+a .SmartHomeImage:hover, a.active .SmartHomeImage{background-position:-674px -76px; }
+
+a .SavingLeader{background-position:-788px 4px;width: 84px; }
+a .SavingLeader:hover, a.active .SavingLeader{background-position:-789px -76px;}
+
+a .GreenFootprintImage{background-position:-907px 2px; width:84px !Important; }
+a .GreenFootprintImage:hover, a.active .GreenFootprintImage{background-position:-904px -76px; }
+
+a .EnergyEfficiencyImage{background-position:-1020px 3px; }
+a .EnergyEfficiencyImage:hover, a.active .EnergyEfficiencyImage{background-position:-1020px -76px; }
+
+a .ConnectMeImage{background-position:-1133px 3px; width:82px; }
+a .ConnectMeImage:hover, a.active .ConnectMeImage{background-position:-1133px -76px; }
+
+a .ServicesImage{background-position:-1254px 3px; width:83px; }
+a .ServicesImage:hover, a.active .ServicesImage{background-position:-1254px -76px;}
+
+a .MyAccountImage{background-position:-1376px 3px; }
+a .MyAccountImage:hover, a.active .MyAccountImage{background-position:-1376px -76px; }
+
+.PageSetting{background-position: -1595px -217px;height: 21px;width:25px;}
+
+.DashboardImage, .OutageMapImage, .UsageImage, .NotificationsImage, .BillingImage, .ElectricVehicleImage, .SmartHomeImage, .SavingLeader, .GreenFootprintImage, .EnergyEfficiencyImage, .ConnectMeImage, .ServicesImage, .MyAccountImage
+{width:92px; height:73px;}
+
+/**  Header Menu Icon ENds  **/
+
+
+
+
+
+
+
+/**  Container Header Icon  **/
+.OutageIcon, .UsageIcon, .NotificationIcon, .GreenFootPrintIcon, .BillingIcon, .ElectricVehicleIcon, .SmartHomeIcon, .EnergyEfficencyIcon, .EnergyEfficencyIcon, .MyAccountIcon, 
+.PowerIcon, .WaterIcon, .BillRatesIcon, .generationIcon, .wasteBillIcon, 
+.SafetyNotificationIcon, .BillingNotificationsIcon, .ServiceNotificationsIcon, .PowerNotificationsIcon, .WaterNotificationsIcon, .AdminIcon, 
+.BillCurrentIcon, .BillIcon, .BillHistoryIcon, .PayNowIcon, .DisputeBillIcon, .BudgetBillIcon, .waterBillIcon, .powerBillIcon, 
+.CharginStationIcon, .SavingLeaderIcon, .ConnectMeIcon, .ServicesIcon, .SettingIcon, .ProfileIcon
+{width:49px; height:35px; float:left;}
+
+.OutageIcon{background-position:-113px -164px;  width: 46px;}
+.UsageIcon{background-position:-235px -164px;  width: 32px;}
+.NotificationIcon{background-position:-343px -164px;  width: 40px;}
+.GreenFootPrintIcon{background-position:-912px -165px;  width: 32px;}
+.BillingIcon{background-position:-453px -166px;  width: 34px;}
+.ElectricVehicleIcon{background-position:-559px -166px;  width: 39px;}
+.SmartHomeIcon{background-position:-680px -166px;  width: 30px;}
+.EnergyEfficencyIcon{background-position:-1025px -166px;  width: 32px;}
+.MyAccountIcon{background-position:-1383px -165px;  width: 36px;}
+
+.SavingLeaderIcon{background-position:-788px -161px;  width: 45px;}
+.ConnectMeIcon{background-position:-1143px -164px;  width: 25px;}
+.ServicesIcon{background-position:-1248px -161px;  width: 49px;}
+
+
+.WeatherIcon{background-position: -1700px -210px;width: 49px;height: 33px; float:left;}
+.SavingTipsIcon{background-position: -1760px -218px;width: 49px;height: 33px; float:left;}
+.EducationTipsIcon{background-position: -1825px -218px;width: 49px;height: 33px; float:left;}
+.NewProgramIcon{background-position: -1896px -218px;width: 49px;height: 33px; float:left;}
+.NewRabetesIcon{background-position: -1968px -218px;width: 49px;height: 33px; float:left;}
+
+.MonthlyBudgetIcon{background-position: -2032px -218px;width: 49px;height: 33px; float:left;}
+.YearlyBudgetIcon{background-position: -2092px -218px;width: 49px;height: 33px; float:left;}
+.EffciencyRankIcon{background-position: -2151px -218px;width: 49px;height: 33px; float:left;}
+
+.DemandResponse{background-position: -2215px -214px; width: 49px;height: 35px; float:left;}
+
+/*usage*/
+.PowerIcon{background-position:-1098px -210px;  width: 37px;}
+.WaterIcon{background-position:-1164px -210px;  width: 37px;}
+.BillRatesIcon{background-position:-1231px -210px;  width: 38px;}
+.generationIcon{background-position:-1621px -160px;  width: 35px;}
+
+
+
+/*Notification Class */
+.SafetyNotificationIcon{background-position:-872px -210px;  width: 35px;}
+.BillingNotificationsIcon{background-position:-718px -210px;  width: 35px;}
+.ServiceNotificationsIcon{background-position:-946px -210px;  width: 35px;}
+.PowerNotificationsIcon{background-position:-793px -210px;  width: 35px;}
+.WaterNotificationsIcon{background-position:-1021px -210px;  width: 35px;}
+.AdminIcon{background-position:-651px -210px;  width: 35px;}
+
+
+
+
+/*Billing  Class */
+.BillCurrentIcon{background-position:-70px -210px;  width: 33px;}
+.BillIcon{background-position:-8px -210px;  width: 32px;}
+.BillHistoryIcon{background-position:-136px -210px;  width: 35px;}
+.PayNowIcon{background-position:-278px -210px;  width: 45px;}
+
+.powerBillIcon{background-position:-1459px -213px;  width: 35px; height:35px;}
+.waterBillIcon{background-position:-1525px -213px;  width: 35px; height:35px;}
+.wasteBillIcon{background-position:-1650px -213px;  width: 35px; height:35px;}
+
+.DisputeBillIcon{background-position: -360px -210px;width: 45px;}
+.BudgetBillIcon{background-position:-1307px -210px;  width: 35px;}
+
+
+/*Electric Vehicle  Class */
+.CharginStationIcon{background-position:-579px -215px;  width: 35px;}
+
+
+
+/*My Account Class */
+.SettingIcon{background-position:-519px -210px;  width: 32px;}
+.ProfileIcon{background-position:-444px -214px;  width: 32px;}
+
+
+
+
+
+.LinkedinIconBig{ background:url(../images/Connect_linkedin.png) no-repeat; float:left; width:32px; height:32px;}
+
+.FacebookIconBig{ background:url(../images/facebook1.png) no-repeat; float:left; width:32px; height:32px;}
+.TwitterIconBig{ background:url(../images/Connect_twitter.png) no-repeat; float:left; width:32px; height:32px;}
+
+/*New sprite class set */
+.kwh_button, .dollar_button,  .ccf_button, .gas_button, .hcf_button,  .hourly, .daily, .monthly, .yearly{ display:inline-block; margin: 0 5px;}
+.kwh_button a, .dollar_button a,  .ccf_button a, .gas_button a, .hcf_button a{ width:58px; height:51px;}
+.hourly a, .daily a, .monthly a, .yearly a { width:56px; height:62px; }
+
+.kwh_button a {background-position:-611px -264px;  }
+.kwh_button a:hover, .kwh_button a.active { background-position:-544px -264px;  }
+
+.dollar_button a { background-position:-340px -264px;  }
+.dollar_button a:hover, .dollar_button a.active { background-position:-272px -264px;  }
+.ccf_button a{ background-position:-73px -263px; }
+.ccf_button a:hover, .ccf_button a.active { background-position:-5px -263px;  }
+.gas_button a{ background-position:-209px -263px; }
+.gas_button a:hover, .gas_button a.active { background-position:-141px -263px;  }
+.hcf_button a{ background-position:-475px -263px; }
+/*.hcf_button a:hover, .hcf_button a.active { background-position:-343px -263px;  }*/
+.hcf_button a:hover, .hcf_button a.active { background-position:-407px -263px;  }
+
+
+.hourly a {background-position:-761px -263px;  }
+.hourly a:hover, .hourly a.active { background-position:-687px -263px;  }
+
+.daily a { background-position:-907px -263px; }
+.daily a:hover, .daily a.active { background-position:-834px -263px;  }
+.monthly a { background-position:-1053px -264px; }
+.monthly a:hover, .monthly a.active { background-position:-981px -263px;  }
+
+
+.yearly a { background-position:-975px -263px; }
+.yearly a:hover, .yearly a.active { background-position:-1056px -263px;  }

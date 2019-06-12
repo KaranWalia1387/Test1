@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="33f455cc-6828-46fd-982a-beb284e8e55a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/ConnectMe.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ConnectMe.wsdl" MetadataType="Wsdl" ID="914a3271-b4b6-4efe-a3c6-7cbee3769823" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/ConnectMe.svc?wsdl" />
+    <MetadataFile FileName="ConnectMe.xsd" MetadataType="Schema" ID="79d158c9-2e58-441e-b272-7787db98080d" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/ConnectMe.svc?xsd=xsd0" />
+    <MetadataFile FileName="ConnectMe.disco" MetadataType="Disco" ID="16673f84-b5d0-4ba3-9a55-28ada5d45cc9" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/ConnectMe.svc?disco" />
+    <MetadataFile FileName="ConnectMe1.xsd" MetadataType="Schema" ID="08c9f4c9-f290-45c2-a9d4-ef7b4f566826" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/ConnectMe.svc?xsd=xsd2" />
+    <MetadataFile FileName="ConnectMe2.xsd" MetadataType="Schema" ID="68ba96aa-2d4a-4894-9ce3-207489d1d223" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/ConnectMe.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

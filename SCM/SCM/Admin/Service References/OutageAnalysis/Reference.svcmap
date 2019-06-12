@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2bdbe8d7-4b8c-49ca-a92c-b0c275054107" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/OutageAnalysis.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="OutageAnalysis.disco" MetadataType="Disco" ID="09a9c365-4c0a-4687-9ab2-34d7d4cef5ef" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/OutageAnalysis.svc?disco" />
+    <MetadataFile FileName="OutageAnalysis.xsd" MetadataType="Schema" ID="28fcbaaa-e00f-4b58-9573-2f7eb9af55a3" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/OutageAnalysis.svc?xsd=xsd0" />
+    <MetadataFile FileName="OutageAnalysis.wsdl" MetadataType="Wsdl" ID="18103331-4641-4df7-842f-289d4b926edf" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/OutageAnalysis.svc?wsdl" />
+    <MetadataFile FileName="OutageAnalysis1.xsd" MetadataType="Schema" ID="3aa579e7-d7e3-439b-ac38-300fed0eee63" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/OutageAnalysis.svc?xsd=xsd2" />
+    <MetadataFile FileName="OutageAnalysis2.xsd" MetadataType="Schema" ID="86d5e9c8-fbc5-4341-8923-19ee9432e6f7" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/OutageAnalysis.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

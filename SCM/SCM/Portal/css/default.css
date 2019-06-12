@@ -1,0 +1,392 @@
+﻿/* ------------------------------------- */
+        .about_my_home .mid_area_home .right_content_area_home input[type="text"] {
+    width: 78%;
+    float: left;
+}
+
+.about_my_home .mid_area_home .right_content_area_home select {
+    width: 78%;
+    float: left;
+}
+
+.right_content_area_home > input + span {
+    float: left;
+    width: 10% !important;
+    padding-top: 4px;
+        }
+
+        .main.container1 {
+    width: 10% !important;
+    display: block !important;
+    float: left;
+    position: Relative;
+}
+        /* ------------------------------------- */
+.canceladd {
+    float: right;
+    margin-right: 5px;
+             }
+
+        #page_loader {
+            background-image: url('../images/loader.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            opacity: .7;
+            display: none;
+            position: absolute;
+            top: 0px;
+            z-index: 99999999;
+        }
+
+        .back_button {
+            display: none !important;
+        }
+
+        .w2ui-tag {
+            z-index: 9999999 !important;
+        }
+
+        .new_head h2 {
+            color: #fff;
+            font-size: 58px !important;
+            line-height: 46px !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        #lhc_container {
+            z-index: 99999 !important;
+            top: auto !important;
+            bottom: 48px !important;
+        }
+
+        .new_head h3 {
+            color: #fff;
+            font-size: 23px !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        .new_head ul {
+            list-style: outside none none;
+            margin: 75px 10px 0 !important;
+            padding: 0;
+        }
+
+        .inner_uni5 {
+            height: 99%;
+        }
+
+            .inner_uni5 ul li a {
+                padding: 5px 0;
+            }
+
+        .inner_uni3 {
+            height: 99%;
+        }
+
+            .inner_uni3 ul li a {
+                padding: 5px 0;
+            }
+
+        .inner_uni6 {
+            height: 99%;
+        }
+
+            .inner_uni6 ul li a {
+                padding: 1px 0;
+            }
+
+            .inner_uni6 ul li {
+                border-top: 4px solid #d4d4d4;
+                margin: 0 20px;
+                padding: 0;
+            }
+
+        #errorMsg {
+            background: rgba(60, 60, 60, 0.82) none repeat scroll 0 0;
+            border-left: 3px solid #f00;
+            box-shadow: 0 1px 3px #ccc;
+            color: white;
+            left: -9%;
+            padding: 7px 8px;
+            position: absolute;
+            top: 0px;
+            width: 312px;
+        }
+
+        .register-section .form-group {
+            margin-bottom: 10px;
+        }
+
+        .forget_name {
+            padding-top: 3px;
+        }
+
+        @-moz-document url-prefix() {
+            .register-section .form-group {
+                margin-bottom: 9px;
+            }
+            .register-section .form-group:first-child {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (min-width:0\0) {
+            .register-section .form-group .btn.btn-sub.btn-sub2 {
+                margin-top: 1px !important;
+            }
+
+            .form_group_1 h6 {
+                margin-bottom: 14px;
+            }
+        }
+
+        .bg {
+            display: none;
+        }
+
+         .divtime_box {
+            margin-top: 185px;
+            text-align: center;
+            background: #fff;
+            float: left;
+            width: 100%;
+            padding: 21px;
+           opacity: 0.91;
+        }
+
+        .divtime_box > p {
+        color: #707070;
+        font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+       .divtime_box .date_box {
+        color: #36abe0;
+        font-size: 26px;
+            }
+
+       .time_box1 {
+               width: 100%;
+                float: left;
+                text-align: center;
+                    margin-top: 21px;
+       }
+
+    .time_box1 ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .time_box1 ul li {
+            width: 107px;
+            border-radius: 5px;
+            margin-left: 10px;
+            text-align: center;
+            display: inline-block;            
+            padding: 10px;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#36abe0+0,0c74a2+100 */
+background: #36abe0; /* Old browsers */
+            background: -moz-linear-gradient(top, #36abe0 0%, #0c74a2 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #36abe0 0%,#0c74a2 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #36abe0 0%,#0c74a2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36abe0', endColorstr='#0c74a2',GradientType=0 ); /* IE6-9 */
+        }
+
+            .time_box1 ul li span {
+                display: block;
+                font-size: 16px;
+                color: #fff;
+            }
+
+            .time_box1 ul li span:first-child {
+                    font-size: 24px;
+                }
+
+    @media (min-width:1100px) and (max-width:1400px) {
+            .nav_login_section ul li a img {
+                    margin: 10px 15px 8px 0 !important;
+            }
+
+            .nav_login_section ul li a span {
+                    padding: 7px 0 0 !important;
+            }
+        }
+
+    .about_my_home .mid_area_home {
+                height: 338px;
+                padding-left: 21px;
+                overflow: auto;
+                width: 100%;
+    }
+
+    .about_my_home .bottom_area_home {
+            margin-top: 10px;
+    }
+
+    .about_my_home .upper_text {
+            margin: 0px 15px 15px -2px;
+    }
+
+    .about_my_home .mid_area_home .left_content_area_home {
+    color: #000;
+    }
+
+    .inpt_space_style > span {
+    padding-right: 10px;
+    float: left;
+    }
+
+    .inpt_space_style > span > input {
+            margin-right: 5px !important;
+            position: relative;
+            top: 1px;
+        }
+
+         .help_popup_link, .help_popup_link_1 {
+            position: relative;
+            z-index: 999;
+        }
+
+        .help_popup_box, .help_popup_box_1 {
+            display: none;
+            width: 300px;
+            min-height: 121px;
+            border: 1px solid #E8E8E8;
+            background: #fff;
+            position: absolute;
+            left: 55px;
+            top: -18px;
+            z-index: 9999;
+            padding: 2px 10px;
+            box-shadow: 1px 2px 6px #cdcdcd;
+        }
+
+        .help_popup_box_1 {
+            left: 20px;
+        }
+
+        .help_popup_link img, .help_popup_link_1 img {
+            cursor: pointer;
+            z-index: 9999999;
+            position: relative;
+        }
+
+        .help_popup_box h5, .help_popup_box_1 h5 {
+            margin: 4px 0;
+            padding: 4px 0px;
+            border-bottom: 1px solid #EFEFEF;
+            font-size: 14px;
+            font-weight: bold;
+            color: #4C82BB;
+        }
+
+        .help_popup_box p, .help_popup_box_1 p {
+            font-size: 12px;
+        }
+
+
+        .help_popup_box_bdr {
+            width: 0;
+            height: 0;
+            border-right: 15px solid #fff !important;
+            border-left: 15px solid transparent;
+            border-top: 15px solid transparent;
+            border-bottom: 13px solid transparent;
+            margin-left: -40px;
+            position: absolute;
+        }
+
+        .help_popup_box_1 .help_popup_box_bdr {
+            border-right: 15px solid #ECECEC !important;
+        }
+
+
+        i.icon.help.circle::before {
+            content: "" !important;
+        }
+
+        .right {
+            border: 0 none !important;
+            height: 48px;
+            left: 0 !important;
+            position: absolute !important;
+            z-index: -1;
+        }
+
+        .ui.divider {
+            -moz-user-select: none;
+            color: rgba(0, 0, 0, 0.85);
+            font-size: 1rem;
+            font-weight: 700;
+            height: 0;
+            letter-spacing: 0.05em;
+            margin: 2px 0 8px 0px !important;
+            text-transform: uppercase;
+            padding: 0 !important;
+        }
+
+        h5 {
+            font-weight: 700;
+            margin: 0px 0px 8px !important;
+            padding: 0;
+            color: #006699 !important;
+        }
+
+         .help_icon_img {
+            color: #AFAFAF;
+            cursor: pointer;
+            font-size: 24px;
+            margin-left: -21px;
+            top:-18px;
+        }
+
+         .main.container1 {
+    position: relative;
+         }
+
+         .help_conte_box {
+    display: none;
+            background: #fff;
+            position: absolute;
+            left: -240px;
+            width: 240px;
+            float: left;
+            height: auto;
+            top: -10px;
+            word-break: break-word;
+            padding: 5px 9px;
+            border-radius: 5px;
+            box-shadow: 5px;
+            text-align: left;
+            box-shadow: 0px 0px 1px #ccc;
+            opacity: 9 !important;
+            border: 1px solid #ccc;
+            color: #404040;
+            font-family: arial;
+            font-size: 15px;
+            font-style:normal;
+            z-index:99999;
+         }
+
+         .arrow_brdr {
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-left: 10px solid #C7C7C7;
+                border-bottom: 5px solid transparent;
+                position: relative;
+                float: right;
+                right: -19px;
+                top: 12px;
+         }
+         .glyphicon.glyphicon-question-sign.help_icon_img.help_icon_img:before {
+    content: "\e9b1" !important;
+    font-family: "scmfonts" !important;
+    color: #2e669e !important;
+}

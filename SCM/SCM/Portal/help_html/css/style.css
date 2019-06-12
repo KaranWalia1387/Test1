@@ -1,0 +1,100 @@
+.panel-heading {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 0;
+}
+.base-exmple-faq .panel-title > a {
+    color: inherit;
+    display: block;
+    padding: 10px 15px;
+	outline:0;
+}
+.base-exmple-faq .panel-title > a:focus, .base-exmple-faq .panel-title > a:hover,.base-exmple-faq .panel-title > a:active
+{
+outline:0;
+text-decoration:none;
+
+}
+.base-exmple-faq .panel-title > a:hover
+{
+background-color:#cfcfcf;
+color:#333;
+}
+.faq-head {
+    padding: 10px 0;
+}
+.faq-heading
+{
+color:#006699;
+font-size:25px;
+
+}
+
+.wrp
+{
+padding:5px 15px;
+}
+.wrap-around
+{
+width:100%;
+}
+@media only screen and (min-width : 300px) and (max-width : 480px) {
+	.faq-heading {
+		color: #006699;
+		font-size: 20px;
+	}
+.base-exmple-faq .panel-title > a {
+    color: inherit;
+    display: block;
+    font-size: 12px;
+    outline: 0 none;
+    padding: 10px 15px 10px 5px;
+}
+	.base-exmple-faq .panel-body {
+		padding: 5px 10px;
+		text-align: justify;
+	}
+	.base-exmple-faq .panel-body {
+		text-align: justify;
+		font-size:12px;
+		color:#666;
+	}
+
+}
+i.indicator {
+    float: right !important;
+    position: relative;
+    right: -10px;
+    top: 0;
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	.faq-heading {
+		color: #006699;
+		font-size: 20px;
+	}
+.base-exmple-faq .panel-title > a {
+    color: inherit;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    outline: 0 none;
+    padding: 10px 5px;
+}
+	.base-exmple-faq .panel-body {
+		padding: 5px 10px;
+		text-align: justify;
+	}
+	.base-exmple-faq .panel-body {
+		text-align: justify;
+		font-size:13px;
+		color:#666;
+	}
+	i.indicator {
+    float: right !important;
+    position: relative;
+    right: 5px;
+    top: 0;
+}
+
+}
+

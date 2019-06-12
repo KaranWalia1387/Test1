@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b0a86c12-d98c-440a-b55b-5a6102487b13" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/CustomerAnalysis.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CustomerAnalysis.xsd" MetadataType="Schema" ID="f1a96f05-3004-4cb1-962a-d261a63ca04c" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CustomerAnalysis.svc?xsd=xsd0" />
+    <MetadataFile FileName="CustomerAnalysis.wsdl" MetadataType="Wsdl" ID="eee95399-e564-45fe-8eac-31db1abd6ab0" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CustomerAnalysis.svc?wsdl" />
+    <MetadataFile FileName="CustomerAnalysis1.xsd" MetadataType="Schema" ID="8b2cc086-4008-4c85-b002-b2a502306955" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CustomerAnalysis.svc?xsd=xsd1" />
+    <MetadataFile FileName="CustomerAnalysis2.xsd" MetadataType="Schema" ID="9bb2e6f9-f7c3-4500-b79d-7f6eec58b9b3" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CustomerAnalysis.svc?xsd=xsd2" />
+    <MetadataFile FileName="CustomerAnalysis.disco" MetadataType="Disco" ID="baaea79b-0772-47db-84eb-5dc97d9cc502" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/CustomerAnalysis.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

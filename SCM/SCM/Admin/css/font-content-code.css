@@ -1,0 +1,383 @@
+﻿@charset "utf-8";
+
+
+.icon-admin-addmore:before {
+  content: "\e900";
+}
+.icon-admin-add-remove-feature:before {
+  content: "\e901";
+}
+.icon-admin-admin-configurtion:before {
+  content: "\e902";
+}
+.icon-admin-administration:before {
+  /*content: "\e903";*/
+   content: "\e91a";
+}
+.icon-admin-admin-service-configuration:before {
+  content: "\e904";
+}
+.icon-admin-allmail:before {
+  content: "\e905";
+}
+.icon-admin-application_label:before {
+  content: "\e906";
+}
+.icon-admin-attribute:before {
+  content: "\e907";
+}
+.icon-admin-auto-response:before {
+  content: "\e908";
+}
+.icon-admin-back:before {
+  content: "\e909";
+}
+.icon-admin-backward:before {
+  content: "\e910";
+}
+.icon-admin-banners:before {
+  content: "\e911";
+}
+.icon-admin-bargraph:before {
+  content: "\e912";
+}
+.icon-admin-billing:before {
+  content: "\e913";
+}
+.icon-admin-blocked:before {
+  content: "\e914";
+}
+.icon-admin-blocked-account:before {
+  content: "\e915";
+}
+.icon-admin-blocked-ip:before {
+  content: "\e916";
+}
+.icon-admin-browser-used:before {
+  content: "\e917";
+}
+.icon-admin-campaign:before {
+  content: "\e918";
+}
+.icon-admin-close:before {
+  content: "\e919";
+}
+.icon-admin-collaboration:before {
+  content: "\e920";
+}
+.icon-admin-configuration-settings:before {
+  content: "\e921";
+}
+.icon-admin-connect_me:before {
+  content: "\e922";
+}
+.icon-admin-contract:before {
+  content: "\e923";
+}
+.icon-admin-crash-log:before {
+  content: "\e924";
+}
+.icon-admin-crm:before {
+  /*content: "\e925";*/
+  content: "\e91b";
+  }
+.icon-admin-crm-dashboard:before {
+  content: "\e926";
+}
+.icon-admin-csr:before {
+  /*content: "\e927";*/
+   content: "\e90b";
+}
+.icon-admin-customer_engagement:before {
+  /*content: "\e928";*/
+   content: "\e90f";
+}
+.icon-admin-customer-behaviour:before {
+  content: "\e929";
+}
+.icon-admin-customer-configuration:before {
+  content: "\e930";
+}
+.icon-admin-dashboard:before {
+  content: "\e931";
+}
+.icon-admin-demand-responce:before {
+  content: "\e932";
+}
+.icon-admin-deployement:before {
+  content: "\e933";
+}
+.icon-admin-device-used:before {
+  content: "\e934";
+}
+.icon-admin-disclaimer-settings:before {
+  content: "\e935";
+}
+.icon-admin-done:before {
+  content: "\e936";
+}
+.icon-admin-down:before {
+  content: "\e937";
+}
+.icon-admin-efficiency:before {
+  /*content: "\e938";*/
+  content: "\e90d";
+}
+.icon-admin-email:before {
+  content: "\e939";
+}
+.icon-admin-emailtemplate:before {
+  content: "\e940";
+}
+.icon-admin-expand:before {
+  content: "\e941";
+}
+.icon-admin-faq:before {
+  content: "\e942";
+}
+.icon-admin-field_service_view:before {
+  content: "\e943";
+}
+.icon-admin-file_blank:before {
+  content: "\e944";
+}
+.icon-admin-filter:before {
+  content: "\e945";
+}
+.icon-admin-footprint:before {
+  content: "\e946";
+}
+.icon-admin-forward:before {
+  content: "\e947";
+}
+.icon-admin-front:before {
+  content: "\e948";
+}
+.icon-admin-home:before {
+  content: "\e949";
+}
+.icon-admin-ivr:before {
+  content: "\e950";
+}
+.icon-admin-leak-alert:before {
+  content: "\e951";
+}
+.icon-admin-list_ok:before {
+  content: "\e952";
+}
+.icon-admin-location:before {
+  content: "\e953";
+}
+.icon-admin-locked-customer:before {
+  content: "\e954";
+}
+.icon-admin-login-details:before {
+  content: "\e955";
+}
+.icon-admin-login-issue:before {
+  content: "\e956";
+}
+.icon-admin-marketing-preference:before {
+  content: "\e957";
+}
+.icon-admin-notifications:before {
+  content: "\e958";
+}
+.icon-admin-notification-template:before {
+  content: "\e959";
+}
+.icon-admin-notification-workflow:before {
+  content: "\e960";
+}
+.icon-admin-online-payment:before {
+  content: "\e961";
+}
+.icon-admin-onoff:before {
+  content: "\e962";
+}
+.icon-admin-open_file:before {
+  content: "\e963";
+}
+.icon-admin-outages:before {
+  content: "\e964";
+}
+.icon-admin-paperless-billing:before {
+  content: "\e965";
+}
+.icon-admin-payment_options:before {
+  content: "\e966";
+}
+.icon-admin-pie_chart:before {
+  content: "\e967";
+}
+.icon-admin-pigibank:before {
+  content: "\e968";
+}
+.icon-admin-privacy-policy:before {
+  content: "\e969";
+}
+.icon-admin-programs:before {
+  content: "\e970";
+}
+.icon-admin-push-notifications:before {
+  content: "\e971";
+}
+.icon-admin-rebates:before {
+  content: "\e972";
+}
+.icon-admin-Register:before {
+  content: "\e973";
+}
+.icon-admin-registration-template:before {
+  content: "\e974";
+}
+.icon-admin-replay:before {
+  content: "\e975";
+}
+.icon-admin-resolutions:before {
+  content: "\e976";
+}
+.icon-admin-role:before {
+  content: "\e977";
+}
+.icon-admin-saved:before {
+  content: "\e978";
+}
+.icon-admin-schedule-maintenance:before {
+  content: "\e979";
+}
+.icon-admin-security-configuration:before {
+  content: "\e980";
+}
+.icon-admin-segment:before {
+  content: "\e981";
+}
+.icon-admin-send-notification:before {
+  content: "\e982";
+}
+.icon-admin-sent:before {
+  content: "\e983";
+}
+.icon-admin-service:before {
+  content: "\e984";
+}
+.icon-admin-service-configuration:before {
+  content: "\e985";
+}
+.icon-admin-settings:before {
+  content: "\e986";
+}
+.icon-admin-solar:before {
+  content: "\e987";
+}
+.icon-admin-squarebox:before {
+  content: "\e988";
+}
+.icon-admin-subtractless:before {
+  content: "\e989";
+}
+.icon-admin-terms-conditions:before {
+  content: "\e990";
+}
+.icon-admin-text-message:before {
+  content: "\e991";
+}
+.icon-admin-thermostat-dashboard:before {
+  content: "\e992";
+}
+.icon-admin-trash:before {
+  content: "\e993";
+}
+.icon-admin-up:before {
+  content: "\e994";
+}
+.icon-admin-usage:before {
+  content: "\e995";
+}
+.icon-admin-users:before {
+  content: "\e996";
+}
+.icon-admin-utility_information:before {
+  content: "\e997";
+}
+.icon-admin-wateriqanalytics:before {
+  content: "\e998";
+}
+
+
+
+.icon-admin-planned_outage:before {
+  content: "\e999";
+}
+.icon-admin-unplanned_outage:before {
+  content: "\e800";
+}
+.icon-admin-21:before {
+  content: "\e801";
+}
+.icon-admin-bullet-list:before {
+  content: "\e802";
+}
+.icon-admin-bar:before {
+  content: "\e803";
+}
+.icon-admin-ev-2:before {
+  content: "\e804";
+}
+.icon-admin-ev:before {
+  content: "\e805";
+}
+.icon-admin-payment_location:before {
+  content: "\e806";
+}
+
+.icon-admin-Demand_responce_new:before {
+    content: "\e93a";
+}
+
+.icon-admin-budget_my_bill:before {
+    content: "\e93b";
+}
+.icon-admin-MobileDashobard_setting:before {
+    content: "\e91e";
+}
+
+
+/*@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-Regular.otf') format('opentype'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Semibold';
+    src: url('../fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-Semibold.otf') format('opentype'), url('../fonts/MyriadPro-Semibold.woff') format('woff'), url('../fonts/MyriadPro-Semibold.ttf') format('truetype'), url('../fonts/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-LightSemiExt';
+    src: url('../fonts/MyriadPro-LightSemiExt.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-LightSemiExt.otf') format('opentype'), url('../fonts/MyriadPro-LightSemiExt.woff') format('woff'), url('../fonts/MyriadPro-LightSemiExt.ttf') format('truetype'), url('../fonts/MyriadPro-LightSemiExt.svg#MyriadPro-LightSemiExt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'summernote';
+    font-style:normal;
+    font-weight:normal;
+           src:url("../fonts/summernote.eot?dc97c88102d55aed645e5f227c58ba5b");
+           src:url("../fonts/summernote.eot?#iefix") format("embedded-opentype"),
+               url("../fonts/summernote.woff?dc97c88102d55aed645e5f227c58ba5b") format("woff"),
+               url("../font/summernote.ttf?dc97c88102d55aed645e5f227c58ba5b") format("truetype");
+}*/
+
+

@@ -1,0 +1,250 @@
+﻿.gis-footprint-area {
+    float: right;
+    margin: 0 7px 0 0;
+    padding: 0;
+}
+
+.MapTextView {
+    float: left;
+    margin-top: 12px;
+}
+
+    .MapTextView img {
+        height: 18px;
+        margin-left: 0px;
+    }
+
+a#Map {
+    background: url("../images/icon_map.png") no-repeat left top;
+    display: block;
+    width: 23px;
+    height: 34px;
+    float: left;
+    margin-right: 10px;
+}
+
+    a#Map.active {
+        color: #666;
+        background: url("../images/icon_map_hover.png") no-repeat left top;
+    }
+
+a#Text {
+    background: url("../images/icon_text_hover.png") no-repeat left top;
+    display: block;
+    width: 23px;
+    height: 30px;
+    float: left;
+    margin-top: 2px;
+}
+
+    a#Text.active {
+        color: #666;
+        background: url("../images/icon_text.png") no-repeat left top;
+    }
+
+.search-area input {
+    height: 28px;
+}
+.gis-footprint-area ul li:last-child {
+        width: 253px;
+    font-size: 13px;
+}
+/* For IE 9 IE 10 IE 11 */
+@media screen and (min-width:0\0) {
+    .search-area input[type="text"] {
+        padding: 4px 10px 7px;
+    }
+}
+
+
+/* For IE 8 */
+@media \0screen {
+    .search-area input[type="text"] {
+        padding: 4px 10px 7px;
+    }
+}
+
+#footprint_map_canvas {
+    height: 90.3% !important;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .cover_right_top_area {
+        width: 63% !important;
+    }
+
+    #selFootPrint {
+        width: 179px !important;
+    }
+
+    .responsive_width_1 {
+        width: 183px;
+    }
+
+    .cover_top_area h1 {
+        width: 25%;
+    }
+
+    #selFootPrint {
+        width: 125px !important;
+    }
+
+    #footprint_map_canvas {
+        height: 94.3% !important;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1024px) {
+    .cover_right_top_area {
+        width: 66% !important;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:767px) {
+
+    .cover_top_area h1 {
+        width: 130px;
+    }
+
+    .search-area {
+        float: left;
+        width: 45%;
+    }
+
+    .gis-footprint-area ul li {
+        padding: 8px 5px 0 !important;
+    }
+
+    #selFootPrint {
+        width: 180px !important;
+    }
+
+    #selFootPrint {
+        float: left;
+        font-size: 9px;
+        height: 18px;
+        margin: -3px 15px 0 0;
+        padding: 0;
+    }
+
+    .gis-footprint-area ul li:last-child {
+        position: absolute;
+        right: -77px;
+        top: -50px;
+        width: 65%;
+    }
+
+    .cover_right_top_area .search-area input[type="text"], input[type="password"], textarea {
+        width: 100% !important;
+    }
+}
+
+@media (min-width:300px) and (max-width:767px) {
+    .without_sidebar {
+        height: 100% !important;
+    }
+
+    .gis-footprint-area {
+        border-top: 1px solid #ccc;
+        float: right !important;
+        margin: 45px 7px 7px 0;
+        padding: 0;
+    }
+
+    .MapTextView {
+        margin-left: 7px;
+        margin-top: 15px;
+        position: relative;
+        z-index: 999;
+    }
+
+    a#Map, a#Text, a#Map.active, a#Text.active {
+        background-size: 13px;
+    }
+}
+
+@media (min-width:1500px) and (max-width:3500px) {
+    .without_sidebar {
+        height: 104% !important;
+    }
+}
+/*Google Map css start*/
+
+#footprint_map_canvas {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-width: none;
+}
+
+.gm-style-iw {
+    width: 350px !important;
+    top: 15px !important;
+    left: 0px !important;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+    border: 1px solid #fff;
+    /*border-radius: 5px 5px 5px 5px;*/
+}
+
+    .gm-style-iw > div {
+        width: 350px !important;
+    }
+/*#iw-container {
+    margin-bottom: 10px;
+}*/
+#iw-container .iw-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 10px;
+    background-color: #fff;
+    color: #006699;
+    margin: 0;
+    /*border-radius: 2px 2px 0 0;*/
+    border-bottom: 1px solid #f4f4f4;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.iw-title > strong {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#iw-container .iw-content {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-right: 1px;
+    padding: 8px 5px 10px 10px;
+    max-height: 140px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #53565a;
+    font-family: Arial;
+}
+
+.iw-content img {
+    float: right;
+    margin: 0 5px 5px 10px;
+}
+
+.iw-subTitle {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+.iw-bottom-gradient {
+    position: absolute;
+    width: 326px;
+    height: 25px;
+    bottom: 10px;
+    right: 18px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+/*Google map ends here */

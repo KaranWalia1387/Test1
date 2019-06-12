@@ -1,0 +1,155 @@
+﻿
+@charset "utf-8";
+
+@import url('../css/scm_font_icon.css');
+
+nav.main_large ul.tabs li a span {
+       height: 18px !important;
+}
+
+nav.main_large ul.tabs li a:before {
+        top: 13px !important;
+}
+
+nav.main_large ul.tabs li.ev a:before {
+        top: 18px !important;
+}
+.inner-dashboard-area.inner-dashboard-area h3 {
+    height:40px;
+        font-size: 15px;
+}
+.currency ul.calender_usages#usageMapMode li a:before {
+        left: 0 !important;
+       right: 0 !important;
+}
+.currency ul.calender_usages li {
+    width: 53px !important;
+}
+.currency ul li a[mode="D"] {
+       text-indent: -6px !important;
+}
+
+.currency ul li a[mode="D"], .currency ul li a.active[mode="D"] {
+        text-indent: -6px !important;
+    }
+.currency ul li a.active:before {
+        left: 0 !important;
+       right: 0 !important;
+}
+
+.billing-area .pay_bill.pay_bill a {
+    right: -81px !important;
+     width: auto !important;
+    white-space: nowrap !important;
+        padding: 6px 31px 6px 5px !important;
+     margin-bottom:0;
+}
+.billing-area .pay_bill.pay_bill a:first-child {
+       font-size: 11px;
+}
+.billing-area .pay_bill.pay_bill a.view_bill_style {
+           font-size: 11px;
+               float:left;
+             margin-left: 8px;
+}
+.billing-area .pay_bill.pay_bill  {
+        width: 49%;
+            position: relative;
+              left: -17px;
+
+}
+.billing-area .pay_bill.pay_bill a.re_txt1 {
+    right: -94px !important;
+}
+  
+#ContentPlaceHolder1_evArea a {
+    font-size: 11px !important ;
+}
+#ContentPlaceHolder1_evArea { 
+    font-size: 13px !important;
+}
+.currency #usageMapMode .currency_1 ul li input[type="submit"], .currency #usageMapMode .currency_1 ul li input[type="submit"].active {
+    background-image:none !important;
+}
+.div_disclaimer_spanish.div_disclaimer_spanish {
+        margin-top: -2px !important;
+}
+.current_area ul li i {
+        line-height: 19px;
+}
+
+ .currency ul.calender_usages#usageMapMode li a:before {
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto !important;
+        text-align: center !important;
+      }
+ .currency.currency ul li a.active[mode="S"], .currency.currency ul li a[mode="S"] {
+         text-indent: -3px !important;
+ }
+ .currency ul.calender_usages#usageMapMode li a {
+     font-size: 10px !important;
+ }
+
+ .VehicalStatus .GridTableLabel:nth-child(1){
+        padding-top: 0px !important;
+}
+ .VehicalStatus .OddColor:nth-child(2){ 
+ padding-top: 0px !important;
+    }
+
+
+ .logo_large.logo_large {
+    padding: 10px 0px 7px 7px !important;
+    
+}
+
+ .right_content_box.right_content_box #usageMapType ul li a.active[type="K"]:before, .right_content_box.right_content_box #usageMapType ul li a.active[mode="K"]:before, .currency.currency > #usageMapType > ul > li > a.active[text="kWh"]:before {
+         left: -19px !important;
+ }
+ .right_content_box.right_content_box #usageMapType ul li a[type="K"]:before, .right_content_box.right_content_box #usageMapType ul li a[mode="K"]:before, .currency.currency > #usageMapType > ul > li > a[text="KWh"]:before {
+         left: -19px !important;
+ }
+
+ .right_content_box.right_content_box #usageMapType ul li a[type="D"]:before {
+         left: -10px !important;
+ }
+
+ .right_content_box.right_content_box #usageMapType ul li a.active[type="W"]:before, .currency.currency > #usageMapType > ul > li > a.active[text="HCF"]:before,
+ .right_content_box #usageMapType ul li a.active[type="C"]:before, .currency.currency > #usageMapType > ul > li > a.active[text="Ccf"]:before,
+ .right_content_box #usageMapType ul li a[type="C"]:before, .currency.currency > #usageMapType > ul > li > a[text="Ccf"]:before {
+      left: -19px !important;
+ }
+ .right_content_box.right_content_box #usageMapType ul li a[type="W"]:before, .currency.currency > #usageMapType > ul > li > a[text="HCF"]:before {
+      left: -19px !important;
+ }
+ .right_content_box.right_content_box #usageMapType ul li a[type="G"]:before, .currency.currency > #usageMapType > ul > li > a[text="Gallon"]:before {
+         left: -11px !important;
+ }
+ .right_content_box.right_content_box #usageMapType ul li a.active[type="G"]:before, .currency.currency > #usageMapType > ul > li > a.active[text="Gallon"]:before {
+     left: -11px !important;
+ }
+
+            .currency.currency ul li input[value="Comparez Moi"],
+            .currency.currency ul li input.active[value="Comparez Moi"],
+            .currency.currency ul li input[value="Comparez Code Postale"],
+            .currency.currency ul li input.active[value="Comparez Code Postale"],
+            .currency.currency ul li input[value="Comparez Fournisseur"],
+            .currency.currency ul li input.active[value="Comparez Fournisseur"],
+            .currency.currency ul li input[value="Comparez Tous"],
+            .currency.currency ul li input.active[value="Comparez Tous"] {
+                background:none !important;
+                position:relative;
+                  z-index: 999;
+            }
+
+  .logo_large {
+         padding: 10px 0px 9px 7px !important;
+ }
+
+  .nav_left ul li a {
+    width: 86%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="21760999-b589-46f4-91a4-a54b77e95831" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/UserBehaviour.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UserBehaviour.disco" MetadataType="Disco" ID="296a7606-dc6f-4ea8-98cb-07f572dc8ad9" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/UserBehaviour.svc?disco" />
+    <MetadataFile FileName="UserBehaviour.xsd" MetadataType="Schema" ID="5c525c34-0a57-467f-bfb6-f2a6d4b1144a" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/UserBehaviour.svc?xsd=xsd0" />
+    <MetadataFile FileName="UserBehaviour1.xsd" MetadataType="Schema" ID="08ebee82-dcf2-4e4e-b8d4-054c0df5b912" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/UserBehaviour.svc?xsd=xsd2" />
+    <MetadataFile FileName="UserBehaviour.wsdl" MetadataType="Wsdl" ID="d311a879-710f-45ef-bbfb-b80e36e5e327" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/UserBehaviour.svc?wsdl" />
+    <MetadataFile FileName="UserBehaviour2.xsd" MetadataType="Schema" ID="cefa5440-6f7a-4832-8e3d-df25b9738d3a" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/UserBehaviour.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

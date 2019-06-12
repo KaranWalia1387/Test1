@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Configuration.master.cs" Inherits="AdminPanel.Configuration" %>
+
+<%@ Import Namespace="AdminPanel" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
+    
+    <aside class="left-side sidebar-offcanvas">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <ul class="tabs sidebar-menu" id="accordion">
+
+                <%if (SessionAccessor.UserRightList.Contains(UserRights.OutageCreate))
+                  { %>
+                <li class="sidebar_outage"><a href="configure-outage.aspx">Outage</a></li>
+                <%} %>
+
+                <%if (SessionAccessor.UserRightList.Contains(UserRights.UsageReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.UsageAccess))
+                  { %>
+                <li class="sidebar_usage" style="display: none"><a href="configure-usage.aspx">Usage</a></li>
+                <%} %>
+
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.BillingReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.BillingAccess))
+                   { %>
+                <li class="sidebar_billing" style="display: none"><a href="configure-billing.aspx">Billing</a></li>
+                <% }
+
+                   if (SessionAccessor.UserRightList.Contains(UserRights.EfficiencyReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.EfficiencyAccess))
+                   { %>
+                <li class="sidebar_efficency"><a href="configure-saving-tips.aspx">Efficiency</a></li>
+                <% }
+
+                   if (SessionAccessor.UserRightList.Contains(UserRights.ConnectMeReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.ConnectMeAccess))
+                   { %>
+
+                <li class="sidebar_connectme"><a href="configure-connectme.aspx">Connect Me</a></li>
+
+                <% }
+                   if (SessionAccessor.scmexpress != "1")
+                   {
+                       if (SessionAccessor.UserRightList.Contains(UserRights.CompareReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.CompareAccess))
+                       { %>
+
+                <li class="sidebar_compare" style="display: none"><a href="configure-comparespending.aspx">Compare</a></li>
+                <% }%>
+                <% }
+                  if (SessionAccessor.scmexpress != "1")
+                  {
+                      if (SessionAccessor.UserRightList.Contains(UserRights.ServiceReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.ServiceAccess))
+                      { %>
+
+                <li class="sidebar_service"><a href="configure-service.aspx">Services</a></li>
+                <% }%>
+                <% } if (SessionAccessor.UserRightList.Contains(UserRights.AccountReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.AccountAccess))
+                  { %>
+                <li class="sidebar_myaccount" style="display: none"><a href="configue-myaccount.aspx">My Account</a></li>
+                <% }%>
+                <%--Have hidden images and theme till its not implemented as per new UI--%>
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.PaymentLocationReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.PaymentLocationAccess))
+                   { %>
+                <li class="sidebar_PaymentLocations"><a href="view-payLocation.aspx">Payment Location</a>
+                </li>
+                <%} %>
+
+                <% if (SessionAccessor.UserRightList.Contains(UserRights.PaymentOptionReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.PaymentOptionAccess))
+                   { %>
+                <li class="sidebar_PaymentOption"><a href="PaymentOption.aspx">Payment Options</a>
+                </li>
+                <% }
+
+                   if (SessionAccessor.UserRightList.Contains(UserRights.RoleAccess))
+                   { %>
+                <li class="sidebar_Role"><a href="Role.aspx">Role</a>
+                </li>
+                <% } if (SessionAccessor.UserRightList.Contains(UserRights.FeatureAccess))
+                   { %>
+                <li class="sidebar_Feature"><a href="Configure-feature.aspx">Add/Remove Feature</a>
+                </li>
+                <% }
+
+                   if (SessionAccessor.UserRightList.Contains(UserRights.SettingReadOnly) || SessionAccessor.UserRightList.Contains(UserRights.SettingAccess))
+                   { %>
+
+                <li id="banner" class="sidebar_configurebanner" style="display: none"><%--<a href="configure-banner">Banners</a>--%>
+                    <a class="lnkconfigurebanner" href="#collapseTwo">Banners</a>
+                    <ul id="collapseTwo" class="collapse" style="display: none">
+                        <li class="sidebar_configurebanner_inner"><a href="configure-banner.aspx">Configure Banner</a></li>
+                        <li class="sidebar_statistics_inner"><a href="banner-statistics.aspx">Statistics</a></li>
+                        <li class="sidebar_clicklogs_inner"><a href="banner-click-logs.aspx">Click Logs</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar_Settings"><a href="configure-authentication.aspx">Settings</a></li>
+                <% }
+
+                   if (SessionAccessor.UserRightList.Contains(UserRights.LanguageAccess) || SessionAccessor.UserRightList.Contains(UserRights.LanguageReadOnly))
+                   { %>
+                <li class="sidebar_MultiManguage_app"><a href="MultiLanguage.aspx">Application Labels</a></li>
+
+                <%  }%>
+                <li class="sidebar_SocialMedia"><a href="configure-socialmedia.aspx">Utility Information</a></li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <aside class="right-side">
+        <a href="javascript:void(0);" id="button-sidebar" class="button-sidebar ir"></a>
+        <div class="inner-right-section">
+            <div class="right-content-area">
+                <asp:ContentPlaceHolder ID="rightpanel" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </aside>
+  
+    <script type="text/javascript" src="../js/jscolor/jscolor.js"></script>
+    <script type="text/javascript">
+        $(".confi").addClass('active');
+
+    </script>
+    <style>
+        #collapseOne li a, .in li a {
+            cursor: pointer;
+        }
+
+        #PopupAddTopic {
+            left: 15% !important;
+            top: 0% !important;
+        }
+    </style>
+
+</asp:Content>

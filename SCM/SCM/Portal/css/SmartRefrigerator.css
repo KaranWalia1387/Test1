@@ -1,0 +1,29 @@
+﻿ 
+        .ajax__slider_h_rail {
+            width: 100% !important;
+            float: left !important;
+            margin-right: 20px;
+        }
+
+        .TempBox {
+            border: 0 !important;
+        }
+
+        @media only screen and (min-width:768px) and (max-width:1024px) {
+
+            .Left_Bill_area input[type="text"], input[type="password"], textarea {
+                float: left;
+                padding: 0 3px;
+            }
+
+            .ajax__slider_h_rail {
+                width: 78%;
+            }
+        }
+
+        @media (max-width:767px) {
+            .TempBox {
+                width: 34px !important;
+            }
+        }
+    

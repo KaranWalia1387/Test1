@@ -1,0 +1,56 @@
+﻿
+        .SearchIcon {
+            background: url("../images/SearchIcon.png") no-repeat scroll left top;
+            cursor: pointer;
+            height: 28px;
+            display: inline-block;
+            margin: 0 5px 3px 0;
+            width: 27px;
+            float: left;
+        }
+
+         
+          .w2ui-tag .w2ui-tag-body {
+    white-space: normal;
+    min-width: 130px;
+    line-height: 15px;
+}
+
+        .TableCellHeaderSearch input[type="text"], input[type="password"], textarea {
+            padding: 5px 10px 5px;
+            border-radius: 0;
+            width: 80%;
+            border: 1px solid #d6d6d6;
+            float: left;
+            font-size: 13px;
+            font-weight: normal;
+        }
+
+        .TableCellHeaderSearch {
+            float: right;
+            padding: 0px 0px 0px;
+            width: 197px;
+            display: none;
+        }
+
+        @media (min-width:992px) and (max-width:1024px) {
+            .top_section_left h2 span {
+                line-height: 22px !important;
+            }
+        }
+
+        @media (min-width:768px) and (max-width:991px) {
+            .top_section_left h2 span {
+                line-height: 12px !important;
+            }
+
+            .top_section_left {
+                height: 215px !important;
+            }
+        }
+       
+          .button_list_section_right select, .button_list_section_right input[type="text"] {
+              color: #676767;
+          }
+
+        

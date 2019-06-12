@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="967f8170-10bd-4e2e-9b23-73f04969add7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/Common.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Common.disco" MetadataType="Disco" ID="8eb48924-9e94-433a-a654-59093460f6fc" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Common.svc?disco" />
+    <MetadataFile FileName="Common.wsdl" MetadataType="Wsdl" ID="ddfb7162-adae-4c8d-bf6d-65dd43aaf14b" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Common.svc?wsdl" />
+    <MetadataFile FileName="Common.xsd" MetadataType="Schema" ID="2d327e30-f509-467a-9b0a-0a7bda38b2eb" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Common.svc?xsd=xsd1" />
+    <MetadataFile FileName="Common1.xsd" MetadataType="Schema" ID="d85d148d-76d3-42f0-99f0-6663d2e152f0" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Common.svc?xsd=xsd2" />
+    <MetadataFile FileName="Common2.xsd" MetadataType="Schema" ID="77d62b4f-4687-4a2d-b96c-2c3dff08b49b" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Common.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

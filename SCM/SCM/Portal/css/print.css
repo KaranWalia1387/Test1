@@ -1,0 +1,294 @@
+﻿@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        -moz-print-color-adjust: exact;
+    }
+
+    .tabs, #P6BWWR9LQB-img, .inner-content-log ul, .status-icon, #firefly-widget-wrapper, #lhc_status_container, .TableCellHeaderSearch, .textDesc, .Nodatadiv, .logo_large, .like_lnk_ro, .like_lnk, .addTipTxt, .setting_save_box, .logo, .back_to_login {
+        display: none;
+    }
+
+     
+
+    .desc {
+       word-wrap: break-word!important;
+        white-space: nowrap;
+    }
+
+    .descWithoutHtml {
+        display: block !important;
+        margin-top: 30px !important;
+    }
+
+    footer, .nav_left, .headEfficiency, header {
+        display: none;
+    }
+
+    .inner-mid-container {
+        width: 100%;
+    }
+
+
+    a[href]:after {
+        content: none !important;
+    }
+
+    body {
+        width: 100% !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .nav_left ul li.active {
+        background: url(../images/bg_nav_sidebar_active.png) no-repeat 106% top;
+    }
+
+    ul.MailListing {
+        height: 100% !important;
+        overflow: visible !important;
+    }
+
+    .TempBox {
+        width: 150px;
+    }
+
+    .energy_mid_box .right_content_box {
+        overflow: visible;
+    }
+
+    .calender_usages {
+        float: right;
+        display: block;
+    }
+
+    .efficiency_area ul {
+        margin: 0px 0px 0px 0%;
+        list-style: none;
+        padding: 0;
+    }
+
+        .efficiency_area ul li {
+            background: #fff none repeat scroll 0 0;
+            box-shadow: 0 1px 2px 0px #ececec;
+            float: left;
+            max-height: 600px !important;
+            margin: 20px 8px 10px;
+            padding: 0;
+            position: relative;
+            border: 1px solid #ececec;
+            width: 100%;
+        }
+
+    .right_content_box ul li {
+        list-style-position: inside;
+        vertical-align: text-top;
+        display: block !important;
+    }
+
+    .efficiency_area ul li .top_div_img {
+        margin: 0;
+        padding: 0;
+        width: 95%;
+        clear: both;
+        height: 115px;
+        text-align: center;
+        border-bottom: 1px solid #CCC;
+        /*margin-bottom: -40px;*/
+        border: none !important;
+    }
+
+    .efficiency_area ul li .content_energy_area .added_vote_area ul {
+        margin: 0 0 0 10px !important;
+    }
+
+        .efficiency_area ul li .content_energy_area .added_vote_area ul li {
+            border: none !important;
+        }
+        .efficiency_area ul li .content_energy_area .added_vote_area ul li span{
+            border: none !important;
+            font-weight:400 !important;
+        }
+    .energy_mid_box .right_content_box {
+        overflow: visible;
+        width: 100% !important;
+    }
+
+    .bottom_efficiency {
+        position: absolute;
+        left: 0;
+        bottom: inherit !important;
+    }
+
+    .efficiency_area ul li .content_energy_area .like_area.like_area {
+        float: left;
+        margin: 0px 0px 12px 9px !important;
+        width:12%!important;
+        padding-left:10px!important;
+    }
+
+    .efficiency_area ul li .content_energy_area .added_vote_area.added_vote_area.added_vote_area ul li {
+            border-left: 0px solid #666666!important;
+    }
+
+    .top_conte_box_mob, .hgt {
+        height: 100%;
+        overflow: visible !important;
+    }
+
+    .right_content_box {
+        width: 80%;
+        float: left;
+        padding-bottom: 0%;
+        height: 100%;
+        overflow: visible !important;
+    }
+
+    .modal-content {
+        background: #fff !important;
+    }
+
+    .modal-dialog popup_area {
+        width: 600px !important;
+    }
+
+    .bot_scroll {
+        height: 100% !important;
+        overflow: visible !important;
+    }
+
+    #contenttablejqxgrid {
+        width: 100% !important;
+    }
+
+    ul.MailListing {
+        width: 100%;
+        display: table;
+        height: 100% !important;
+        overflow: visible !important;
+    }
+
+        ul.MailListing li {
+            display: table-cell;
+        }
+
+            ul.MailListing li:nth-child(1) {
+                border: none;
+            }
+
+    .right_content_box {
+        width: 80%;
+        float: left;
+        padding-bottom: 0%;
+        height: 100%;
+        overflow: visible !important;
+    }
+
+    .back_to_login, #lhc_status_container {
+        display: none;
+    }
+
+
+    .right_content_box_1 {
+        height: inherit !important;
+    }
+
+    .top_div_img {
+        border: none;
+    }
+
+
+        .top_div_img img {
+            border: none;
+        }
+
+    .efficiency_area ul li {
+        box-shadow: none;
+    }
+
+        .efficiency_area ul li .content_energy_area h1 {
+            margin-top: 50px !important;
+            font-weight:normal!important;
+        }
+        .efficiency_area ul li .content_energy_area .like_area span{
+            font-weight:400 !important;
+        }
+    .efficiency_area ul li {
+        width: 100% !important;
+    }
+
+    .added_vote_area ul li {
+        width: 30% !important;
+    }
+
+    .logo_large, .alert_pop {
+        display: none !important;
+    }
+
+    .added_vote_area.added_view_sec {
+        width: 30% !important;
+    }
+
+    .efficiency_area ul li {
+        border: 1px solid #ececec;
+    }
+
+    .added_vote_area > ul {
+        width: 99%;
+        overflow: auto;
+    }
+
+
+
+    .container {
+        margin: auto !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .NotAvail {
+        display: block !important;
+    }
+
+    .setting_save_box {
+    display:none !important}
+    .right_content_box_1, .top_conte_box_mob, .energy_mid_box .right_content_box, .efficiency_area ul li{
+        overflow:visible !important;
+    }
+    .efficiency_area ul li .content_energy_area .added_vote_area{
+        width:45%!important;
+    }
+    .bottom_efficiency{
+        margin-left:-10px!important;
+    }
+    .bottom_efficiency_space{
+        margin-left:0px!important;
+    }
+    .register a {
+    margin: 0;
+    padding: 5px 7px 4px;
+    border-radius: 0px;
+    text-decoration: none !important;
+    color: #000 !important;
+    float: right;
+    display: block;
+    background: #7c7c7c!important;
+    text-transform: capitalize;
+    font-size: 12px;
+    outline: none;
+}
+    .efficiency_area ul li .content_energy_area .register_spac ul li{
+        width:14%!important;
+    }
+    
+    .register{
+        display:none!important;
+    }
+    .registered_box .add, registered_box .ng-binding{
+        display:none;
+    }
+    .registered_box ul .enroll_none{
+        display:none!important;
+    }
+
+   
+}

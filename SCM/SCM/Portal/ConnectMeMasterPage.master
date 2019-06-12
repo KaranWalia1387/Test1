@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="ConnectMeMasterPage.master.cs" Inherits="CustomerPortal.ConnectMeMasterPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        #errorMsg {
+            float: right;
+            position: absolute;
+            top: 8px;
+            right: 0px;
+            background: rgba(60,60,60,.82);
+            color: white;
+            padding: 3px 8px;
+            box-shadow: 0px 1px 3px #ccc;
+            display: none;
+        }
+
+        .w2ui-tag .w2ui-tag-body {
+            background-color: rgba(60,60,60,.82);
+            display: inline-block;
+            position: absolute;
+            border-radius: 4px;
+            padding: 4px 10px;
+            color: #fff !important;
+            box-shadow: 1px 1px 3px #000;
+            line-height: 100%;
+            font-size: 11px;
+            font-family: Verdana,Arial,sans-serif;
+            left: -230px;
+            top: -29px;
+        }
+        .w2ui-tag .w2ui-tag-body:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-right: 5px solid transparent;
+            border-top: 5px solid rgba(60,60,60,.82);
+            border-left: 5px solid transparent;
+            bottom: -11px;
+            left: 30px;
+        }
+        @media (min-width:767px) and (max-width:991px) {
+            .slider_mob {
+                width: 142px !important;
+            }
+
+                .slider_mob img {
+                    max-width: 142px !important;
+                }
+        }
+    </style>
+
+    <script type="text/javascript">
+        var arrcarosuelid = ["slider1_container", "slider2_container"];//Array for carosuel id's
+    </script>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <section class="inner_mid_section" id="devices">
+    <div class="container inner-mid-container">
+    <div class="energy_mid_box" style="position:relative;">
+    <asp:HiddenField ID="hdnFlag" Value="load" runat="server" ClientIDMode="Static" />
+    <asp:HiddenField ID="hdnDR" Value="0" runat="server" ClientIDMode="Static" />
+        <h1>                    
+            <img src="images/icon_connectme_sidebar.svg" style="padding-right:5px; margin-top: -3px; float: left;" />
+            <span class="head_icon_flat icon_connectme"></span>
+            <span globalize="ML_Footer_a_ConnectMe"> <%= CustomerPortal.Translator.T("ML_Footer_a_ConnectMe") %></span>
+        </h1>
+        <span id="errorMsg" style="float:right;"></span>
+        <div class="sidebar_toggle">Sidebar Navigation</div>
+        <div class="nav_left"> 
+                	<ul>
+                    	<li class=" icon_contact active" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.ConnectMeContactUs) %>"><a href="connect-me.aspx" globalize="ML_CONNECTMEMaster_Anchor_ContactUs"><%= CustomerPortal.Translator.T("ML_CONNECTMEMaster_Anchor_ContactUs") %></a></li>
+                        <li class="icon_fb"  style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.ConnectMeFacebook) %>">
+                          <a href="#" globalize="ML_ConnectMe_FB"><%= CustomerPortal.Translator.T("ML_ConnectMe_FB") %></a> 
+                        </li>
+                        <li class="icon_twitter" id="MyAccountUsage" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.ConnectMeTwitter) %>">
+                         <%-- <a href="#" globalize="ML_ConnectMe_tw"><%= CustomerPortal.Translator.T("ML_ConnectMe_tw") %></a> --%>
+                             <a href="#" globalize="ML_ConnectMe_tw">Twitter</a> <%-- made chagned for bug id 0054572 --%>
+                        </li>
+                        <li class="icon_youtube_new" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.ConnectMeYoutube) %>">
+                             <a href="#" globalize="ML_ConnectMe_Youtube"><%= CustomerPortal.Translator.T("ML_ConnectMe_Youtube") %></a>
+                         <%-- <a href="https://www.youtube.com/channel/UCvX2JCJIY2VEhmqLQ1cO4Pg" target="_blank">YouTube</a>--%>
+                        </li>                       
+                    </ul>
+
+                     <div class="banner_left_img" globlaize="ML_Compare_Lbl_AdBanner">
+                            <a href="#"> <img id="IDBannerConnectMe" runat="server" clientidmode="Static" src="" alt="" class="padding_banner"  onclick="BannerClick(this.id);"/><%--images/banner_ads/image002.png--%>
+                            </a>
+                     </div> 
+                </div>
+       <div class="right_content_box">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+    </asp:ContentPlaceHolder>
+           </div>
+        </div>
+    </div>
+    </section>
+</asp:Content>

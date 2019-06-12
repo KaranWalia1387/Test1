@@ -1,0 +1,197 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Thermostat.master.cs" Inherits="AdminPanel.Demand_Response.Thermostat" %>
+<%@ Import Namespace="AdminPanel" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <link href="../js/jqxGrid/styles/jqx.base.css" rel="stylesheet" />
+    <link href="../js/jqxGrid/styles/jqx.web.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+ <%--   <script src="../Scripts/jquery-1.11.2.min.js" type="text/javascript"></script>--%>
+     <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <script src="../js/app.js"></script>
+    <style type="text/css">
+        .inner-right-section .right-content-area {
+            padding: 0 0 20px 0;
+        }
+        .jqx-grid-cell-selected, .jqx-grid-cell-hover
+        {
+            background-color: #999999;
+        }
+
+        div[role='row']
+        {
+            cursor: pointer;
+        }
+
+        .demand_res_nav {
+            width:100% !important;
+        }
+
+         #jqxgrid {
+            border-radius: 0 !important;
+        }
+
+        #gridbox {
+            border-radius: 0 !important;
+        }
+
+        .jqx-widget .jqx-grid-cell, .jqx-widget .jqx-grid-column-header, .jqx-widget .jqx-grid-group-cell {
+            border-color: #ddd !important;
+        }
+
+        input:disabled:not([type="button"]), select:disabled, textarea:disabled, input[readonly]:not([type="button"]), select[readonly], textarea[readonly] {
+            background-color: #fff !important;
+        }
+
+          .jqx-fill-state-hover {
+            background:#f8fafb !important;
+        }
+
+          .jqx-fill-state-pressed {
+              background:#edeeee !important;
+          }
+
+        .jqx-grid-column-header {
+            padding-left: 10px;
+            font-size: 13px !important;
+        }
+
+        .jqx-widget-content {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+            font-style: normal;
+        }
+
+        .jqx-grid-cell-alt {
+            background: #f8fafb !important;
+        }
+
+        .jqx-grid-column-header.jqx-grid-column-header {
+            padding-left:0px !important;
+        }
+
+    </style>
+   <script type="text/javascript">
+       //To disable the enter in textboxes.
+       $(document).keypress(function (event) {
+           if (event.keyCode == 13 || event.which == 13) {
+               event.preventDefault();
+           }
+       });
+       $(document).ready(function () {
+           var open = true;
+           $(".button-sidebar").click(function () {
+
+               $(".left-side").toggle();
+               $(".right-side").toggleClass("remove_left_margin");
+               if (open) {
+                   open = false;
+                   $("#button-sidebar").css("background", "url('../images/close-arrow.png') no-repeat center center");
+               } else {
+                   open = true;
+                   $("#button-sidebar").css("background", "url('../images/open-arrow.png') no-repeat center center");
+               }
+               //if ($(".jqgrid").jqxGrid != null)
+               //    $(".jqgrid").jqxGrid('updatebounddata');
+               //$('.grid_main_box').toggleClass("padleft");
+               //if ($('.filter-section').length > 0) {
+               //    var GridHeight = $('.filter-section').width();
+               //    if (GridHeight > 600) {
+               //        $('.grid_main_box').toggleClass("padleft");
+               //    }
+               //    if ($("#jqxgrid") != null) {
+               //        $("#jqxgrid").jqxGrid({ width: GridHeight });
+               //    }
+               //    if ($('#ddlCity') != null) {
+
+               //        var modechild = ($('#ddlCity').val() != '') ? '2' : '1';
+               //        if (modechild == 2) {
+               //            $("#jqxchildgrid").jqxGrid({ width: GridHeight });
+               //        }
+               //    }
+
+               //}
+
+           });
+
+           $(".icon-bar").click(function () {
+
+               $(".left-side").toggle();
+               $(".right-side").toggleClass("remove_left_margin");
+
+           });
+
+       });
+
+
+
+    </script>
+   <%-- <script src="highcharts/jquery-1.10.2.min.js"></script>--%>
+    <script src="highcharts/highcharts.js"></script>
+
+    <script type="text/javascript" src="../js/jqxGrid/jqxcore.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxdata.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxlistbox.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxgrid.filter.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxmenu.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxgrid.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxgrid.sort.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxgrid.pager.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxgrid.selection.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxdatatable.js"></script>
+    <script src="../js/jqxGrid/jqxcalendar.js"></script>
+    <script src="../js/jqxGrid/jqxcheckbox.js"></script>
+    <script src="../js/jqxGrid/jqxpanel.js"></script>
+    <script src="../js/jqxGrid/jqxdatetimeinput.js"></script>
+    <script type="text/javascript" src="../js/jqxGrid/jqxgrid.columnsresize.js"></script>
+    <script src="../js/jqxgrid/jqxGrid.columnsreorder.js"></script>
+
+    <script src="highcharts/jquery.fancybox.js?v=2.1.5"></script>
+     <link href="css/jquery.fancybox.css?v=2.1.5" rel="stylesheet" />
+    <script type="text/javascript" src="../js/demos.js"></script>
+    <aside class="left-side sidebar-offcanvas">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            
+    </asp:ScriptManager>
+            <ul class="tabs sidebar-menu" id="accordion">
+              <% if (SessionAccessor.UserRightList.Contains(UserRights.DemandRespThermostatView))
+                                   { %>
+                          <li class="icon-home-thermo"><a href="dashboard.aspx">Thermostat Dashboard</a></li>
+                        <%} 
+                          if (SessionAccessor.UserRightList.Contains(UserRights.DemandRespDevice))
+                                   {%>
+                            <li class="icon-device-thermo"><a href="device-summary.aspx">Device</a></li>
+                        <%}
+                          if (SessionAccessor.UserRightList.Contains(UserRights.DemandRespDemandResponse))
+                                   { %>
+                            <li class="icon-dr-thermo"><a href="demand-response.aspx">Demand Response</a></li>
+                        <%} %>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+     <aside class="right-side">
+        <a href="javascript:void(0);" id="button-sidebar" class="button-sidebar ir"></a>
+        <div class="inner-right-section">
+            <div class="right-content-area">
+                <asp:ContentPlaceHolder ID="head" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </aside>
+    
+    <script type="text/javascript">
+        $(".icon_thermostat").addClass('active');
+       
+    </script>
+
+
+</asp:Content>

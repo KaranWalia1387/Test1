@@ -1,0 +1,254 @@
+@charset "utf-8";
+html, body {
+	height:100%;
+}
+body {
+	margin: 0px;
+	color: #56565a;
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	background: #f4f4f4;
+	}
+
+
+/* Header */
+header {
+	background:#fff;
+	margin:0px;
+	padding:0px;
+	box-shadow:0px 0px 4px #cfcfcf;
+	}
+	
+.logo a {
+	display:block;
+	outline:none;	
+	}
+	
+	.logo img {
+		padding:20px 0 20px 4px;		
+		}
+		
+	.connect_with_us {
+		background:#e1e1e1 url(../images/bg_connect_with_us.png) no-repeat left top;
+		display: table;
+		width: 100%;
+		height:71px;
+		padding:21px 0 0 22%;
+		}
+		
+	.connect_with_us p {
+		float:left;
+		color:#403f3f;
+		font-size:108.3%;
+		padding:5px 0 0 0;		
+		}
+		
+	.connect_with_us ul {
+		float:right;		
+		margin:0;
+		padding:0px;
+		list-style:none;
+		}
+	
+	.connect_with_us ul li {
+		float:left;
+		padding:0px;
+		margin:0px;
+		}
+		
+	.connect_with_us ul li a {
+		display:block;
+		text-decoration:none;
+		 color:#e1e1e1;
+		 padding:0px 22px 10px;
+		 outline:none;
+		 text-indent:-9999px;
+		}
+		
+	.connect_with_us ul li.facebook a {
+		background:url(../images/icon_fb_login.png) no-repeat left top;		
+		}
+		
+	.connect_with_us ul li.facebook a:hover {
+		background:url(../images/icon_fb_login_ro.png) no-repeat left top;		
+		}
+		
+	.connect_with_us ul li.twitter a {
+		background:url(../images/icon_twitter_login.png) no-repeat left top;
+		}
+		
+	.connect_with_us ul li.twitter a:hover {
+		background:url(../images/icon_twitter_login_ro.png) no-repeat left top;
+		}
+	
+	.connect_with_us ul li.google_plus a {
+		background:url(../images/icon_google_plus_login.png) no-repeat left top;
+		}
+		
+	.connect_with_us ul li.google_plus a:hover {
+		background:url(../images/icon_google_plus_login_ro.png) no-repeat left top;
+		}
+		
+	
+		
+
+/* Login page Style */
+
+.login-page {
+	background: #ffffff; /* Old browsers */	
+	padding-top:32px;
+	padding-bottom:35px;
+	margin-top:51px;
+	position:relative;
+	display:flex;
+	border:1px solid #d2d2d2;
+	}
+
+.loginpage-form  {
+	padding: 0 10% 0 23px;
+	}
+	
+.loginpage-form h1  {
+	color:#87c301;
+	font-size:230.8%;
+	font-weight:normal;
+	padding:0 0 10px 0;
+	margin-top:0px;
+	}
+	
+.loginpage-form h3 {
+	font-size:141.7%;
+	color:#5e5e5e;
+	padding: 5px 0 7px 0;
+	margin:0px;
+	}
+
+
+.login-page .login-page-user {
+	background:#fff url("../images/user-name-icon.jpg") no-repeat left center;
+	padding-left:50px;
+	border-radius:0px;
+	}	
+
+.login-page-password {
+	background:#fff url("../images/password-icon.jpg") no-repeat left center;
+	padding-left:50px;
+	border-radius:0px;
+	}
+
+.forgot-password {
+	margin-top:10px;
+	color:#6f6f6f;
+	display:block;
+	width:100%;
+	float:right;
+	text-align:right;
+	}		
+
+.forgot-password a {
+	color:#2561ad;
+	text-decoration:none;
+	font-size: 107.7%;
+	padding:2px 0px;
+	}
+
+.forgot-password a:first-child {
+	padding-left:0px;
+	}	
+
+.forgot-password a:hover {
+	color:#959595;		
+	}
+
+	
+.login-page-image {
+	text-align: left;
+	padding-top:9px;
+	width: 96.6%;
+	}	 
+	
+.login-page-image img {
+	padding-bottom:27px;
+	max-width: 100%;
+	}
+	
+.login-page-image .carousel-indicators {
+	bottom: -19px !important;
+	}
+	
+	.login-page-image .carousel-indicators li {
+		background-color: #e1e1e1;
+		margin:0 6px 0 6px;
+		width: 12px;
+		height: 12px;
+		}
+			
+	.login-page-image .carousel-indicators .active {
+		background-color: #57565b;
+		}
+		
+	.btn-default-login {
+		display:block;
+		float:right;
+		border:0px;
+		color:#fff;
+		font-size:166.7%;
+		outline:none;
+		padding: 7px 12% 7px 18%;
+		margin: 18px 0 19px 0;
+		background:#56565a url(../images/bg_log_smw.png) no-repeat left top;
+		transition:all 0.5s ease-in;
+		-moz-transition:all 0.5s ease-in;
+		-webkit-transition:all 0.5s ease-in;
+		}
+		
+	.btn-default-login:hover {		
+		background:#74a601 url(../images/bg_log_smw.png) no-repeat left top;
+		transition:all 0.5s ease-in;
+		-moz-transition:all 0.5s ease-in;
+		-webkit-transition:all 0.5s ease-in;
+		}
+		
+.login-form-text [type="checkbox"] {
+	margin-top:1px;
+		}
+
+/* Footer */
+footer {
+	background: #fff;
+	color: #000;
+	text-align: center;
+	position: fixed;
+	padding:4px 10px;
+	width: 100%;
+	bottom: 0px;
+	z-index: 9999;
+	box-shadow:10px 0 10px #cfcfcf;
+	}
+	
+footer .copy-right {
+	margin:7px 0px 0px;
+	padding:0px;
+	text-align:left;
+	font-size:10px;
+}
+
+footer .footlinks {
+	margin:7px 0px 0px 0px;
+	padding:0px;
+	text-align:center;
+}
+
+
+footer .footer-logo {
+	float:right;
+	margin:4px 0px;
+}
+
+
+@media (max-width:767px){
+	.logo a {
+		text-align:center;
+		}
+	}
+		

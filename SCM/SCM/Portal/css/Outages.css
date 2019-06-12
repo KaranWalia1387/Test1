@@ -1,0 +1,320 @@
+﻿
+#btnDistance, #btnRate {
+    cursor: pointer;
+}
+
+.esriPopup .actionsPane .zoomTo {
+    display: none;
+}
+
+.MessageContainer .PinLabel {
+    position: absolute;
+    top: 18px;
+    left: 27px;
+    color: #000000;
+    display: block;
+    width: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.LeftPanel .MessageContainerActive, .LeftPanel .MessageContainer:hover {
+    background: #eaeaea;
+    border-bottom: 1px dashed #dadada;
+    color: #53565a;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.MessageContainer, .MessageContainerActive {
+    line-height: 18px;
+    position: relative;
+}
+
+    .MessageContainer .blue {
+        color: #3398cc;
+        font-weight: bold;
+    }
+
+    .MessageContainer .red {
+        color: #fe0000;
+    }
+
+    .MessageContainerActive .blue, .MessageContainer:hover .blue, .MessageContainer:hover .red, .MessageContainerActive .red, .MessageContainerActive .PinLabel, .MessageContainer:hover .PinLabel {
+        color: #006699 !important;
+    }
+
+.LeftPanel .MessageContainer {
+    border-bottom: 1px dashed #dadada;
+    padding: 10px;
+    font-size: 12px;
+}
+
+    .LeftPanel .MessageContainer strong {
+        font-size: 12px;
+        padding-right: 5px;
+    }
+
+.MessageContainer table td, th {
+    vertical-align: top;
+}
+
+.cover_right_top_area {
+    width: auto;
+    float: right;
+}
+
+.gis-footprint-area ul li {
+    padding: 8px 10px 5px;
+    float: left;
+}
+
+    .gis-footprint-area ul li:last-child {
+        padding-right: 15px;
+        width: 250px;
+    }
+
+@media (min-width:1400px) and (max-width:2800px) {
+    .without_sidebar {
+        height: 100% !important;
+    }
+
+    .energy_mid_box .right_content_box_outage {
+        height: 97%;
+    }
+}
+
+/*@media screen and (min-width:0\0) {
+            .gis-footprint-area ul li:last-child {
+                padding-right: 15px;
+                width: 35%;
+            }
+        }*/
+/* For IE 8 */
+
+/*@media \0screen {
+            .gis-footprint-area ul li:last-child {
+                padding-right: 15px;
+                width: 35%;
+            }
+        }*/
+
+.distance_area ul {
+    display: block !important;
+    margin: 0px !important;
+}
+
+    .distance_area ul li a.active {
+        background: #dddddd;
+        color: #000 !important;
+    }
+
+.right_charging_map .distance_area ul li a {
+    padding: 7px 0px !important;
+}
+
+.right_charging_map .distance_area ul li {
+    border-bottom: medium none;
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 50%;
+}
+
+.search-area input {
+    height: 28px;
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .energy_mid_box .right_content_box_outage {
+        height: 97%;
+    }
+
+
+    .search-area {
+        float: left;
+        width: 84%;
+    }
+
+    .distance_area ul {
+        display: block !important;
+        margin: 0px !important;
+    }
+
+        .distance_area ul li a.active {
+            background: #dddddd;
+            color: #000 !important;
+        }
+
+    .right_charging_map .distance_area ul li a {
+        padding: 7px 0px !important;
+    }
+
+    .right_charging_map .distance_area ul li {
+        border-bottom: medium none;
+        display: inline;
+        float: left;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 50%;
+    }
+}
+
+#iw-container .iw-content {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-right: 1px;
+    padding: 15px 5px 20px 15px;
+    max-height: 140px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.iw-content img {
+    float: right;
+    margin: 0 5px 5px 10px;
+}
+
+#w2ui-tag-GIStxtGoogleSearch .w2ui-tag-body {
+    background-color: rgba(60,60,60,.82);
+    display: inline-block;
+    position: absolute;
+    border-radius: 4px;
+    padding: 4px 10px;
+    margin-left: 10px;
+    margin-top: 0;
+    color: #fff !important;
+    box-shadow: 1px 1px 3px #000;
+    line-height: 100%;
+    font-size: 11px;
+    font-family: Verdana,Arial,sans-serif;
+    right: -45px;
+    top: -22px;
+}
+
+    #w2ui-tag-GIStxtGoogleSearch .w2ui-tag-body:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-top: 5px solid rgba(60,60,60,.82);
+        border-right: 5px solid transparent;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+@media (max-width:767px) {
+    .without_sidebar {
+        height: 100% !important;
+    }
+
+    .cover_right_top_area {
+        border-top: 2px solid #f4f4f4;
+        margin-top: 5px;
+        width: 100% !important;
+        padding-right: 23px;
+    }
+
+    .gis-footprint-area ul li:last-child {
+        width: 171px;
+    }
+
+    .cover_right_top_area .search-area input[type="text"], input[type="password"], textarea {
+        width: 100% !important;
+    }
+}
+
+#outage_map_canvas {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-width: none;
+}
+
+.gm-style-iw {
+    width: 350px !important;
+    top: 15px !important;
+    left: 0px !important;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+    border: 1px solid #fff;
+    /*border-radius: 5px 5px 5px 5px;*/
+}
+
+    .gm-style-iw > div {
+        width: 350px !important;
+    }
+/*#iw-container {
+    margin-bottom: 10px;
+}*/
+#iw-container .iw-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3px 10px;
+    background-color: #fff;
+    color: #006699;
+    margin: 0;
+    /*border-radius: 2px 2px 0 0;*/
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.iw-title > strong {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#iw-container .iw-content {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-right: 1px;
+    padding: 8px 5px 10px 10px;
+    max-height: 140px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #53565a;
+    font-family: Arial;
+}
+
+.iw-content img {
+    float: right;
+    margin: 0 5px 5px 10px;
+}
+
+.iw-subTitle {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+.iw-bottom-gradient {
+    position: absolute;
+    width: 326px;
+    height: 25px;
+    bottom: 10px;
+    right: 18px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+.sizer content{
+    display: none;
+}
+
+
+.search-area #GIStxtGoogleSearch {
+    font-size:12px;
+}

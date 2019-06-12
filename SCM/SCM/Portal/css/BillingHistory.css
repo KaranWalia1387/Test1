@@ -1,0 +1,113 @@
+﻿
+.w2ui-grid .w2ui-grid-body table .w2ui-head > div {
+    overflow: hidden;
+    padding: 16px 17px !important;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.w2ui-grid .w2ui-grid-body table .w2ui-head {
+    background-image: linear-gradient(#ececec, #ececec);
+    border-bottom: 1px solid #c5c5c5;
+    border-right: 0 solid #c5c5c5;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.w2ui-even {
+    background-color: #f3f6fa;
+    color: inherit;
+    height: 36px !important;
+}
+
+.w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.w2ui-odd {
+    background-color: #ffffff;
+    color: inherit;
+    height: 36px !important;
+}
+
+.w2ui-grid .w2ui-grid-body table td {
+    border-bottom: 0 solid #d6d5d7;
+    border-right: 0 solid #d6d5d7;
+    cursor: default;
+    overflow: hidden;
+}
+
+.w2ui-grid {
+    border: 0 solid #c0c0c0;
+    border-radius: 2px;
+    overflow: hidden !important;
+    position: relative;
+}
+
+.w2ui-grid .w2ui-grid-body table td.w2ui-grid-data {
+    margin: 0;
+    padding: 0;
+    text-align: left !important;
+}
+
+.w2ui-grid .w2ui-grid-body table .w2ui-head > div {
+    color: #4b4b4b;
+    font-weight: bold;
+}
+
+
+#grid_wugrid_toolbar {
+    display: none !important;
+}
+
+#grid_wugrid_body {
+    top: 0 !important;
+}
+
+.billing_area_div_grid_history {
+    position: relative;
+    height: 0%;
+    overflow-y: auto;
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+}
+
+.selected {
+    color: #006699 !important;
+    font-size: 13px !important;
+}
+
+.ajax__calendar .ajax__calendar_container {
+    margin-left: 0 !important;
+    margin-top: -6px !important;
+}
+
+@media (max-width:991px) {
+    .tablesorter-blue .header, .tablesorter-blue .tablesorter-header {
+        padding: 8px 8px 8px 14px !important;
+    }
+}
+
+.history_bill {
+    height: 30px;
+}
+
+.billing_history_date {
+    width: 76% !important;
+}
+
+.pointer {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.w2ui-grid-body {
+    height: 100% !important;
+}
+
+@media (min-width:1500px) and (max-width:3500px) {
+    .energy_mid_box .right_content_box {
+        height: 98% !important;
+    }
+}

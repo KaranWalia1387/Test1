@@ -1,0 +1,54 @@
+﻿
+        .TableCellHeaderSearch {
+        display:none;
+        }
+        .energy_mid_box .right_content_box {
+            height: 93%;
+        }
+       .TableCellContainer {
+            overflow:hidden;
+        }
+        @media (max-width:480px) {
+            .monthly_saving_mob {
+                margin: 5px 10px 5px 10px !important;
+                width: 100% !important;
+                float: left;
+            }
+
+            .monthly_saving_mob_1 {
+                margin-left: 10px !important;
+                width: 100% !important;
+            }
+        }
+        @media (min-width:768px) and (max-width:991px) {
+                .monthly_saving_mob_1 {
+                    margin-left: 21px !important;
+                    margin-top: 10px;
+                    width: 46% !important;
+                }
+            }
+        .home_zip_txt span {
+           float:left;
+           padding-right:4px;
+        }
+
+         .average_usage_header {
+            width:100%;
+            float:left;
+        }
+        .current_area ul li {
+                padding: 7px 2% !important;
+                width: 33.3%;
+                    min-height: 70px;
+        }
+        .current_area ul li i {
+            text-transform:uppercase;
+        }
+        .current_area ul li span {
+            font-size:22px;
+        }
+
+        
+.energy_mid_box {
+    padding-bottom:15px !important;
+}

@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="MyAccount.master.cs" Inherits="CustomerPortal.MyAccount1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                type: "POST",
+                url: "Dashboard.aspx/Setbanners",
+                data: '{PlaceHolderID: "' + 2 + '" }',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    JSON.parse(response.d) == null ? $('#IDBannerSettings').attr('src', "images/no_img.png") : $('#IDBannerSettings').attr('src', JSON.parse(response.d));
+                    $('#IDBannerSettings').error(function () {                        
+                        $(this).attr('src', 'images/no_img.png');
+                    });
+                },
+                error: function (request, status, error) {
+                    loader.hideloader();
+                }
+            });
+        });
+    </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <section class="inner_mid_section" id="devices">
+      <div class="container inner-mid-container">
+      <div class="energy_mid_box">        
+          <h1><img src="images/icon_myaccount_sidebar.svg" style="padding-right:7px; margin-top: -3px; float: left;">
+              <span class="head_icon_flat icon_myaccount"></span>
+                <span globalize="ML_MYACCOUNT_h1_Myaccount"><%= CustomerPortal.Translator.T("ML_MYACCOUNT_h1_Myaccount") %></span></h1>
+               	    <div class="sidebar_toggle">Sidebar Navigation</div>
+                    <div class="nav_left"> 
+                	    <ul>
+                            <%if (CustomerPortal.SessionAccessor.PaymentMode == 1)
+                              { %>
+                                   <li class="icon_profile"><a href="kubra/account.aspx"><span globalize="ML_MYACCOUNT_Navigation_Profile"><%= CustomerPortal.Translator.T("ML_MYACCOUNT_Navigation_Profile") %></span></a></li> 
+                             <% }
+                              else
+                              {%>
+                                  <li class="icon_profile" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.MyAccount) %>"><a href="account.aspx"><span globalize="ML_MYACCOUNT_Navigation_Profile"><%= CustomerPortal.Translator.T("ML_MYACCOUNT_Navigation_Profile") %></span></a></li>
+                             <% } %>  
+                    	   
+                            <li class="icon_setting" ><a href="Settings.aspx"><span globalize="ML_MyAccount_div_Settings"><%= CustomerPortal.Translator.T("ML_MyAccount_div_Settings") %></span></a></li>  
+                            <%if (CustomerPortal.SessionAccessor.PaymentMode == 1)
+                              { %>
+                                  <li class="ico_recurringpayment"><a href="kubra/recurringpayment.aspx"><span>Recurring Payment</span></a></li>  
+                             <% }
+                              else
+                              {%>
+                                <%if (CustomerPortal.SessionAccessor.IsExternalPaymentLink == "0")
+                                  { %>
+                                 <li class="payment_info" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.MyAccountPaymentInfo) %>"><a href="Payment_info.aspx" ><span globalize="ML_MyAccount_div_PaymentInfo"><%= CustomerPortal.Translator.T("ML_MyAccount_div_PaymentInfo") %></span></a></li>            
+                                <%} %>
+                            <%--"display:none" Set as it's already there in Billing Section--%>
+                                 <li class="marketing_pref" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.MyAccountMarketingPreference) %>"><a href="Preference.aspx"><span globalize="ML_MyAccount_span_MktPref"><%= CustomerPortal.Translator.T("ML_MyAccount_span_MktPref") %></span></a></li>
+                             <% }
+                             %>  
+                            <%if (CustomerPortal.SessionAccessor.CustomerType == "Commercial")
+                              { %>
+                                  <li class="icon_aboutmyhome" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.MyAccountAboutMyHome) %>" ><a href="AboutMyBusiness.aspx"><span globalize="ML_MyAccount_Header_AboutMyBusiness"><%= CustomerPortal.Translator.T("ML_MyAccount_Header_AboutMyBusiness") %></span></a></li>  
+                             <% }
+                              else
+                              {%>
+                                    <li class="icon_aboutmyhome" style="display:<%=CustomerPortal.SessionAccessor.IsModuleEnabled(CustomerPortal.Features.MyAccountAboutMyHome) %>"><a href="Aboutmyhome.aspx"><span globalize="ML_MyAccount_div_Aboutmyhome"><%= CustomerPortal.Translator.T("ML_MyAccount_div_Aboutmyhome") %></span></a></li>  
+                             <% } %>  
+                                                       
+                           
+                                    
+                        </ul>
+                        <div class="banner_left_img" globalize="ML_MYACCOUNT_Img_AddBanner" title="Add Banner">
+                            <a href="#">
+                                <img id="IDBannerSettings" clientidmode="Static" runat="server" src="" alt="" onclick="BannerClick(this.id);"/></a><%--images/banner_ads/image004.png--%>
+                        </div>
+                     </div>    
+     <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+    </asp:ContentPlaceHolder>
+   </div></div></section>
+</asp:Content>

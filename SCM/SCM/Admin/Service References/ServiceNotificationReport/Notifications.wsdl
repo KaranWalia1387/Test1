@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Notifications" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Notifications.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Notifications.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Notifications.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INotifications_MobNotificationsReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobNotificationsReport" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_MobNotificationsReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobNotificationsReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_NetNotificationsReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetNotificationsReport" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_NetNotificationsReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetNotificationsReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_MobNotificationsType_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobNotificationsType" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_MobNotificationsType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobNotificationsTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_NetNotificationsType_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetNotificationsType" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_NetNotificationsType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetNotificationsTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_MobGetInboxMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetInboxMessages" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_MobGetInboxMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetInboxMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_NetGetInboxMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetInboxMessages" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_NetGetInboxMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetInboxMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_MobGetMessageBody_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetMessageBody" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_MobGetMessageBody_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetMessageBodyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_NetGetMessageBody_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetMessageBody" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_NetGetMessageBody_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetMessageBodyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_MobUpdateMessageDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobUpdateMessageDetails" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_MobUpdateMessageDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobUpdateMessageDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_NetUpdateMessageDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetUpdateMessageDetails" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_NetUpdateMessageDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetUpdateMessageDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_MobMsgReply_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobMsgReply" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_MobMsgReply_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobMsgReplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_NetMsgReply_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetMsgReply" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_NetMsgReply_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetMsgReplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_PushMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:PushMessage" />
+  </wsdl:message>
+  <wsdl:message name="INotifications_PushMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PushMessageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="INotifications">
+    <wsdl:operation name="MobNotificationsReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/MobNotificationsReport" message="tns:INotifications_MobNotificationsReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/MobNotificationsReportResponse" message="tns:INotifications_MobNotificationsReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetNotificationsReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/NetNotificationsReport" message="tns:INotifications_NetNotificationsReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/NetNotificationsReportResponse" message="tns:INotifications_NetNotificationsReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobNotificationsType">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/MobNotificationsType" message="tns:INotifications_MobNotificationsType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/MobNotificationsTypeResponse" message="tns:INotifications_MobNotificationsType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetNotificationsType">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/NetNotificationsType" message="tns:INotifications_NetNotificationsType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/NetNotificationsTypeResponse" message="tns:INotifications_NetNotificationsType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobGetInboxMessages">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/MobGetInboxMessages" message="tns:INotifications_MobGetInboxMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/MobGetInboxMessagesResponse" message="tns:INotifications_MobGetInboxMessages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGetInboxMessages">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/NetGetInboxMessages" message="tns:INotifications_NetGetInboxMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/NetGetInboxMessagesResponse" message="tns:INotifications_NetGetInboxMessages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobGetMessageBody">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/MobGetMessageBody" message="tns:INotifications_MobGetMessageBody_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/MobGetMessageBodyResponse" message="tns:INotifications_MobGetMessageBody_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGetMessageBody">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/NetGetMessageBody" message="tns:INotifications_NetGetMessageBody_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/NetGetMessageBodyResponse" message="tns:INotifications_NetGetMessageBody_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobUpdateMessageDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/MobUpdateMessageDetails" message="tns:INotifications_MobUpdateMessageDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/MobUpdateMessageDetailsResponse" message="tns:INotifications_MobUpdateMessageDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetUpdateMessageDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/NetUpdateMessageDetails" message="tns:INotifications_NetUpdateMessageDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/NetUpdateMessageDetailsResponse" message="tns:INotifications_NetUpdateMessageDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobMsgReply">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/MobMsgReply" message="tns:INotifications_MobMsgReply_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/MobMsgReplyResponse" message="tns:INotifications_MobMsgReply_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetMsgReply">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/NetMsgReply" message="tns:INotifications_NetMsgReply_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/NetMsgReplyResponse" message="tns:INotifications_NetMsgReply_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PushMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotifications/PushMessage" message="tns:INotifications_PushMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotifications/PushMessageResponse" message="tns:INotifications_PushMessage_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_INotifications" type="tns:INotifications">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MobNotificationsReport">
+      <soap:operation soapAction="http://tempuri.org/INotifications/MobNotificationsReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetNotificationsReport">
+      <soap:operation soapAction="http://tempuri.org/INotifications/NetNotificationsReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobNotificationsType">
+      <soap:operation soapAction="http://tempuri.org/INotifications/MobNotificationsType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetNotificationsType">
+      <soap:operation soapAction="http://tempuri.org/INotifications/NetNotificationsType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobGetInboxMessages">
+      <soap:operation soapAction="http://tempuri.org/INotifications/MobGetInboxMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGetInboxMessages">
+      <soap:operation soapAction="http://tempuri.org/INotifications/NetGetInboxMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobGetMessageBody">
+      <soap:operation soapAction="http://tempuri.org/INotifications/MobGetMessageBody" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGetMessageBody">
+      <soap:operation soapAction="http://tempuri.org/INotifications/NetGetMessageBody" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobUpdateMessageDetails">
+      <soap:operation soapAction="http://tempuri.org/INotifications/MobUpdateMessageDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetUpdateMessageDetails">
+      <soap:operation soapAction="http://tempuri.org/INotifications/NetUpdateMessageDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobMsgReply">
+      <soap:operation soapAction="http://tempuri.org/INotifications/MobMsgReply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetMsgReply">
+      <soap:operation soapAction="http://tempuri.org/INotifications/NetMsgReply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PushMessage">
+      <soap:operation soapAction="http://tempuri.org/INotifications/PushMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Notifications">
+    <wsdl:port name="BasicHttpBinding_INotifications" binding="tns:BasicHttpBinding_INotifications">
+      <soap:address location="http://64.58.161.201/adminservice6.0/Notifications.svc/SoapService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

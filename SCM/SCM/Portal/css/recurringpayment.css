@@ -1,0 +1,291 @@
+﻿.toast-info {
+    width: 300px !important;
+    height: 140px !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    position: fixed !important;
+    margin: auto !important;
+}
+
+#toast-container.toast-middle-center {
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+}
+
+#toast-container > :hover {
+    cursor: text !important;
+}
+
+.name-feild {
+    width: 22%;
+}
+
+.inner-right-sub {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 92%;
+}
+
+.profile-details {
+    width: 100%;
+    padding: 11px 22px;
+}
+
+.acc_inner_box_1 .profile-details:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+.inner_mid_section select, .inner_mid_section input[type="text"] {
+    width: 69%;
+}
+
+.fixed_pay_inpt {
+    margin-top: 1px !important;
+    margin-right: 6px !important;
+}
+
+.right_content_box ul li {
+    border-bottom: 0px solid #f4f4f4;
+}
+
+.rec_payment_box .name-feild {
+    line-height: 25px;
+}
+
+#ulFixed .name-feild {
+    line-height: 35px;
+}
+
+.ajax__calendar .ajax__calendar_container {
+    margin-top: 0 !important;
+}
+
+.whites_bar {
+    padding: 10px 0px;
+    float: left;
+    display:none;
+    width: 100%;
+}
+
+.selected {
+    background: none repeat scroll 0 0 #7c7c7c !important;
+    border: medium none !important;
+    border-radius: 2px;
+    color: #f0f0f0 !important;
+    float: right;
+    font-size: 14px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    padding: 3px 27px !important;
+    text-align: center;
+}
+
+.energy_mid_box .right_content_box {
+    height: 98%;
+}
+
+.submit-button {
+    pointer-events: auto;
+}
+
+input[type=submit][class=selected] {
+    pointer-events: none;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .name-feild {
+        width: 40% !important;
+    }
+}
+
+@media (min-width:300px) and (max-width:767px) {
+    .whites_bar > span {
+        width: 40% !important;
+    }
+
+        .whites_bar > span + span {
+            width: 60% !important;
+        }
+
+    .whites_bar .sub-name {
+        width: 55%;
+    }
+
+    .name-feild {
+        width: 45%;
+        padding: 6px 0 0 !important;
+    }
+
+    #ddlPaymentDate {
+        width: 88% !important;
+    }
+
+    #ddlPayment {
+        width: 80% !important;
+    }
+}
+
+.sub_name_recurr ul {
+    margin: 23px 0px 0px 17px;
+    padding: 0;
+    list-style: none;
+}
+
+    .sub_name_recurr ul li {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .sub_name_recurr ul ul {
+        clear: both;
+        width: 100%;
+        margin: 10px 0px 5px 0px;
+        padding: 7px 0px 0px 20px;
+        border-top: 1px solid #F0F0F0;
+    }
+
+        .sub_name_recurr ul ul li {
+            margin: 0;
+            border: none !important;
+            padding: 3px 0px 0px 18px;
+            width: 100%;
+        }
+
+
+            .sub_name_recurr ul ul li input[type="text"] {
+                margin: 0;
+                padding: 4px 5px;
+                float: left;
+                width: 18%;
+            }
+
+            .sub_name_recurr ul ul li select {
+                margin: 6px 0 2px -13px;
+                padding: 4px 5px;
+                float: left;
+                /*width:18%*/
+            }
+
+#errorMsg {
+    background: rgba(60, 60, 60, 0.82) none repeat scroll 0 0;
+    box-shadow: 0 1px 3px #ccc;
+    color: white;
+    float: right;
+    padding: 3px 8px;
+    position: absolute;
+    right: 20px !important;
+    top: 5px !important;
+    z-index: 9999;
+}
+.w2ui-head w2ui-head-last,.w2ui-grid-data-last{
+    display:none !important;
+}
+
+.select-bar {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 11px 0 11px 30px;
+    text-align: left;
+    width: 100%;
+}
+
+.credit_debit {
+     margin: 0;
+    padding: 10px 0 10px 30px;
+    text-align: left;
+    width: 100%;
+    border-bottom:1px solid #ccc;
+}
+
+#SelectCard{
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 30px;
+    vertical-align: top;
+    width: 22%;
+}
+
+#SelectBank {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 30px;
+    vertical-align: top;
+    width: 22%;
+}
+
+.whites_bar h2 {
+    margin:0;
+    padding:7px 30px 12px;
+    font-size:15px;
+    color:#6b6c6e;
+}
+
+.whites_bar select {
+    margin-left:30px;
+}
+
+.term_Cond {
+    color: #7e7e7e;
+    float: left;
+    font-size: 13px;
+    height: 89%;
+    line-height: 22px;
+    margin: 0;
+    overflow: auto;
+    padding: 5px 30px;
+    text-align: left;
+    width: 100%;
+}
+
+.term_Cond p {
+    padding:10px 0px 5px
+}
+
+@media (min-width:1400px) and (max-width:3200px) {
+    .inner-right-right-section {
+        height:100%;
+    }
+    .inner-right-sub {
+        height: 83% !important;
+    }
+}
+
+p.accept {
+     font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 8px 0 0 7px;
+    text-align: right;
+}
+
+.rec_payment_box {
+     border-top: 1px solid #ccc;
+    float: left;
+    width: 100%;
+}
+
+input[type="checkbox"]#chkterm {
+    vertical-align:top;
+}
+#recurringgridTable table tr td, #recurringgridTable table tr th  {
+      padding: 10px 10px;
+    font-size: 11px;
+}
+#recurringgridTable table th {
+    background:#ececec;
+    padding: 15px 10px !important;
+
+}
+#recurringgridTable table tr {
+        border: 1px solid #f4f4f4;
+}
+
+#recurringgridTable table tr:nth-child(odd) {
+        background:#f9f9f9;
+}

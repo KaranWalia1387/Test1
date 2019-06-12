@@ -1,0 +1,174 @@
+﻿body{margin: 0px;padding: 0px;font-family: Arial;font-size: 13px;color:#666666;-webkit-user-select:none;-webkit-text-size-adjust:none;}
+* {padding:0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+html, body, form {height: 100%;}
+
+table{border-collapse: collapse;border-spacing: 0px;border-color: transparent;}
+tr, td{vertical-align:top;}
+h1 {padding: 0;margin: 0;}
+:focus{outline:0px;}
+a{outline:none; text-decoration:none;}
+a:hover{text-decoration:underline;}
+a img{border:0px;outline:0px;}
+input[type="text"], input[type="password"], textarea {border: 1px solid #AAAAAA;padding: 5px 10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; width:178px; resize:none;}
+select {border: 1px solid #AAAAAA;padding: 4px 5px 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+
+input[type="text"].TextBoxNoClass{border: 0px;border-radius: 0px;box-shadow: none;padding: 0px;}
+
+.clear{clear:both; line-height:1px; font-size:1px; height:1px; text-indent:-999px;}
+.green{color: Green;}
+.red{color: Red;}
+.EvenColor{background:#f9f9f9;}
+
+.Defaultbtns, .TabBtns, .TabBtns_ro, .DefaultbtnsSmall, .OnBtnClass, .OffBtnClass{background-image:url(../images/DefaultBtns.png);background-repeat:repeat-x;border:1px solid #6d6d6d;letter-spacing:.3px; }
+
+a.noUnderline{ text-decoration:none;}
+/*** Theme Settings  ***/
+
+a, .TableCellContainerHeader, .SavingTips_PeopleAdded span, .SavingTips_Savings span, .WeatherTodayContainer h3{color: #83C44E;}
+.PageHeaderColor{background:#83C44E;}
+.PagefooterColor{background:#006599;}
+.forgetText, .SavingTips_Title{color: #006599;}
+
+.Defaultbtns{background-position:-0px 0px;font-weight:bold; color:#fff; padding:9px 15px;  -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; text-shadow: 0 1px .5px #000000; text-transform: uppercase;    }
+.Defaultbtns:hover{background-position:0px -40px; cursor:pointer;}
+
+.DefaultbtnsSmall, .OnBtnClass, .OffBtnClass{font-weight:bold; color:#333;text-shadow: 0 1px .5px #fff; float:left; font-size:12px; padding:6px 20px; cursor:pointer;}
+.DefaultbtnsSmall:hover{background-position:0px -40px;}
+.DefaultbtnsSmall{background-position:-0px 0px;font-weight:bold; color:#fff; padding:7px 15px; margin-bottom:5px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; text-shadow: 0 1px .5px #000000; }
+
+/*Grid*/
+.ShowGrid
+{
+    background-color: #fff; margin: 5px 0 10px 0; border: solid 1px #525252; border-collapse:collapse; font-family:Calibri; color: #474747;
+}
+.ShowGrid th  {
+
+      padding : 4px 2px;
+
+      color: #fff;
+
+      background: #83C44E repeat-x top;
+
+      border-left: solid 1px #525252;
+
+      font-size: 0.9em; }
+.ShowGrid td {
+
+      padding: 2px;
+
+      border: solid 1px #c1c1c1; }
+
+/*.TabBtns, .TabBtns_ro {font-weight:bold; background-image:url(../images/DefaultBtns-old1.png);background-repeat:repeat-x; color:#333;text-shadow: 0 1px .5px #fff; float:left; font-size:12px; padding:6px 20px; cursor:pointer; background-position: 0 -111px;}*/
+.TabBtns, .TabBtns_ro {font-weight:bold; background-image:url(../images/DefaultBtns-old1.png); background-position: 0 -1px; background-repeat:repeat-x; color:#333; float:left; font-size:12px; font-weight: bold; padding:6px 20px; cursor:pointer;}
+
+/*.TabBtns:hover, .TabBtns_ro{background-position:0px -79px;}*/
+.TabBtns:hover, .TabBtns_ro{background-position:0px -45px;color: #fff;}
+
+.OnBtnClass{background-position:0px -141px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; margin-right:10px;}
+.OffBtnClass{background-position:0px -110px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; margin-right:10px;}
+
+.LeftTabBtns{ -webkit-border-radius: 6px 0px 0px 6px; -moz-border-radius: 6px 0px 0px 6px; border-radius: 6px 0px 0px 6px;}
+.MidTabBtns{-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius:0px;}
+.RightTabBtns{-webkit-border-radius: 0px 6px 6px 0px; -moz-border-radius: 0px 6px 6px 0px; border-radius: 0px 6px 6px 0px;}
+
+.InActiveTab{padding:8px 11px 0px 12px; background:url(../images/Cell-Header3.png) repeat-x top left; height:36px;width: 200px;float: left;border-right: 1px inset #dadada;}
+.ActiveTabLeft{padding:8px 11px 0px 12px; background:url(../images/Cell-Header3.png) repeat-x top left;  height:36px;width: 200px;-webkit-border-radius: 10px 0px 0px 0px;
+-moz-border-radius: 10px 0px 0px 0px;border-radius: 10px 0px 0px 0px;border-right: 1px inset #dadada;float: left;}
+.ActiveTab{padding:8px 11px 0px 12px; height:36px;width: 200px;float: left;border-right: 1px inset #dadada;}
+
+.login-panel span
+{
+    display: none;
+}
+
+
+/*** Theme Settings Ends  ***/
+
+
+
+.wrapper {min-height: 100%;height: auto !important;	position: relative;width: 1335px;margin: 0 auto -36px;}
+.footer, .push {height: 33px; /* .push must be the same height as .footer */position: relative;	width: 1335px;	margin: 0 auto;}
+
+.Weather{text-align:center;}
+.Weather img{height:37px; width:50px;}
+
+/*** SCM Page Header Class ***/ 
+.PageHeaderColor{-webkit-border-radius: 0px 0px 10px 10px; -moz-border-radius: 0px 0px 10px 10px; border-radius: 0px 0px 10px 10px; line-height:0px !important; }
+.loginLogo{background: url("../images/Customer_Portal_Login.png");width: 783px;height: 206px; margin:30px auto; background-repeat: no-repeat;text-decoration: none;text-indent: -9999px;}
+.forgetText{float: right;margin-right: 64px;}
+
+
+.header {width: 1335px;margin: 0 auto; padding-top:2px;}
+.HeaderLogo{float:left; width:229px; margin:10px 0px 0px 20px; background:url("../images/Customer_Portal_Header.png");height:68px;background-repeat:no-repeat; text-decoration: none; text-indent:-9999px;background-size: 100%;}
+.MenuContainer{float:right; width: 1069px; }
+.Searchbox {float:right; margin-bottom:5px; margin-right:20px; width:502px; text-align:right;}
+
+
+
+
+
+
+
+
+
+/*** SCM Content Header Class ***/
+.TableCellContainer{border:1px solid #b5b5b5;  -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; padding:1px; margin:2px 5px; }
+.TableCellContainerHeader{padding:8px 10px 0px; background:url(../images/Cell-Header2.png) repeat-x top left;  height:36px; -webkit-border-radius: 10px 10px  10px 10px; -moz-border-radius: 10px 10px  10px 10px; border-radius: 10px 10px  10px 10px;  text-align:left; }
+.TableCellContainerHeader-second{padding:8px 10px 0px; background:url(../images/Cell-Header2.png) repeat-x top left; display:inline-block; width:480px;  height:36px; -webkit-border-radius: 10px 10px  10px 10px; -moz-border-radius: 10px 10px  10px 10px; border-radius: 10px 10px  10px 10px;  text-align:left; }
+.TableCellHeaderTitle {padding: 7px 0px 5px 5px;font-size: 15px;float: left;font-weight: bold;}
+.HeaderTabLinks{float:right;padding: 0px 0px 5px 5px;font-size: 15px;font-weight: bold; color:#83C44E !important;}
+.HeaderTabLinksLeft{padding: 7px 0px 5px 5px;font-size: 15px;float: left;font-weight: bold; color:#83C44E !important;}
+/*** SCM Content Class ***/
+.TableCellContainerContent{height:auto; width:100%; border-top:1px solid #dadada; -webkit-border-radius: 0px 0px  10px 10px; -moz-border-radius: 0px 0px  10px 10px; border-radius: 0px 0px  10px 10px;}
+.Contentheight{height:423px;}
+.ContentheightDR{height:420px; overflow:auto}
+.CenterConterWidth{width:650px;}
+/*** SCM Content Footer Class ***/
+.TableCellContainerFooter{padding:10px; background:url(../images/Cell-footer.png) repeat-x top left; -webkit-border-radius: 0px 0px 10px 10px; -moz-border-radius: 0px 0px 10px 10px; border-radius: 0px 0px 10px 10px;  text-align:left; border-top:1px solid #dadada; clear:both; }
+.lblpro1 
+{
+    color:#83C44E;
+}
+
+.lblpro2 
+{
+    color:#83C44E;
+}
+
+
+
+/*** SCM Page Footer Class ***/
+.PagefooterColor{color:#fff; -webkit-border-radius: 10px 10px 0px 0px; -moz-border-radius: 10px 10px 0px 0px; border-radius: 10px 10px 0px 0px; height:36px;}
+.SocialIcons{float:left; width:265px;}
+.SocialIcons span{float:left; padding:10px 10px 0px 20px;}
+.SocialIcons a img{float:left; margin-right:10px; padding-top:8px;}
+
+.SocialIcons a.facebook{float:left; display:block; margin:5px 3px 0; width:25px; height:25px; background:url(../images/facebook.png) no-repeat left top;}
+.SocialIcons a.facebook:hover{ width:25px; height:25px; background:url(../images/facebook-hover.png) no-repeat left top;}
+
+.SocialIcons a.twitter{float:left; display:block; margin:5px 3px 0; width:25px; height:25px; background:url(../images/twitter.png) no-repeat left top;}
+.SocialIcons a.twitter:hover{ width:25px; height:25px; background:url(../images/twitter-hover_new.png) no-repeat left top;}
+
+.SocialIcons a.linkedin{float:left; display:block; margin:5px 3px 0; width:25px; height:25px; background:url(../images/linkedin.png) no-repeat left top;}
+.SocialIcons a.linkedin:hover{ width:25px; height:25px; background:url(../images/linkedin-hover_new.png) no-repeat left top;}
+
+.SocialIcons a.youtube{float:left; display:block; margin:5px 3px 0; width:25px; height:25px; background:url(../images/youtube.png) no-repeat left top;}
+.SocialIcons a.youtube:hover{ width:25px; height:25px; background:url(../images/youtube-hover.png) no-repeat left top;}
+.CopyRight{float:left; width:855px; line-height:33px; text-align:center; }
+.PoweredBy{float:left; width:200px;}
+.PoweredBy img{float:right; margin:10px 10px 0px 0px;}
+/*** Class added by arun ***/
+.secServiceTitle {background-color: #EBE9E9;
+    border: 1px solid #BEB9B9;
+    border-radius: 4px;
+    color: #79a412;
+    font-size: 16px;
+    margin: 20px 0;
+    padding: 7px 5px;
+}
+
+/*** Class added by arun end ***/

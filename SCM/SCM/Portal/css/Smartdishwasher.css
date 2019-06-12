@@ -1,0 +1,21 @@
+﻿
+        .right_content_box_1 {
+                height: 87% !important;
+        }
+        .sidebar_toggle
+        {
+            float:left;
+            width:100%;
+        }
+        @media (min-width:320px) and (max-width:991px) {
+            .right_content_box_1 {
+                height: 94% !important;
+            }
+        }
+
+        @media (max-width:767px){
+        .cover_right_top_area {
+             margin-top: -41px;
+        }
+        }
+ 

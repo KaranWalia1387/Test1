@@ -1,0 +1,453 @@
+﻿   .customer_txt p {
+            margin: 0 !important;
+            padding: 10px 0 11px !important;
+        }
+
+        .customer_txt_name .topic_box select {
+            border: 1px solid #d6d6d6;
+            outline: medium none;
+            padding: 5px 0;
+            width: 85%;
+        }
+
+        .customer_txt_name p {
+            margin: 0 0 3px;
+            padding: 9px 0;
+        }
+
+        .gray_u {
+            background: #e8e9e9;
+        }
+
+        .gray_w {
+            background: #fff;
+        }
+        .profile_img_border {
+                width: 60px;
+                height: 60px;
+                border: 1px solid #ccc;
+                position: relative;
+        }
+        .right_content_box .profile_img .profile_img_border img {
+                width: 58px!important;
+                height: auto !important;
+                position: absolute;
+                border: 0px;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+        }
+
+
+           @media (min-width:768px) and (max-width:993px) {
+            .cust_pop {
+                width: 100% !important;
+            }
+
+            .contact_pop {
+                width: 100% !important;
+                border-top: 2px solid #ccc;
+            }
+
+        }
+
+        .profile_img {
+            float: left;
+            width: 9%;
+        }
+
+        .profile_img span {
+            display:none;
+        }
+
+        .details_box {
+              width: 90%;
+        }
+
+        .show_details_right {
+            float:right;
+             width: 185px;
+        }
+
+         .show_details_right ul {
+             padding-top:13px !important;
+            width: 160px;
+              float: right;
+         }
+
+            .show_details_right ul li {
+                float: right;
+                width: auto;
+                border-bottom: 0px !important;
+                padding-bottom: 1px !important;
+            }
+
+        a.show_details_right_btn {
+            background: #87be1b;
+            color: #fff !important;
+            float: right;
+            text-decoration: none;
+            padding: 4px 14px 6px;
+            border-radius: 0px;
+            font-size: 14px;
+        }
+
+        .details_box h5 {
+            color: #5f6163;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 6px 0 6px;
+            float: left;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+
+         .details_box .register_lnk {
+            margin-top: 7px;
+        }
+
+         .details_box .register_lnk {
+            float: left;
+            padding-bottom: 5px;
+        }
+
+         .like_btn_brdr {
+                 border: 1px solid #95d60a !important;
+                border-radius: 8px;
+                width: 81px;
+                margin-top: 6px;
+         }
+
+        .details_box .register_lnk .like_lnk {
+            background: rgba(0, 0, 0, 0) url("../images/like_img.png") no-repeat scroll left top;
+            height: 23px;
+            margin-top: 3px;
+            padding-bottom: 25px;
+               padding-right: 25px;
+            vertical-align: top;
+            outline: none !important;
+        }
+
+        .details_box .register_lnk .like_lnk_ro {
+            background: rgba(0, 0, 0, 0) url("../images/like_img_ro.png") no-repeat scroll left top;
+            height: 23px;
+            margin-top: 3px;
+            padding-bottom: 27px;
+               padding-right: 25px;
+            vertical-align: top;
+            outline: none !important;
+        }
+
+        .right_content_box ul:nth-child(even) {
+            background: #FDFDFD;
+            margin: 1px 0px;
+        }
+
+        .register_eff_lnk {
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+            clear: both;
+            margin-top: 5px;
+            padding: 0 3px !important;
+            position: static;
+            width: 82px;
+        }
+
+            .register_eff_lnk a {
+                background: none;
+                color: #069;
+                display: block;
+                padding: 2px 6px 8px;
+                font-size: 17px;
+                text-decoration: none;
+                width: 105px;
+                text-align: center;
+            }
+
+                .register_eff_lnk a:hover {
+                    color: #069;
+                }
+
+        .right_content_box ul li {
+            border-bottom: 1px solid #f4f4f4;
+            display: flex;
+            flex-flow: row wrap;
+            list-style-position: inside;
+            padding: 0 0 10px 12px;
+            vertical-align: text-top;
+        }
+
+        .modal-header {
+            background: none repeat scroll 0 0 #f7f7f7;
+            border-bottom: 1px solid #e5e5e5;
+            min-height: 16.43px;
+            padding: 7px 15px;
+            border-radius: 5px 5px 0px 0px !important;
+        }
+
+        .discription_pro {
+            padding: 16px 16px 16px 16px;
+            font-size: 13px;
+            line-height: 23px;
+            text-align: justify;
+            color: #797979;
+        }
+
+        /*#showdetails_effi button.close {
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            padding: 3px 8px;
+            background-color: #ccc;
+            color: #fff;
+            font-weight: normal;
+            opacity: 99;
+        }*/
+
+        .TableCellHeaderSearch {
+            display: none;
+        }
+
+        .all_bill_box .gray_div, .all_bill_box .white_div
+        {
+            padding: 6px 14px;
+        }
+
+        .divider_line {
+            margin-bottom: 0px;
+        }
+
+        .details_box .register_lnk ul li {
+            background: none;
+            border-radius:0px;
+        }
+
+        .delete_goal {
+            width: 18px;
+            position: absolute;
+            right: -1px;
+            top: 4px;
+            /*border: 1px solid #F72121;*/
+            /*padding: 4px;*/
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #showdetails_effi .modal-body {
+            position: relative;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            /* Safari only override */
+            ::i-block-chrome, .highcharts-container svg text {
+                font-size: 12px !important;
+            }
+        }
+
+        @-moz-document url-prefix() {
+            .highcharts-container svg text {
+                font-size: 12px !important;
+            }
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            /* Safari only override */
+            ::i-block-chrome, .right_content_box ul li {
+                height: auto;
+                display: table;
+                width: 100%;
+            }
+
+            ::i-block-chrome, .details_box .register_lnk ul li, ::i-block-chrome, .details_box .view_details li {
+                height: auto;
+                width: auto;
+            }
+
+            ::i-block-chrome, li.register_eff_lnk {
+                width: auto !important;
+                float: right;
+            }
+
+            ::i-block-chrome, .details_box .register_lnk ul li {
+                float: left;
+                padding: 3px 12px 8px 7px;
+                border-bottom: 0px;
+                margin-bottom: 0px;
+                background: url(../images/divider_like_lnk.png) no-repeat left 14px !important;
+                width: 77px;
+                line-height: 17px;
+            }
+
+            ::i-block-chrome, .details_box .register_lnk span {
+                display: inline-block;
+            }
+
+            ::i-block-chrome, .details_box .register_lnk ul li:first-child {
+                background: none !important;
+            }
+
+            ::i-block-chrome, a.show_details_right_btn {
+                margin-right: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .details_box .row-1 {
+                padding-bottom: 21px;
+            }
+            .details_box .row-1 .register_lnk {
+                position: absolute;
+                left: -12% !important;
+                bottom: -20px !important;
+                width: auto !important;
+                }
+          }
+        /* Edited by prashant starts for iphone*/
+        @media (min-width:300px) and (max-width:640px) {
+            a.show_details_right_btn{
+                margin-top:2px !important;
+            }
+            .details_box h5 {
+                color: #13689b;
+                float: left;
+                font-size: 12px;
+            }
+
+            .profile_img {
+                float: left;
+                width: 20%;
+            }
+
+            .details_box {
+                padding: 0 10px;
+                width: 80%;
+            }
+
+            a.show_details_right_btn {
+                background: #87be1b none repeat scroll 0 0;
+                border-radius: 3px;
+                color: #fff !important;
+                float: right;
+                font-size: 14px;
+                margin-top: 10px;
+                padding: 4px 10px 6px;
+                text-decoration: none;
+            }
+
+            .show_details_right {
+                float: right;
+                width: 64%;
+            }
+
+            .details_box .row-1 .register_lnk {
+                bottom: 0 !important;
+                left: 0 !important;
+                padding: 0;
+                position: relative;
+                width: 36% !important;
+            }
+            #showdetails_effi .modal-content {
+                width: 100% !important;
+            }
+            #showdetails_effi button.close {
+                background-color: #ccc;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                color: #fff;
+                font-weight: normal;
+                opacity: 99;
+                padding: 0 4px;
+            }
+            #showdetails_effi h4 {
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .img_area > .img {
+                border: 1px solid #ccc;
+                float: left;
+                height: 100px;
+                overflow: hidden;
+                padding: 2px;
+                width: 100%;
+            }
+
+            .img_area .img img {
+                height: 100%;
+                max-width: 100%;
+                width: 100%;
+            }
+            .right_efficency {
+                background: #f4f4f4 none repeat scroll 0 0;
+                float: left;
+                margin: 5px 0 0;
+                padding: 7px;
+                width: 100%;
+            }
+                .right_efficency > ul > li {
+                    float: left;
+                    margin: 0;
+                    padding: 0;
+                    width: 33.33%;
+                }
+                .right_efficency > ul > li > b {
+                    font-size: 11px;
+                    font-weight: bold;
+                    padding-right: 5px;
+                }
+                .right_efficency > ul>  li >span {
+                    font-size: 12px;
+                    font-weight: normal;
+                }
+            .discription_pro {
+                color: #797979;
+                font-size: 11px;
+                height: auto;
+                line-height: 15px;
+                margin: 0;
+                padding: 5px 10px;
+                text-align: justify;
+                width: 100%;
+            }
+        }
+         /* Edited by prashant ends for iphone*/
+        @media (min-width:768px) and (max-width:991px) {
+            .register_lnk {
+                margin-top: -13px;
+                padding-left: 0;
+                width: 27%;
+               }
+            }
+        .average_usage_header {
+            width:100%;
+            float:left;
+        }
+        .current_area ul li {
+                padding: 7px 2% !important;
+                width: 33.3%;
+        }
+        .current_area ul li i {
+            text-transform:uppercase;
+        }
+        @media screen and (min-width:0\0) {
+                .show_details_right ul {
+                    padding-top: 15px !important;
+                }
+                .details_box .register_lnk {
+                    margin-top: 4px;
+                }
+            }
+        /*@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+            .profile_img {
+                float: none;
+                display: inline-block;
+            }
+
+            .details_box {
+                float: right;
+                width: 85%;
+                /* display: inline-block; */
+            /*}
+        }*/

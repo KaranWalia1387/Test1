@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="81037a72-5118-445e-9ac5-8dab2a0535f4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/Generation.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Generation.wsdl" MetadataType="Wsdl" ID="ed5ecdba-599c-4620-b0d0-d504f0b57e63" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Generation.svc?wsdl" />
+    <MetadataFile FileName="Generation.disco" MetadataType="Disco" ID="f91d5a41-becb-4a5a-9273-277fdaa5d5fe" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Generation.svc?disco" />
+    <MetadataFile FileName="Generation.xsd" MetadataType="Schema" ID="bd0dfd65-6b5d-42e9-b05d-fe3d6bac4336" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Generation.svc?xsd=xsd0" />
+    <MetadataFile FileName="Generation1.xsd" MetadataType="Schema" ID="36d68e5c-77fb-4de6-8e01-dc66c42e3896" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Generation.svc?xsd=xsd1" />
+    <MetadataFile FileName="Generation2.xsd" MetadataType="Schema" ID="344a02e9-6df1-41e2-80f3-192d6c85c564" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/Generation.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

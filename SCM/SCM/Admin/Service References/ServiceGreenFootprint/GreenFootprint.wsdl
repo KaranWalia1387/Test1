@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="GreenFootprint" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/GreenFootprint.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/GreenFootprint.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/GreenFootprint.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGreenFootprint_MobFootprints_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobFootprints" />
+  </wsdl:message>
+  <wsdl:message name="IGreenFootprint_MobFootprints_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobFootprintsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGreenFootprint_NetFootprints_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetFootprints" />
+  </wsdl:message>
+  <wsdl:message name="IGreenFootprint_NetFootprints_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetFootprintsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGreenFootprint_MobGreenFootprintReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobGreenFootprintReport" />
+  </wsdl:message>
+  <wsdl:message name="IGreenFootprint_MobGreenFootprintReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobGreenFootprintReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGreenFootprint_NetGreenFootprintReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGreenFootprintReport" />
+  </wsdl:message>
+  <wsdl:message name="IGreenFootprint_NetGreenFootprintReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGreenFootprintReportResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IGreenFootprint">
+    <wsdl:operation name="MobFootprints">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGreenFootprint/MobFootprints" message="tns:IGreenFootprint_MobFootprints_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGreenFootprint/MobFootprintsResponse" message="tns:IGreenFootprint_MobFootprints_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetFootprints">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGreenFootprint/NetFootprints" message="tns:IGreenFootprint_NetFootprints_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGreenFootprint/NetFootprintsResponse" message="tns:IGreenFootprint_NetFootprints_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobGreenFootprintReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGreenFootprint/MobGreenFootprintReport" message="tns:IGreenFootprint_MobGreenFootprintReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGreenFootprint/MobGreenFootprintReportResponse" message="tns:IGreenFootprint_MobGreenFootprintReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGreenFootprintReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGreenFootprint/NetGreenFootprintReport" message="tns:IGreenFootprint_NetGreenFootprintReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGreenFootprint/NetGreenFootprintReportResponse" message="tns:IGreenFootprint_NetGreenFootprintReport_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IGreenFootprint" type="tns:IGreenFootprint">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MobFootprints">
+      <soap:operation soapAction="http://tempuri.org/IGreenFootprint/MobFootprints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetFootprints">
+      <soap:operation soapAction="http://tempuri.org/IGreenFootprint/NetFootprints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobGreenFootprintReport">
+      <soap:operation soapAction="http://tempuri.org/IGreenFootprint/MobGreenFootprintReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGreenFootprintReport">
+      <soap:operation soapAction="http://tempuri.org/IGreenFootprint/NetGreenFootprintReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GreenFootprint">
+    <wsdl:port name="BasicHttpBinding_IGreenFootprint" binding="tns:BasicHttpBinding_IGreenFootprint">
+      <soap:address location="http://64.58.161.201/adminservice6.0/GreenFootprint.svc/SoapService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,38 @@
+﻿
+
+.calender_right {
+	    background: url("images/sprinkler/calender_icon.gif") no-repeat left top;
+		}
+.ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
+	    background: url("images/sprinkler/arrow_left_cal.png") no-repeat left top !important;
+		background-position:left top !important;
+	}
+	
+	.ui-widget-header .ui-icon {
+    background: url("images/sprinkler/arrow_right_cal.png")  no-repeat left top !important;
+	background-position:left top !important;
+}
+
+ .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	  background: none !important;
+    border: 0px solid #999999 !important;
+	padding:0px !important;
+	margin:0px !important;
+	cursor:pointer;
+	transition:all 0.7s ease-in;
+}	
+.ui-datepicker-title {
+	color:#fff;
+}	
+.zone_are_select select, .zone_are_select input[type="text"] {
+    margin-top:10px;
+}
+
+        .energy_mid_box .right_content_box {
+    margin-left: 0%;
+    overflow: visible !important;
+    width: 80%;
+}
+       
+        
+

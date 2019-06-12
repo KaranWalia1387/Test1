@@ -1,0 +1,21 @@
+﻿.nav_left ul li a.popup_area #changePwdPopup .popup_area_home .popup_right_content_area_home {
+    margin-bottom: 10px;
+}
+
+.customer-details ul li {
+    height: auto !important;
+}
+
+.w2ui-grid .w2ui-grid-body table td.w2ui-grid-data {
+    padding: 0px 15px !important;
+}
+
+.w2ui-grid .w2ui-grid-body table .w2ui-head > div {
+    padding: 7px 15px !important;
+}
+
+.nav_left ul li a {
+    background-size: 20px !important;
+        outline: none !important;
+}
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="735c8e35-59ce-40fa-9c42-45d0818ca9ef" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64.58.161.201/AdminService6.0/ElectricVehicle.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ElectricVehicle.wsdl" MetadataType="Wsdl" ID="eeff7e2c-5316-4034-a42f-464c6e17c719" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/ElectricVehicle.svc?wsdl" />
+    <MetadataFile FileName="ElectricVehicle.disco" MetadataType="Disco" ID="b5d8d476-71c6-4ba1-8f43-8548ab5a0135" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/ElectricVehicle.svc?disco" />
+    <MetadataFile FileName="ElectricVehicle.xsd" MetadataType="Schema" ID="27f63a2c-fb71-4c85-98f1-29b4e3eb6616" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/ElectricVehicle.svc?xsd=xsd2" />
+    <MetadataFile FileName="ElectricVehicle1.xsd" MetadataType="Schema" ID="ec480f76-e60b-4e0b-b4a1-3f509204126b" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/ElectricVehicle.svc?xsd=xsd0" />
+    <MetadataFile FileName="ElectricVehicle2.xsd" MetadataType="Schema" ID="e9562f6a-ff9b-4e72-8220-399128f0f8b8" SourceId="1" SourceUrl="http://64.58.161.201/adminservice6.0/ElectricVehicle.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

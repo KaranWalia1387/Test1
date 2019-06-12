@@ -1,0 +1,103 @@
+﻿ 
+        .energy_mid_box .right_content_box {
+            height: 97%;
+        }
+
+        .inner_mid_section_box1 {
+            height: 80% !important;
+        }
+
+            .inner_mid_section_box1 .right_top_box-1 {
+                height: 85% !important;
+                overflow: auto;
+            }
+
+        .inner_uni1 {
+            height: 80% !important;
+            overflow: auto;
+        }
+
+        .inner_uni5 {
+            height: 76% !important;
+            overflow: auto;
+        }
+
+        .inner_uni3 {
+            height: 78% !important;
+            overflow: auto;
+        }
+
+        .inner_uni1 .setting_save_box {
+            padding-top: 13px;
+        }
+
+        .inner_mid_section_box1 .setting_save_box {
+            padding-top: 15px;
+        }
+
+        .inner_mid_section_box1 .energy_mid_box {
+            padding-bottom: 12px;
+        }
+
+        .inner_uni3 .setting_save_box {
+            padding-top: 9px;
+        }
+
+        .inner_uni3 .energy_mid_box {
+            padding-bottom: 36px;
+        }
+
+        .right_content_box_1 {
+            height: 87%;
+            overflow: auto;
+            position: relative;
+        }
+
+        .inner_mid_section_box1 .right_content_box_1 {
+            height: 84% !important;
+        }
+
+        @media (min-width:1400px) {
+            .right_content_box_1 {
+                height: 89% !important;
+            }
+        }
+
+        .inner_uni1 .right_content_box_1 {
+            height: 87% !important;
+        }
+
+        .inner_uni3 .right_content_box_1 {
+            height: 87% !important;
+        }
+
+        .inner_uni5 .right_content_box_1 {
+            height: 87% !important;
+        }
+
+        .energy_mid_box .right_content_box {
+            overflow:visible !important;
+            width: 79%;
+            margin-left: 1%;
+
+        }
+        @media (max-width:767px) {
+            .energy_mid_box .right_content_box {
+                 width: 99.5%;
+            }
+            .setting_save_box {
+                float: left;
+            }
+            .sidebar_toggle {
+                width: 100%;
+                float:left;
+            }
+            .right_content_box_1{
+                height: 94%;
+            }
+        }
+        
+
+
+
+    

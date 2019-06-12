@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Common" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Common.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Common.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://64.58.161.201/adminservice6.0/Common.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICommon_MobGetCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetCity" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_MobGetCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_NetGetCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetCity" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_NetGetCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_NetGetCityZipCodes_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetCityZipCodes" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_NetGetCityZipCodes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetCityZipCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_MobGetZipcode_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetZipcode" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_MobGetZipcode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetZipcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_NetGetZipcode_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetZipcode" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_NetGetZipcode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetZipcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_MobGetColorcode_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetColorcode" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_MobGetColorcode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobGetColorcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_NetGetColorcode_InputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetColorcode" />
+  </wsdl:message>
+  <wsdl:message name="ICommon_NetGetColorcode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NetGetColorcodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICommon">
+    <wsdl:operation name="MobGetCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommon/MobGetCity" message="tns:ICommon_MobGetCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommon/MobGetCityResponse" message="tns:ICommon_MobGetCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGetCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommon/NetGetCity" message="tns:ICommon_NetGetCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommon/NetGetCityResponse" message="tns:ICommon_NetGetCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGetCityZipCodes">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommon/NetGetCityZipCodes" message="tns:ICommon_NetGetCityZipCodes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommon/NetGetCityZipCodesResponse" message="tns:ICommon_NetGetCityZipCodes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobGetZipcode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommon/MobGetZipcode" message="tns:ICommon_MobGetZipcode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommon/MobGetZipcodeResponse" message="tns:ICommon_MobGetZipcode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGetZipcode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommon/NetGetZipcode" message="tns:ICommon_NetGetZipcode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommon/NetGetZipcodeResponse" message="tns:ICommon_NetGetZipcode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobGetColorcode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommon/MobGetColorcode" message="tns:ICommon_MobGetColorcode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommon/MobGetColorcodeResponse" message="tns:ICommon_MobGetColorcode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NetGetColorcode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommon/NetGetColorcode" message="tns:ICommon_NetGetColorcode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommon/NetGetColorcodeResponse" message="tns:ICommon_NetGetColorcode_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICommon" type="tns:ICommon">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MobGetCity">
+      <soap:operation soapAction="http://tempuri.org/ICommon/MobGetCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGetCity">
+      <soap:operation soapAction="http://tempuri.org/ICommon/NetGetCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGetCityZipCodes">
+      <soap:operation soapAction="http://tempuri.org/ICommon/NetGetCityZipCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobGetZipcode">
+      <soap:operation soapAction="http://tempuri.org/ICommon/MobGetZipcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGetZipcode">
+      <soap:operation soapAction="http://tempuri.org/ICommon/NetGetZipcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobGetColorcode">
+      <soap:operation soapAction="http://tempuri.org/ICommon/MobGetColorcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NetGetColorcode">
+      <soap:operation soapAction="http://tempuri.org/ICommon/NetGetColorcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Common">
+    <wsdl:port name="BasicHttpBinding_ICommon" binding="tns:BasicHttpBinding_ICommon">
+      <soap:address location="http://64.58.161.201/adminservice6.0/Common.svc/SoapService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

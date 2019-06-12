@@ -1,0 +1,523 @@
+﻿/*-- Notification Inbox CSS Start From Here --*/
+
+.top-notif-inbox-section {
+    background: #e6e6e6 none repeat scroll 0 0;
+      color: #fff;
+    float: left;
+    font-size: 12px;
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.Rightheader-Pannel .trash-icons {
+    margin-left: 10px;
+}
+
+.select_chech-box {
+    /*border-right: 1px solid #d6d6d6;*/
+    float: left;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-top: 8px;
+    text-align: left;
+    width: 4.5%;
+}
+
+
+.select_topic {
+    width: 9%;
+    float: left;
+    text-align: left;
+    padding-top: 3px;
+}
+
+    .select_topic a, .select_from a, .select_date a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+        .select_topic a:hover, .select_from a:hover, .select_date a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+    .select_topic img {
+        text-align: center;
+        padding-left: 15%;
+        margin-top: -2px;
+    }
+
+.select_from {
+   
+  -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    /*border-color: #ccc #ccc #ccc -moz-use-text-color;*/
+    /*border-image: none;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;*/
+    color: #3c3c3c;
+    float: left;
+    font-size: 16px;
+    overflow: hidden;
+    padding:8px 38px 0 34px;
+    position: relative;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 22.5%;
+    /*border:none;
+        border-right: 1px solid #ccc;*/
+}
+
+.select_subject {
+  -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    /*border-color: #ccc #ccc #ccc -moz-use-text-color;*/
+    /*border-image: none;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;*/
+    color: #3c3c3c;
+    float: left;
+    font-size: 16px;
+    overflow: hidden;
+    padding:8px 6px 0 11px;
+    position: relative;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 52%;
+     /*border:none;
+         border-right: 1px solid #ccc;*/
+}
+
+.select_atachment {
+    width: 0%;
+    float: left;
+    text-align: center;
+    padding-top: 3px;
+     border:none;
+}
+
+.select_date {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    /*border-color: #ccc #ccc #ccc -moz-use-text-color;*/
+    /*border-image: none;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;*/
+    color: #3c3c3c;
+    float: left;
+    font-size: 16px;
+    padding:8px 6px 0 13px;
+    position: relative;
+    text-align: left;
+    width: 20.5%;
+     /*border:none;
+         border-right: 0px solid #ccc;*/
+}
+
+.message-section {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    font-size: 12px;
+
+}
+
+    .message-section ul {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+        .message-section ul li {
+            margin: 0px;
+            padding: 8px 0px;
+            width: 100%;
+            float: left;
+            border-bottom: 1px solid #e3e3e3;
+        }
+
+            .message-section ul li:hover {
+                background: #f4f4f4;
+            }
+
+.right-notif-img {
+}
+
+    .right-notif-img img {
+        margin-right: 10px;
+    }
+
+.message-body-section {
+    margin: 10px 15px;
+}
+
+.from-section {
+    width: 10%;
+    float: left;
+    margin: 0px 0px 10px;
+    font-size: 14px;
+    color: #53565a;
+    font-weight: bold;
+}
+
+.from-name-section {
+    width: 90%;
+    float: right;
+    padding-left: 20px;
+    margin: 0px 0px 0px;
+    font-size: 14px;
+    color: #53565a;
+}
+
+.message-attached-img {
+    width: 100%;
+    display: block;
+    clear: both;
+    margin: 15px 0px;
+}
+
+    .message-attached-img img {
+        border: 1px solid #9c9c9c;
+        padding: 1px;
+    }
+
+    .message-attached-img span {
+        padding-right: 15px;
+    }
+
+.message-written-area {
+    width: 100%;
+    display: block;
+    clear: both;
+    font-size: 12px;
+    line-height: 21px;
+    margin: 30px 0px 15px;
+}
+
+.thanks-area {
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    margin: 20px 0px;
+}
+
+.edit-tools {
+    margin: 0px 0px 15px 0px;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 3px 5px;
+}
+
+.message-body-section .buttons {
+    width: 100%;
+}
+
+.BackBtn {
+    background: #333 url(../images/notification_icon/BackIcon.png) no-repeat;
+    background-position: center center;
+    text-indent: -9999px;
+    width: 60px;
+    border: 1px solid #333;
+    cursor: pointer;
+    margin: 3px 10px 0px -170px;
+    padding: 3px;
+}
+
+.BacktoInbox {
+    background: url(../images/notification_icon/icon-back-to-inbox.png) no-repeat left top;
+    text-indent: -9999px;
+    width: 60px;
+    cursor: pointer;
+    height:30px;
+}
+
+ul.MailListing {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    height: 429px;
+    overflow: auto;
+}
+
+    ul.MailListing li {
+         background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #dadada;
+    clear: left;
+    line-height: 31px;
+    list-style-type: none;
+    padding: 0;
+    }
+
+        ul.MailListing li:hover {
+            background: #f7f7f7;
+            cursor: pointer;
+        }
+
+        ul.MailListing li.unread {
+            background: #F7F7F7;
+        }
+
+            ul.MailListing li.unread:hover {
+                background: #dbdbdb;
+                color: #000;
+                cursor: pointer;
+            }
+
+            ul.MailListing li.unread .FromContainer, ul.MailListing li.unread .msgSubject {
+                font-weight: bold;
+            }
+
+ul.InboxLabelListing_sub li span, ul.InboxLabelListing li.parent span {
+    color: Red;
+}
+
+.SelectContainer {
+     -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #ccc #ccc;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    float: left;
+    padding: 3px 0 0;
+    text-align: center;
+    width: 4.6%;
+        border-color: #D4D4D4;
+    border-bottom: 0px;
+}
+
+    .SelectContainer img {
+        margin-left: 10px;
+    }
+
+.SaveImageContainer {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #ccc #ccc -moz-use-text-color;
+    border-image: none;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    float: left;
+    height: 35px;
+    text-align: center;
+    width:3%;
+        border-color: #D4D4D4;
+    border-bottom: 0px;
+}
+
+    .SaveImageContainer img {
+        margin-top: -3px;
+    }
+
+.FromContainer {
+      -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #ccc #ccc -moz-use-text-color;
+    border-image: none;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    float: left;
+    height: 35px;
+    overflow: hidden;
+    padding-left: 8px;
+    padding-top: 1px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:20%;
+        border-color: #D4D4D4;
+    border-bottom: 0px;
+}
+
+.SubjectContainer {
+   -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #ccc;
+    border-image: none;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    float: left;
+    height: 35px;
+    overflow: hidden;
+    padding-left: 12px;
+    padding-top: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:46.6%;
+        border-color: #D4D4D4;
+    border-bottom: 0px;
+}
+
+.AttachmentContainer {
+ -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #ccc #ccc -moz-use-text-color;
+    border-image: none;
+    border-style: none solid solid none;
+    border-width: 0 1px 1px 0;
+    float: left;
+    height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:6.3%;
+ padding-left: 18px;
+     border-color: #D4D4D4;
+    border-bottom: 0px;
+}
+
+    .AttachmentContainer img {
+        height: 17px;
+    }
+
+.TimeContainer {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #ccc #ccc -moz-use-text-color;
+    border-image: none;
+    border-style: none solid solid none;
+    border-width: 0 1px 1px 0;
+    float: left;
+    height: 35px;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 10px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:19.5%;
+        border-color: #D4D4D4;
+    border-bottom: 0px;
+}
+
+.DetailsMessageContainer .DetailsMessageFrom {
+    width: 10%;
+    float: left;
+    margin: 0px 0px 10px;
+    font-size: 14px;
+    color: #53565a;
+    font-weight: bold;
+}
+
+
+.DetailsMessageContainer .DetailsMessageUser {
+    width: 90%;
+    float: right;
+    padding-left: 20px;
+    margin: -31px -2px -50px 21px;
+    font-size: 14px;
+    color: #53565a;
+}
+
+.DetailsMessageContainer .DetailsMessageSubject {
+    width: 90%;
+    float: right;
+    padding-left: 20px;
+    margin: -31px -2px -50px 21px;
+    font-size: 14px;
+    color: #53565a;
+}
+
+.DetailsMessageContainer .DMcontent {
+    width: 100%;
+    display: block;
+    clear: both;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 30px 0px 15px;
+    font-weight: bold;
+}
+
+.DetailsMessageContainer .DetailsMessageContent {
+    width: 100%;
+    display: block;
+    clear: both;
+    font-size: 12px;
+    line-height: 21px;
+    margin: 30px 0px 15px;
+}
+
+.DetailsMessageContainer .MessageTitle {
+    width: 10%;
+    float: left;
+    margin: 0px 0px 10px;
+    font-size: 14px;
+    color: #53565a;
+    font-weight: bold;
+}
+
+.DetailsMessageContainer .MessageDate {
+    padding-left: 20px;
+    margin: -18px 0px -1px 78px;
+    font-size: 14px;
+    color: #53565a;
+}
+
+
+.submitBtn {
+    /*background: #606060;*/
+    border: none;
+    color: #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+    height: 30px;
+    margin: 13px 15px 5px 10px;
+    padding: 5px 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.closeBtn {
+    background: #606060;
+    border: none;
+    color: #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+    height: 30px;
+    margin: 13px 18px 5px 5px;
+    padding: 5px 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.SortIcon{/*float:right;*/ cursor: pointer;
+    margin-left: 4px;
+    margin-top: 2px;
+    position: absolute;
+    right: 14px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .select_from {
+        width: 29.5%;
+    }
+
+    .select_subject {
+        width:44%;
+    }
+
+}
